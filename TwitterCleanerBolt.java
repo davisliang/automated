@@ -71,8 +71,7 @@ public class TwitterCleanerBolt implements IRichBolt {
 		txt = this.removeUrl(txt);
 		txt = txt.replace("\n", "");
 		txt = txt.toLowerCase();
-		if(txt.length()<80)
-			return;
+		
 			
 		// extract hashtags
 		String hasht = "\nhashtags: ";
@@ -97,9 +96,16 @@ public class TwitterCleanerBolt implements IRichBolt {
 		if(useTopicSelector == true && keep == false)
 			return;
 
-		OutputStream oStream;
-		String finaltext = "\n\ntext: " + txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","");
 		
+
+		OutputStream oStream;
+
+		//removes multiple whitespace, hashtag entries, and tag entries
+		String finaltext = "\n\ntext: " + txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","").replaceAll("( )+", " ");
+
+		if(finaltext.length()<60)
+			return;
+
 		try {
 			oStream = new FileOutputStream("/Users/Davis/Desktop/dump.txt", true);
 			oStream.write(finaltext.getBytes());
@@ -142,7 +148,7 @@ public class TwitterCleanerBolt implements IRichBolt {
 	 **/
 	public static String removeUrl(String tweet) {
 		try{
-			String urlPattern = "((https?|ftp|gopher|telnet|file|Unsure|http):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)";
+			String urlPattern = "((https?|ftp|gopher|telnet|file|Unsure|http|https):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)";
 			
 			Pattern p = Pattern.compile(urlPattern,Pattern.CASE_INSENSITIVE);
 			Matcher m = p.matcher(tweet);
