@@ -92,23 +92,24 @@ public class TwitterCleanerBolt implements IRichBolt {
 			} else {
 				hasht += hashtage.getText() + " ";
 			}
-
-			if(useTopicSelector == true && keep == false)
-				return;
-
-			OutputStream oStream;
-			String finaltext = "\n\ntext: " + txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","");
-
-			try {
-				oStream = new FileOutputStream("/Users/Davis/Desktop/dump.txt", true);
-				oStream.write(finaltext.getBytes());
-				oStream.write(hasht.getBytes());
-				oStream.close();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
+
+		if(useTopicSelector == true && keep == false)
+			return;
+
+		OutputStream oStream;
+		String finaltext = "\n\ntext: " + txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","");
+		
+		try {
+			oStream = new FileOutputStream("/Users/Davis/Desktop/dump.txt", true);
+			oStream.write(finaltext.getBytes());
+			oStream.write(hasht.getBytes());
+			oStream.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
     }
 
     /**
