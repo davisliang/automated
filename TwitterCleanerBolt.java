@@ -96,19 +96,17 @@ public class TwitterCleanerBolt implements IRichBolt {
 		if(useTopicSelector == true && keep == false)
 			return;
 
-		
-
 		OutputStream oStream;
 
 		//removes multiple whitespace, hashtag entries, and tag entries
 		String finaltext = "\n\ntext: " + txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","").replaceAll("( )+", " ");
     
-    //remove characters we don't want
-    finaltext = preserveASCII(finaltext); 
+    	//remove characters we don't want
+    	finaltext = preserveASCII(finaltext); 
 		
-    String finaltext = "\n\ntext: " + finaltext;
+    	String finaltext = "\n\ntext: " + finaltext;
     
-    if(finaltext.length()<60)
+	    if(finaltext.length()<60)
 			return;
 
 		try {
@@ -120,16 +118,16 @@ public class TwitterCleanerBolt implements IRichBolt {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+			
     }
 
-    /**
-     * TO-DO
-     **/
-	@Override
-	public void cleanup() {
-    return;
-  }
+	    /**
+	     * TO-DO
+	     **/
+		@Override
+		public void cleanup() {
+	    return;
+  	}
 
 	/**
      * TO-DO: Documentation
@@ -151,24 +149,30 @@ public class TwitterCleanerBolt implements IRichBolt {
    * helper method to remove all characters that do not meet certain requirements
    * @param tweet The text field from the tweet tuple
    */
-  public static String preserveASCII(String tweet) {
-    char[] charArrayTweet = tweet.toCharArray();
-    for(int i = 0; i < charArrayTweet.length; i++) {
-      char c = charArrayTweet[i];
-      if(!((((int) c>=32 && (int) c<=63)) || ((int) c >= 96 && (int) c <= 127))) {
-        charArrayTweet = removeChar(charArrayTweet, i);
-        i--;
-      }
-    }
-    return new String(charArrayTweet);
-  }
+    public static String preserveASCII(String tweet) {
+    	char[] charArrayTweet = tweet.toCharArray();
 
-  public static char[] removeChar( char[] original, int removeLocation) {
-    StringBuilder sb = new StringBuilder();
-    sb.append(original);
-    sb.deleteCharAt(removeLocation);
-    return sb.toString().toCharArray();
-  }
+    	for(int i = 0; i < charArrayTweet.length; i++) {
+      		char c = charArrayTweet[i];
+      		if(!((((int) c>=32 && (int) c<=63)) || ((int) c >= 96 && (int) c <= 127))) {
+        		charArrayTweet = removeChar(charArrayTweet, i);
+        		i--;
+      		}
+    	}
+    	return new String(charArrayTweet);
+  	}
+
+  	/**
+  	 * helper method to remove a single character in an array
+  	 * @param original Original text of the tweet
+  	 * @param removeLocation element location to be removed
+  	 **/
+  	public static char[] removeChar( char[] original, int removeLocation) {
+    	StringBuilder sb = new StringBuilder();
+    	sb.append(original);
+    	sb.deleteCharAt(removeLocation);
+    	return sb.toString().toCharArray();
+  	}
 
 	/**
 	 * helper method to remove all URLs using regex.
