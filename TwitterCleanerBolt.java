@@ -1,3 +1,4 @@
+import java.lang.StringBuilder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Arrays;
@@ -101,7 +102,9 @@ public class TwitterCleanerBolt implements IRichBolt {
 
 		//removes multiple whitespace, hashtag entries, and tag entries
 		String finaltext = "\n\ntext: " + txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","").replaceAll("( )+", " ");
-
+    
+    //remove characters we don't want
+    finaltext = preserveASCII(finaltext); 
 		if(finaltext.length()<60)
 			return;
 
@@ -147,30 +150,21 @@ public class TwitterCleanerBolt implements IRichBolt {
    */
   public static String preserveASCII(String tweet) {
     char[] charArrayTweet = tweet.toCharArray();
-    for(int i = 0 ; i < charArrayTweet.length; i++) {
+    for(int i = 0; i < charArrayTweet.length; i++) {
       char c = charArrayTweet[i];
-      if((int) c >= 32 && (int) c <= 63) 
-        continue;
-      else if((int) c >= 96 && (int) c <= 127)
-        continue;
-      else {
-        charArrayTweet = removeChar(charArrayTweet, i); 
+      if(!((((int) c>=32 && (int) c<=63)) || ((int) c >= 96 && (int) c <= 127))) {
+        charArrayTweet = removeChar(charArrayTweet, i);
         i--;
       }
     }
-      
     return new String(charArrayTweet);
   }
 
-  public static char[] removeChar( char[] original, int location_to_remove) {
-    char[] result = new char[original.length-1];
-    int last_insert = 0;
-    for (int i = 0; i < original.length; i++){
-      if (i == location_to_remove)
-        i++;
-      result[last_insert++] = original[i];
-    }
-    return result;
+  public static char[] removeChar( char[] original, int removeLocation) {
+    StringBuilder sb = new StringBuilder();
+    sb.append(original);
+    sb.deleteCharAt(removeLocation);
+    return sb.toString().toCharArray();
   }
 
 	/**
