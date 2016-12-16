@@ -105,7 +105,10 @@ public class TwitterCleanerBolt implements IRichBolt {
     
     //remove characters we don't want
     finaltext = preserveASCII(finaltext); 
-		if(finaltext.length()<60)
+		
+    String finaltext = "\n\ntext: " + finaltext;
+    
+    if(finaltext.length()<60)
 			return;
 
 		try {
@@ -172,7 +175,7 @@ public class TwitterCleanerBolt implements IRichBolt {
 	 * @param tweet The text field from the tweet tuple.
 	 **/
 	public static String removeUrl(String tweet) {
-		try{
+	  try{
 			String urlPattern = "((https?|ftp|gopher|telnet|file|Unsure|http|https):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)";
 			
 			Pattern p = Pattern.compile(urlPattern,Pattern.CASE_INSENSITIVE);
@@ -181,8 +184,8 @@ public class TwitterCleanerBolt implements IRichBolt {
 			// re-assigns str while removing URLs
 			int i = 0;
 			while (m.find()) {
-			    tweet = tweet.replaceAll(m.group(i),"").trim();
-			    i++;
+			  tweet = tweet.replaceAll(m.group(i),"").trim();
+			  i++;
 			}
 
 			return tweet;
