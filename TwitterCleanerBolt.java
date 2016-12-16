@@ -179,7 +179,7 @@ public class TwitterCleanerBolt implements IRichBolt {
      * @param tweet The text field from the tweet tuple.
      **/
     public static String removeUrl(String tweet) {
-      try{
+        try{
             String urlPattern = "((https?|ftp|gopher|telnet|file|Unsure|http|https):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)";
             
             Pattern p = Pattern.compile(urlPattern,Pattern.CASE_INSENSITIVE);
