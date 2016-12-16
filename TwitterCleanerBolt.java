@@ -1,4 +1,3 @@
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Arrays;
@@ -141,6 +140,38 @@ public class TwitterCleanerBolt implements IRichBolt {
 	public Map<String, Object> getComponentConfiguration() {
 		return null;
 	}
+
+  /**
+   * helper method to remove all characters that do not meet certain requirements
+   * @param tweet The text field from the tweet tuple
+   */
+  public static String preserveASCII(String tweet) {
+    char[] charArrayTweet = tweet.toCharArray();
+    for(int i = 0 ; i < charArrayTweet.length; i++) {
+      char c = charArrayTweet[i];
+      if((int) c >= 32 && (int) c <= 63) 
+        continue;
+      else if((int) c >= 96 && (int) c <= 127)
+        continue;
+      else {
+        charArrayTweet = removeChar(charArrayTweet, i); 
+        i--;
+      }
+    }
+      
+    return new String(charArrayTweet);
+  }
+
+  public static char[] removeChar( char[] original, int location_to_remove) {
+    char[] result = new char[original.length-1];
+    int last_insert = 0;
+    for (int i = 0; i < original.length; i++){
+      if (i == location_to_remove)
+        i++;
+      result[last_insert++] = original[i];
+    }
+    return result;
+  }
 
 	/**
 	 * helper method to remove all URLs using regex.
