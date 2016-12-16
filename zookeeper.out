@@ -1,30 +1,30 @@
-2016-12-14 11:25:41,031 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /Users/Davis/zookeeper-3.4.6/bin/../conf/zoo.cfg
-2016-12-14 11:25:41,035 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
-2016-12-14 11:25:41,035 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
-2016-12-14 11:25:41,035 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
-2016-12-14 11:25:41,036 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
-2016-12-14 11:25:41,050 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /Users/Davis/zookeeper-3.4.6/bin/../conf/zoo.cfg
-2016-12-14 11:25:41,050 [myid:] - INFO  [main:ZooKeeperServerMain@95] - Starting server
-2016-12-14 11:25:41,060 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
-2016-12-14 11:25:41,060 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=daviss-mbp.dynamic.ucsd.edu
-2016-12-14 11:25:41,060 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_101
-2016-12-14 11:25:41,060 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
-2016-12-14 11:25:41,060 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre
-2016-12-14 11:25:41,060 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/Davis/zookeeper-3.4.6/bin/../build/classes:/Users/Davis/zookeeper-3.4.6/bin/../build/lib/*.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/slf4j-api-1.6.1.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/netty-3.7.0.Final.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/log4j-1.2.16.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/jline-0.9.94.jar:/Users/Davis/zookeeper-3.4.6/bin/../zookeeper-3.4.6.jar:/Users/Davis/zookeeper-3.4.6/bin/../src/java/lib/*.jar:/Users/Davis/zookeeper-3.4.6/bin/../conf:
-2016-12-14 11:25:41,061 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/Users/Davis/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
-2016-12-14 11:25:41,061 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/6r/_tfq0x0s1vb1zcmmkf_tqwp40000gn/T/
-2016-12-14 11:25:41,061 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
-2016-12-14 11:25:41,062 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
-2016-12-14 11:25:41,062 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
-2016-12-14 11:25:41,062 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=10.12
-2016-12-14 11:25:41,062 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=Davis
-2016-12-14 11:25:41,062 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/Davis
-2016-12-14 11:25:41,063 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/Davis/tweetnet
-2016-12-14 11:25:41,072 [myid:] - INFO  [main:ZooKeeperServer@755] - tickTime set to 2000
-2016-12-14 11:25:41,072 [myid:] - INFO  [main:ZooKeeperServer@764] - minSessionTimeout set to -1
-2016-12-14 11:25:41,072 [myid:] - INFO  [main:ZooKeeperServer@773] - maxSessionTimeout set to -1
-2016-12-14 11:25:41,091 [myid:] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181
-2016-12-14 11:25:41,092 [myid:] - ERROR [main:ZooKeeperServerMain@63] - Unexpected exception, exiting abnormally
+2016-12-16 12:56:18,033 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /Users/Davis/zookeeper-3.4.6/bin/../conf/zoo.cfg
+2016-12-16 12:56:18,039 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2016-12-16 12:56:18,039 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2016-12-16 12:56:18,039 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2016-12-16 12:56:18,040 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2016-12-16 12:56:18,058 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /Users/Davis/zookeeper-3.4.6/bin/../conf/zoo.cfg
+2016-12-16 12:56:18,058 [myid:] - INFO  [main:ZooKeeperServerMain@95] - Starting server
+2016-12-16 12:56:18,072 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-12-16 12:56:18,072 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=daviss-mbp.ucsd.edu
+2016-12-16 12:56:18,072 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_101
+2016-12-16 12:56:18,073 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2016-12-16 12:56:18,073 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre
+2016-12-16 12:56:18,073 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/Davis/zookeeper-3.4.6/bin/../build/classes:/Users/Davis/zookeeper-3.4.6/bin/../build/lib/*.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/slf4j-api-1.6.1.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/netty-3.7.0.Final.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/log4j-1.2.16.jar:/Users/Davis/zookeeper-3.4.6/bin/../lib/jline-0.9.94.jar:/Users/Davis/zookeeper-3.4.6/bin/../zookeeper-3.4.6.jar:/Users/Davis/zookeeper-3.4.6/bin/../src/java/lib/*.jar:/Users/Davis/zookeeper-3.4.6/bin/../conf:
+2016-12-16 12:56:18,073 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/Users/Davis/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-12-16 12:56:18,073 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/6r/_tfq0x0s1vb1zcmmkf_tqwp40000gn/T/
+2016-12-16 12:56:18,073 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2016-12-16 12:56:18,074 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
+2016-12-16 12:56:18,074 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
+2016-12-16 12:56:18,075 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=10.12
+2016-12-16 12:56:18,075 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=Davis
+2016-12-16 12:56:18,075 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/Davis
+2016-12-16 12:56:18,075 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/Davis/tweetnet
+2016-12-16 12:56:18,085 [myid:] - INFO  [main:ZooKeeperServer@755] - tickTime set to 2000
+2016-12-16 12:56:18,085 [myid:] - INFO  [main:ZooKeeperServer@764] - minSessionTimeout set to -1
+2016-12-16 12:56:18,085 [myid:] - INFO  [main:ZooKeeperServer@773] - maxSessionTimeout set to -1
+2016-12-16 12:56:18,117 [myid:] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181
+2016-12-16 12:56:18,118 [myid:] - ERROR [main:ZooKeeperServerMain@63] - Unexpected exception, exiting abnormally
 java.net.BindException: Address already in use
 	at sun.nio.ch.Net.bind0(Native Method)
 	at sun.nio.ch.Net.bind(Net.java:433)
