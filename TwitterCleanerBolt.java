@@ -104,7 +104,7 @@ public class TwitterCleanerBolt implements IRichBolt {
         //remove characters we don't want
         finaltext = preserveASCII(finaltext); 
         
-        String finaltext = "\n\ntext: " + finaltext;
+        finaltext = "\n\ntext: " + finaltext;
     
         if(finaltext.length()<60)
             return;
