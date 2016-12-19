@@ -34,10 +34,9 @@ class ReducedAsciiDictionary:
 			start = self.ranges[i][0]
 			end = self.ranges[i][1]
 			for j in range(start,end+1):
-				dictionary[chr(j)] = counter
+				self.dictionary[chr(j)] = counter
 				counter += 1
 
-	# any more functionality to add?
 
 
 		
