@@ -1,3 +1,10 @@
+'''
+Keras backend. cLSTM Model.
+
+Input: (365x1) 64 unique chars, 1 EOS char, 300 word2vec context
+Output: ()
+
+'''
 import pickle as pkl
 import  numpy as np
 from load_data import load_data
@@ -10,8 +17,10 @@ from keras.optimizers import RMSprop
 from keras.layers import Dropout
 
 print("Start loading data ...")
-data, n_char, tweet_length = load_data() # data shape = #tweets x 141 x input_dim(365)
+data, n_char, tweet_length = load_data() 
+# data shape = #tweets x 141 x input_dim(365)
 print("Finished loading data")
+
 
 input_dim = data.shape[2]
 input_length = 40

@@ -46,10 +46,13 @@ for twt in range(numData):
 print "data (TYPE): ", type(X)
 print "data (SHAPE): ", X.shape
 
-print "first tweet, first character: ", tweets[0][6]
-print "first tweet, first character index: ", dictionary.get(tweets[0][6])
-print "first tweet, first character vector: ", X[0,0]
+#print "first tweet, first character: ", tweets[0][6]
+#print "first tweet, first character index: ", dictionary.get(tweets[0][6])
+#print "first tweet, first character vector: ", X[0,0]
 
-print "random tweet, random character: ", tweets[253][12+6]
-print "random tweet, random cahracter index: ", dictionary.get(tweets[253][12+6])
-print "random tweet, random character vector:", X[253,12]
+#print "random tweet, random character: ", tweets[253][12+6]
+#print "random tweet, random cahracter index: ", dictionary.get(tweets[253][12+6])
+#print "random tweet, random character vector:", X[253,12]
+
+
+print "random tweet, should be empty: ", X[253,140]
