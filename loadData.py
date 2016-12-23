@@ -1,15 +1,20 @@
+'''
+loads twitter dataset from storm API.
+'''
 import numpy as np
 import cPickle as pickle
 from ReducedAsciiDictionary import ReducedAsciiDictionary
-'''
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import Dropout
-from keras.layers import LSTM
-from keras.callbacks import ModelCheckpoint
-from keras.utils import np_utils
-'''
+
+
 def loadData(dictionary,ranges):
+	''' Creates dataset based on dictionary, a set of ascii
+	ranges, and pickled twitter data from Apache Storm.
+
+	X: (numTweets, 141, dictionaryLength + embeddings length)
+	vocabLen: (dictionary length)
+	tweetLength: (numTweets)
+	'''
+
 	#load tweets and hashtag embeddings
 	tweets = pickle.load(open("preprocessed_new_tweets.pkl","rb"))
 	embeddings = pickle.load(open("new_embeddings.pkl","rb"))
@@ -17,22 +22,23 @@ def loadData(dictionary,ranges):
 	#visualize data
 	print "tweets (ELEMENT TYPE): ", type(tweets[0])
 	print "tweets (Number Of Tweets): ", len(tweets)
-
 	print "hashtag (ELEMENT TYPE): ", type(embeddings[0])
 	print "hashtag (SHAPE): ", embeddings.shape
 
 	#create character dictionary for tweets.
 	dictionary = ReducedAsciiDictionary({},ranges).dictionary
+
+	#total number of tweets
 	numData = len(tweets)
 
-	#load first 1000 tweets
-	#recall numpy array should be of shape (samples, time steps, features)
-
+	#number of unique characters in dataset
 	vocabLen = len(dictionary)+1
+
+	#initialize datastore arrays
 	X = np.zeros([numData, 140+1, vocabLen + embeddings.shape[1]])
 	tweetLength = np.zeros(numData)
 
-	# for each tweet
+	# for each tweet create onehot encoding for each character
 	for twt in range(numData):
 		tweetLength[twt] = len(tweets[twt])-6+1
 		currTweet = tweets[twt][6:len(tweets[twt])]
@@ -42,7 +48,7 @@ def loadData(dictionary,ranges):
 			
 		    for embIndex in range(embeddings.shape[1]):
 				X[twt,ch,embIndex+vocabLen] = embeddings[twt,embIndex]
-		#end of tweet indentifier is when first and second are ones
+		#end of tweet character
 		X[twt,len(currTweet),len(dictionary)]=1
 
 	return X, vocabLen, tweetLength
