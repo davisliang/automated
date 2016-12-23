@@ -1,9 +1,13 @@
+'''
+Creates word2vec embeddings for each tweet using co-occurence 
+counts and weighted vector aggregations.
+'''
 import pickle
 import re
 import numpy as np
 
-
-data_path = "/home/yshu-phd/twitter/newdump.txt"
+#generalized datapath
+data_path = "newdump.txt"
 
 def get_hashtags(): 
 

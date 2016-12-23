@@ -1,10 +1,12 @@
+'''
+Function reduces all tweets to contain only characters in
+the second and fourth columns of the standard ascii table.
+This should be used if you are using an old version
+of the storm topology that does not do this online.
+'''
+
 import cPickle as pickle
 import numpy as np
-#reduces all tweets to feature only characters in
-#the second and fourth columns of the standard ascii table.
-
-#This should be used if you are using an old version
-#of the storm topology that does not do this online.
 
 tweets = pickle.load(open("new_tweets_list_string.pkl","rb"))
 embeddings = pickle.load(open("new_embeddings.pkl","rb"))
