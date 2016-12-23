@@ -7,7 +7,7 @@ Output: ()
 '''
 import pickle as pkl
 import  numpy as np
-from load_data import load_data
+from loadData import loadData
 from keras.utils import np_utils
 from keras.models import Sequential
 from keras.layers import LSTM
@@ -17,7 +17,7 @@ from keras.optimizers import RMSprop
 from keras.layers import Dropout
 
 print("Start loading data ...")
-data, n_char, tweet_length = load_data() 
+data, n_char, tweet_length = loadData({},np.array([])) 
 # data shape = #tweets x 141 x input_dim(365)
 print("Finished loading data")
 
