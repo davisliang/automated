@@ -40,7 +40,15 @@ public class TwitterStreamSpout extends BaseRichSpout {
     String accessToken;
     String accessTokenSecret;
     String[] keyWords;
-        
+    
+    /**
+     * Constructor.
+     * @param consumerKey Twitter API credential
+     * @param consumerSecret Twitter API credential
+     * @param accessToken Twitter API credential
+     * @param accessTokenSecret Twitter API credential
+     * @param keyWords array of words to filter for
+     */
     public TwitterStreamSpout(String consumerKey, String consumerSecret,
         String accessToken, String accessTokenSecret, String[] keyWords) {
 
@@ -51,10 +59,19 @@ public class TwitterStreamSpout extends BaseRichSpout {
         this.keyWords = keyWords;
     }
         
+    /**
+     * TO DO: default constructor is a stub.
+     */
     public TwitterStreamSpout() {
       // TODO Auto-generated constructor stub
     }
         
+    /**
+     * creates a new status blockingQueue and a statusListener.
+     * @param conf Storm configuration
+     * @param context Storm context
+     * @param collector Storm spout collector
+     */
     @Override
     public void open(Map conf, TopologyContext context,
         SpoutOutputCollector collector) {
@@ -106,6 +123,9 @@ public class TwitterStreamSpout extends BaseRichSpout {
         }
     }
             
+    /**
+     * polls from the blocking queue to get next status.
+     */
     @Override
     public void nextTuple() {
         Status ret = queue.poll();
@@ -117,11 +137,17 @@ public class TwitterStreamSpout extends BaseRichSpout {
         }
     }
             
+    /**
+     * closes twitter stream. 
+     */
     @Override
     public void close() {
         _twitterStream.shutdown();
     }
             
+    /**
+     * worker node configurator. Default set to 1 local machine.
+     */
     @Override
     public Map<String, Object> getComponentConfiguration() {
         Config ret = new Config();
@@ -134,7 +160,10 @@ public class TwitterStreamSpout extends BaseRichSpout {
             
     @Override
     public void fail(Object id) {}
-            
+    
+    /**
+     * Declare output field type.
+     */
     @Override
     public void declareOutputFields(OutputFieldsDeclarer declarer) {
         declarer.declare(new Fields("tweet"));

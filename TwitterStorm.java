@@ -13,7 +13,7 @@ public class TwitterStorm {
 
     /**
      * The main method extracts user arguments (in runAPI.sh), and constructs
-     * the topology
+     * the topology. Optional Kill Command can be added at the end.
      *
      * @param args[] array of size 5. Last argument are 'keyword' arguments
      */
@@ -46,7 +46,6 @@ public class TwitterStorm {
         LocalCluster cluster = new LocalCluster();
         cluster.submitTopology("TwitterHashtagStorm", config,
             builder.createTopology());
-
         //no kill condition. Run until manual kill command.
     }
 }
