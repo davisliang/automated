@@ -17,9 +17,11 @@ from keras.layers import Activation
 from keras.optimizers import RMSprop
 from keras.layers import Dropout
 from keras.layers import BatchNormalization
+from tweetGenerator import generateText
+from keras.callbacks import ModelCheckpoint
 
 print("Start loading data ...")
-data, dictLen, tweetLen = loadData({},np.array([])) 
+data, dictLen, tweetLen, dictionary = loadData({},np.array([])) 
 # data shape = #tweets x 141 x inputSize(365)
 print("Finished loading data")
 
@@ -70,10 +72,16 @@ model.add(Activation('softmax'))
 optimizer = RMSprop(lr=0.001)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 
+#define file checkpoint
+filePath = "intermediateWeights.hdf5"
+checkPoint = ModelCheckpoint(filePath, monitor='loss', verbose=1)
+callbacksList = [checkPoint]
+
 #train on mini-epochs (sized seqPerSegment) to lower total RAM usage.
 for seg in range(numSegments):
     dataX = np.asarray(X[seg*seqPerSegment: (seg+1)*seqPerSegment])
     datay = np.asarray(y[seg*seqPerSegment: (seg+1)*seqPerSegment])
     print("Input shape: ", dataX.shape)
     print("Output shape: ", datay.shape)
-    model.fit(dataX, datay, nb_epoch=20, batch_size=128)
+    model.fit(dataX, datay, nb_epoch=20, batch_size=128, callbacks=callbacksList)
+    #generateText(dictionary)
