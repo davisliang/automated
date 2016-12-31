@@ -51,4 +51,4 @@ def loadData(dictionary,ranges):
 		#end of tweet character
 		X[twt,len(currTweet),len(dictionary)]=1
 
-	return X, vocabLen, tweetLength
+	return X, vocabLen, tweetLength, dictionary
