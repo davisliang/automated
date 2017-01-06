@@ -84,4 +84,12 @@ for seg in range(numSegments):
     print("Input shape: ", dataX.shape)
     print("Output shape: ", datay.shape)
     model.fit(dataX, datay, nb_epoch=20, batch_size=128, callbacks=callbacksList)
-    #generateText(dictionary)
+    
+    generateText(dictionary, data, dictLen, tweetLen, X, y, 
+    inputSize, sequenceLength, numHiddenFirst, numTweets, seqPerSegment,
+    n_examples, numSegments)
+    
+
+
+
+
