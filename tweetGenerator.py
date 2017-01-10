@@ -27,6 +27,7 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 	# data shape = #tweets x 141 x inputSize(365)
 	#initialize inverse dictionary to map integers to characterse
 	inverseDictionary = {v: k for k, v in dictionary.iteritems()}
+	print "inverseDictionary Size", len(inverseDictionary)
 
 	#building cLSTM model
 	print("\n")
@@ -55,23 +56,29 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 
 	#initializing to random seed
 	seedTweet = np.random.randint(n_examples, size=1)
-
-	contextVector=np.zeros(300)
+	contextVector=np.zeros(inputSize-(dictLen))
 
 	printSeed="SEED: "
 	for c in range(sequenceLength):
-		pattern = X[seedTweet][c,:]
+		#for each character in the sequence
 
+		#grab the pattern, which is the 1x365 input vector
+		pattern = X[seedTweet][c,:]
+		#grab the 1x300 context subvector
 		contextVector = pattern[dictLen:]
 
+		#search, in the pattern itself, for the one-hot element
 		counter = 0
 		for i in range(dictLen):
 			if(pattern[i] == 1):
 				counter = i
 				break
+		#if one-hot element is greater than 64, then EOS
+		if(counter>=64):
+			printSeed = printSeed + "<<EOS>>"
+			continue;
 
 		printSeed = printSeed + inverseDictionary[counter]
-
 	print printSeed
 
 	x = X[seedTweet][0:sequenceLength]
@@ -80,7 +87,8 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 
 	printResult = "GENERATED TEXT: "
 
-	for i in range(140):
+	charsGenerated = 140
+	for i in range(charsGenerated):
 
 		prediction = model.predict(inputVector, verbose=0)
 		#index = np.argsort(prediction)
@@ -88,7 +96,7 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 		#rand_index = index[0][len(index[0]) - rand - 1]
 		rand_index = np.argmax(prediction)
 
-		if(rand_index==64):
+		if(rand_index==(dictLen-1)):
 			printResult = printResult + "<<EOS>>"
 			break
 
