@@ -20,10 +20,10 @@ def loadData(dictionary,ranges):
 	embeddings = pickle.load(open("new_embeddings.pkl","rb"))
 
 	#visualize data
-	print "tweets (ELEMENT TYPE): ", type(tweets[0])
-	print "tweets (Number Of Tweets): ", len(tweets)
-	print "hashtag (ELEMENT TYPE): ", type(embeddings[0])
-	print "hashtag (SHAPE): ", embeddings.shape
+	#print "tweets (ELEMENT TYPE): ", type(tweets[0])
+	#print "tweets (Number Of Tweets): ", len(tweets)
+	#print "hashtag (ELEMENT TYPE): ", type(embeddings[0])
+	#print "hashtag (SHAPE): ", embeddings.shape
 
 	#create character dictionary for tweets.
 	dictionary = ReducedAsciiDictionary({},ranges).dictionary
@@ -40,6 +40,8 @@ def loadData(dictionary,ranges):
 
 	# for each tweet create onehot encoding for each character
 	for twt in range(numData):
+		if(twt%1000==0):
+			print "loaded: ", twt, " of ", numData
 		tweetLength[twt] = len(tweets[twt])-6+1
 		currTweet = tweets[twt][6:len(tweets[twt])]
 		for ch in range(len(currTweet)):
