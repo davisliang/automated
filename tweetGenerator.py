@@ -34,7 +34,6 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 	model = Sequential()
 
 	model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize), return_sequences=True))
-	model.add(LSTM(numHiddenFirst, return_sequences=True))
 	model.add(LSTM(numHiddenFirst))
 
 	model.add(Dense(numHiddenFirst))
