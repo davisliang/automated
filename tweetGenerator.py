@@ -1,7 +1,4 @@
 '''
-This code should not be used. Mega inefficient and a waste of RAM.
-Will fix soon... :). Code calling this method from other classes
-Have been commented out.
 Reads weight matrix from hdf5 file and generates text using seed.
 '''
 import numpy as np
