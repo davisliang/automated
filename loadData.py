@@ -44,13 +44,14 @@ def loadData(dictionary,ranges):
 			print "loaded: ", twt, " of ", numData
 		tweetLength[twt] = len(tweets[twt])-6+1
 		currTweet = tweets[twt][6:len(tweets[twt])]
+
 		for ch in range(len(currTweet)):
-		    oneHotIndex = dictionary.get(currTweet[ch])
-		    X[twt,ch,oneHotIndex] = 1
+			oneHotIndex = dictionary.get(currTweet[ch])
+			X[twt,ch,oneHotIndex] = 1
 			
-		    for embIndex in range(embeddings.shape[1]):
+			for embIndex in range(embeddings.shape[1]):
 				X[twt,ch,embIndex+vocabLen] = embeddings[twt,embIndex]
-		#end of tweet character
+		#end of tweet character (EOS)
 		X[twt,len(currTweet),len(dictionary)]=1
 
 	return X, vocabLen, tweetLength, dictionary

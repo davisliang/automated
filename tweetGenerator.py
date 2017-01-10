@@ -64,6 +64,7 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 
 		#grab the pattern, which is the 1x365 input vector
 		pattern = X[seedTweet][c,:]
+
 		#grab the 1x300 context subvector
 		contextVector = pattern[dictLen:]
 
@@ -73,7 +74,8 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 			if(pattern[i] == 1):
 				counter = i
 				break
-		#if one-hot element is greater than 64, then EOS
+		#if one-hot element is greater than 64, then EOS.
+		#technically you'll never reach this as seqLen should be < tweetLen
 		if(counter>=64):
 			printSeed = printSeed + "<<EOS>>"
 			continue;
