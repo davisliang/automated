@@ -36,10 +36,4 @@ class ReducedAsciiDictionary:
 			for j in range(start,end+1):
 				self.dictionary[chr(j)] = counter
 				counter += 1
-
-
-
-		
-
-
-
+				
