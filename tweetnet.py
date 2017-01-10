@@ -15,6 +15,7 @@ from keras.layers import LSTM
 from keras.layers import Dense
 from keras.layers import Activation
 from keras.optimizers import RMSprop
+from keras.optimizers import Adagrad
 from keras.layers import Dropout
 from keras.layers import BatchNormalization
 from tweetGenerator import generateText
@@ -36,7 +37,7 @@ numHiddenFirst = 512
 numTweets = data.shape[0]
 #seqPerSegment: sequences (of size sequenceLength) per mini-epoch. 
 #Lowers maximum memory usage.
-seqPerSegment = 10000
+seqPerSegment = 5000
 
 X = []
 y = []
@@ -52,15 +53,21 @@ for i in range(numTweets):
 #X: [10000 (numTweets), 40 (sequenceLength), 365(inputSize)].
 n_examples = len(X)
 numSegments = np.ceil(n_examples/seqPerSegment).astype(int)
-print('# of sequences per segments: ', seqPerSegment)
-print('# of segments: ', numSegments)
+#print('# of sequences per segments: ', seqPerSegment)
+#print('# of segments: ', numSegments)
 
 #building cLSTM model
-print("\n")
+#print("\n")
 print("Start building model ....")
 model = Sequential()
 
-model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize)))
+model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize), return_sequences=True))
+model.add(LSTM(numHiddenFirst, return_sequences=True))
+model.add(LSTM(numHiddenFirst))
+
+model.add(Dense(numHiddenFirst))
+model.add(Activation('relu'))
+model.add(BatchNormalization())
 
 model.add(Dense(numHiddenFirst))
 model.add(Activation('relu'))
@@ -69,26 +76,29 @@ model.add(BatchNormalization())
 model.add(Dense(dictLen))
 model.add(Activation('softmax'))
 
-optimizer = RMSprop(lr=0.001)
+optimizer = Adagrad()
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
-
+print("Finished building model.")
 #define file checkpoint
 filePath = "intermediateWeights.hdf5"
 checkPoint = ModelCheckpoint(filePath, monitor='loss', verbose=1)
 callbacksList = [checkPoint]
 
 #train on mini-epochs (sized seqPerSegment) to lower total RAM usage.
-for seg in range(numSegments):
-    dataX = np.asarray(X[seg*seqPerSegment: (seg+1)*seqPerSegment])
-    datay = np.asarray(y[seg*seqPerSegment: (seg+1)*seqPerSegment])
-    print("Input shape: ", dataX.shape)
-    print("Output shape: ", datay.shape)
-    model.fit(dataX, datay, nb_epoch=20, batch_size=128, callbacks=callbacksList)
-    
-    generateText(dictionary, data, dictLen, tweetLen, X, y, 
-    inputSize, sequenceLength, numHiddenFirst, numTweets, seqPerSegment,
-    n_examples, numSegments)
-    
+for epoch in range(50):
+    for seg in range(numSegments):
+        print("\n")
+        print "Segment: ", seg, " | Epoch: ", epoch 
+        dataX = np.asarray(X[seg*seqPerSegment: (seg+1)*seqPerSegment])
+        datay = np.asarray(y[seg*seqPerSegment: (seg+1)*seqPerSegment])
+        #print("Input shape: ", dataX.shape)
+        #print("Output shape: ", datay.shape)
+        model.fit(dataX, datay, nb_epoch=1, batch_size=128, callbacks=callbacksList)
+        
+        generateText(dictionary, data, dictLen, tweetLen, X, y, 
+        inputSize, sequenceLength, numHiddenFirst, numTweets, seqPerSegment,
+        n_examples, numSegments)
+        
 
 
 
