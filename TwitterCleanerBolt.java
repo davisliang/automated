@@ -72,7 +72,6 @@ public class TwitterCleanerBolt implements IRichBolt {
         txt = txt.replace("\n", "");
         txt = txt.toLowerCase();
         
-            
         // extract hashtags
         String hasht = "\nhashtags: ";
         boolean keep = false;
@@ -198,5 +197,4 @@ public class TwitterCleanerBolt implements IRichBolt {
             return tweet;
         }
     }
-
 } 
