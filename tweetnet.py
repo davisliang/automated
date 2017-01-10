@@ -53,6 +53,7 @@ for i in range(numTweets):
 #X: [10000 (numTweets), 40 (sequenceLength), 365(inputSize)].
 n_examples = len(X)
 numSegments = np.ceil(n_examples/seqPerSegment).astype(int)
+numEpochs=50
 #print('# of sequences per segments: ', seqPerSegment)
 #print('# of segments: ', numSegments)
 
@@ -62,7 +63,6 @@ print("Start building model ....")
 model = Sequential()
 
 model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize), return_sequences=True))
-model.add(LSTM(numHiddenFirst, return_sequences=True))
 model.add(LSTM(numHiddenFirst))
 
 model.add(Dense(numHiddenFirst))
@@ -85,10 +85,10 @@ checkPoint = ModelCheckpoint(filePath, monitor='loss', verbose=1)
 callbacksList = [checkPoint]
 
 #train on mini-epochs (sized seqPerSegment) to lower total RAM usage.
-for epoch in range(50):
+for epoch in range(numEpochs):
     for seg in range(numSegments):
         print("\n")
-        print "Segment: ", seg, " | Epoch: ", epoch 
+        print "Segment: ", seg, "/", numSegments, " | Epoch: ", epoch, "/", numEpochs 
         dataX = np.asarray(X[seg*seqPerSegment: (seg+1)*seqPerSegment])
         datay = np.asarray(y[seg*seqPerSegment: (seg+1)*seqPerSegment])
         #print("Input shape: ", dataX.shape)
