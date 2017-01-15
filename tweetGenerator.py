@@ -17,16 +17,6 @@ from keras.layers import Dropout
 from keras.layers import BatchNormalization
 import sys
 
-def sample(preds, temperature=1.0):
-
-	preds = np.asarray(preds).astype('float64')
-	preds = np.log(preds) / temperature
-	exp_preds = np.exp(preds)
-	preds = exp_preds / np.sum(exp_preds)
-	preds = np.squeeze(preds)
-	probas = np.random.multinomial(1, preds, 1)
-	return np.argmax(probas)
-
 def generateText(dictionary, data, dictLen, tweetLen, X, y, 
 	inputSize, sequenceLength, numHiddenFirst, numTweets, seqPerSegment,
 	n_examples, numSegments):
@@ -34,6 +24,7 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 	# data shape = #tweets x 141 x inputSize(365)
 	#initialize inverse dictionary to map integers to characterse
 	inverseDictionary = {v: k for k, v in dictionary.iteritems()}
+	print "inverseDictionary Size", len(inverseDictionary)
 
 	#building cLSTM model
 	print("\n")
@@ -62,30 +53,37 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 
 	#initializing to random seed
 	seedTweet = np.random.randint(n_examples, size=1)
-
-	contextVector=np.zeros(inputSize-dictLen)
+	contextVector=np.zeros(inputSize-(dictLen))
 
 	printSeed="SEED: "
 	for c in range(sequenceLength):
+		#for each character in the sequence
+
+		#grab the pattern, which is the 1x365 input vector
 		pattern = X[seedTweet][c,:]
 
+		#grab the 1x300 context subvector
 		contextVector = pattern[dictLen:]
 
+		#search, in the pattern itself, for the one-hot element
 		counter = 0
 		for i in range(dictLen):
 			if(pattern[i] == 1):
 				counter = i
 				break
-		
-		if(counter>=(dictLen-1)):
+		#if one-hot element is greater than 64, then EOS.
+		#technically you'll never reach this as seqLen should be < tweetLen
+		if(counter>=64):
 			printSeed = printSeed + "<<EOS>>"
 			continue;
 
 		printSeed = printSeed + inverseDictionary[counter]
-
 	print printSeed
 
+	x = X[seedTweet][0:sequenceLength]
+	inputVector = np.reshape(x,(1,len(x),len(x[0])))
 	#generate characters
+<<<<<<< HEAD
 	charsGenerated=140
 	temperatures = [0.001, 0.1, 0.25, 0.5, 1.0]
 	for run in range(len(temperatures)+1):
@@ -108,17 +106,34 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 			if(rand_index==(dictLen-1)):
 				printResult = printResult + "<<EOS>>"
 				break
+=======
+>>>>>>> 5273e9d457b1322d8f2faa15e02904518adfc082
 
-			result = inverseDictionary[rand_index]
-			printResult = printResult+result
+	printResult = "GENERATED TEXT: "
 
-			charVector=np.zeros(dictLen)
-			charVector[rand_index]=1
-			currInput = np.concatenate((charVector,contextVector))
+	charsGenerated = 140
+	for i in range(charsGenerated):
 
-			concatVector = np.reshape(currInput, (1,1,len(currInput)))
+		prediction = model.predict(inputVector, verbose=0)
+		#index = np.argsort(prediction)
+		#rand = np.random.randint(5)
+		#rand_index = index[0][len(index[0]) - rand - 1]
+		rand_index = np.argmax(prediction)
 
-			inputVector=np.concatenate((inputVector,concatVector), axis=1)
-			inputVector=inputVector[:,1:len(inputVector[0]),:]
+		if(rand_index==(dictLen-1)):
+			printResult = printResult + "<<EOS>>"
+			break
 
-		print printResult
+		result = inverseDictionary[rand_index]
+		printResult = printResult+result
+
+		charVector=np.zeros(dictLen)
+		charVector[rand_index]=1
+		currInput = np.concatenate((charVector,contextVector))
+
+		concatVector = np.reshape(currInput, (1,1,len(currInput)))
+
+		inputVector=np.concatenate((inputVector,concatVector), axis=1)
+		inputVector=inputVector[:,1:len(inputVector[0]),:]
+
+	print printResult
