@@ -26,6 +26,8 @@ data, dictLen, tweetLen, dictionary = loadData({},np.array([]))
 # data shape = #tweets x 141 x inputSize(365)
 print("Finished loading data")
 
+loadWeights=True
+
 #initialize some hyper-parameters
 #inputSize: size of each input vector (default: 365x1)
 inputSize = data.shape[2]
@@ -77,6 +79,11 @@ model.add(Dense(dictLen))
 model.add(Activation('softmax'))
 
 optimizer = Adagrad()
+
+if(loadWeights==True):
+    model.load_weights("intermediateWeights.hdf5")
+
+
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 print("Finished building model.")
 #define file checkpoint
