@@ -83,31 +83,6 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 	x = X[seedTweet][0:sequenceLength]
 	inputVector = np.reshape(x,(1,len(x),len(x[0])))
 	#generate characters
-<<<<<<< HEAD
-	charsGenerated=140
-	temperatures = [0.001, 0.1, 0.25, 0.5, 1.0]
-	for run in range(len(temperatures)+1):
-		printResult = "GENERATED TEXT WITH TEMPERATURE "
-		if run < len(temperatures):
-			temperature = temperatures[run]
-			printResult = printResult + str(temperature)+ ": "
-
-		x = X[seedTweet][0:sequenceLength]
-		inputVector = np.reshape(x,(1,len(x),len(x[0])))
-		    
-		for i in range(charsGenerated):
-
-			prediction = model.predict(inputVector, verbose=0)
-			if run < len(temperatures):
-				rand_index = sample(prediction, temperature)
-			else:
-				rand_index = np.argmax(prediction)
-
-			if(rand_index==(dictLen-1)):
-				printResult = printResult + "<<EOS>>"
-				break
-=======
->>>>>>> 5273e9d457b1322d8f2faa15e02904518adfc082
 
 	printResult = "GENERATED TEXT: "
 
