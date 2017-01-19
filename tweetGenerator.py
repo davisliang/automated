@@ -15,6 +15,7 @@ from keras.optimizers import RMSprop
 from keras.optimizers import Adagrad
 from keras.layers import Dropout
 from keras.layers import BatchNormalization
+from scipy.stats import rv_discrete
 import sys
 
 def generateText(dictionary, data, dictLen, tweetLen, X, y, 
@@ -93,8 +94,8 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 		#index = np.argsort(prediction)
 		#rand = np.random.randint(5)
 		#rand_index = index[0][len(index[0]) - rand - 1]
-		rand_index = np.argmax(prediction)
 
+		rand_index = rv_discrete(values=(list(xrange(len(prediction[0]))),prediction[0])).rvs(size=1)[0]
 		if(rand_index==(dictLen-1)):
 			printResult = printResult + "<<EOS>>"
 			break
