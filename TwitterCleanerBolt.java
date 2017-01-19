@@ -98,7 +98,7 @@ public class TwitterCleanerBolt implements IRichBolt {
         OutputStream oStream;
 
         //removes multiple whitespace, hashtag entries, and tag entries
-        String finaltext = "\n\ntext: " + txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","").replaceAll("( )+", " ");
+        String finaltext = txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","").replaceAll("( )+", " ");
     
         //remove characters we don't want
         finaltext = preserveASCII(finaltext); 
