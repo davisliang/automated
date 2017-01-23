@@ -26,7 +26,7 @@ data, dictLen, tweetLen, dictionary = loadData({},np.array([]))
 # data shape = #tweets x 141 x inputSize(365)
 print("Finished loading data")
 
-loadWeights=True
+loadWeights=False
 
 #initialize some hyper-parameters
 #inputSize: size of each input vector (default: 365x1)
