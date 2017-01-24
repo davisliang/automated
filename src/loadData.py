@@ -16,8 +16,8 @@ def loadData(dictionary,ranges):
 	'''
 
 	#load tweets and hashtag embeddings
-	tweets = pickle.load(open("preprocessed_new_tweets.pkl","rb"))
-	embeddings = pickle.load(open("new_embeddings.pkl","rb"))
+	tweets = pickle.load(open("~/tweetnet/data/preprocessed_new_tweets.pkl","rb"))
+	embeddings = pickle.load(open("~/tweetnet/data/new_embeddings.pkl","rb"))
 
 	#visualize data
 	#print "tweets (ELEMENT TYPE): ", type(tweets[0])

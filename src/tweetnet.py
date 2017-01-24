@@ -81,13 +81,13 @@ model.add(Activation('softmax'))
 optimizer = Adagrad()
 
 if(loadWeights==True):
-    model.load_weights("intermediateWeights.hdf5")
+    model.load_weights("~/tweetnet/logs/intermediateWeights.hdf5")
 
 
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 print("Finished building model.")
 #define file checkpoint
-filePath = "intermediateWeights.hdf5"
+filePath = "~/tweetnet/logs/intermediateWeights.hdf5"
 checkPoint = ModelCheckpoint(filePath, monitor='loss', verbose=1)
 callbacksList = [checkPoint]
 

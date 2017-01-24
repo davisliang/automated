@@ -110,7 +110,7 @@ public class TwitterCleanerBolt implements IRichBolt {
             return;
 
         try {
-            oStream = new FileOutputStream("/Users/Davis/Desktop/dump.txt", true);
+            oStream = new FileOutputStream("~/tweetnet/data/dump.txt", true);
             oStream.write(finaltext.getBytes());
             oStream.write(hasht.getBytes());
             oStream.close();

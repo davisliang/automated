@@ -8,8 +8,8 @@ of the storm topology that does not do this online.
 import cPickle as pickle
 import numpy as np
 
-tweets = pickle.load(open("new_tweets_list_string.pkl","rb"))
-embeddings = pickle.load(open("new_embeddings.pkl","rb"))
+tweets = pickle.load(open("~/tweetnet/data/new_tweets_list_string.pkl","rb"))
+embeddings = pickle.load(open("~/tweetnet/data/new_embeddings.pkl","rb"))
 
 print "tweet array shape: ", len(tweets)
 print "embeddings array shape: ", embeddings.shape
@@ -30,5 +30,5 @@ for i in range(len(tweets)):
             continue
     tweets[i]=s
 
-pickle.dump(tweets, open( "preprocessed_new_tweets","wb"))
+pickle.dump(tweets, open( "~/tweetnet/data/preprocessed_new_tweets","wb"))
 

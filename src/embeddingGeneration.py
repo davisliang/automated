@@ -7,7 +7,7 @@ import re
 import numpy as np
 
 #generalized datapath
-data_path = "newdump.txt"
+data_path = "~/tweetnet/data/dump.txt"
 
 def get_hashtags(): 
 
@@ -112,7 +112,7 @@ def get_hashmap_prep(vocab_path):
             hash_dict.pop(hashtag)
             english_hashtags += 1
     print "Number of English hashtags: ", english_hashtags
-    with open("hashmap_prep.pkl", "wb") as ff:
+    with open("~/tweetnet/data/hashmap_prep.pkl", "wb") as ff:
             pickle.dump(hash_dict, ff, pickle.HIGHEST_PROTOCOL)
     for hashtag in hash_dict.keys():
         print count2
@@ -121,7 +121,7 @@ def get_hashmap_prep(vocab_path):
         for h in dic.keys():
             if h not in all_vocab:
                 dic.pop(h)
-    with open("hashmap1.pkl", "wb") as f:
+    with open("~/tweetnet/data/hashmap1.pkl", "wb") as f:
             pickle.dump(hash_dict, f, pickle.HIGHEST_PROTOCOL)
 
 
@@ -141,7 +141,7 @@ def word2vec_dict(file_path):
                 word2vec[line[0]] = [float(num) for num in line[1:len(line)-1]]
                 word2vec[line[0]] = np.asarray(word2vec[line[0]])
             count += 1
-    with open("word2vec_dict.pkl", "wb") as f:
+    with open("~/tweetnet/data/word2vec_dict.pkl", "wb") as f:
         pickle.dump(word2vec, f, pickle.HIGHEST_PROTOCOL)
 
 
@@ -167,7 +167,7 @@ def generate_vector(hash_map, word2vec):
                     hashmap[k].pop(kk)
             if hashmap[k] == {}:
                 hashmap.pop(k)
-    with open("hashmapfinal.pkl", "wb") as ff:
+    with open("~/tweetnet/data/hashmapfinal.pkl", "wb") as ff:
         pickle.dump(hashmap, ff, pickle.HIGHEST_PROTOCOL)
     print "Number of valid none English word hashtags: ", len(hashmap.keys())
 
@@ -186,7 +186,7 @@ def generate_vector(hash_map, word2vec):
             vec += weight * word2vec_dict[tag2]
         vector_dict[tag1] = vec
 
-    with open("word2vec_additional.pkl", "wb") as fff:
+    with open("~/tweetnet/data/word2vec_additional.pkl", "wb") as fff:
         pickle.dump(vector_dict, fff, pickle.HIGHEST_PROTOCOL)
 
 def tweet2vector(dict1_path, dict2_path):
@@ -226,7 +226,7 @@ def tweet2vector(dict1_path, dict2_path):
                     hashtag_embed.append(embed*1.0/(num_valid*1.0))
                 else:
                     hashtag_embed.append(embed)
-    with open("hashtag_embedding.pkl","wb") as fff:
+    with open("~/tweetnet/data/hashtag_embedding.pkl","wb") as fff:
         pickle.dump(hashtag_embed, fff, pickle.HIGHEST_PROTOCOL)
     
 def remove_invalid_tweets(embed):
@@ -250,14 +250,14 @@ def remove_invalid_tweets(embed):
     embeddings = np.asarray(embeddings)
     print "Removing finished!"
 
-    with open("new_tweets.pkl", "wb") as ff:
+    with open("~/tweetnet/data/new_tweets.pkl", "wb") as ff:
         pickle.dump(tweets, ff, pickle.HIGHEST_PROTOCOL)
-    with open("new_embeddings.pkl", "wb") as fff:
+    with open("~/tweetnet/data/new_embeddings.pkl", "wb") as fff:
         pickle.dump(embeddings, fff, pickle.HIGHEST_PROTOCOL)
 
 if __name__ == "__main__":
     get_unique_hashtags()
-    get_hashmap_prep("vocabs.txt")
-    generate_vector("hashmap1.pkl", "word2vec_dict.pkl")
-    tweet2vector("word2vec_dict.pkl", "word2vec_additional.pkl")
+    get_hashmap_prep("~/tweetnet/data/vocabs.txt")
+    generate_vector("~/tweetnet/data/hashmap1.pkl", "~/tweetnet/data/word2vec_dict.pkl")
+    tweet2vector("~/tweetnet/data/word2vec_dict.pkl", "~/tweetnet/data/word2vec_additional.pkl")
     #remove_invalid_tweets("hashtag_embedding.pkl")
