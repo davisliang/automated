@@ -1,10 +1,10 @@
 #!/bin/bash
 ~/tweetnet/scripts/startZK.sh
 sleep 5
-./scripts/newTerminal.sh ~/tweetnet/scripts/startZKClient.sh
+~/tweetnet/scripts/newTerminal.sh ~/tweetnet/scripts/startZKClient.sh
 sleep 5
-./scripts/newTerminal.sh ~/tweetnet/scripts/startNimbus.sh
+~/tweetnet/scripts/newTerminal.sh ~/tweetnet/scripts/startNimbus.sh
 sleep 5
-./scripts/newTerminal.sh ~/tweetnet/scripts/startSupervisor.sh
+~/tweetnet/scripts/newTerminal.sh ~/tweetnet/scripts/startSupervisor.sh
 sleep 5
-./scripts/newTerminal.sh ~/tweetnet/scripts/startStormUI.sh
+~/tweetnet/scripts/newTerminal.sh ~/tweetnet/scripts/startStormUI.sh
