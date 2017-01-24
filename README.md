@@ -11,3 +11,8 @@ Classifier (contextual LSTM) built on Keras (on Theano), and Python.
 6. Theano (tested on version 0.8.2)
 7. Keras (tested on latest version as of January 9, 2017)
 8. Linux Based OS (tested on Ubuntu 16.04LTS)
+
+## Install Guide:
+1. [Install CUDA and cuDNN](http://www.pyimagesearch.com/2016/07/04/how-to-install-cuda-toolkit-and-cudnn-for-deep-learning/)
+2. [Apache Storm and Twitter API Setup](https://www.tutorialspoint.com/apache_storm/apache_storm_in_twitter.htm)
+3. [Install keras and Theano](http://www.pyimagesearch.com/2016/07/18/installing-keras-for-deep-learning/)
