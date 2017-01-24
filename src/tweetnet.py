@@ -20,7 +20,7 @@ from keras.layers import Dropout
 from keras.layers import BatchNormalization
 from tweetGenerator import generateText
 from keras.callbacks import ModelCheckpoint
-
+from os.path import expanduser
 print("Start loading data ...")
 data, dictLen, tweetLen, dictionary = loadData({},np.array([])) 
 # data shape = #tweets x 141 x inputSize(365)
@@ -81,13 +81,13 @@ model.add(Activation('softmax'))
 optimizer = Adagrad()
 
 if(loadWeights==True):
-    model.load_weights("~/tweetnet/logs/intermediateWeights.hdf5")
+    model.load_weights(expanduser("~/tweetnet/logs/intermediateWeights.hdf5"))
 
 
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 print("Finished building model.")
 #define file checkpoint
-filePath = "~/tweetnet/logs/intermediateWeights.hdf5"
+filePath = expanduser("~/tweetnet/logs/intermediateWeights.hdf5")
 checkPoint = ModelCheckpoint(filePath, monitor='loss', verbose=1)
 callbacksList = [checkPoint]
 
