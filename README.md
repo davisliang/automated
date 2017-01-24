@@ -17,6 +17,8 @@ Classifier (contextual LSTM) built on Keras (on Theano), and Python.
 2. [Apache Storm and Twitter API Setup](https://www.tutorialspoint.com/apache_storm/apache_storm_in_twitter.htm)
 3. [Install keras and Theano](http://www.pyimagesearch.com/2016/07/18/installing-keras-for-deep-learning/)
 
+
+
 **Note**: In the CUDA setup, the section where you link cuda to cuda-7.5 is outdated. 
 
 Intead of following this step:
