@@ -17,7 +17,7 @@ from keras.layers import Dropout
 from keras.layers import BatchNormalization
 import sys
 
-def generateText(dictionary, data, dictLen, tweetLen, X, y, 
+def generateText(dictionary, data, dictLen, tweetLen, X, y,
 	inputSize, sequenceLength, numHiddenFirst, numTweets, seqPerSegment,
 	n_examples, numSegments):
 
