@@ -20,7 +20,9 @@ Classifier (contextual LSTM) built on Keras (on Theano), and Python.
 **Note**: In the CUDA setup, the section where you link cuda to cuda-7.5 is outdated. 
 
 Intead of following this step:
+
     export CUDA_HOME=/usr/local/cuda-7.5
 
 Make sure you using and linking *CUDA v8.0*:
+
     export CUDA_HOME=/usr/local/cuda-8.0
