@@ -4,7 +4,7 @@ loads twitter dataset from storm API.
 import numpy as np
 import cPickle as pickle
 from ReducedAsciiDictionary import ReducedAsciiDictionary
-
+from os.path import expanduser
 
 def loadData(dictionary,ranges):
 	''' Creates dataset based on dictionary, a set of ascii
@@ -16,8 +16,8 @@ def loadData(dictionary,ranges):
 	'''
 
 	#load tweets and hashtag embeddings
-	tweets = pickle.load(open("~/tweetnet/data/preprocessed_new_tweets.pkl","rb"))
-	embeddings = pickle.load(open("~/tweetnet/data/new_embeddings.pkl","rb"))
+	tweets = pickle.load(open(expanduser("~/tweetnet/data/preprocessed_new_tweets.pkl"),"rb"))
+	embeddings = pickle.load(open(expanduser("~/tweetnet/data/new_embeddings.pkl"),"rb"))
 
 	#visualize data
 	#print "tweets (ELEMENT TYPE): ", type(tweets[0])
