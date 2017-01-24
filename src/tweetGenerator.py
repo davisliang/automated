@@ -48,7 +48,7 @@ def generateText(dictionary, data, dictLen, tweetLen, X, y,
 
 
 	#load the network weights
-	fileName = "intermediateWeights.hdf5"
+	fileName = "~/tweetnet/logs/intermediateWeights.hdf5"
 	model.load_weights(fileName)
 	model.compile(loss='categorical_crossentropy', optimizer='adam')
 
