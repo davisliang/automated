@@ -17,6 +17,10 @@
 2. [Apache Storm and Twitter API Setup](https://www.tutorialspoint.com/apache_storm/apache_storm_installation.htm)
 3. [Install keras and Theano](http://www.pyimagesearch.com/2016/07/18/installing-keras-for-deep-learning/)
 
+## Run Guide(Local MacOSX):
+1. Run systemStartMac.sh to start your Storm instance. Note that this opens four new terminals; for Zookeeper, the Nimbus, the Supervisor, and StormUI. To view StormUI you can navigate to localhost:8080. Each new open terminal requires sudo access and will request for the user's password).
+2. Run runAPI.sh to open the Twitter stream and start collection. (Requires you to edit runAPI.sh with correct Twitter API credentials).
+
 **Note**: In the CUDA setup, the section where you link cuda to cuda-7.5 is outdated. 
 
 Intead of following this step:
