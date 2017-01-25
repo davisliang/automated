@@ -1,6 +1,6 @@
 # tweetnet
-Tweet Miner built on Java, Apache Storm, and the Twitter API. Requires twitter developer credentials to run.
-Classifier (contextual LSTM) built on Keras (on Theano), and Python.
+**Tweet Miner** built on Java, Apache Storm, and the Twitter API. Requires twitter developer credentials to run.
+**Model** (contextual LSTM) built on Keras (on Theano), and Python.
 
 ## Requirements:
 1. CUDNN (tested on cuDNN 5105)
