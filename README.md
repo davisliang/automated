@@ -2,8 +2,7 @@
 
 **Tweetnet** is a deep learning model for sentiment analysis. Tweetnet uses context based LSTMs and the Twitter API to extract features and learn representations from an infinite stream of tweets.
 
-The data miner built on Java, Apache Storm, and the Twitter API. Requires twitter developer credentials to run.
-The context-based LSTM model is built on Keras (on Theano), and Python.
+The data miner built on Java, Apache Storm, and the Twitter API. The context-based LSTM model is built on Keras (on Theano), and Python.
 
 ## Requirements:
 1. CUDNN (tested on cuDNN 5105)
