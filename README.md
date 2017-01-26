@@ -21,11 +21,12 @@ The data miner built on Java, Apache Storm, and the Twitter API. The context-bas
 
 ## Run Guide:
 1. **MacOSX (Local): **Run **systemStartMac.sh** to start your *Storm* instance. 
-2. **Ubuntu 16.04 (Local): **Run **systemStartMac.sh** to start your *Storm* instance. 
+2. Run **runAPI.sh** to open the *Twitter* stream and start collection. (Requires you to edit **runAPI.sh** with correct *Twitter* API credentials).
+
+1. **Ubuntu 16.04 (Local): **Run **systemStartMac.sh** to start your *Storm* instance. 
+2. Run **runAPI.sh** to open the *Twitter* stream and start collection. (Requires you to edit **runAPI.sh** with correct *Twitter* API credentials).
 
 **Note**: The system start script opens four new terminals; *Apache Zookeeper*, the *Nimbus*, the *Supervisor*, and *StormUI*. Each new open terminal requires **sudo** access and will request for the user's password. To view *StormUI* you can navigate to *localhost:8080*. 
-
-3. Run **runAPI.sh** to open the *Twitter* stream and start collection. (Requires you to edit **runAPI.sh** with correct *Twitter* API credentials).
 
 **Note**: In the CUDA setup, the section where you link cuda to cuda-7.5 is outdated. 
 
