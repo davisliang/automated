@@ -19,13 +19,16 @@ The data miner built on Java, Apache Storm, and the Twitter API. The context-bas
 2. [Apache Storm and Twitter API Setup](https://www.tutorialspoint.com/apache_storm/apache_storm_installation.htm)
 3. [Install keras and Theano](http://www.pyimagesearch.com/2016/07/18/installing-keras-for-deep-learning/)
 
-## Run Guide (MacOSX Local):
+## Data Miner Run Guide (MacOSX Local):
 1. Run **systemStartMac.sh** to start your *Storm* instance. 
 2. Run **runAPI.sh** to open the *Twitter* stream and start collection. (Requires you to edit **runAPI.sh** with correct *Twitter* API credentials).
 
-## Run Guide (Ubuntu 16.04 Local):
+## Data Miner Run Guide (Ubuntu 16.04 Local):
 1. Run **systemStartMac.sh** to start your *Storm* instance. 
 2. Run **runAPI.sh** to open the *Twitter* stream and start collection. (Requires you to edit **runAPI.sh** with correct *Twitter* API credentials).
+
+## Tweetnet Run Guide:
+1. Run **tweetnet.py**.
 
 **Note**: The system start script opens four new terminals; *Apache Zookeeper*, the *Nimbus*, the *Supervisor*, and *StormUI*. Each new open terminal requires **sudo** access and will request for the user's password. To view *StormUI* you can navigate to *localhost:8080*. 
 
