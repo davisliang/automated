@@ -20,97 +20,59 @@ from scipy.stats import rv_discrete
 import sys
 from os.path import expanduser
 
-def generateText(dictionary, data, dictLen, tweetLen, X, y,
-	inputSize, sequenceLength, numHiddenFirst, numTweets, seqPerSegment,
-	n_examples, numSegments):
+def sample(preds, temperature=1.0):
+    preds = np.asarray(preds).astype('float64')
+    preds = np.log(preds) / temperature
+    exp_preds = np.exp(preds)
+    preds = exp_preds / np.sum(exp_preds)
+    probas = np.random.multinomial(1, preds, 1)
+    return np.argmax(probas)
 
-	# data shape = #tweets x 141 x inputSize(65)
-	#initialize inverse dictionary to map integers to characterse
-	inverseDictionary = {v: k for k, v in dictionary.iteritems()}
-	print "inverseDictionary Size", len(inverseDictionary)
+def generateText(model, tweets, sequenceLength, vocabLen, dictionary):
+    
+    # Random select a tweet for generation
+    start_index = random.randint(len(tweets))
+    inverseDictionary = {v: k for k, v in dictionary.iteritems()}
+    
+    # Different temperature adds randomness to character generation
+    for diversity in [0.2, 0.5, 1.0, 1.2]:
+        print("\n")
+        print('----- diversity:', diversity)
 
-	#building cLSTM model
-	print("\n")
-	print("Generating Text... ")
-	model = Sequential()
+        generated = ""
 
-	model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize), return_sequences=True))
-	model.add(LSTM(numHiddenFirst))
+        seed = tweets[start_index][6:sequenceLength+6]
+        print('----- Generating with seed: "' + seed + '"')
+        generated += seed
+        sys.stdout.write(generated)
 
-	model.add(Dense(numHiddenFirst))
-	model.add(Activation('relu'))
-	model.add(BatchNormalization())
+        for i in range(140):
 
-	model.add(Dense(numHiddenFirst))
-	model.add(Activation('relu'))
-	model.add(BatchNormalization())
+            # x: [1, sequenceLength(40), 65]
+            x = np.zeros((1, sequenceLength, vocabLen))
+            
+            # Create one hot encoding vectors for the seed
+            for j, ch in enumerate(seed):
+                x[0, j, dictionary.get(ch)] = 1
 
-	model.add(Dense(dictLen))
-	model.add(Activation('softmax'))
-
-
-	#load the network weights
-	fileName = expanduser("~/tweetnet/logs/intermediateWeights.hdf5")
-        model.load_weights(fileName)
-	model.compile(loss='categorical_crossentropy', optimizer='adam')
-
-	#initializing to random seed
-	seedTweet = np.random.randint(n_examples, size=1)
-	contextVector=np.zeros(inputSize-(dictLen))
-
-	printSeed="SEED: "
-	for c in range(sequenceLength):
-		#for each character in the sequence
-
-		#grab the pattern, which is the 1x365 input vector
-		pattern = X[seedTweet][c,:]
-
-		#grab the 1x300 context subvector
-		contextVector = pattern[dictLen:]
-
-		#search, in the pattern itself, for the one-hot element
-		counter = 0
-		for i in range(dictLen):
-			if(pattern[i] == 1):
-				counter = i
-				break
-		#if one-hot element is greater than 64, then EOS.
-		#technically you'll never reach this as seqLen should be < tweetLen
-		if(counter>=64):
-			printSeed = printSeed + "<<EOS>>"
-			continue;
-
-		printSeed = printSeed + inverseDictionary[counter]
-	print printSeed
-
-	x = X[seedTweet][0:sequenceLength]
-	inputVector = np.reshape(x,(1,len(x),len(x[0])))
-	#generate characters
-
-	printResult = "GENERATED TEXT: "
-
-	charsGenerated = 140
-	for i in range(charsGenerated):
-
-		prediction = model.predict(inputVector, verbose=0)
-		#index = np.argsort(prediction)
-		#rand = np.random.randint(5)
-		#rand_index = index[0][len(index[0]) - rand - 1]
-
-		rand_index = rv_discrete(values=(list(xrange(len(prediction[0]))),prediction[0])).rvs(size=1)[0]
-		if(rand_index==(dictLen-1)):
-			printResult = printResult + "<<EOS>>"
-			break
-
-		result = inverseDictionary[rand_index]
-		printResult = printResult+result
-
-		charVector=np.zeros(dictLen)
-		charVector[rand_index]=1
-		concatVector = np.reshape(charVector, (1,1,len(charVector)))
-
-		inputVector=np.concatenate((inputVector,concatVector), axis=1)
-		inputVector=inputVector[:,1:len(inputVector[0]),:]
-                print inputVector.shape
-
-	print printResult
+            preds = model.predict(x, verbose=0)[0]
+            next_index = sample(preds, diversity)
+            
+            # If an EOS symbol is genearted, append "<EOS>" to the end of generated and stop
+            if next_index == vocabLen - 1:
+                next_char = "<EOS>"
+                generated += next_char
+                seed = seed[1:] + next_char
+                sys.stdout.write(next_char)
+                sys.stdout.flush()
+                break
+            
+            # If not an EOS symbol, append the last generated char
+            else:
+                next_char = inverseDictionary[next_index]
+                generated += next_char
+                # Shift the window by 1 go create the new seed
+                seed = seed[1:] + next_char
+                sys.stdout.write(next_char)
+                sys.stdout.flush()
+        print("\n")

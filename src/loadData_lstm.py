@@ -5,24 +5,26 @@ import numpy as np
 import cPickle as pickle
 from ReducedAsciiDictionary import ReducedAsciiDictionary
 from os.path import expanduser
+import sys
 
-def loadData(dictionary,ranges):
+def loadData(dictionary,ranges,sequenceLength, nTweet):
 	''' Creates dataset based on dictionary, a set of ascii
 	ranges, and pickled twitter data from Apache Storm.
 
-	X: (numTweets, 141, dictionaryLength + embeddings length)
+
+        X: [#sequences, 40, 65]
+        y: [#sequences, 65]
 	vocabLen: (dictionary length)
 	tweetLength: (numTweets)
 	'''
 
 	#load tweets and hashtag embeddings
 	tweets = pickle.load(open(expanduser("~/tweetnet/data/preprocessed_new_tweets.pkl"),"rb"))
+        np.random.shuffle(tweets)
 
-	#visualize data
-	#print "tweets (ELEMENT TYPE): ", type(tweets[0])
-	#print "tweets (Number Of Tweets): ", len(tweets)
-	#print "hashtag (ELEMENT TYPE): ", type(embeddings[0])
-	#print "hashtag (SHAPE): ", embeddings.shape
+        #use the first nTweet tweets
+        tweets = tweets[0:nTweet]
+        print "Number of tweets ", len(tweets)
 
 	#create character dictionary for tweets.
 	dictionary = ReducedAsciiDictionary({},ranges).dictionary
@@ -34,21 +36,40 @@ def loadData(dictionary,ranges):
 	vocabLen = len(dictionary)+1
 
 	#initialize datastore arrays
-	X = np.zeros([numData, 140+1, vocabLen])
+        tweetSequence = []
+        nextChar = []
 	tweetLength = np.zeros(numData)
 
-	# for each tweet create onehot encoding for each character
-	for twt in range(numData):
-		if(twt%1000==0):
-			print "loaded: ", twt, " of ", numData
-		tweetLength[twt] = len(tweets[twt])-6+1
-		currTweet = tweets[twt][6:len(tweets[twt])]
+        #Split data into sequences of length 40 and create nextChar array
+        for i in range(numData):
+            oneTweet = tweets[i]
+            for j in range(0, len(oneTweet) - sequenceLength - 1, 1):
+                tweetSequence.append(oneTweet[j : j+sequenceLength])
+                nextChar.append(oneTweet[j+sequenceLength])
+            tweetSequence.append(oneTweet[len(oneTweet)-sequenceLength - 1:len(oneTweet) - 1])
+            nextChar.append("<EOS>")
+        print('Number of sequences: ', len(tweetSequence))
 
-		for ch in range(len(currTweet)):
-			oneHotIndex = dictionary.get(currTweet[ch])
-			X[twt,ch,oneHotIndex] = 1
-			
-		#end of tweet character (EOS)
-		X[twt,len(currTweet),len(dictionary)]=1
+	# for each sequence, create onehot encoding for each character
+        # X: [#sequences, 40, 65]
+        # y: [#sequences, 65]
+	print("Vectorization...")
+        X = np.zeros((len(tweetSequence), sequenceLength, vocabLen), dtype=np.bool)
+        y = np.zeros((len(tweetSequence), vocabLen), dtype=np.bool)
 
-	return X, vocabLen, tweetLength, dictionary
+        for i, seq in enumerate(tweetSequence):
+            if i % 10000 == 0:
+                print "Loading tweet ", i
+	    for j, ch in enumerate(seq):
+		oneHotIndex = dictionary.get(ch)
+		X[i,j,oneHotIndex] = 1
+	    
+            if nextChar[i] != "<EOS>":
+                y[i, dictionary.get(nextChar[i])] = 1
+            else:
+                y[i, len(dictionary)] = 1
+        return X, y, vocabLen, dictionary, tweetSequence, nextChar, tweets
+
+if __name__ == "__main__":
+    X, y, vocabLen, dictionary, tweetSequence, nextChar, tweets = loadData({},np.array([]),40)
+    print "The first tweet sequence is: ", tweetSequence[0]

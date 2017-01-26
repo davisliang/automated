@@ -22,65 +22,53 @@ from keras.layers import BatchNormalization
 from tweetGenerator_lstm import generateText
 from keras.callbacks import ModelCheckpoint
 from os.path import expanduser
+
+
+#sequenceLength: sequence length (k in BPTTk)
+sequenceLength = 40
 print("Start loading data ...")
-data, dictLen, tweetLen, dictionary = loadData({},np.array([])) 
-np.random.shuffle(data)
-# data shape = #tweets x 141 x inputSize(365)
+X, y, vocabLen, dictionary, tweetSequence, nextChar, tweets = loadData({},np.array([]), sequenceLength) 
 print("Finished loading data")
 
 loadWeights=False
 
 #initialize some hyper-parameters
 #inputSize: size of each input vector (default: 365x1)
-inputSize = data.shape[2]
-#sequenceLength: sequence length (k in BPTTk)
-sequenceLength = 50
+inputSize = vocabLen
+print vocabLen
 #numHiddenFirst: size of first hidden layer
 numHiddenFirst = 128
-#numTweets: total number of tweets in dataset
-numTweets = data.shape[0]
 #seqPerSegment: sequences (of size sequenceLength) per mini-epoch. 
 #Lowers maximum memory usage.
-seqPerSegment = 5000
-
-X = []
-y = []
-
-#create input and target datasets from loaded data.
-for i in range(numTweets):
-    for j in range(0, int(tweetLen[i])-sequenceLength, 1):
-        seq_in = data[i, j:j+sequenceLength, :]
-        seq_out = data[i, j+sequenceLength, 0:dictLen]
-        X.append(seq_in)
-        y.append(seq_out)
+seqPerSegment = 10000
 
 #X: [10000 (numTweets), 40 (sequenceLength), 65(inputSize)].
 n_examples = len(X)
 numSegments = np.ceil(n_examples/seqPerSegment).astype(int)
 numEpochs=50
-#print('# of sequences per segments: ', seqPerSegment)
-#print('# of segments: ', numSegments)
+print('# of sequences per segments: ', seqPerSegment)
+print('# of segments: ', numSegments)
 
 #building cLSTM model
 #print("\n")
 print("Start building model ....")
 model = Sequential()
 
-model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize), return_sequences=True))
-model.add(LSTM(numHiddenFirst))
+model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize)))
+#model.add(LSTM(numHiddenFirst))
 
-model.add(Dense(numHiddenFirst))
-model.add(Activation('relu'))
-model.add(BatchNormalization())
+#model.add(Dense(numHiddenFirst))
+#model.add(Activation('relu'))
+#model.add(BatchNormalization())
 
-model.add(Dense(numHiddenFirst))
-model.add(Activation('relu'))
-model.add(BatchNormalization())
+#model.add(Dense(numHiddenFirst))
+#model.add(Activation('relu'))
+#model.add(BatchNormalization())
 
-model.add(Dense(dictLen))
+model.add(Dense(vocabLen))
 model.add(Activation('softmax'))
 
-optimizer = RMSprop(lr=0.001)
+optimizer = RMSprop(lr=0.01)
 
 if(loadWeights==True):
     model.load_weights(expanduser("~/tweetnet/logs/intermediateWeights.hdf5"))
@@ -89,25 +77,20 @@ if(loadWeights==True):
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 print("Finished building model.")
 #define file checkpoint
-filePath = expanduser("~/tweetnet/logs/intermediateWeights.hdf5")
-checkPoint = ModelCheckpoint(filePath, monitor='loss', verbose=1)
-callbacksList = [checkPoint]
+#filePath = expanduser("~/tweetnet/logs/intermediateWeights.hdf5")
+#checkPoint = ModelCheckpoint(filePath, monitor='loss', verbose=1)
+#callbacksList = [checkPoint]
 
 #train on mini-epochs (sized seqPerSegment) to lower total RAM usage.
 for epoch in range(numEpochs):
+#    model.fit(X, y, nb_epoch=1, batch_size=128)
+#    generateText(model, tweets, sequenceLength, vocabLen, dictionary)
     for seg in range(numSegments):
         print("\n")
-        print "Segment: ", seg, "/", numSegments, " | Epoch: ", epoch, "/", numEpochs 
-        dataX = np.asarray(X[seg*seqPerSegment: (seg+1)*seqPerSegment])
-        datay = np.asarray(y[seg*seqPerSegment: (seg+1)*seqPerSegment])
-        #print("Input shape: ", dataX.shape)
-        #print("Output shape: ", datay.shape)
-        print dataX[0].shape
-        model.fit(dataX, datay, nb_epoch=1, batch_size=128, callbacks=callbacksList)
+        print "Segment: ", seg+1, "/", numSegments, " | Epoch: ", epoch, "/", numEpochs 
+        model.fit(X[seg*seqPerSegment: (seg+1)*seqPerSegment], y[seg*seqPerSegment: (seg+1)*seqPerSegment], nb_epoch=1, batch_size=128)
+        generateText(model, tweets, sequenceLength, vocabLen, dictionary)
 
-#        generateText(dictionary, data, dictLen, tweetLen, X, y, 
-#        inputSize, sequenceLength, numHiddenFirst, numTweets, seqPerSegment,
-#        n_examples, numSegments)
         
 
 
