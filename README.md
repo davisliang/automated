@@ -30,6 +30,8 @@ The data miner built on Java, Apache Storm, and the Twitter API. The context-bas
 ## Tweetnet Run Guide:
 1. Run **tweetnet.py**.
 
+## Notes:
+
 **Note**: The system start script opens four new terminals; *Apache Zookeeper*, the *Nimbus*, the *Supervisor*, and *StormUI*. Each new open terminal requires **sudo** access and will request for the user's password. To view *StormUI* you can navigate to *localhost:8080*. 
 
 **Note**: In the CUDA setup, the section where you link cuda to cuda-7.5 is outdated. 
