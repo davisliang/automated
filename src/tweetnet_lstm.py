@@ -9,7 +9,7 @@ Output: (65x1) 64 unique chars, 1 EOS char
 import pickle as pkl
 import  numpy as np
 import h5py
-from loadData_lstm2 import loadData
+from loadData_lstm import loadData
 from keras.utils import np_utils
 from keras.models import Sequential
 from keras.layers import LSTM
