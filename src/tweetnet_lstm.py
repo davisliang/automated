@@ -26,8 +26,11 @@ from os.path import expanduser
 
 #sequenceLength: sequence length (k in BPTTk)
 sequenceLength = 40
+
+# number of tweets to use
+nTweet = 7000
 print("Start loading data ...")
-X, y, vocabLen, dictionary, tweetSequence, nextChar, tweets = loadData({},np.array([]), sequenceLength) 
+X, y, vocabLen, dictionary, tweetSequence, nextChar, tweets = loadData({},np.array([]), sequenceLength, nTweet) 
 print("Finished loading data")
 
 loadWeights=False
