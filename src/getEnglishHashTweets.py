@@ -3,18 +3,21 @@ import numpy
 import cPickle as pickle
 
 def checkHashtags(hashtagStr,dictionary):
-    hasEnglishHashtag = False 
+    hasMultiEnglishHashtag = False 
     returnHt = "hashtags:"
     htStr = hashtagStr[9:]
     htTokens = htStr.split(" ")
+    nEnglishHashtag = 0
     for token in htTokens:
         try:
             if(len(dictionary[token])>0):
                 returnHt = returnHt + " " + token
-                hasEnglishHashtag = True
+		nEnglishHashtag += 1
         except KeyError:
             continue
-    return returnHt, hasEnglishHashtag
+    if nEnglishHashtag >= 2:
+	hasMultiEnglishHashtag = True
+    return returnHt, hasMultiEnglishHashtag
 
 
 dictionary = pickle.load(open(expanduser("~/tweetnet/data/word2vec_dict.pkl"), "r"))
@@ -31,12 +34,13 @@ while((counter+1)<len(fileLines)):
     textLine = fileLines[counter]
     htLine = fileLines[counter+1]
     if(textLine[0:5]=="text:"):
-        wordHT, hasEnglishHashtag = checkHashtags(htLine,dictionary)
-        if(hasEnglishHashtag):
+        wordHT, hasMultiEnglishHashtag = checkHashtags(htLine,dictionary)
+        if(hasMultiEnglishHashtag):
             keepTweets.append(textLine)
             keepHashtags.append(wordHT)
     counter = counter + 1
-     
+
+print "Number of remaining tweets: ",len(keepTweets)     
 with open(expanduser("~/tweetnet/data/englishHashtagTweet.pkl"), "wb") as file1:
     pickle.dump(keepTweets,file1, pickle.HIGHEST_PROTOCOL) 
 

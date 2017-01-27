@@ -28,7 +28,7 @@ from os.path import expanduser
 sequenceLength = 40
 
 # number of tweets to use
-nTweet = 7000
+nTweet = 120000
 print("Start loading data ...")
 X, y, vocabLen, dictionary, tweetSequence, nextChar, tweets = loadData({},np.array([]), sequenceLength, nTweet) 
 print("Finished loading data")
