@@ -16,7 +16,7 @@ def predContext(htDictionary, modelOutput, topN, label):
 
     counter = 0
     for k in htDictionary.keys():
-        dotResult[counter] = -numpy.dot(modelOutput,htDictionary[k])
+        dotResult[counter] = -numpy.dot(modelOutput,htDictionary[k])[-1]
         keyResult.append(k)
         counter = counter + 1
     

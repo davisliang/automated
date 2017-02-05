@@ -1,14 +1,16 @@
 '''
 loads twitter dataset from storm API.
 '''
+import sys
+import os
 import numpy as np
 import cPickle as pickle
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..","utils")))
 from ReducedAsciiDictionary import ReducedAsciiDictionary
 from getEnglishHashTweets import checkHashtags
 from numpy import random
 from random import shuffle
 from os.path import expanduser
-import sys
 
 def loadData(dictionary,ranges,sequenceLength,trainPercent):
 	''' Creates dataset based on dictionary, a set of ascii

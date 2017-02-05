@@ -1,7 +1,10 @@
 from os.path import expanduser
+import os
+import sys
 import numpy
 from numpy import shape
 import cPickle as pickle
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..","utils")))
 
 from keras.utils import np_utils
 from keras.models import Sequential
@@ -17,16 +20,17 @@ dictionary = pickle.load(open(expanduser("~/tweetnet/data/word2vec_dict.pkl"), "
 
 data = numpy.zeros([len(hashtags),300])
 label = numpy.zeros([len(hashtags),300])
-stringLabel = []
-
+inputStringLabel = []
+outputStringLabel = []
 for i in range(len(hashtags)):
     line = hashtags[i]
     listHashtag = line.split()
     data[i,:]=dictionary[listHashtag[1]]
     label[i,:]=dictionary[listHashtag[2]]
-    stringLabel.append(listHashtag[2])
+    inputStringLabel.append(listHashtag[1])
+    outputStringLabel.append(listHashtag[2])
 
-htDic = createHtDict(dictionary, stringLabel)
+htDic = createHtDict(dictionary, outputStringLabel)
 
 # Train and Test split
 trainPercent = 0.99
@@ -36,9 +40,10 @@ nEpoch = 5000
 
 trainData = data[0 : nTrainData]
 testData = data[nTrainData + 1 :]
+testInputStringLabel = inputStringLabel[nTrainData + 1 :]
 print testData.shape
 trainLabel = label[0 : nTrainData]
-testLabel = stringLabel[nTrainData + 1 :]
+testOutputStringLabel = outputStringLabel[nTrainData + 1 :]
 
 
 model = Sequential()
@@ -64,10 +69,11 @@ for epoch in range(nEpoch):
     randIdx = numpy.random.randint(0, len(testData), 10)
     for testIdx in range(len(testData)):
 	modelOutput = model.predict(numpy.expand_dims(testData[testIdx, :], axis=0))
-	topNht, isCorrect, topNdist = predContext(htDic, modelOutput, topN, testLabel[testIdx])
+	topNht, isCorrect, topNdist = predContext(htDic, modelOutput, topN, testOutputStringLabel[testIdx])
         if testIdx in randIdx:
             print "Generating for example ", testIdx
-	    print "True label is ", testLabel[testIdx]
+            print "True input is ", testInputStringLabel[testIdx]
+	    print "True label is ", testOutputStringLabel[testIdx]
             print "Top ", topN, " hashtags are ", topNht
 	if isCorrect:
             correctCnt += 1.0

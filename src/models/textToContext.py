@@ -9,6 +9,10 @@ Output: (65x1) 64 unique chars, 1 EOS char
 import cPickle as pickle
 import  numpy as np
 import h5py
+import os
+import sys
+from os.path import expanduser
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..","utils")))
 from loadDataText2Hashtag import loadData
 from predContext import predContext, createHtDict
 from keras.utils import np_utils
@@ -22,7 +26,6 @@ from keras.layers import Dropout
 from keras.layers import BatchNormalization
 from tweetGenerator_lstm import generateText
 from keras.callbacks import ModelCheckpoint
-from os.path import expanduser
 
 #get the top N prediction of hashtags
 topN = 5
@@ -59,7 +62,7 @@ nTrainSequences = len(trainTweetSequence)
 print "Number of testing sequences: ", nTestSequences
 print "Number of training sequences: ", nTrainSequences
 print "Number of testing tweets: ", nTestData
-print "Number of training tweets: ", nTestData
+print "Number of training tweets: ", nTrainData
 
 # Load word2vec dictionary
 dictionary = pickle.load(open(expanduser("~/tweetnet/data/word2vec_dict.pkl")))
@@ -103,7 +106,7 @@ for epoch in range(numEpochs):
             if isCorrect:
                 correctCnt += 1
             if tweetCnt in randIdx:
-                print testTweets[tweetCnt]
+                print testTweets[tweetCnt][:-2]
                 print "True label is ", testHashtags[tweetCnt]
                 print "Top ", topN, " hashtags are ", topNht
             tweetCnt += 1
