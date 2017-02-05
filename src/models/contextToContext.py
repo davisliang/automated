@@ -48,12 +48,16 @@ testOutputStringLabel = outputStringLabel[nTrainData + 1 :]
 
 model = Sequential()
 
-model.add(Dense(300, input_shape=(300,)))
-model.add(Activation('tanh'))
+model.add(Dense(1048, input_shape=(300,)))
+model.add(Activation('relu'))
 model.add(BatchNormalization())
 
-model.add(Dense(300))
-model.add(Activation('tanh'))
+model.add(Dense(1048))
+model.add(Activation('relu'))
+model.add(BatchNormalization())
+
+model.add(Dense(512))
+model.add(Activation('relu'))
 model.add(BatchNormalization())
 
 model.add(Dense(300))
@@ -72,7 +76,7 @@ for epoch in range(nEpoch):
 	topNht, isCorrect, topNdist = predContext(htDic, modelOutput, topN, testOutputStringLabel[testIdx])
         if testIdx in randIdx:
             print "Generating for example ", testIdx
-            print "True input is ", testInputStringLabel[testIdx]
+            print "Input is ", testInputStringLabel[testIdx]
 	    print "True label is ", testOutputStringLabel[testIdx]
             print "Top ", topN, " hashtags are ", topNht
 	if isCorrect:
