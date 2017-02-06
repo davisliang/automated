@@ -11,6 +11,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import Activation
 from keras.optimizers import SGD
+from keras.optimizers import RMSprop
 from keras.layers import BatchNormalization
 import keras.callbacks
 from predContext import predContext, createHtDict
@@ -35,7 +36,7 @@ htDic = createHtDict(dictionary, outputStringLabel)
 # Train and Test split
 trainPercent = 0.99
 nTrainData = numpy.round(len(data)*trainPercent).astype(int)
-topN = 5
+topN = 10
 nEpoch = 5000
 
 trainData = data[0 : nTrainData]
@@ -48,22 +49,18 @@ testOutputStringLabel = outputStringLabel[nTrainData + 1 :]
 
 model = Sequential()
 
-model.add(Dense(1048, input_shape=(300,)))
-model.add(Activation('relu'))
-model.add(BatchNormalization())
-
-model.add(Dense(1048))
-model.add(Activation('relu'))
+model.add(Dense(512, input_shape=(300,)))
+model.add(Activation('tanh'))
 model.add(BatchNormalization())
 
 model.add(Dense(512))
-model.add(Activation('relu'))
+model.add(Activation('tanh'))
 model.add(BatchNormalization())
 
 model.add(Dense(300))
 model.add(Activation('tanh'))
 
-optimizer = SGD(lr=0.01)
+optimizer = RMSprop(lr=0.005)
 model.compile(loss='mse', optimizer=optimizer)
 
 for epoch in range(nEpoch):
