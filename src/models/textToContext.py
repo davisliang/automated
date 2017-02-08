@@ -64,6 +64,8 @@ print "Number of training sequences: ", nTrainSequences
 print "Number of testing tweets: ", nTestData
 print "Number of training tweets: ", nTrainData
 
+#for i in range(1000):
+#    print (trainTweetSequence[i], trainHashtagSequence[i])
 # Load word2vec dictionary
 dictionary = pickle.load(open(expanduser("~/tweetnet/data/word2vec_dict.pkl")))
 
@@ -78,6 +80,7 @@ print("Start building model ....")
 model = Sequential()
 
 model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize)))
+
 model.add(Dense(outputSize))
 model.add(Activation('tanh'))
 
@@ -100,7 +103,7 @@ for epoch in range(numEpochs):
         # Stack the windows (1 x 40 x 65) of each tweet as a 3D matrix (#windows x 40 x 65)
         if testTweetSequence[testIdx][-1] == chr(3):
             oneTweet = testX[tweetStartIdx:testIdx+1, :, :]
-	    modelOutput = model.predict(oneTweet)
+            modelOutput = model.predict(oneTweet)
             topNht, isCorrect, topNdist = predContext(htDic, modelOutput, topN, testHashtags[tweetCnt])
             tweetStartIdx = testIdx + 1
             if isCorrect:

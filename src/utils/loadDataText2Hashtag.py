@@ -81,7 +81,6 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent):
 
 
         #Split data into sequences of length 40 for testing
-        print testTweets
         for i in range(nTestData):
             oneTweet = testTweets[i]
             ht = hashtags[i].split(" ")
