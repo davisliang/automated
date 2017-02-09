@@ -1,0 +1,1389 @@
+
+ ########################################## 
+EPOCH: 99
+input: Manhattan
+target: Brooklyn
+isCorrect: True
+topN: ['NYC', 'NY', 'Brooklyn', 'nyc', 'Yonkers', 'LA', 'NewYork', 'Harlem', 'Philly', 'NJ']
+
+input: Moonlight
+target: cast
+isCorrect: False
+topN: ['OO7', 'KimKardashian', 'scifi', 'lifehacker', 'ParisHilton', 'losangeles', 'EBook', 'Xmen', 'Deadpool', 'blackfriday']
+
+input: USDCAD
+target: FOREX
+isCorrect: True
+topN: ['Forex', 'forex', 'eurusd', 'FOREX', 'OANDA', 'fx', 'FX', 'blackfriday', 'KimKardashian', 'GBPNZD']
+
+input: Gmail
+target: HOWTO
+isCorrect: False
+topN: ['infosec', 'StackOverflow', 'SmartDeploy', 'socialnetworking', 'LifeHacker', 'blackfriday', 'KimKardashian', 'IT', 'ECommerce', 'Dropshipping']
+
+input: traffic
+target: ticket
+isCorrect: False
+topN: ['ECommerce', 'Dropshipping', 'marketing', 'B2B', 'WAHM', 'ecommerce', 'socialnetworking', 'business', 'WebHosting', 'Mompreneur']
+
+input: health
+target: oranges
+isCorrect: False
+topN: ['fitness', 'wellness', 'Fitness', 'Wellness', 'health', 'cardio', 'Pilates', 'FITNESS', 'yoga', 'skincare']
+
+input: News
+target: Sports
+isCorrect: False
+topN: ['losangeles', 'KimKardashian', 'Weightloss', 'Dropshipping', 'SmallBiz', 'Biz', 'WAHM', 'ECommerce', 'blackfriday', 'Onsale']
+
+input: Shoes
+target: Lot
+isCorrect: False
+topN: ['Style', 'Dropshipping', 'KimKardashian', 'ParisHilton', 'Fashionista', 'Shoe', 'BlackFriday', 'Mompreneur', 'Clothing', 'Fashion']
+
+input: InfoSec
+target: Cybersecurity
+isCorrect: True
+topN: ['Cybersecurity', 'cybersecurity', 'infosec', 'Cyberwar', 'cyber', 'CyberSecurity', 'IT', 'InfoSec', 'MySQL', 'Security']
+
+input: L
+target: GRAY
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'Dropshipping', 'EGOS', 'ASSORTED', 'katyperry', 'COYS', 'SmartDeploy', 'losangeles', 'lpga']
+
+input: accident
+target: injury
+isCorrect: False
+topN: ['KimKardashian', 'becky', 'katyperry', 'ASSORTED', 'lol', 'lifehacker', 'mmj', 'lfc', 'LMAO', 'ParisHilton']
+
+input: Geopolitics
+target: News
+isCorrect: False
+topN: ['Dropshipping', 'ECommerce', 'Busines', 'spazio', 'Economy', 'Luxury', 'Homebased', 'Style', 'Travel', 'losangeles']
+
+input: videogames
+target: gaming
+isCorrect: False
+topN: ['blackfriday', 'lifehacker', 'PS3', 'nintendo', 'Nintendo', 'KimKardashian', 'LifeHacker', 'appstore', 'Dropshipping', 'StackOverflow']
+
+input: privacy
+target: safety
+isCorrect: False
+topN: ['cybersecurity', 'socialnetworking', 'infosec', 'Dropshipping', 'cyber', 'IT', 'IoT', 'SmartDeploy', 'Cybersecurity', 'ecommerce']
+
+input: lfc
+target: swans
+isCorrect: False
+topN: ['lfc', 'chelsea', 'COYS', 'barcelona', 'tottenham', 'liverpool', 'mourinho', 'ManU', 'coventry', 'swansea']
+
+input: Hybrid
+target: Networking
+isCorrect: False
+topN: ['SmartDeploy', 'StayFit', 'KimKardashian', 'Dropshipping', 'Asus', 'Hybrid', 'Mouthguard', 'MotorTrend', 'spazio', 'losangeles']
+
+input: Startup
+target: Business
+isCorrect: True
+topN: ['Dropshipping', 'Busines', 'ECommerce', 'SmallBiz', 'Marketing', 'Startups', 'EdTech', 'Business', 'B2B', 'Biz']
+
+input: Services
+target: Trucking
+isCorrect: True
+topN: ['Trucking', 'Motorsports', 'trucking', 'Hydraulics', 'Auto', 'Construction', 'Travel', 'Racing', 'Motorcycle', 'Homecare']
+
+input: Healthy
+target: Program
+isCorrect: False
+topN: ['Fitness', 'Weightloss', 'Wellness', 'Nutrition', 'Healthy', 'Health', 'Workout', 'Lifestyle', 'Fit', 'Parenting']
+
+input: Fit
+target: Diet
+isCorrect: False
+topN: ['Weightloss', 'Wellness', 'Healthy', 'Fitness', 'Workout', 'Health', 'Fit', 'Lifestyle', 'Homebased', 'KimKardashian']
+
+input: SEO
+target: google
+isCorrect: False
+topN: ['Dropshipping', 'SEO', 'ECommerce', 'blackfriday', 'StackOverflow', 'SmartDeploy', 'ecommerce', 'B2B', 'backlink', 'webdesign']
+
+input: FX
+target: Trading
+isCorrect: False
+topN: ['Dropshipping', 'Forex', 'ECommerce', 'blackfriday', 'HYIP', 'Repost', 'FOREX', 'RealEstate', 'EBook', 'WebDesign']
+
+input: pharmaceutical
+target: market
+isCorrect: False
+topN: ['health', 'wellness', 'skincare', 'healthcare', 'medical', 'Wellness', 'caregiving', 'Health', 'education', 'diabetes']
+
+input: Valencia
+target: football
+isCorrect: False
+topN: ['KimKardashian', 'Dropshipping', 'ParisHilton', 'cebu', 'losangeles', 'WAHM', 'ECommerce', 'Realestate', 'Homebased', 'Mompreneur']
+
+input: Putin
+target: Allah
+isCorrect: False
+topN: ['Trump', 'Putin', 'Obama', 'Iran', 'Netanyahu', 'POTUS', 'FLOTUS', 'Kremlin', 'Biden', 'VPOTUS']
+
+input: bulldog
+target: dog
+isCorrect: True
+topN: ['cats', 'dog', 'dogs', 'pets', 'puppy', 'cat', 'COYB', 'pup', 'felines', 'doggie']
+
+input: Paranormal
+target: Attorneys
+isCorrect: False
+topN: ['losangeles', 'OO7', 'MARCIN', 'EdTech', 'Vloggers', 'KimKardashian', 'Film', 'Homeschool', 'Comics', 'Gardening']
+
+input: USA
+target: Europe
+isCorrect: False
+topN: ['Dropshipping', 'WAHM', 'Homebased', 'ECommerce', 'SmartDeploy', 'KimKardashian', 'Job', 'GovCon', 'EdTech', 'Mompreneur']
+
+input: Jobs
+target: Wolverhampton
+isCorrect: False
+topN: ['Dropshipping', 'Homebased', 'EdTech', 'ECommerce', 'WAHM', 'TEFL', 'SmartDeploy', 'Prototyping', 'K\xc3\xb6ln', 'Celerion']
+
+input: np
+target: SoundCloud
+isCorrect: True
+topN: ['SoundCloud', 'Soundcloud', 'BuzzFeed', 'Mashable', 'Dropbox', 'LifeHacker', 'StackOverflow', 'wordpress', 'Wordpress', 'plugin']
+
+input: Style
+target: Clothing
+isCorrect: True
+topN: ['Fashion', 'Style', 'Clothing', 'Jewelry', 'Bag', 'KimKardashian', 'Makeup', 'Shoe', 'Lingerie', 'Dropshipping']
+
+input: jobs
+target: birmingham
+isCorrect: False
+topN: ['losangeles', 'WAHM', 'artgallery', 'KimKardashian', 'Cleveland', 'Lafayette', 'lpga', 'Akron', 'Dropshipping', 'ElPaso']
+
+input: food
+target: farmers
+isCorrect: False
+topN: ['foodie', 'recipes', 'Foodie', 'foodies', 'yummy', 'Recipes', 'wholefoods', 'Recipe', 'Cooking', 'KimKardashian']
+
+input: NSSN
+target: solidarity
+isCorrect: False
+topN: ['losangeles', 'LCFC', 'SmartDeploy', 'MIMOSA', 'ASSORTED', 'Dropshipping', 'InsideTrack', 'Celerion', 'KimKardashian', 'EdTech']
+
+input: wifey
+target: lol
+isCorrect: False
+topN: ['ParisHilton', 'KimKardashian', 'kids', 'Mompreneur', 'Mom', 'mom', 'mompreneur', 'fun', 'kid', 'vh1']
+
+input: Bath
+target: Shower
+isCorrect: True
+topN: ['Shower', 'HotSpring', 'Caesarstone', 'Pendants', 'Giveway', 'Quilted', 'Beauty', 'Style', 'Pantyhose', 'Makeup']
+
+input: forex
+target: ECB
+isCorrect: False
+topN: ['fx', 'forex', 'Forex', 'eurusd', 'trading', 'GBPNZD', 'FOREX', 'OANDA', 'currency', 'econ']
+
+input: escorts
+target: sex
+isCorrect: True
+topN: ['sex', 'sexual', 'Sex', 'gay', 'masturbation', 'lesbians', 'erotic', 'adult', 'shemales', 'erotica']
+
+input: success
+target: quote
+isCorrect: False
+topN: ['WAHM', 'Dropshipping', 'Mompreneur', 'KimKardashian', 'entrepreneurship', 'ParisHilton', 'mompreneur', 'motivation', 'InsideTrack', 'Motivation']
+
+input: Cuiaba
+target: Sunrise
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'redes', 'katyperry', 'becky', 'barcelona', 'vh1', 'nba', 'lfc', 'mourinho']
+
+input: TopNews
+target: News
+isCorrect: True
+topN: ['News', 'news', 'NEWS', 'Breaking_News', 'WashingtonPost', 'Sports', 'CNBC', 'CNN', 'SmallBiz', 'FOX']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'streaming', 'spazio', 'netflix', 'vr', 'Dropshipping', 'dts', 'Streaming', 'Soundcloud', 'venice']
+
+input: Scaramucci
+target: Davos
+isCorrect: False
+topN: ['losangeles', 'Dropshipping', 'blackfriday', 'KimKardashian', 'WAHM', 'Homebased', 'Realestate', 'Weightloss', 'artgallery', 'smallbiz']
+
+input: Competition
+target: Comp
+isCorrect: False
+topN: ['win', 'Win', 'winning', 'Winning', 'ParisHilton', 'KimKardashian', 'FACup', 'COYB', 'GOTW', 'acca']
+
+input: job
+target: jobs
+isCorrect: False
+topN: ['Hospitality', 'Nursing', 'Healthcare', 'Homebased', 'Business', 'Wellness', 'Homecare', 'HealthCare', 'Retail', 'EdTech']
+
+input: Antique
+target: Auction
+isCorrect: False
+topN: ['Handmade', 'Dropshipping', 'Jewelry', 'Furniture', 'Giveway', 'Style', 'Clothing', 'Decor', 'handmade', 'Quilted']
+
+input: maps
+target: history
+isCorrect: False
+topN: ['KimKardashian', 'lifehacker', 'WAHM', 'blackfriday', 'kpop', 'Dropshipping', 'ParisHilton', 'socialnetworking', 'appstore', 'LifeHacker']
+
+input: np
+target: SoundCloud
+isCorrect: True
+topN: ['SoundCloud', 'Soundcloud', 'BuzzFeed', 'Mashable', 'Dropbox', 'LifeHacker', 'StackOverflow', 'wordpress', 'Wordpress', 'plugin']
+
+input: Google
+target: SEO
+isCorrect: False
+topN: ['Google', 'blackfriday', 'Dropshipping', 'SmartDeploy', 'StackOverflow', 'ECommerce', 'LifeHacker', 'appstore', 'socialnetworking', 'Android']
+
+input: holiday
+target: vacation
+isCorrect: False
+topN: ['blackfriday', 'ParisHilton', 'KimKardashian', 'Dropshipping', 'losangeles', 'SmartDeploy', 'CyberMonday', 'lpga', 'appstore', 'WAHM']
+
+input: abstinence
+target: chastity
+isCorrect: False
+topN: ['KimKardashian', 'Dropshipping', 'ParisHilton', 'COYB', 'EGOS', 'GRATITUDE', 'I', 'PRAYER', 'CELEBRATE', 'ALLAH']
+
+input: australia
+target: doctors
+isCorrect: False
+topN: ['Dropshipping', 'fashion', 'KimKardashian', 'COYB', 'artgallery', 'handmade', 'fun', 'contemporary', 'etsy', 'diy']
+
+input: Chennai
+target: chennai
+isCorrect: False
+topN: ['Jobs', 'Job', 'EdTech', 'Homebased', 'Dropshipping', 'Innovation', 'Busines', 'DonateLife', 'SmartDeploy', 'Business']
+
+input: sound
+target: album
+isCorrect: True
+topN: ['album', 'remix', 'song', 'Radiohead', 'mixtape', 'CD', 'reggae', 'Mixtape', 'Maroon5', 'Songs']
+
+input: Vietnam
+target: RealEstate
+isCorrect: False
+topN: ['Jobs', 'Dropshipping', 'SmartDeploy', 'Job', 'EdTech', 'EBook', 'blackfriday', 'ECommerce', 'OldSchool', 'KimKardashian']
+
+input: business
+target: Chelmsford
+isCorrect: False
+topN: ['Dropshipping', 'blackfriday', 'WAHM', 'losangeles', 'webdesign', 'ECommerce', 'B2B', 'smallbiz', 'ecommerce', 'KimKardashian']
+
+input: job
+target: IT
+isCorrect: False
+topN: ['Hospitality', 'Nursing', 'Healthcare', 'Homebased', 'Business', 'Wellness', 'Homecare', 'HealthCare', 'Retail', 'EdTech']
+
+input: News
+target: World
+isCorrect: False
+topN: ['losangeles', 'KimKardashian', 'Weightloss', 'Dropshipping', 'SmallBiz', 'Biz', 'WAHM', 'ECommerce', 'blackfriday', 'Onsale']
+
+input: OA
+target: pterosaurs
+isCorrect: False
+topN: ['SmartDeploy', 'KimKardashian', 'Dropshipping', 'ASSORTED', 'ParisHilton', 'ManU', 'EGOS', 'lfc', 'smok', 'Cholecystectomy']
+
+input: STARTUP
+target: webhosting
+isCorrect: False
+topN: ['Dropshipping', 'losangeles', 'blackfriday', 'KimKardashian', 'ASSORTED', 'katyperry', 'ParisHilton', 'WAHM', 'Repost', 'RADIOLOGY']
+
+input: Education
+target: Generations
+isCorrect: False
+topN: ['India', 'Pakistan', 'Bangladesh', 'China', 'SriLanka', 'Indonesia', 'Malaysia', 'UAE', 'Nepal', 'Gujarat']
+
+input: sales
+target: brand
+isCorrect: False
+topN: ['marketing', 'Marketing', 'Dropshipping', 'B2B', 'ECommerce', 'ecommerce', 'eCommerce', 'branding', 'advertising', 'blackfriday']
+
+input: TECH
+target: NEWS
+isCorrect: True
+topN: ['NEWS', 'PLANNER', 'ASSORTED', 'RADIOLOGY', 'BLOGS', 'FRAMED', 'SLASHED', 'MOVERS', 'INNOVATION', 'SPORTS']
+
+input: NFL
+target: Seahawks
+isCorrect: True
+topN: ['Ravens', 'Bengals', 'Seahawks', 'Cowboys', 'Titans', 'Raiders', 'Colts', 'Steelers', 'Jaguars', 'Redskins']
+
+input: Greatest
+target: Actress
+isCorrect: True
+topN: ['KimKardashian', 'ParisHilton', 'OO7', 'Fashion', 'Dropshipping', 'Braless', 'Mompreneur', 'Dresses', 'Actress', 'Celebs']
+
+input: bloggers
+target: tool
+isCorrect: False
+topN: ['SEO', 'Wordpress', 'backlink', 'StackOverflow', 'LifeHacker', 'wordpress', 'Dropshipping', 'ECommerce', 'backlinks', 'blackfriday']
+
+input: Cabinet
+target: Jharkhand
+isCorrect: False
+topN: ['ASSORTED', 'mmj', 'cebu', 'coventry', 'redes', 'becky', 'nyc', 'publica', 'tasmania', 'RADIOLOGY']
+
+input: tennis
+target: coaching
+isCorrect: False
+topN: ['news', 'blackfriday', 'KimKardashian', 'losangeles', 'lfc', 'ParisHilton', 'ccg', 'lifehacker', 'lpga', 'artgallery']
+
+input: inspiration
+target: quotes
+isCorrect: True
+topN: ['quotes', 'quote', 'quotations', 'quotation', 'Quotes', 'quoted', 'blackfriday', 'lifehacker', 'articles', 'commentary']
+
+input: UnitedStates
+target: Job
+isCorrect: True
+topN: ['Dropshipping', 'Jobs', 'ECommerce', 'Homebased', 'EdTech', 'SmartDeploy', 'Busines', 'Job', 'Investment', 'Realestate']
+
+input: new
+target: website
+isCorrect: False
+topN: ['KimKardashian', 'Dropshipping', 'WAHM', 'LifeHacker', 'SmartDeploy', 'blackfriday', 'lifehacker', 'ParisHilton', 'BuzzFeed', 'socialnetworking']
+
+input: cloud
+target: hosting
+isCorrect: False
+topN: ['SmartDeploy', 'IT', 'Dropshipping', 'OpenSource', 'cebu', 'ASSORTED', 'ECommerce', 'redes', 'FollowUs', 'FollowMe']
+
+input: Shanghai
+target: China
+isCorrect: False
+topN: ['job', 'Job', 'jobs', 'employment', 'temp', 'Jobs', 'internships', 'Homebased', 'Hiring', 'Dropshipping']
+
+input: AI
+target: ML
+isCorrect: False
+topN: ['Dropshipping', 'SmartDeploy', 'ECommerce', 'StackOverflow', 'WebDesign', 'DevOps', 'WAHM', 'EBook', 'AWeber', 'losangeles']
+
+input: streaming
+target: gamer
+isCorrect: False
+topN: ['music', 'KimKardashian', 'MIXTAPE', 'djs', 'vh1', 'HIPHOP', 'jazz', 'katyperry', 'netlabel', 'musi']
+
+input: busker
+target: market
+isCorrect: False
+topN: ['SmartDeploy', 'SFMoMA', 'Dropshipping', 'netlabel', 'Celerion', 'KimKardashian', 'FollowUs', 'SoundCloud', 'blackfriday', 'tunein']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'holiday', 'vacations', 'vacation', 'CyberMonday', 'blackfriday', 'KimKardashian', 'Vacation', 'Christmas', 'Dropshipping']
+
+input: Gallery
+target: Piano
+isCorrect: False
+topN: ['Design', 'SFMoMA', 'Fashion', 'KimKardashian', 'Webdesign', 'Photography', 'Designers', 'Art', 'Dropshipping', 'Fashionista']
+
+input: Western
+target: women
+isCorrect: False
+topN: ['ASSORTED', 'RADIOLOGY', 'Dropshipping', 'Idlib', 'PLANNER', 'FRAMED', 'MIXTAPE', 'CELEBRATE', 'losangeles', 'SmartDeploy']
+
+input: golf
+target: tennis
+isCorrect: False
+topN: ['lpga', 'KimKardashian', 'losangeles', 'ParisHilton', 'artgallery', 'becky', 'Dropshipping', 'blackfriday', 'katyperry', 'lfc']
+
+input: maga
+target: trump
+isCorrect: False
+topN: ['mmj', 'becky', 'katyperry', 'wut', 'dx', 'lol', 'LMAO', 'thx', 'radiohead', 'swansea']
+
+input: 3X
+target: FRONT
+isCorrect: False
+topN: ['Dropshipping', 'blackfriday', 'SmartDeploy', 'ECommerce', 'HYIP', 'KimKardashian', 'Startups', 'cebu', 'Weightloss', 'losangeles']
+
+input: Cabinet
+target: manufacturing
+isCorrect: False
+topN: ['ASSORTED', 'mmj', 'cebu', 'coventry', 'redes', 'becky', 'nyc', 'publica', 'tasmania', 'RADIOLOGY']
+
+input: deal
+target: BlackFriday
+isCorrect: True
+topN: ['BlackFriday', 'bargain', 'CyberMonday', 'bargains', 'blackfriday', 'Dropshipping', 'Deals', 'giftcard', 'giftcards', 'Shopping']
+
+input: Iran
+target: News
+isCorrect: False
+topN: ['Syria', 'Iran', 'Syrians', 'Syrian', 'Assad', 'Egypt', 'Damascus', 'syria', 'Iranian', 'Hamas']
+
+input: Davos
+target: Davos
+isCorrect: False
+topN: ['Dropshipping', 'SmartDeploy', 'blackfriday', 'LifeHacker', 'ECommerce', 'Vloggers', 'KimKardashian', 'HYIP', 'FreeSpeech', 'MotorTrend']
+
+input: SocialMedia
+target: SMM
+isCorrect: False
+topN: ['Marketing', 'ECommerce', 'B2B', 'marketing', 'Dropshipping', 'Business', 'SEO', 'eCommerce', 'EdTech', 'Busines']
+
+input: Best
+target: Actor
+isCorrect: False
+topN: ['Shoes', 'Shoe', 'Clothing', 'Toys', 'Apparel', 'Adidas', 'Dropshipping', 'footwear', 'Merch', 'Nike']
+
+input: Pok
+target: india
+isCorrect: False
+topN: ['KimKardashian', 'katyperry', 'Dropshipping', 'blackfriday', 'newyork', 'becky', 'wordpress', 'ParisHilton', 'mmj', 'nyc']
+
+input: IOTA
+target: dx
+isCorrect: False
+topN: ['Dropshipping', 'SmartDeploy', 'KimKardashian', 'losangeles', 'cebu', 'ECommerce', 'Homebased', 'blackfriday', 'EGOS', 'HYIP']
+
+input: android
+target: free
+isCorrect: False
+topN: ['app', 'appstore', 'apps', 'Android', 'blackfriday', 'iOS', 'ipad', 'iphone', 'iPhone', 'smartphone']
+
+input: ordering
+target: classic
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'lifehacker', 'WAHM', 'SmartDeploy', 'Mompreneur', 'ParisHilton', 'blackfriday', 'vh1', 'EBook']
+
+input: realtor
+target: realestate
+isCorrect: False
+topN: ['artgallery', 'losangeles', 'blackfriday', 'Dropshipping', 'PLANNER', 'newyork', 'KimKardashian', 'smallbiz', 'ccg', 'ASSORTED']
+
+input: Bitcoin
+target: BTC
+isCorrect: False
+topN: ['Dropshipping', 'blackfriday', 'WAHM', 'losangeles', 'SmartDeploy', 'ECommerce', 'B2B', 'KimKardashian', 'Busines', 'HYIP']
+
+input: Tech
+target: Cars
+isCorrect: False
+topN: ['News', 'TechNews', 'Busines', 'Dropshipping', 'SmallBiz', 'MARCIN', 'blackfriday', 'Biz', 'Vloggers', 'EdTech']
+
+input: quote
+target: love
+isCorrect: False
+topN: ['KimKardashian', 'Dropshipping', 'quote', 'inspiration', 'WAHM', 'AppDev', 'ParisHilton', 'motivation', 'humanbeing', 'SmartDeploy']
+
+input: psychology
+target: goals
+isCorrect: False
+topN: ['mentalhealth', 'InsideTrack', 'jobsearch', 'caregivers', 'caregiving', 'Parenting', 'WAHM', 'Sciatica', 'KidsHealth', 'Wellness']
+
+input: Epic
+target: improving
+isCorrect: False
+topN: ['Dropshipping', 'ECommerce', 'Vloggers', 'Movies', 'blackfriday', 'Onsale', 'KimKardashian', 'Movie', 'Gamer', 'Infographic']
+
+input: Juventus
+target: logo
+isCorrect: False
+topN: ['ManU', 'Benfica', 'Everton', 'Juve', 'Juventus', 'barcelona', 'lfc', 'Arsenal', 'chelsea', 'tottenham']
+
+input: Pakistan
+target: SIUT
+isCorrect: False
+topN: ['Dropshipping', 'News', 'KimKardashian', 'MARCIN', 'losangeles', 'blackfriday', 'ParisHilton', 'WAHM', 'countryboy', 'Vloggers']
+
+input: inspiration
+target: quotes
+isCorrect: True
+topN: ['quotes', 'quote', 'quotations', 'quotation', 'Quotes', 'quoted', 'blackfriday', 'lifehacker', 'articles', 'commentary']
+
+input: Kobe
+target: Collectibles
+isCorrect: False
+topN: ['Shoes', 'Shoe', 'Clothing', 'footwear', 'shoes', 'Furniture', 'shoe', 'Clothes', 'Eyewear', 'Apparel']
+
+input: press
+target: SocialMedia
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'Dropshipping', 'Giveway', 'artgallery', 'Style', 'Freebies', 'MARCIN', 'Horoscope', 'Mompreneur']
+
+input: sunrise
+target: Manchester
+isCorrect: False
+topN: ['snow', 'weather', 'snowfall', 'winter', 'arctic', 'snowing', 'travel', 'Travel', 'KimKardashian', 'storm']
+
+input: atheism
+target: mormons
+isCorrect: False
+topN: ['God', 'theism', 'religion', 'Christ', 'Christianity', 'christianity', 'Jesus', 'Scripture', 'Atheism', 'zionism']
+
+input: Green
+target: Bay
+isCorrect: False
+topN: ['Dropshipping', 'Eco', 'KimKardashian', 'Realestate', 'ECommerce', 'ParisHilton', 'Recycling', 'Weightloss', 'PLANNER', 'losangeles']
+
+input: job
+target: offcampus
+isCorrect: False
+topN: ['Hospitality', 'Nursing', 'Healthcare', 'Homebased', 'Business', 'Wellness', 'Homecare', 'HealthCare', 'Retail', 'EdTech']
+
+input: np
+target: SoundCloud
+isCorrect: True
+topN: ['SoundCloud', 'Soundcloud', 'BuzzFeed', 'Mashable', 'Dropbox', 'LifeHacker', 'StackOverflow', 'wordpress', 'Wordpress', 'plugin']
+
+input: socialmedia
+target: SEO
+isCorrect: False
+topN: ['marketing', 'Dropshipping', 'B2B', 'ECommerce', 'socialnetworking', 'WAHM', 'webdesign', 'ecommerce', 'LevelUp', 'SmartDeploy']
+
+input: Microsoft
+target: Smartphone
+isCorrect: True
+topN: ['Dropshipping', 'StackOverflow', 'Android', 'ECommerce', 'SmartDeploy', 'Smartphone', 'DevOps', 'LifeHacker', 'blackfriday', 'apps']
+
+input: friends
+target: people
+isCorrect: False
+topN: ['new', 'job', 'tunein', 'kids', 'TEFL', 'COYB', 'jobs', 'socialnetworking', 'jobsearch', 'WAHM']
+
+input: Dbacks
+target: Cards
+isCorrect: False
+topN: ['Dbacks', 'Diamondbacks', 'Padres', 'Dodgers', 'Orioles', 'Brewers', 'Cardinals', 'Timberwolves', 'Mavs', 'Yankees']
+
+input: Tours
+target: Travel
+isCorrect: True
+topN: ['Travel', 'Destinations', 'Vacation', 'travel', 'Shopping', 'Homebased', 'Luxury', 'Hotels', 'Dropshipping', 'losangeles']
+
+input: protest
+target: Trump
+isCorrect: False
+topN: ['Dropshipping', 'COYB', 'SmartDeploy', 'humanbeing', 'tunein', 'KimKardashian', 'OldSchool', 'ParisHilton', 'ManU', 'what']
+
+input: Etihad
+target: Dublin
+isCorrect: False
+topN: ['Dropshipping', 'ECommerce', 'KimKardashian', 'Mompreneur', 'WAHM', 'Vloggers', 'Onsale', 'Realestate', 'ParisHilton', 'losangeles']
+
+input: diamonds
+target: jewelry
+isCorrect: True
+topN: ['jewelry', 'Jewelry', 'earrings', 'necklace', 'handmade', 'handbags', 'etsy', 'antiques', 'beads', 'pendant']
+
+input: Westmont
+target: IL
+isCorrect: False
+topN: ['job', 'KimKardashian', 'lifehacker', 'ParisHilton', 'Job', 'katyperry', 'blackfriday', 'vh1', 'Dropshipping', 'thx']
+
+input: comedians
+target: getting
+isCorrect: False
+topN: ['KimKardashian', 'vh1', 'humanbeing', 'ParisHilton', 'lifehacker', 'tunein', 'music', 'funny', 'Dropshipping', 'OldSchool']
+
+input: Speech
+target: Presentation
+isCorrect: False
+topN: ['Leadership', 'Wellness', 'Weightloss', 'Homeschool', 'Busines', 'Travel', 'Homebased', 'Beauty', 'Film', 'Hospitality']
+
+input: missing
+target: missing
+isCorrect: False
+topN: ['KimKardashian', 'lpga', 'ParisHilton', 'tunein', 'COYB', 'Cleveland', 'Jeter', 'ProBowl', 'kids', 'WAHM']
+
+input: ECOWAS
+target: Zambia
+isCorrect: True
+topN: ['Gambia', 'Ghana', 'Senegal', 'Tunisia', 'Eritrea', 'Zimbabwe', 'Zambia', 'Burundi', 'Serbia', 'Juventus']
+
+input: UGA
+target: Dawgs
+isCorrect: True
+topN: ['Dawgs', 'Buccaneers', 'Seahawks', 'Bearcats', 'Falcons', 'Jaguars', 'Jackets', 'Panthers', 'Cougars', 'Bengals']
+
+input: discourse
+target: opensource
+isCorrect: False
+topN: ['ParisHilton', 'KimKardashian', 'religion', 'SFMoMA', 'cultura', 'vegan', 'love', 'art', 'humanbeing', 'Codependency']
+
+input: goals
+target: dreams
+isCorrect: False
+topN: ['Dropshipping', 'success', 'entrepreneurship', 'COYB', 'Success', 'KimKardashian', 'entrepreneurs', 'innovation', 'B2B', 'WAHM']
+
+input: PressRelease
+target: Web
+isCorrect: False
+topN: ['KimKardashian', 'losangeles', 'Dropshipping', 'Repost', 'blackfriday', 'EGOS', 'ParisHilton', 'Weightloss', 'artgallery', 'katyperry']
+
+input: Abraham
+target: direction
+isCorrect: False
+topN: ['God', 'commandments', 'zionism', 'theism', 'religion', 'Scripture', 'Jesus', 'Qur', 'Atheism', 'christianity']
+
+input: Liverpool
+target: art
+isCorrect: False
+topN: ['lfc', 'ManU', 'ManCity', 'COYS', 'tottenham', 'THFC', 'Liverpool', 'ManUtd', 'liverpool', 'chelsea']
+
+input: Instagram
+target: socialmedia
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'lifehacker', 'Vloggers', 'socialnetworking', 'StackOverflow', 'BuzzFeed', 'blackfriday', 'EBook', 'losangeles']
+
+input: job
+target: jobs
+isCorrect: False
+topN: ['Hospitality', 'Nursing', 'Healthcare', 'Homebased', 'Business', 'Wellness', 'Homecare', 'HealthCare', 'Retail', 'EdTech']
+
+input: barcelona
+target: dinner
+isCorrect: False
+topN: ['barcelona', 'F\xc3\xbatbol', 'COYS', 'portugal', 'lfc', 'mourinho', 'KimKardashian', 'Catalunya', 'ParisHilton', 'ManU']
+
+input: Solution
+target: Fitness
+isCorrect: True
+topN: ['Fitness', 'Wellness', 'Weightloss', 'Fit', 'Workout', 'Cardio', 'Pilates', 'Health', 'Sports', 'wellness']
+
+input: Ascendant
+target: Leo
+isCorrect: False
+topN: ['Sagittarius', 'Libra', 'Pisces', 'Virgo', 'Capricorn', 'Aries', 'Gemini', 'Horoscope', 'Scorpio', 'Aquarius']
+
+input: Books
+target: eBooks
+isCorrect: True
+topN: ['eBooks', 'ebooks', 'EBook', 'ebook', 'Ebook', 'Dropshipping', 'blackfriday', 'iPad', 'LifeHacker', 'WAHM']
+
+input: DVD
+target: eBay
+isCorrect: False
+topN: ['Movies', 'Movie', 'KimKardashian', 'Dropshipping', 'movies', 'Vloggers', 'ParisHilton', 'movie', 'losangeles', 'EBook']
+
+input: charity
+target: job
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'Dropshipping', 'artgallery', 'CELEBRATE', 'losangeles', 'Giveway', 'katyperry', 'VEGAN', 'FRAMED']
+
+input: job
+target: in
+isCorrect: False
+topN: ['Hospitality', 'Nursing', 'Healthcare', 'Homebased', 'Business', 'Wellness', 'Homecare', 'HealthCare', 'Retail', 'EdTech']
+
+input: blogging
+target: headlines
+isCorrect: False
+topN: ['LifeHacker', 'StackOverflow', 'blackfriday', 'socialnetworking', 'backlink', 'socialmedia', 'lifehacker', 'SEO', 'ECommerce', 'Dropshipping']
+
+input: accommodation
+target: directory
+isCorrect: False
+topN: ['KimKardashian', 'lifehacker', 'ParisHilton', 'vh1', 'blackfriday', 'diy', 'Dropshipping', 'LifeHacker', 'newyork', 'socialmedia']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'streaming', 'spazio', 'netflix', 'vr', 'Dropshipping', 'dts', 'Streaming', 'Soundcloud', 'venice']
+
+input: New
+target: Steel
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'Onsale', 'Giveway', 'artgallery', 'Weightloss', 'ParisHilton', 'losangeles', 'MIXTAPE', 'Webdesign']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'streaming', 'spazio', 'netflix', 'vr', 'Dropshipping', 'dts', 'Streaming', 'Soundcloud', 'venice']
+
+input: manchester
+target: talks
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'blackfriday', 'tasmania', 'cebu', 'ParisHilton', 'SmartDeploy', 'COYS', 'COYB', 'nyc']
+
+input: How
+target: Tech
+isCorrect: True
+topN: ['Tech', 'Mouthguard', 'Mizzou', 'Startups', 'HigherEd', 'Technology', 'EdTech', 'Startup', 'Longhorns', 'Biz']
+
+input: Filipino
+target: Oligarchs
+isCorrect: False
+topN: ['RADIOLOGY', 'saudi', 'ASSORTED', 'WesternU', 'cebu', 'consu', 'Dropshipping', 'Singapore', 'Taiwan', 'muslims']
+
+input: RT
+target: Please
+isCorrect: False
+topN: ['Follow', 'follow', 'Sign', 'Find', 'ParisHilton', 'KimKardashian', 'Repost', 'Check', 'Make', 'Go']
+
+input: Facebook
+target: android
+isCorrect: False
+topN: ['StackOverflow', 'KimKardashian', 'blackfriday', 'BuzzFeed', 'LifeHacker', 'lifehacker', 'Dropshipping', 'socialmedia', 'Mashable', 'appstore']
+
+input: Canonical
+target: Unity
+isCorrect: False
+topN: ['Dropshipping', 'EBook', 'KimKardashian', 'blackfriday', 'losangeles', 'SmartDeploy', 'lifehacker', 'BlackFriday', 'ParisHilton', 'Webdesign']
+
+input: SoundCloud
+target: np
+isCorrect: True
+topN: ['np', 'mmj', 'ccg', 'nyt', 'publica', 'katyperry', 'becky', 'vr', 'dx', 'thx']
+
+input: plastering
+target: directory
+isCorrect: False
+topN: ['KimKardashian', 'PLANNER', 'ASSORTED', 'artgallery', 'ParisHilton', 'losangeles', 'FRAMED', 'RADIOLOGY', 'EGOS', 'Dropshipping']
+
+input: win
+target: Competition
+isCorrect: False
+topN: ['Giveaway', 'giveaway', 'Giveaways', 'sweepstakes', 'giveaways', 'Sweepstakes', 'Contest', 'prizes', 'Dropshipping', 'Giveway']
+
+input: True
+target: Virgo
+isCorrect: True
+topN: ['Virgo', 'Pisces', 'Sagittarius', 'KimKardashian', 'Libra', 'Aries', 'ParisHilton', 'Horoscope', 'Capricorn', 'Scorpio']
+
+input: Google
+target: Android
+isCorrect: True
+topN: ['Google', 'blackfriday', 'Dropshipping', 'SmartDeploy', 'StackOverflow', 'ECommerce', 'LifeHacker', 'appstore', 'socialnetworking', 'Android']
+
+input: cycling
+target: Enfield
+isCorrect: False
+topN: ['biking', 'Dropshipping', 'cycling', 'TEFL', 'KimKardashian', 'ECommerce', 'travel', 'SmartDeploy', 'socialnetworking', 'tunein']
+
+input: economy
+target: vc
+isCorrect: False
+topN: ['Dropshipping', 'economy', 'econ', 'HYIP', 'economic', 'EU', 'inflation', 'COYB', 'Economy', 'EURCAD']
+
+input: L
+target: EVENING
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'Dropshipping', 'EGOS', 'ASSORTED', 'katyperry', 'COYS', 'SmartDeploy', 'losangeles', 'lpga']
+
+input: news
+target: reuters
+isCorrect: False
+topN: ['KimKardashian', 'blackfriday', 'Dropshipping', 'ParisHilton', 'SmartDeploy', 'OldSchool', 'LifeHacker', 'WAHM', 'StackOverflow', 'socialmedia']
+
+input: technology
+target: digital
+isCorrect: False
+topN: ['blackfriday', 'SmartDeploy', 'Dropshipping', 'lifehacker', 'KimKardashian', 'socialnetworking', 'losangeles', 'WAHM', 'cebu', 'StackOverflow']
+
+input: temp
+target: publishing
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'Weightloss', 'Skincare', 'Gardening', 'Weather', 'Travel', 'skincare', 'Beauty', 'Fashion']
+
+input: Granny
+target: Mature
+isCorrect: True
+topN: ['Mature', 'Adult', 'Homebased', 'Gamer', 'Introverts', 'tweens', 'roleplaying', 'mature', 'DnD', 'Parenting']
+
+input: Toronto
+target: job
+isCorrect: False
+topN: ['artgallery', 'KimKardashian', 'losangeles', 'ASSORTED', 'lpga', 'Dropshipping', 'EGOS', 'PLANNER', 'MARCIN', 'MIXTAPE']
+
+input: love
+target: success
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'Dropshipping', 'WAHM', 'vh1', 'lifehacker', 'humanbeing', 'Mompreneur', 'tunein', 'mompreneur']
+
+input: Crawford
+target: Muguruza
+isCorrect: False
+topN: ['Dropshipping', 'losangeles', 'KimKardashian', 'blackfriday', 'ParisHilton', 'ECommerce', 'lpga', 'artgallery', 'WAHM', 'Cavs']
+
+input: architecture
+target: design
+isCorrect: True
+topN: ['design', 'Design', 'architecture', 'styling', 'deco', 'Designers', 'designer', 'webdesign', 'Designer', 'stylish']
+
+input: Win
+target: giveaway
+isCorrect: True
+topN: ['Giveaway', 'giveaway', 'Giveaways', 'Giveway', 'Sweepstakes', 'Contest', 'sweepstakes', 'Dropshipping', 'prizes', 'Freebies']
+
+input: Luton
+target: Jobs
+isCorrect: True
+topN: ['Jobs', 'Job', 'Dropshipping', 'jobs', 'Homebased', 'EdTech', 'job', 'Busines', 'WAHM', 'GovCon']
+
+input: throwback
+target: lol
+isCorrect: True
+topN: ['KimKardashian', 'becky', 'vh1', 'lifehacker', 'blackfriday', 'lol', 'mario', 'kpop', 'federer', 'ParisHilton']
+
+input: Camera
+target: Lens
+isCorrect: False
+topN: ['Art', 'Arts', 'SFMoMA', 'Artists', 'Design', 'Photography', 'Poetry', 'Fashion', 'Artist', 'Film']
+
+input: health
+target: BCTV
+isCorrect: False
+topN: ['fitness', 'wellness', 'Fitness', 'Wellness', 'health', 'cardio', 'Pilates', 'FITNESS', 'yoga', 'skincare']
+
+input: JOHNNY
+target: NCT
+isCorrect: False
+topN: ['ASSORTED', 'PLANNER', 'MIXTAPE', 'EGOS', 'FRAMED', 'coventry', 'RADIOLOGY', 'mmj', 'KimKardashian', 'HIPHOP']
+
+input: Video
+target: Youtube
+isCorrect: True
+topN: ['Youtube', 'KimKardashian', 'BuzzFeed', 'YouTube', 'Vloggers', 'katyperry', 'ParisHilton', 'blackfriday', 'appstore', 'SoundCloud']
+
+input: Video
+target: Youtube
+isCorrect: True
+topN: ['Youtube', 'KimKardashian', 'BuzzFeed', 'YouTube', 'Vloggers', 'katyperry', 'ParisHilton', 'blackfriday', 'appstore', 'SoundCloud']
+
+input: NBA
+target: Portland
+isCorrect: False
+topN: ['Basketball', 'Twolves', 'NBA', 'Sixers', 'Knicks', 'Timberwolves', 'Cavs', 'Nets', 'basketball', 'Baseball']
+
+input: Phoenix
+target: AZ
+isCorrect: False
+topN: ['jobsearch', 'job', 'WAHM', 'Dropshipping', 'Homebased', 'artgallery', 'KimKardashian', 'RADIOLOGY', 'JOB', 'PLANNER']
+
+input: tech
+target: china
+isCorrect: False
+topN: ['technology', 'SmartDeploy', 'blackfriday', 'socialnetworking', 'news', 'Dropshipping', 'LifeHacker', 'gadget', 'WAHM', 'StackOverflow']
+
+input: mobile
+target: tech
+isCorrect: False
+topN: ['Dropshipping', 'SmartDeploy', 'blackfriday', 'StackOverflow', 'appstore', 'WebDesign', 'apps', 'wordpress', 'OldSchool', 'socialnetworking']
+
+input: Home
+target: Caregiver
+isCorrect: False
+topN: ['Kitchen', 'Weightloss', 'Design', 'Wellness', 'ECommerce', 'Dropshipping', 'Homebased', 'EdTech', 'Style', 'Mompreneur']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'startups', 'Entrepreneurs', 'Startup', 'DevOps', 'Innovators', 'Dropshipping', 'HYIP', 'OpenSource', 'StartUpHire']
+
+input: cruise
+target: tourism
+isCorrect: False
+topN: ['travel', 'vacation', 'vacations', 'Travel', 'Destinations', 'dining', 'cruises', 'holidays', 'biking', 'spa']
+
+input: Investing
+target: Business
+isCorrect: True
+topN: ['Busines', 'Business', 'Dropshipping', 'Realestate', 'Homebased', 'RealEstate', 'blackfriday', 'losangeles', 'Travel', 'ECommerce']
+
+input: Nokia
+target: patent
+isCorrect: False
+topN: ['Smartphone', 'Dropshipping', 'blackfriday', 'EBook', 'Android', 'KimKardashian', 'smartphone', 'ipad', 'BlackFriday', 'losangeles']
+
+input: Collectible
+target: Buzz
+isCorrect: True
+topN: ['Buzz', 'Blog', 'losangeles', 'Biz', 'KimKardashian', 'ParisHilton', 'Trending', 'Gadgets', 'Apps', 'lifehacker']
+
+input: quote
+target: poetry
+isCorrect: False
+topN: ['KimKardashian', 'Dropshipping', 'quote', 'inspiration', 'WAHM', 'AppDev', 'ParisHilton', 'motivation', 'humanbeing', 'SmartDeploy']
+
+input: Clean
+target: Energy
+isCorrect: False
+topN: ['RADIOLOGY', 'Weightloss', 'Homebased', 'losangeles', 'Dropshipping', 'Realestate', 'PLANNER', 'HotSpring', 'cebu', 'EdTech']
+
+input: Investment
+target: Pip
+isCorrect: True
+topN: ['Pip', 'Removals', 'OO7', 'WAHM', 'Dropshipping', 'FollowUs', 'ECommerce', 'KimKardashian', 'SmartDeploy', 'DIY']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Libra', 'Pisces', 'Virgo', 'Capricorn', 'Aries', 'Gemini', 'Horoscope', 'Scorpio', 'Aquarius']
+
+input: Riverview
+target: FL
+isCorrect: True
+topN: ['FL', 'OH', 'TX', 'FLORIDA', 'Florida', 'Clearwater', 'WY', 'Kissimmee', 'GA', 'MO']
+
+input: travel
+target: burma
+isCorrect: False
+topN: ['holidays', 'holiday', 'vacations', 'vacation', 'CyberMonday', 'blackfriday', 'KimKardashian', 'Vacation', 'Christmas', 'Dropshipping']
+
+input: contest
+target: RT
+isCorrect: False
+topN: ['win', 'KimKardashian', 'ParisHilton', 'COYB', 'lifehacker', 'winning', 'Dropshipping', 'fun', 'vh1', 'cheltenham']
+
+input: Paris
+target: cold
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'ParisHilton', 'blackfriday', 'spazio', 'losangeles', 'SmartDeploy', 'redes', 'artgallery', 'cebu']
+
+input: AI
+target: AR
+isCorrect: False
+topN: ['Dropshipping', 'SmartDeploy', 'ECommerce', 'StackOverflow', 'WebDesign', 'DevOps', 'WAHM', 'EBook', 'AWeber', 'losangeles']
+
+input: Pulsar
+target: Dress
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'EBook', 'Dropshipping', 'blackfriday', 'Fashionista', 'LifeHacker', 'losangeles', 'Gadgets', 'Vloggers']
+
+input: Austria
+target: AB
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'ParisHilton', 'losangeles', 'blackfriday', 'Travel', 'Homebased', 'ECommerce', 'WAHM', 'Vloggers']
+
+input: motorsport
+target: crash
+isCorrect: False
+topN: ['lfc', 'Motorsport', 'F1', 'COYS', 'dx', 'nascar', 'portugal', 'coventry', 'racing', 'Formula1']
+
+input: Encryption
+target: Security
+isCorrect: False
+topN: ['Dropshipping', 'EBook', 'WebHosting', 'StackOverflow', 'SmartDeploy', 'DevOps', 'OpenSource', 'MySQL', 'KimKardashian', 'ECommerce']
+
+input: snoring
+target: dogs
+isCorrect: False
+topN: ['KimKardashian', 'lifehacker', 'ParisHilton', 'vh1', 'mmj', 'losangeles', 'blackfriday', 'tunein', 'becky', 'SmartDeploy']
+
+input: Digital
+target: Cricket
+isCorrect: False
+topN: ['Trends', 'Dropshipping', 'KimKardashian', 'Weightloss', 'Vloggers', 'Infographic', 'losangeles', 'EBook', 'SmallBiz', 'Homebased']
+
+input: architecture
+target: design
+isCorrect: True
+topN: ['design', 'Design', 'architecture', 'styling', 'deco', 'Designers', 'designer', 'webdesign', 'Designer', 'stylish']
+
+input: handmade
+target: shop
+isCorrect: False
+topN: ['jewelry', 'etsy', 'Jewelry', 'KimKardashian', 'handmade', 'Dropshipping', 'ParisHilton', 'decor', 'Handmade', 'wearables']
+
+input: LBC
+target: twat
+isCorrect: False
+topN: ['KimKardashian', 'losangeles', 'ParisHilton', 'Style', 'Weightloss', 'vh1', 'Braless', 'Fitness', 'Dropshipping', 'Repost']
+
+input: success
+target: quote
+isCorrect: False
+topN: ['WAHM', 'Dropshipping', 'Mompreneur', 'KimKardashian', 'entrepreneurship', 'ParisHilton', 'mompreneur', 'motivation', 'InsideTrack', 'Motivation']
+
+input: cheese
+target: antipasti
+isCorrect: False
+topN: ['Dropshipping', 'tamarindo', 'nutella', 'cebu', 'losangeles', 'ASSORTED', 'wine', 'wholefoods', 'mmj', 'chefs']
+
+input: Bandon
+target: Dublin
+isCorrect: False
+topN: ['ASSORTED', 'RADIOLOGY', 'Ovr', 'OH', 'THERAPIST', 'OR', 'losangeles', 'MIXTAPE', 'FL', 'MIMOSA']
+
+input: indie
+target: vinyl
+isCorrect: False
+topN: ['KimKardashian', 'music', 'Dropshipping', 'indie', 'rock', 'vh1', 'hiphop', 'diy', 'Maroon5', 'Indie']
+
+input: consciousness
+target: intuition
+isCorrect: False
+topN: ['spirituality', 'Codependency', 'Mindfulness', 'mindfulness', 'wellness', 'spiritual', 'yogini', 'Yoga', 'Wellness', 'ParisHilton']
+
+input: curve
+target: swimsuit
+isCorrect: False
+topN: ['KimKardashian', 'mmj', 'blackfriday', 'katyperry', 'ParisHilton', 'becky', 'vh1', 'Dropshipping', 'lol', 'LMAO']
+
+input: Cowboys
+target: Jersey
+isCorrect: False
+topN: ['Packers', 'Cowboys', 'Bengals', 'Steelers', 'Ravens', 'Browns', 'Phins', 'Seahawks', 'NFL', 'Redskins']
+
+input: Apple
+target: iWatch
+isCorrect: False
+topN: ['blackfriday', 'iPhone', 'appstore', 'Android', 'iPad', 'LifeHacker', 'apps', 'Smartphone', 'smartphone', 'app']
+
+input: Healthy
+target: Eating
+isCorrect: False
+topN: ['Fitness', 'Weightloss', 'Wellness', 'Nutrition', 'Healthy', 'Health', 'Workout', 'Lifestyle', 'Fit', 'Parenting']
+
+input: DailyMail
+target: News
+isCorrect: True
+topN: ['News', 'NEWS', 'Breaking_News', 'FOX', 'Sports', 'WashingtonPost', 'MARCIN', 'news', 'CNBC', 'Television']
+
+input: atheism
+target: catholic
+isCorrect: False
+topN: ['God', 'theism', 'religion', 'Christ', 'Christianity', 'christianity', 'Jesus', 'Scripture', 'Atheism', 'zionism']
+
+input: Now
+target: www
+isCorrect: True
+topN: ['www', 'artgallery', 'losangeles', 'newyork', 'smallbiz', 'lasvegas', 'lpga', 'mcc', 'ccg', 'blackfriday']
+
+input: JULIANA
+target: Purple
+isCorrect: False
+topN: ['ASSORTED', 'PLANNER', 'EXPLANATION', 'JOB', 'FRAMED', 'KimKardashian', 'VEGAN', 'CLEANING', 'RADIOLOGY', 'EXCUSE']
+
+input: blueberry
+target: muffins
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'gardening', 'ParisHilton', 'wholefoods', 'WAHM', 'losangeles', 'blackfriday', 'artgallery', 'foodies']
+
+input: Essex
+target: Money
+isCorrect: False
+topN: ['Leeds', 'Dropshipping', 'Ruskington', 'Bensham', 'LOWESTOFT', 'KimKardashian', 'coventry', 'LCFC', 'COYB', 'COYS']
+
+input: startup
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'entrepreneurs', 'entrepreneurship', 'Mompreneur', 'Entrepreneur', 'Dropshipping', 'mompreneur', 'startups', 'WAHM', 'Startups']
+
+input: tattoo
+target: pen
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'Braless', 'Beauty', 'vh1', 'Makeup', 'OO7', 'Sexy', 'lingerie', 'Dropshipping']
+
+input: Tech
+target: Technology
+isCorrect: False
+topN: ['News', 'TechNews', 'Busines', 'Dropshipping', 'SmallBiz', 'MARCIN', 'blackfriday', 'Biz', 'Vloggers', 'EdTech']
+
+input: trader
+target: signals
+isCorrect: False
+topN: ['Dropshipping', 'HYIP', 'investment', 'Forex', 'Money', 'money', 'ThankYou', 'COYB', 'economy', 'stocks']
+
+input: work
+target: job
+isCorrect: True
+topN: ['job', 'Job', 'KimKardashian', 'lifehacker', 'ParisHilton', 'jobs', 'Dropshipping', 'COYB', 'jobsearch', 'WAHM']
+
+input: Oral
+target: Anal
+isCorrect: True
+topN: ['Anal', 'shemales', 'Pussy', 'Tranny', 'EGOS', 'Boobs', 'Codependency', 'Weightloss', 'Cum', 'KimKardashian']
+
+input: redemption
+target: BRL
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'lifehacker', 'WAHM', 'Dropshipping', 'mompreneur', 'becky', 'tunein', 'Mompreneur', 'vh1']
+
+input: Life
+target: Like
+isCorrect: False
+topN: ['KimKardashian', 'Dropshipping', 'ParisHilton', 'COYB', 'Mompreneur', 'WAHM', 'tunein', 'humanbeing', 'ECommerce', 'lifehacker']
+
+input: Washington
+target: Post
+isCorrect: False
+topN: ['Job', 'job', 'WAHM', 'Dropshipping', 'Mompreneur', 'KimKardashian', 'Homebased', 'Travel', 'ParisHilton', 'ECommerce']
+
+input: hiring
+target: job
+isCorrect: True
+topN: ['job', 'Job', 'jobs', 'employment', 'Homebased', 'Hiring', 'WAHM', 'Career', 'temp', 'internships']
+
+input: Health
+target: Supplement
+isCorrect: False
+topN: ['Weightloss', 'Fitness', 'Wellness', 'Workout', 'Homebased', 'Lifestyle', 'Health', 'Fit', 'ECommerce', 'Cardio']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Libra', 'Pisces', 'Virgo', 'Capricorn', 'Aries', 'Gemini', 'Horoscope', 'Scorpio', 'Aquarius']
+
+input: Zambia
+target: News
+isCorrect: False
+topN: ['Idlib', 'MARCIN', 'ASSORTED', 'losangeles', 'countryboy', 'artgallery', 'SmartDeploy', 'cebu', 'blackfriday', 'KimKardashian']
+
+input: DFS
+target: nfl
+isCorrect: True
+topN: ['nba', 'NBA', 'nhl', 'barcelona', 'mlb', 'blackfriday', 'seahawks', 'Knicks', 'nfl', 'lfc']
+
+input: MCM
+target: MCM
+isCorrect: False
+topN: ['Wellness', 'Weightloss', 'Mompreneur', 'Style', 'Beauty', 'WAHM', 'Dropshipping', 'ElPaso', 'KimKardashian', 'wholefoods']
+
+input: decoration
+target: architecture
+isCorrect: True
+topN: ['architecture', 'design', 'Design', 'SmartDeploy', 'datacenter', 'Designers', 'webdesign', 'UX', 'Prototyping', 'scsi']
+
+input: PETS
+target: VETERINARY
+isCorrect: False
+topN: ['PLANNER', 'ASSORTED', 'KimKardashian', 'MOVERS', 'FRAMED', 'RADIOLOGY', 'Dropshipping', 'EGOS', 'JOB', 'MIXTAPE']
+
+input: Maroc
+target: Morocco
+isCorrect: False
+topN: ['KimKardashian', 'Repost', 'F\xc3\xbatbol', 'ParisHilton', 'redes', 'ASSORTED', 'losangeles', 'Dropshipping', 'Vloggers', 'NYC']
+
+input: recycling
+target: Environment
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'SmartDeploy', 'ParisHilton', 'cebu', 'WAHM', 'ASSORTED', 'Cholecystectomy', 'SFMoMA', 'Mompreneur']
+
+input: AI
+target: BI
+isCorrect: False
+topN: ['Dropshipping', 'SmartDeploy', 'ECommerce', 'StackOverflow', 'WebDesign', 'DevOps', 'WAHM', 'EBook', 'AWeber', 'losangeles']
+
+input: DVD
+target: MOVIE
+isCorrect: False
+topN: ['Movies', 'Movie', 'KimKardashian', 'Dropshipping', 'movies', 'Vloggers', 'ParisHilton', 'movie', 'losangeles', 'EBook']
+
+input: life
+target: inspiration
+isCorrect: False
+topN: ['Dropshipping', 'KimKardashian', 'Mompreneur', 'ParisHilton', 'ECommerce', 'WAHM', 'SmartDeploy', 'LevelUp', 'socialnetworking', 'OldSchool']
+
+input: jobs
+target: pittsburgh
+isCorrect: False
+topN: ['losangeles', 'WAHM', 'artgallery', 'KimKardashian', 'Cleveland', 'Lafayette', 'lpga', 'Akron', 'Dropshipping', 'ElPaso']
+
+input: StarTrek
+target: Spock
+isCorrect: True
+topN: ['KimKardashian', 'scifi', 'lifehacker', 'Spock', 'StarTrek', 'ParisHilton', 'StarWars', 'blackfriday', 'starwars', 'vh1']
+
+input: MiddleEast
+target: Arab
+isCorrect: True
+topN: ['Syria', 'Yemen', 'Egypt', 'Iran', 'UAE', 'Israel', 'Arab', 'Syrian', 'Morocco', 'saudi']
+
+input: fintech
+target: Data
+isCorrect: False
+topN: ['Dropshipping', 'Startups', 'IT', 'B2B', 'banking', 'ECommerce', 'fintech', 'SmartDeploy', 'ecommerce', 'business']
+
+input: Biafra
+target: Nigeria
+isCorrect: False
+topN: ['Britain', 'UK', 'British', 'Brits', 'England', 'Australia', 'Scotland', 'Europe', 'Germany', 'France']
+
+input: chiropractor
+target: Portland
+isCorrect: False
+topN: ['losangeles', 'blackfriday', 'Dropshipping', 'Weightloss', 'EBook', 'KimKardashian', 'SmartDeploy', 'Homebased', 'artgallery', 'WAHM']
+
+input: Cancer
+target: Health
+isCorrect: True
+topN: ['Weightloss', 'Wellness', 'Health', 'Fitness', 'Codependency', 'Healthy', 'Healing', 'wellness', 'Pregnancy', 'Lifestyle']
+
+input: home
+target: fresh
+isCorrect: False
+topN: ['gardening', 'garden', 'Gardening', 'WAHM', 'Mompreneur', 'diy', 'mompreneur', 'landscaping', 'DIY', 'Dropshipping']
+
+input: Vancouver
+target: home
+isCorrect: False
+topN: ['Weather', 'Job', 'Homebased', 'Dropshipping', 'KimKardashian', 'ParisHilton', 'weather', 'blackfriday', 'SWFL', 'artgallery']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'streaming', 'spazio', 'netflix', 'vr', 'Dropshipping', 'dts', 'Streaming', 'Soundcloud', 'venice']
+
+input: Northwich
+target: Jobs
+isCorrect: False
+topN: ['losangeles', 'Dropshipping', 'Realestate', 'KimKardashian', 'artgallery', 'lpga', 'RADIOLOGY', 'EdTech', 'WAHM', 'Webdesign']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'streaming', 'spazio', 'netflix', 'vr', 'Dropshipping', 'dts', 'Streaming', 'Soundcloud', 'venice']
+
+input: consumers
+target: farm
+isCorrect: False
+topN: ['SmartDeploy', 'Dropshipping', 'infosec', 'socialnetworking', 'socialmedia', 'backlink', 'webdesign', 'adwords', 'SEO', 'ecommerce']
+
+input: Prince
+target: prince
+isCorrect: True
+topN: ['prince', 'Prince', 'royal', 'queen', 'Queen', 'King', 'throne', 'bride', 'fairy', 'Madonna']
+
+input: violin
+target: violinist
+isCorrect: False
+topN: ['becky', 'KimKardashian', 'katyperry', 'kpop', 'vh1', 'radiohead', 'ParisHilton', 'lifehacker', 'mmj', 'MIXTAPE']
+
+input: innovation
+target: digital
+isCorrect: False
+topN: ['tech', 'WAHM', 'business', 'socialnetworking', 'Dropshipping', 'B2B', 'Mompreneur', 'KimKardashian', 'infosec', 'ecommerce']
+
+input: beautiful
+target: handmade
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'becky', 'cebu', 'humanbeing', 'COYS', 'coventry', 'spazio', 'tasmania', 'tunein']
+
+input: Canada
+target: History
+isCorrect: False
+topN: ['Jobs', 'Dropshipping', 'blackfriday', 'KimKardashian', 'EdTech', 'losangeles', 'ParisHilton', 'WebDesign', 'Job', 'ECommerce']
+
+input: Facebook
+target: android
+isCorrect: False
+topN: ['StackOverflow', 'KimKardashian', 'blackfriday', 'BuzzFeed', 'LifeHacker', 'lifehacker', 'Dropshipping', 'socialmedia', 'Mashable', 'appstore']
+
+input: struggle
+target: fine
+isCorrect: False
+topN: ['tunein', 'humanbeing', 'KimKardashian', 'ParisHilton', 'lifehacker', 'yogini', 'sports', 'vh1', 'mompreneur', 'gardening']
+
+input: hiring
+target: Lafayette
+isCorrect: False
+topN: ['job', 'Job', 'jobs', 'employment', 'Homebased', 'Hiring', 'WAHM', 'Career', 'temp', 'internships']
+
+input: jobs
+target: Edgewood
+isCorrect: False
+topN: ['losangeles', 'WAHM', 'artgallery', 'KimKardashian', 'Cleveland', 'Lafayette', 'lpga', 'Akron', 'Dropshipping', 'ElPaso']
+
+input: win
+target: giveaway
+isCorrect: True
+topN: ['Giveaway', 'giveaway', 'Giveaways', 'sweepstakes', 'giveaways', 'Sweepstakes', 'Contest', 'prizes', 'Dropshipping', 'Giveway']
+
+input: snowflake
+target: triggered
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'Dropshipping', 'SFMoMA', 'blackfriday', 'vh1', 'etsy', 'lifehacker', 'becky', 'artgallery']
+
+input: Bitcoin
+target: Mercedes
+isCorrect: False
+topN: ['Dropshipping', 'blackfriday', 'WAHM', 'losangeles', 'SmartDeploy', 'ECommerce', 'B2B', 'KimKardashian', 'Busines', 'HYIP']
+
+input: hiring
+target: job
+isCorrect: True
+topN: ['job', 'Job', 'jobs', 'employment', 'Homebased', 'Hiring', 'WAHM', 'Career', 'temp', 'internships']
+
+input: job
+target: Cook
+isCorrect: False
+topN: ['Hospitality', 'Nursing', 'Healthcare', 'Homebased', 'Business', 'Wellness', 'Homecare', 'HealthCare', 'Retail', 'EdTech']
+
+input: Psychosis
+target: DCP
+isCorrect: False
+topN: ['Weightloss', 'Dropshipping', 'Homebased', 'KimKardashian', 'losangeles', 'ECommerce', 'Codependency', 'ParisHilton', 'Busines', 'Wellness']
+
+input: Pelicans
+target: Hawks
+isCorrect: False
+topN: ['Fitness', 'Coaching', 'Style', 'Leadership', 'Vloggers', 'KimKardashian', 'Parenting', 'Dogs', 'Eagles', 'Leaders']
+
+input: Saudi
+target: Arab
+isCorrect: True
+topN: ['UAE', 'Yemen', 'Qatar', 'Saudi', 'Egypt', 'Bahrain', 'Arab', 'Emirates', 'Syria', 'Qatari']
+
+input: Lawrenceville
+target: GA
+isCorrect: False
+topN: ['job', 'Job', 'KimKardashian', 'JOB', 'jobs', 'Dropshipping', 'blackfriday', 'WAHM', 'temp', 'ParisHilton']
+
+input: Broadway
+target: Jitney
+isCorrect: False
+topN: ['KimKardashian', 'ParisHilton', 'losangeles', 'Dropshipping', 'artgallery', 'MIXTAPE', 'blackfriday', 'vh1', 'Vloggers', 'spazio']
+
+input: hearings
+target: HHS
+isCorrect: False
+topN: ['WAHM', 'Mompreneur', 'Dropshipping', 'KimKardashian', 'ParisHilton', 'fashionista', 'Fashion', 'fashion', 'Dresses', 'bridal']
+
+input: fashion
+target: deal
+isCorrect: False
+topN: ['style', 'styles', 'Style', 'stylish', 'deco', 'retro', 'styling', 'funky', 'decor', 'KimKardashian']
+
+input: fragrance
+target: beauty
+isCorrect: True
+topN: ['beauty', 'Beauty', 'skincare', 'beautiful', 'cosmetics', 'Makeup', 'Skincare', 'maquillage', 'fashion', 'Fashion']
+
+input: ACA
+target: healthcare
+isCorrect: False
+topN: ['Obamacare', 'ObamaCare', 'obamacare', 'mmj', 'medicaid', 'Dropshipping', 'ASSORTED', 'obama', 'teaparty', 'TeaParty']
+
+input: travel
+target: cruise
+isCorrect: False
+topN: ['holidays', 'holiday', 'vacations', 'vacation', 'CyberMonday', 'blackfriday', 'KimKardashian', 'Vacation', 'Christmas', 'Dropshipping']
+
+input: porn
+target: sex
+isCorrect: True
+topN: ['sex', 'sexual', 'Sex', 'masturbation', 'gay', 'erotic', 'blowjobs', 'porn', 'porno', 'lesbians']
+
+input: DIY
+target: Tools
+isCorrect: False
+topN: ['KimKardashian', 'WAHM', 'Dropshipping', 'Mompreneur', 'ECommerce', 'ParisHilton', 'losangeles', 'EBook', 'BlackFriday', 'Webdesign']
+
+input: gardening
+target: Garde
+isCorrect: False
+topN: ['gardening', 'garden', 'Gardening', 'Dropshipping', 'KimKardashian', 'WAHM', 'losangeles', 'ParisHilton', 'diy', 'landscaping']
+
+input: News
+target: Investing
+isCorrect: False
+topN: ['losangeles', 'KimKardashian', 'Weightloss', 'Dropshipping', 'SmallBiz', 'Biz', 'WAHM', 'ECommerce', 'blackfriday', 'Onsale']
+
+numCorrect: 70.0 percCorrect: 0.252707581227
