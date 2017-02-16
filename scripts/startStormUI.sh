@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ~/apache-storm-0.9.5/bin/storm ui
+sudo ~/apache-storm-1.0.3/bin/storm ui

@@ -5,14 +5,14 @@ import java.util.Arrays;
 import twitter4j.*;
 import twitter4j.conf.*;
 import java.util.List;
-import backtype.storm.tuple.Fields;
-import backtype.storm.tuple.Values;
+import org.apache.storm.tuple.Fields;
+import org.apache.storm.tuple.Values;
 
-import backtype.storm.task.OutputCollector;
-import backtype.storm.task.TopologyContext;
-import backtype.storm.topology.IRichBolt;
-import backtype.storm.topology.OutputFieldsDeclarer;
-import backtype.storm.tuple.Tuple;
+import org.apache.storm.task.OutputCollector;
+import org.apache.storm.task.TopologyContext;
+import org.apache.storm.topology.IRichBolt;
+import org.apache.storm.topology.OutputFieldsDeclarer;
+import org.apache.storm.tuple.Tuple;
 
 import java.io.FileOutputStream;
 import java.io.OutputStream;
@@ -29,7 +29,7 @@ public class TwitterCleanerBolt implements IRichBolt {
     boolean useTopicSelector = false;
     String language = new String("en");
     List<String> topics = Arrays.asList("politics","entertainment",
-            "world","us","business","opinion","tech","science","health", 
+            "world","us","business","opinion","tech","science","health",
             "sports", "art", "style", "food", "travel");
 
     /**
@@ -56,7 +56,7 @@ public class TwitterCleanerBolt implements IRichBolt {
     public void execute(Tuple tuple) {
 
         Status tweet = (Status) tuple.getValueByField("tweet");
-        
+
         // return criterion
         if(!tweet.getLang().equals(language))
             return;
@@ -71,15 +71,13 @@ public class TwitterCleanerBolt implements IRichBolt {
         txt = this.removeUrl(txt);
         txt = txt.replace("\n", "");
         txt = txt.toLowerCase();
-        
-            
+
+
         // extract hashtags
         String hasht = "\nhashtags: ";
         boolean keep = false;
         for(HashtagEntity hashtage : tweet.getHashtagEntities()) {
-            this.collector.emit(new Values(hashtage.getText())); 
-
-            // only select tweets that have hashtags/topics co-occurrence. 
+            // only select tweets that have hashtags/topics co-occurrence.
             if(this.useTopicSelector == true){
 
                 for(String s:this.topics) {
@@ -100,15 +98,17 @@ public class TwitterCleanerBolt implements IRichBolt {
 
         //removes multiple whitespace, hashtag entries, and tag entries
         String finaltext = txt.replaceAll("#[^\\s]+","").replaceAll("@[^\\s]+","").replaceAll("( )+", " ");
-    
+
         //remove characters we don't want
-        finaltext = preserveASCII(finaltext); 
-        
+        finaltext = preserveASCII(finaltext);
+
+        //emit onto the kafka bolt
+        this.collector.emit(new Values(finaltext + hasht));
+
         finaltext = "\n\ntext: " + finaltext;
-    
+
         if(finaltext.length()<60)
             return;
-
         try {
             oStream = new FileOutputStream(System.getProperty("user.home")+"/tweetnet/data/dump.txt", true);
             oStream.write(finaltext.getBytes());
@@ -118,7 +118,6 @@ public class TwitterCleanerBolt implements IRichBolt {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-            
     }
 
         /**
@@ -134,7 +133,7 @@ public class TwitterCleanerBolt implements IRichBolt {
      **/
     @Override
     public void declareOutputFields(OutputFieldsDeclarer declarer) {
-        declarer.declare(new Fields("postCleanedTweets"));
+        declarer.declare(new Fields("message"));
     }
 
     /**
@@ -181,10 +180,10 @@ public class TwitterCleanerBolt implements IRichBolt {
     public static String removeUrl(String tweet) {
         try{
             String urlPattern = "((https?|ftp|gopher|telnet|file|Unsure|http|https):((//)|(\\\\))+[\\w\\d:#@%/;$()~_?\\+-=\\\\\\.&]*)";
-            
+
             Pattern p = Pattern.compile(urlPattern,Pattern.CASE_INSENSITIVE);
             Matcher m = p.matcher(tweet);
-            
+
             // re-assigns str while removing URLs
             int i = 0;
             while (m.find()) {
@@ -199,4 +198,4 @@ public class TwitterCleanerBolt implements IRichBolt {
         }
     }
 
-} 
+}
