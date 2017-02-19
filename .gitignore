@@ -22,7 +22,7 @@
 *.bmp
 runAPI.sh
 *.gz
-
+*.log
 # misc data files#
 *.html
 *.pkl
