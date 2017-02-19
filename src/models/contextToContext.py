@@ -3,6 +3,8 @@ import os
 import sys
 import numpy
 from numpy import shape
+from numpy import random
+from random import shuffle
 import cPickle as pickle
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..","utils")))
 import time
@@ -19,33 +21,54 @@ from predContext import predContext, createHtDict
 from keras.layers import PReLU
 hashtags = pickle.load(open(expanduser("~/tweetnet/data/englishHashtag.pkl"),"rb"))
 dictionary = pickle.load(open(expanduser("~/tweetnet/data/word2vec_dict.pkl"), "rb"))
+hashtagFreq = pickle.load(open(expanduser("~/tweetnet/data/hashtagFreq.pkl"), "rb"))
 
-data = numpy.zeros([len(hashtags),300])
-label = numpy.zeros([len(hashtags),300])
+idx_shuf = range(len(hashtags))
+shuffle(idx_shuf)
+freqThreshold = 84
+hashtags_shuf = []
+context_shuf = []
+hashtagFreqCnt = {}
+
+for i in idx_shuf:
+    ht = hashtags[i].split(" ")
+    if hashtagFreq[ht[2]] >= freqThreshold:
+	if hashtagFreqCnt.get(ht[2]) == None:
+
+            hashtagFreqCnt[ht[2]] = 1
+            hashtags_shuf.append(ht[2])
+            context_shuf.append(ht[1])
+
+        elif hashtagFreqCnt[ht[2]] < freqThreshold:
+
+            hashtagFreqCnt[ht[2]] += 1
+            hashtags_shuf.append(ht[2]) 
+            context_shuf.append(ht[1])
+
+data = numpy.zeros([len(hashtags_shuf),300])
+label = numpy.zeros([len(hashtags_shuf),300])
 inputStringLabel = []
 outputStringLabel = []
-for i in range(len(hashtags)):
-    line = hashtags[i]
-    listHashtag = line.split()
-    data[i,:]=dictionary[listHashtag[1]]
-    label[i,:]=dictionary[listHashtag[2]]
-    inputStringLabel.append(listHashtag[1])
-    outputStringLabel.append(listHashtag[2])
+for i in range(len(hashtags_shuf)):
+    data[i,:]=dictionary[context_shuf[i]]
+    label[i,:]=dictionary[hashtags_shuf[i]]
+    inputStringLabel.append(context_shuf[i])
+    outputStringLabel.append(hashtags_shuf[i])
 
 htDic = createHtDict(dictionary, outputStringLabel)
 
 # Train and Test split
-trainPercent = 0.99
+trainPercent = 0.95
 nTrainData = numpy.round(len(data)*trainPercent).astype(int)
-topN = 10
+topN = 4
 nEpoch = 5000
 logAllPredictions = True
 trainData = data[0 : nTrainData]
-testData = data[nTrainData + 1 :]
-testInputStringLabel = inputStringLabel[nTrainData + 1 :]
+testData = data[nTrainData :]
+testInputStringLabel = inputStringLabel[nTrainData:]
 print testData.shape
 trainLabel = label[0 : nTrainData]
-testOutputStringLabel = outputStringLabel[nTrainData + 1 :]
+testOutputStringLabel = outputStringLabel[nTrainData:]
 
 
 model = Sequential()
@@ -83,6 +106,6 @@ for epoch in range(nEpoch):
     
     accuracy = correctCnt*1.0 / len(testData)
     #always log accuracy
-    log.append([correctCnt, accuracy]);
-    logger(log,name);
+    log.append([correctCnt, accuracy])
+    logger(log,name)
         

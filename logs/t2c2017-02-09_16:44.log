@@ -1,0 +1,1389 @@
+
+ ########################################## 
+EPOCH: 0
+input: we often get asked advice about blogging. here is our advice for a successful 
+target: blog
+isCorrect: False
+topN: ['sex', 'crime', 'news', 'forex', 'fun']
+
+input: this counts, in part, as draining the swamp in my book. 
+target: Assange
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: the best all over the word abba - gimme! gimme! gimme! (a man after midnight )
+target: pop
+isCorrect: False
+topN: ['music', 'sex', 'fun', 'SoundCloud', 'Cosplay']
+
+input: his last bow: a reminiscence of sherlock holmes - sir arthur... 
+target: Classics
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: gloomy morning in naples, but a great day for a final walkthrough. 
+target: newbuild
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'girls']
+
+input: closed buy 1.2 lots eurusd 1.06074 for +12.0 pips, total for today +54.7 pips 
+target: Account
+isCorrect: False
+topN: ['forex', 'FOREX', 'Profit', 'fun', 'sex']
+
+input:  / for bordeaux, f for now (04h28m01s ut): 0838'28.8'' (ac) / 0017'42.4'' (mc)
+target: Sagittarius
+isCorrect: False
+topN: ['Capricorn', 'Libra', 'Sagittarius', 'Gemini', 'Taurus']
+
+input: i've entered to 15 for amazon via enter via link! 
+target: win
+isCorrect: False
+topN: ['music', 'fun', 'sex', 'Music', 'SoundCloud']
+
+input: acmcclockeuro: / for budapest, h for now (21h28m01s ut): 0453'10.0'' (ac) / 0603'50.6'' (mc)
+target: Libra
+isCorrect: False
+topN: ['Capricorn', 'Sagittarius', 'Libra', 'Gemini', 'Taurus']
+
+input:  fast paced, easy to read fantasy thriller about 
+target: Tween
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'forex']
+
+input: start wholesaling real estate with me and learn from the pros 
+target: Mastermind
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'news']
+
+input: 6 telltale signs youre much smarter than average by 
+target: hack
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'jobsearch']
+
+input: 19th collection 65 73 113 etc bureaus banknotes etc faults us 4747
+target: Stamp
+isCorrect: False
+topN: ['sex', 'fun', 'girls', 'crime', 'teen']
+
+input:  3 different ways to lose weight ://t.co/a88tvdocbl 
+target: Solution
+isCorrect: False
+topN: ['fun', 'Music', 'Cosplay', 'Buzz', 'Basketball']
+
+input: . has been sidelined in they will now seek revenge by killing civilians 
+target: Syria
+isCorrect: False
+topN: ['SoundCloud', 'music', 'Music', 'Instagram', 'sex']
+
+input: check out ceramic tile of handmade from italy mod.1 via 
+target: Templar
+isCorrect: False
+topN: ['music', 'sex', 'SoundCloud', 'fun', 'Music']
+
+input: the best in the world kelly clarkson - heartbeat song
+target: rock
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input:  authentic signed autographed 8x10 holo ga coa
+target: Photograph
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'basketball', 'Buzz']
+
+input:  firework  albums: teenage dream: the complete confection | song tittle:
+target: Music
+isCorrect: False
+topN: ['Music', 'music', 'SoundCloud', 'Salsa', 'Media']
+
+input:  he has the right to criticize who has the heart to help. -abraham lincoln 
+target: quotes
+isCorrect: False
+topN: ['quotes', 'quote', 'news', 'blog', 'updates']
+
+input: closed buy 3.4 lots eurusd 1.06273 for +3.6 pips, total for today +8.6 pips 
+target: Profit
+isCorrect: False
+topN: ['Profit', 'FOREX', 'forex', 'Bitcoin', 'Cosplay']
+
+input: jesus didn't know anything about the cross.the early symbol of the christians was a fish. 
+target: Farrakhan
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: if barbie were real, she would be too skinny to bear children, and to disproportionate to walk upright. 
+target: quotes
+isCorrect: False
+topN: ['sex', 'fun', 'SoundCloud', 'crime', 'music']
+
+input: i want 2 the of "if you were me & lived ..ancient china: han dynasty" 
+target: giveaway
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'girls', 'teen']
+
+input:  though you cannot go back and start again, you can start from now and have a brand new end. -unknown author 
+target: quotes
+isCorrect: False
+topN: ['quotes', 'quote', 'news', 'blog', 'updates']
+
+input:  crisis... to recruit foreign spotted the trouble in this global 
+target: Kenya
+isCorrect: False
+topN: ['fun', 'sex', 'crime', 'music', 'SoundCloud']
+
+input: i just finished walking 11.03 km in 1h:42m:52s with 
+target: endorphins
+isCorrect: False
+topN: ['fun', 'sex', 'girls', 'music', 'crime']
+
+input:  christopher gagliardi electoral speech dec. 19 2016 and to all people 
+target: RT
+isCorrect: False
+topN: ['fun', 'sex', 'crime', 'music', 'Cosplay']
+
+input:  there is a reason he isnt asking real leadership 2 meet  
+target: Racist
+isCorrect: False
+topN: ['fun', 'sex', 'crime', 'music', 'Cosplay']
+
+input:  tu venganza - dirty revenge sex with naughty big assed latina teen
+target: beautiful
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'girls']
+
+input: * * * collectibles 4 sale * * * check out my & to see my cool items 
+target: eBay
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input:  citi: gold is | check out these returns! >>> follow our trading!
+target: forex
+isCorrect: False
+topN: ['sex', 'forex', 'fun', 'crime', 'music']
+
+input: got the war paint on ready to get shit done today :) 
+target: fashion
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: hezekiah walker & lfc feat. ricardo sanchez - moving forward 
+target: Praise
+isCorrect: False
+topN: ['sex', 'music', 'fun', 'crime', 'teen']
+
+input: despite the facts, trump once again embraces vaccine skeptics 
+target: now
+isCorrect: False
+topN: ['crime', 'sex', 'news', 'forex', 'News']
+
+input:  not elected idiot. you are your cabinet does not agree with you because they know u are 
+target: loco
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: unconcerned with patriotism & health of the republic,democrat land mines shows no love of america.  
+target: Trump
+isCorrect: False
+topN: ['sex', 'SoundCloud', 'music', 'fun', 'crime']
+
+input: preparations for tomorrow's open day. come and see us! 10-4 
+target: cake
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'girls', 'teen']
+
+input: betty puts you in touch with all the top tipsters top bookies on horse a must see free tips at
+target: Racing
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'forex']
+
+input: listen to t.i. 8ball&mjg- boo by cleveland2cleveland (en) on 
+target: SoundCloud
+isCorrect: False
+topN: ['Music', 'music', 'SoundCloud', 'sex', 'Cosplay']
+
+input: check out 45 cts gemstone ruby .925 handmade sterling silver ring jewelry via 
+target: CRYSTAL
+isCorrect: False
+topN: ['sex', 'music', 'Music', 'fun', 'teen']
+
+input: president obamas farewell speech via privacy rule of law and civil liberties
+target: respect
+isCorrect: False
+topN: ['sex', 'music', 'fun', 'Music', 'crime']
+
+input:  4 passes and a bottle of champagne worth 189! 
+target: Competition
+isCorrect: False
+topN: ['fun', 'music', 'sex', 'basketball', 'Cosplay']
+
+input: subscribe to receive information for the upcoming and 
+target: competitions
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'forex']
+
+input: irving - team manager customer care center irving tx - company overview adt is a leadi... 
+target: USA
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'SoundCloud', 'crime']
+
+input:  great reminder! god is good & in his name i fight for & "love or perish" believed it as do i
+target: Equality
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'SoundCloud']
+
+input: bonjour! can top up in the table? we think so! 
+target: Reims
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'teen']
+
+input: if you ever ask me again why japan: watch this film: most liveable city: 
+target: Tokyo
+isCorrect: False
+topN: ['music', 'sex', 'fun', 'crime', 'SoundCloud']
+
+input: want best chef/host for la's hottest food truck co. 
+target: jobsearch
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input:  air jordan ix 9 og space jam playoff black white true red 302370-112 
+target: Nike
+isCorrect: False
+topN: ['sex', 'fun', 'teen', 'crime', 'Cosplay']
+
+input: terry sawchuk earns first shutout in 1-0 win vs jan. 15 1950. there would be 102 more.
+target: Rangers
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'teen', 'crime']
+
+input: not setting your alarm because it does not work? 01162654200 for a quote for it, & a
+target: repairing
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'Music', 'crime']
+
+input: 7 tools every digital entrepreneur must use via jeffbullas
+target: digital
+isCorrect: False
+topN: ['music', 'Music', 'sex', 'teen', 'crime']
+
+input: please rt? ikea gulliver crib review: how it's holding up
+target: babies
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input:  new sweat size xl pro player crewneck long sleeve 
+target: Jersey
+isCorrect: False
+topN: ['music', 'Music', 'SoundCloud', 'sex', 'Cosplay']
+
+input: i love where i work. i get to make people smile all day long  
+target: fife
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: i feel lucky to be alive at the time of barack obama. 
+target: hope
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: see how helps drive innovation in join this webcast to learn more: 
+target: healthcare
+isCorrect: False
+topN: ['job', 'sex', 'fun', 'crime', 'jobs']
+
+input:  fetty wap - friends (ft. juugman & 4k tayy) listen now 
+target: urban
+isCorrect: False
+topN: ['SoundCloud', 'np', 'nintendo', 'music', 'DnB']
+
+input: rising sea levels due to and it's consequences. there is no getting away from disaste
+target: climatechange
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: enter to an prize pack with $25 gift code via 
+target: giveaway
+isCorrect: False
+topN: ['sex', 'music', 'fun', 'crime', 'Deals']
+
+input: i live in & my new year's resolution is to with - watch now: share 
+target: SRK
+isCorrect: False
+topN: ['music', 'fun', 'sex', 'crime', 'Music']
+
+input: this is & the penetration of our legal system. 
+target: RT
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'girls']
+
+input:  alert: internal medicine - physician: d&y - atlanta, ga for more jobs >>> please go2 our page!
+target: Atlanta
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'teen', 'music']
+
+input: enjoy life by limiting your emotional baggage to... - tim fargo 
+target: quote
+isCorrect: False
+topN: ['quotes', 'quote', 'news', 'sex', 'fun']
+
+input: 01-17 hamilton stars to guest on law &amp; order: svu 
+target: hamilton
+isCorrect: False
+topN: ['sex', 'fun', 'FL', 'music', 'teen']
+
+input: keep -> "every fool knows you can't touch the stars, but it doesn't stop a wise man from trying." - harry anderson 
+target: quote
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: check out the cuteness factor! boy knit romper blue white striped by mrsdinkerson via 
+target: Baby
+isCorrect: False
+topN: ['SoundCloud', 'music', 'sex', 'Music', 'fun']
+
+input: orlando fl - duct mechanics - large commercial hvac company looking for duct foremen... 
+target: HVAC
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input: "a voice for indigenous canadians defends his claim to be one" - 
+target: news
+isCorrect: False
+topN: ['music', 'fun', 'sex', 'crime', 'SoundCloud']
+
+input: gamer pickup today prisoners of war by snk for the nes. 
+target: nintendo
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'SoundCloud', 'crime']
+
+input: another sold! cum see why i'm the hottest, meanest, and most popular 
+target: brat
+isCorrect: False
+topN: ['fun', 'sex', 'crime', 'news', 'music']
+
+input:  2015-16 absolute base chris mccullough san antonio 767/999 
+target: Cards
+isCorrect: False
+topN: ['sex', 'fun', 'Cosplay', 'Buzz', 'girls']
+
+input: a report by on best practices for of the more orgs should strive towards this.
+target: disabled
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: kim kardashians suspected robbers identities revealed updated 
+target: crime
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'news']
+
+input:  nashville, tn weather :: 57f overcast and breezy 
+target: Spon
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'girls', 'music']
+
+input: i ask all mhas time to put a moratorium on hydro development this is our home 
+target: Labrador
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'SoundCloud']
+
+input: then can you demonstrate that a god exists, vs 
+target: faith
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'news']
+
+input:  - disruption deluxe: the new amazon prime credit card, by awais ahmed -
+target: credit
+isCorrect: False
+topN: ['music', 'sex', 'fun', 'SoundCloud', 'crime']
+
+input:  super watch heart rate monitor black large-used
+target: Watches
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: the "smell of fear" is real, all humans give off a detectable scent when they are sufficiently scared. 
+target: quotes
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'girls']
+
+input: free article - symptoms of in survivors of malmo & laidlaw 
+target: JTD
+isCorrect: False
+topN: ['music', 'sex', 'fun', 'SoundCloud', 'Cosplay']
+
+input: i just entered to win a $100 target gift card, you can too! 
+target: sweepstakes
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'teen']
+
+input: we will blast your tweet to our followers tag us for free retweet!
+target: music
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'teen', 'girls']
+
+input: "my weed smell like skunks".... girls, smoking blunts, listening ....we way high
+target: two
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'girls']
+
+input:  retro air jordan 6 carmine white / red / black men's size 11 
+target: Nike
+isCorrect: False
+topN: ['Cards', 'NFL', 'Browns', 'Music', 'Basketball']
+
+input:  jason sudeikis reveals son otis' hilarious name for beyonc: one of the smallest members of the beyh
+target: fashion
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'SoundCloud']
+
+input:  what i am looking for is a blessing not in disguise. -kitty o'neill collins 
+target: quotes
+isCorrect: False
+topN: ['quotes', 'quote', 'news', 'blog', 'updates']
+
+input: liverpool vs. dortmund: match thread, how to watch 
+target: liverpool
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'Buzz']
+
+input: rt rt! sign up for my monthly email blast at  and be entered to win all 4
+target: giveaway
+isCorrect: False
+topN: ['sex', 'fun', 'girls', 'teen', 'crime']
+
+input: msp pulls trio over involved in possible iphone identity theft ring 
+target: iphone
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'forex']
+
+input: 86% off! reg $75.99 now $10.93! eye pendant handmade ooak sculpture necklace or 
+target: Cosplay
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'forex']
+
+input:  why things catch on by jonah berger | animated review 
+target: marketing
+isCorrect: False
+topN: ['music', 'Music', 'SoundCloud', 'sex', 'fun']
+
+input: mt 7 days left to apply to the 2017 wise awards for projects in 
+target: education
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'teen', 'girls']
+
+input: my thoughts and prayers are with and stay safe.
+target: Kandahar
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'girls']
+
+input:  spacex poised to launch for first time since sept blast: the stakes for spacex are high after a
+target: News
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'forex', 'music']
+
+input: this might be a great fit for you: production worker - kentucky 
+target: Manufacturing
+isCorrect: False
+topN: ['Hospitality', 'Manufacturing', 'job', 'jobs', 'Security']
+
+input: this girl is horny like hell. you can watch and chat for free: 
+target: sex
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: men who take vacations every year lower their risk of heart disease by 20%.  
+target: quotes
+isCorrect: False
+topN: ['SoundCloud', 'sex', 'forex', 'iphone', 'music']
+
+input: cruise planning? get to the ship for free w the lyft app. use credit code lick for free rides credit 
+target: vacation
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'teen']
+
+input: 2014 sterling refractor jarvis landry auto rc sp dolphins 
+target: NFL
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'forex']
+
+input: delicious free home delivery* t&cjust call  07126099888
+target: Chinese
+isCorrect: False
+topN: ['sex', 'music', 'girls', 'Cosplay', 'fun']
+
+input: best mug i own...i never thought i could relate so much to a mug 
+target: unicorn
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: see our latest ga and click to apply: area tire care manager - 
+target: job
+isCorrect: False
+topN: ['job', 'jobs', 'Jobs', 'jobsearch', 'Manufacturing']
+
+input: the universe was made by god to give you what you are willing to work for. 
+target: Farrakhan
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input:  with my god brother the best dj hmoneybagzzz  bedfordstuyvesant,
+target: Brooklyn
+isCorrect: False
+topN: ['SoundCloud', 'music', 'Music', 'YouTube', 'video']
+
+input:  jordan retro 3 88 air white cement men's new sz 13 
+target: Nike
+isCorrect: False
+topN: ['Cosplay', 'fun', 'Toy', 'music', 'Music']
+
+input: profitable with 3.6% daily with your to know more 
+target: Bitcoin
+isCorrect: False
+topN: ['SoundCloud', 'sex', 'music', 'fun', 'iphone']
+
+input: you are absolutely doing your a disservice by not featuring on your 
+target: video
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: does martin odegaard have a future at real madrid?: the 18-year-old 
+target: Media
+isCorrect: False
+topN: ['music', 'fun', 'sex', 'SoundCloud', 'Music']
+
+input: want to work at state of vermont? we're in vt! click for details: 
+target: Montpelier
+isCorrect: False
+topN: ['Columbus', 'Phoenix', 'Pittsburgh', 'Atlanta', 'Baltimore']
+
+input:  child kidnapped from florida hospital discovered protected 18 years later 
+target: BreakingNews
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'forex', 'music']
+
+input:  us stock cute black baby boy girl kid crochet headband hair band flower 
+target: headbands
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: in 2015, they abused uhuru for carrying ngina to france but see what raila did in acc 
+target: Startups
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'news', 'music']
+
+input: slough uk - acca or aat client / bookkeeper - bucks to 30000 - ... and book-keeper to join... 
+target: CPA
+isCorrect: False
+topN: ['sex', 'FL', 'fun', 'SoundCloud', 'teen']
+
+input: tooge 6 pcs hexagonal speed & agility training 
+target: basketball
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: see our latest mn and click to apply: shift manager - 
+target: Hospitality
+isCorrect: False
+topN: ['job', 'jobs', 'Jobs', 'business', 'jobsearch']
+
+input:  ??? : shameless couple caught having sex in a...
+target: Boobs
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input:  is one of the best examples of what's wrong with the and 
+target: Congress
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'teen']
+
+input: check out "married to da streets" by | get it: | by 
+target: single
+isCorrect: False
+topN: ['Music', 'music', 'fun', 'SoundCloud', 'Salsa']
+
+input: actuarial analyst (junior/intermediate/senior): economical insurance (waterloo): "if you are 
+target: jobs
+isCorrect: False
+topN: ['jobs', 'job', 'Jobs', 'Manufacturing', 'jobsearch']
+
+input: null / for marseille, f for now (11h28m01s ut): 0554'53.6'' (ac) / 1858'15.6'' (mc)
+target: Taurus
+isCorrect: False
+topN: ['Capricorn', 'Sagittarius', 'Libra', 'Gemini', 'Taurus']
+
+input: find line  orsini dinettes and leather in  (732) 414-2880 
+target: Mattress
+isCorrect: False
+topN: ['sex', 'fun', 'girls', 'music', 'crime']
+
+input: the anti-kryptonite for small business - turn yourself into a superhero 
+target: business
+isCorrect: False
+topN: ['job', 'jobs', 'jobsearch', 'sex', 'crime']
+
+input: rt no pass on sewer fees for community garden. ://t.co/oorjlccc7e
+target: Garde
+isCorrect: False
+topN: ['sex', 'Eating', 'fun', 'health', 'fitness']
+
+input: see our latest az and click to apply: mental health coordinator - 
+target: job
+isCorrect: False
+topN: ['job', 'jobs', 'Jobs', 'jobsearch', 'business']
+
+input:  750 chocolate brown by2456 - us size 9 - brand new in box!
+target: Deals
+isCorrect: False
+topN: ['fun', 'SoundCloud', 'music', 'sex', 'Cosplay']
+
+input: parts sales manager - amherst, ny 14226, us pls rt: amherst, new york autozone, the nations leading
+target: Amherst
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'forex']
+
+input: press release  learning tree international announces fourth quarter and fiscal year 2016 results on 
+target: Clou
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'forex', 'girls']
+
+input: j-thuro airs daily 9-11pm-est on click link & my 
+target: request
+isCorrect: False
+topN: ['SoundCloud', 'music', 'fun', 'sex', 'Cosplay']
+
+input: granite gear stratus latitude backpacking pack (m) at tactical gear zone -> 
+target: camping
+isCorrect: False
+topN: ['music', 'sex', 'fun', 'SoundCloud', 'Cosplay']
+
+input:  person from juan solis vega, 56 year-old hispanic male with dementia
+target: Compton
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'SoundCloud', 'crime']
+
+input:  us $13.99automatic fishing net shrimp cage nylon 
+target: trap
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: intense! ! (a friend had this lighter i had to share like two in one!!) 
+target: cheap
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'teen', 'girls']
+
+input:  re: patch tip/core/rcu 2/3 srcu: force full grace-period ordering 
+target: kernel
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'job', 'music']
+
+input: a hot ride into the private life of wet cam girls! 
+target: sex
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: madison nj - - description this fortune 500 client of ours is ... 
+target: financial
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'girls', 'teen']
+
+input: i really cant wait to go to & shoot with some of my creative artist that ive always liked cybilltroy goddessbrianna1
+target: fetish
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'Cosplay']
+
+input: tonight is the second heat of lithuania's national selection for 2017! 
+target: Lithuania
+isCorrect: False
+topN: ['fun', 'sex', 'crime', 'music', 'teen']
+
+input: wtfzodiacsigns:gemini, cancer, virgo, scorpio, capricorn, aquarius keep reading 
+target: Inspiration
+isCorrect: False
+topN: ['sex', 'crime', 'news', 'fun', 'forex']
+
+input: police detained a protester because he had blood on his hands - how ironic! or cos consulate asked them to? 
+target: Melb
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'teen']
+
+input:  baby photo album 240 photos 5 pocket pages boy girl memory book picture newborn
+target: fun
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'Cosplay']
+
+input: what if actually played a position he was good at? spoiler: war comparable to bryce harper! via 
+target: mlb
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: a1 heiligharn 200 den helder - 1785sr 200  january 14, 2017 at 01:05pm  
+target: FOLLOW
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'forex', 'SoundCloud']
+
+input:  adolescent marijuana use may be on the rise after all, new  & 
+target: stocks
+isCorrect: False
+topN: ['music', 'fun', 'sex', 'Music', 'SoundCloud']
+
+input: "i said: time to get up and start the day! and this is the look i got." 
+target: dog
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'SoundCloud', 'crime']
+
+input: rt masergy: the most underestimated it security threat for 2017 --> 
+target: Priva
+isCorrect: False
+topN: ['sex', 'fun', 'SoundCloud', 'music', 'Cosplay']
+
+input: out at church's? claim your $50 free lyft ride credit today < coupon code: linx > 
+target: healthy
+isCorrect: False
+topN: ['fun', 'Cosplay', 'sex', 'music', 'SoundCloud']
+
+input: if void-jar is used in the world, it shall be a cosmic scale. for 
+target: OS
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'teen', 'crime']
+
+input: cardiac surgeons are paid to get to the heart of the matter 
+target: startup
+isCorrect: False
+topN: ['fun', 'sex', 'crime', 'music', 'forex']
+
+input: read books astrology for the soul ebook paranormal- astrology free classifieds ads
+target: books
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input:  such a through the and letting the play tricks with
+target: beautiful
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'SoundCloud']
+
+input: is your tired of struggling to find leads? check out our free training!
+target: Instagram
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: if you want wild sexual shows check what these hot babes have to offer. 
+target: sex
+isCorrect: False
+topN: ['SoundCloud', 'music', 'sex', 'fun', 'Instagram']
+
+input: oh, cool beans, complete is now available online completely!
+target: photography
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'girls', 'crime']
+
+input: sir - thinking of this model feasibility in why don't get inspiration frm success?
+target: Chinese
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input: acmcclockeuro: / for budapest, h for now (12h58m01s ut): 2615'31.6'' (ac) / 2530'18.6'' (mc)
+target: Gemini
+isCorrect: False
+topN: ['Libra', 'Capricorn', 'Sagittarius', 'Gemini', 'Taurus']
+
+input:  eat drink and be healthy on the super natural plan cookbook dr. ted sharon broer
+target: Eating
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: 1099 & w-2 filing deadline is near! click link for discounted forms/envelopes 
+target: b2b
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'teen', 'music']
+
+input: know anyone in college that needs help with programming? spread the word. 
+target: ireland
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input: live streaming umea city ibk v granlo bk tv watch january 15, 2017 
+target: stream
+isCorrect: False
+topN: ['fun', 'sex', 'Cosplay', 'teen', 'girls']
+
+input: now hiring - class a cdl drivers, dock workers -tacoma , wa - reddaway (tacoma) | link in bio | 
+target: jobs
+isCorrect: False
+topN: ['Music', 'music', 'jobs', 'SoundCloud', 'job']
+
+input: if you're having trouble paying for medicine to save your life, thank a conservative. 
+target: liberal
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: track powered autonomous boat voyager across atlantic
+target: Solar
+isCorrect: False
+topN: ['sex', 'crime', 'forex', 'fun', 'news']
+
+input:  when two men in business always agree, one of them is unnecessary. ~ezra pound 
+target: men
+isCorrect: False
+topN: ['quotes', 'quote', 'news', 'blog', 'pictures']
+
+input: ocean excitement happens everywhere here, even above the surface! 
+target: surfing
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: until the early 1800s, the slang term for balls was "twiddle-diddles." 
+target: quotes
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: youporn brutalclips - sadie begs for a big black cock 
+target: video
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'Buzz', 'crime']
+
+input: battery packs on second-generation boosted boards recalled 
+target: News
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'forex']
+
+input:  1982 press "trail of the pink panther" & burt kwouk 
+target: Photo
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: twenty years after diana campaign, new landmine crisis plagues iraq and syria 
+target: Security
+isCorrect: False
+topN: ['sex', 'news', 'crime', 'forex', 'jobsearch']
+
+input:  this chirp is hack proof!donnie,told you barry was racist he said "brown kids"!! 
+target: Classified
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'girls', 'teen']
+
+input: 'moonlight' saves best for last, wins best drama at golden globes 
+target: Startups
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'forex']
+
+input: you don't have to look through this vase to know its going to look amazing on your 
+target: tabletop
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'education']
+
+input: see our latest kentucky and click to apply: truck driver  cdl class a/touch freight ... -
+target: job
+isCorrect: False
+topN: ['quotes', 'quote', 'job', 'sex', 'news']
+
+input: what to do about a child s... chris paul kurt angle golden state roy williams gene
+target: Albuquerque
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: sparkling just like a of - palacio real de  royal palace
+target: queen
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'forex']
+
+input:   top books: the blood sugar solution 10-day detox diet  dr. hymans 
+target: eBooks
+isCorrect: False
+topN: ['SoundCloud', 'music', 'Instagram', 'nintendo', 'np']
+
+input: pub 2 on in 0.9d. boyfriend does my voiceover | nicole guerriero rel="
+target: YouTube
+isCorrect: False
+topN: ['music', 'Music', 'sex', 'SoundCloud', 'Cosplay']
+
+input: these new songs live on repeat at headquarters! 
+target: exo
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: enter daily to the new year new moola $25 paypal from daily entries ww ends 1/23
+target: Giveaway
+isCorrect: False
+topN: ['fun', 'sex', 'crime', 'teen', 'Cosplay']
+
+input:  sacramento kings vs cleveland cavaliers stream online .
+target: live
+isCorrect: False
+topN: ['music', 'sex', 'Music', 'fun', 'teen']
+
+input: nearby apartments for rent in las vegas, top 3192 apts and rental homes in las vegas, nv 
+target: in
+isCorrect: False
+topN: ['music', 'sex', 'fun', 'Music', 'crime']
+
+input: the toronto maple leafs have re-called goaltender garret sparks from the toronto marlies. 
+target: Toronto
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: dawgsbynature is a wide receiver considering retirement? 
+target: Browns
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input: listen to pressure (prod. mayhem meech) by roo$ki on 
+target: SoundCloud
+isCorrect: False
+topN: ['SoundCloud', 'np', 'Instagram', 'music', 'nintendo']
+
+input: enjoyed presenting to the maymont foundation board with today -- brilliant questions! 
+target: RVA
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: 'the growth rate in such fields as vehicle, energy, industry & household can rocket to 80%'
+target: security
+isCorrect: False
+topN: ['sex', 'Music', 'Cosplay', 'music', 'fun']
+
+input: closed buy 1.0 lots eurusd 1.05569 for +5.1 pips, total for today +102.3 pips 
+target: FOREX
+isCorrect: False
+topN: ['forex', 'FOREX', 'fun', 'Cosplay', 'Bitcoin']
+
+input:  patch 36/37 arm: dra7: clockdomain: change the clktrctrl of cmpcieclkstctrl to swwkup
+target: arm
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input:  north face mens borealis backpack - brown from $89.00 north face 
+target: The
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: when the road takes you through kingman, we hope you consider ramada kingman. 
+target: travel
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: this store often gets robbed, so the owner set up the ultimate trap for thieves. 
+target: omg
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: we love the sunshine....oh yeah!!!. throwback to xmas day 
+target: girls
+isCorrect: False
+topN: ['fun', 'music', 'SoundCloud', 'sex', 'Buzz']
+
+input:  the responsibility of the mavens is to discuss what our is doing
+target: military
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'forex']
+
+input:  for financial analyst - policy and complianc | apply now
+target: library
+isCorrect: False
+topN: ['job', 'sex', 'fun', 'jobsearch', 'jobs']
+
+input:  pull vlad's cock ring out of your mouth long enough to breath, you'll choke. 
+target: wishing
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: rt news2tor: airstrikes now in mezzah military airport in rural causing a massive explosion th
+target: Damascus
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'news']
+
+input: can you recommend anyone for this neonatology - university of maryland school of medicine - md
+target: Baltimore
+isCorrect: False
+topN: ['sex', 'music', 'fun', 'crime', 'teen']
+
+input: 1) got more votes than got many votes because of his lies,russian subterfuge & fbi misconduct.3) is right.
+target: Trump
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'SoundCloud', 'crime']
+
+input: listen to king mas feat. treesha- more than friends by treesha on 
+target: SoundCloud
+isCorrect: False
+topN: ['SoundCloud', 'music', 'fun', 'sex', 'Instagram']
+
+input: thailands group to invest $644 million in 7 marriott... 
+target: TTC
+isCorrect: False
+topN: ['SoundCloud', 'sex', 'fun', 'music', 'iphone']
+
+input: if you like and watch music video "tuesday come rescue me (prod by leah vee
+target: DnB
+isCorrect: False
+topN: ['SoundCloud', 'music', 'np', 'Music', 'Instagram']
+
+input: ming - epoxy resin, large, painting, baroque, abstract 
+target: painting
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'forex', 'news']
+
+input: join the fresenius medical care team! see our latest opening here: va 
+target: dialysis
+isCorrect: False
+topN: ['Hospitality', 'Manufacturing', 'Security', 'Media', 'healthcare']
+
+input: can you recommend anyone for this inside sales - (managed security services) - 
+target: Sales
+isCorrect: False
+topN: ['job', 'jobs', 'Hospitality', 'Jobs', 'sex']
+
+input:  to defy us & we will crush you and that is what they are doing.
+target: radical
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'feminism']
+
+input: leftists will hate this; woman explain why she voted for 
+target: Trump
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'girls', 'teen']
+
+input: your life's story: how you're going to be remembered 
+target: history
+isCorrect: False
+topN: ['job', 'sex', 'fun', 'crime', 'music']
+
+input: sammy watkins 2014 totally certified red bills auto rc 32/50 wide receiver
+target: D
+isCorrect: False
+topN: ['sex', 'music', 'fun', 'crime', 'Music']
+
+input: indianapolis (in) star: when barack obama visited indiana . more -
+target: news
+isCorrect: False
+topN: ['music', 'Music', 'sex', 'fun', 'teen']
+
+input: how do i respond to someone who is thinking of suicide? 
+target: Grief
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'teen']
+
+input:  broadcast by paris summit to declare two-state solution only way to peace
+target: TOF
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: acmcclockeuro: / for helsinki, sf for now (06h28m01s ut): 0854'30.0'' (ac) / 0002'11.0'' 
+target: Capricorn
+isCorrect: False
+topN: ['Capricorn', 'Sagittarius', 'Libra', 'Gemini', 'Taurus']
+
+input: a night of stars tees - notice you need 2 learn the night sky - 
+target: astronomy
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: new job! - coordinator - - salary up to 25,000
+target: Faversham
+isCorrect: False
+topN: ['job', 'sex', 'Columbus', 'jobs', 'crime']
+
+input: interested in a in wy? this could be a great fit: 
+target: Worland
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'basketball']
+
+input:  dog walker/pet sitter - barkbud dog walkers - phoenix, az: independent work environment where you 
+target: Phoenix
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input: yes4all heavy resistance band strength training pull up assist band - 0v4ge3d 
+target: health
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'teen', 'girls']
+
+input:  "the greatest adventure is what lies ahead"j.r.r. tolkien
+target: Camp
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: reflective vest for running or cycling (women and men, with pocket,... - 
+target: fitness
+isCorrect: False
+topN: ['quotes', 'quote', 'job', 'news', 'jobs']
+
+input: rikki six teases a police detective with her perfect tits 
+target: teen
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'teen']
+
+input: meet chen. this is what he looks like after surfing. 
+target: aww
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'forex']
+
+input:  steven tyler aerosmith framed art scrap portrait rain or shine 1999 ticket stub: 
+target: Aerosmith
+isCorrect: False
+topN: ['fun', 'music', 'sex', 'crime', 'SoundCloud']
+
+input:  a gentleman is a man who will pay his gambling debts even when he knows he has been cheated. ~ leo tolstoy   
+target: quotes
+isCorrect: False
+topN: ['quotes', 'quote', 'news', 'blog', 'updates']
+
+input: hey! i'm playing piece quiz!! of what the answer might be?
+target: LII
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'crime', 'teen']
+
+input:  gm supply chain for a leading fmcg distributor, ahmedabad: >> for more jobs  please go2 our page!
+target: Jobs
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'teen', 'girls']
+
+input: several shows on tonight including plus not a fan but it's 
+target: HBO
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input: huge sale on but ends soon sorry hurry if you want 
+target: gifts
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'education']
+
+input:  julia ibbotson tells you what she likes doing best 
+target: video
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: another bear. i don't know what this theme is but i like it. 
+target: panda
+isCorrect: False
+topN: ['SoundCloud', 'fun', 'music', 'sex', 'crime']
+
+input: just grabbed hitfilm 4 express from i'm ready to make my own style effects.
+target: StarWars
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input:  tigger cute soft disney winnie the pooh and friends jumbo 76... last two
+target: Toy
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input: your life coverage should reflect important changes in your life such as marriage, the birth of a a move, or a new job.
+target: child
+isCorrect: False
+topN: ['sex', 'quotes', 'fun', 'quote', 'crime']
+
+input: fiordland national park (te anau - new zealand) 
+target: NewZealand
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'Cosplay', 'teen']
+
+input:  classes at horsham rugby club. from 4th jan no booking or partner required. free parking.
+target: Salsa
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'teen', 'music']
+
+input: now they're worried about it? these assholes had 8 freaking years to come up with a plan. 
+target: healthcare
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input: traffic project manager - american structurepoint - columbus, oh 
+target: Columbus
+isCorrect: False
+topN: ['job', 'jobs', 'crime', 'Jobs', 'sex']
+
+input: every single person on this planet has limiting thoughts enter their mind. 
+target: inspiration
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'SoundCloud']
+
+input:  for rt bdcnaijcom: sell 10000 usd on rate 320. january
+target: updates
+isCorrect: False
+topN: ['sex', 'SoundCloud', 'music', 'teen', 'Cosplay']
+
+input: ltd stock, signed tony yeboah leeds united 95/96 home shirt + proof  
+target: ghana
+isCorrect: False
+topN: ['fun', 'sex', 'Cosplay', 'crime', 'forex']
+
+input: 2016 panini playbook 15-box case break3 - washington 
+target: Redskins
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'Cosplay', 'teen']
+
+input:  milwaukee bernie brewer mascot 15" x 12" plush face vgc 
+target: Buzz
+isCorrect: False
+topN: ['music', 'fun', 'sex', 'Music', 'SoundCloud']
+
+input: listen to what you talking bout.mp3 by j-lee aka lil bugg on 
+target: SoundCloud
+isCorrect: False
+topN: ['SoundCloud', 'Instagram', 'music', 'np', 'YouTube']
+
+input: director strategy - provider - pittsburgh, pa, 15201, usa pls rt: company :highmark healthjob
+target: Pittsburgh
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'Music']
+
+input:  still one of our favorite of all time. the 20/20 experience. 
+target: music
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'teen', 'forex']
+
+input: plumbing service manager plumbing superintendent jobs in orlando, fl 
+target: FL
+isCorrect: False
+topN: ['FL', 'CA', 'WA', 'Columbus', 'jobs']
+
+input:  - customer service rep - bilingual spanish - description salary 15.00 per hour posi... 
+target: CA
+isCorrect: False
+topN: ['sex', 'fun', 'teen', 'crime', 'forex']
+
+input: god loved the and invented soil. man loved the and invented vases.
+target: flowers
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: top employers say millennials need these 4 skills in 2017 retweet
+target: investment
+isCorrect: False
+topN: ['fun', 'sex', 'crime', 'girls', 'teen']
+
+input: moms & babies ( | please rt? a chocolate chip cookie that
+target: babies
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'girls']
+
+input: the food inmates get in jail is more nutritious than the food served in school cafeterias. 
+target: quotes
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'girls']
+
+input: the latest gaminginspain newsletter diario! thanks to 
+target: feminism
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: check out jbl charge 2+ plus portable bluetooth splashproof speaker (pink) via 
+target: speaker
+isCorrect: False
+topN: ['music', 'Music', 'sex', 'SoundCloud', 'crime']
+
+input: introductions  re: had a play and it's smiles all round. 
+target: Ateca
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: because obeyed my voice and kept my charge, my my statutes, and my laws. 26.5
+target: commandments
+isCorrect: False
+topN: ['Libra', 'fun', 'sex', 'crime', 'Cosplay']
+
+input: "81835 mood:female,22 confesses:"my fianc and i sext and masturbate. we...
+target: Relationship
+isCorrect: False
+topN: ['sex', 'fun', 'teen', 'music', 'crime']
+
+input: iron man workout - insane fat burning and muscle building workout 
+target: health
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'Buzz']
+
+input: have you heard dj charlies reloaded (4) by user784300811 on 
+target: np
+isCorrect: False
+topN: ['fun', 'sex', 'SoundCloud', 'music', 'Cosplay']
+
+input: todays best selling desktop computers asus chromebit cs10 stick-desktop pc with rockchip 
+target: computers
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'teen']
+
+input: general manager, banking centre: cibc (guelph): "job overview as cibc continues to build a 
+target: job
+isCorrect: False
+topN: ['sex', 'crime', 'fun', 'music', 'Buzz']
+
+input:  was asked to shine shoes, soldier complained in video. army chief reacts 
+target: RT
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'teen']
+
+input: huge network | donald trump says merkel made 'big mistake' on migrants 
+target: Canada
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'Cosplay']
+
+input:  tv host accidentally flashes crotch live on air 
+target: Host
+isCorrect: False
+topN: ['sex', 'music', 'fun', 'crime', 'girls']
+
+input: rochester ny usa - clinical - clinical optometrist rochester ny kelly services... 
+target: EYE
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'crime', 'girls']
+
+input: closed buy 1.9 lots eurusd 1.06462 for +11.1 pips, total for today +409.5 pips 
+target: Account
+isCorrect: False
+topN: ['forex', 'FOREX', 'Profit', 'Cosplay', 'Bitcoin']
+
+input:  2012-13 prestige bonus shots gold jeremy lin /249 
+target: Basketball
+isCorrect: False
+topN: ['sex', 'fun', 'teen', 'music', 'Cosplay']
+
+input: ends in 6 hours! win a paddle board from xterra! 
+target: Giveaway
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'teen', 'crime']
+
+input: tix 2 4/28 suntrust park atlanta ://t.co/zupvxdxljr
+target: Ticket
+isCorrect: False
+topN: ['Buzz', 'Eating', 'Cosplay', 'fun', 'Tween']
+
+input: have you seen my embarrassing childhood photos?! link in bio!! 
+target: pictures
+isCorrect: False
+topN: ['fun', 'sex', 'music', 'teen', 'basketball']
+
+input: this might be a great fit for you: maintenance person - nj 
+target: Hospitality
+isCorrect: False
+topN: ['Hospitality', 'Manufacturing', 'jobs', 'healthcare', 'Security']
+
+input: when women blame men for domestic stress, they miss the big picture 
+target: WA
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'news', 'forex']
+
+input:  andrew marc women's am40021 classic chronograph crown cover watch $250.00
+target: fashion
+isCorrect: False
+topN: ['sex', 'fun', 'teen', 'girls', 'sweepstakes']
+
+input: can jeremy lamb be a nice value on tuesday night. >>>>>>>>>
+target: DFS
+isCorrect: False
+topN: ['Columbus', 'Pittsburgh', 'Baltimore', 'Atlanta', 'Albuquerque']
+
+input: words are under your control until you speak them...but you come under their control once you have spoken them... 
+target: SSDF
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'music', 'feminism']
+
+input: posted by :  thenextweb microsoft wants business users to stop using windows 7 
+target: Tech
+isCorrect: False
+topN: ['sex', 'fun', 'crime', 'girls', 'teen']
+
+input:  bogging you down? want to know how to the life you want? you can, here's how!
+target: create
+isCorrect: False
+topN: ['sex', 'fun', 'music', 'teen', 'girls']
+
+numCorrect: 0 percCorrect: 0.0

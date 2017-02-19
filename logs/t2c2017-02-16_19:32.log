@@ -1,0 +1,1494 @@
+
+ ########################################## 
+EPOCH: 21
+input: branch associate part time teller terramont woodlands jobs in houston, tx 
+target: TX
+isCorrect: True
+topN: ['TX', 'quote', 'FL', 'deco']
+
+input:  intelligence panel to examine possible campaign links with russia, senators say - cbs news
+target: Follow
+isCorrect: False
+topN: ['quote', 'stream', 'TX', 'fashion']
+
+input: quoteimagedaily: "oh, love will make a dog howl in rhyme." - 
+target: love
+isCorrect: False
+topN: ['quote', 'success', 'win', 'stream']
+
+input: the best of algenist collection: 2014 edition 4-pi... 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'Shoes', 'love']
+
+input: used 2005 toyota sienna xle sports van cars for sale in clermont, fl 
+target: FL
+isCorrect: False
+topN: ['stream', 'quote', 'love', 'free']
+
+input: nothing is new. everything is trying to answer the same questions 
+target: success
+isCorrect: True
+topN: ['quote', 'success', 'win', 'FL']
+
+input: sponsor with big machete makes young ladies go nuts (see photo) 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'NBA']
+
+input:  civil rights icon rep. john lewis says trump isn't a "legitimate president" - cbs news
+target: Follow
+isCorrect: True
+topN: ['Follow', 'stream', 'love', 'quote']
+
+input: abrs national taxonomy research grant program - 2013-14 grants awa 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'fashion']
+
+input: lakers legend kobe bryant never got bored with the basics 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'stream', 'browns', 'Giveaway']
+
+input: . hi pat! we have a cool project coming up w in love to share  cindy
+target: TX
+isCorrect: False
+topN: ['fashion', 'beauty', 'stream', 'love']
+
+input:  2012 bmw k-series 2012 bmw k1600gt, 15k miles, fully loaded, gps, esa, great deal !!!
+target: auction
+isCorrect: True
+topN: ['auction', 'fashion', 'stream', 'quote']
+
+input: sterling silver rhodium plated heart motif cubic zirconia heart toe ring.. 
+target: fashion
+isCorrect: False
+topN: ['stream', 'quote', 'entrepreneur', 'CA']
+
+input:  new big hurt basketball shoes vintage 1990s size 11 
+target: Shoes
+isCorrect: True
+topN: ['Shoes', 'fashion', 'TX', 'NBA']
+
+input: narwall : personalized designs for toys, apparel and decor for kids 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'CA', 'stream', 'Startups']
+
+input: contract accounting assistant part time jobs in san diego, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'TX', 'FL', 'stream']
+
+input: live streaming slovenia v finland tv watch 13.01.2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'love', 'beauty']
+
+input: flying give you 'the fear?' here are the world's safest airlines 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'NBA']
+
+input: your service can be scalable, just ask zach olsen - 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'quote', 'fashion', 'stream']
+
+input: kula kwa macho! see the hot mamas campaigning for joho in t 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'beauty', 'stream', 'quote']
+
+input: draft emissions reduction fund methods released for public consult 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'stream']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.2529: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'free', 'Giveaway']
+
+input: used 2014 ford f 150 xl w automatic pickup cars for sale in san antonio, tx 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'quote']
+
+input: a 58-story skyscraper in san francisco is sinking and people 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'fashion']
+
+input: acmcclockeuro: is now (08h28m01s ut) culminating at 1816'32.8'' conjunct at athens, gr
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Scorpio', 'TX']
+
+input: live streaming rotherham united vs huddersfield town tv watch february 14, 2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'quote', 'love']
+
+input: used 2017 honda hr v ex hatchback 4 dr cars for sale in jacksonville, fl 
+target: FL
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'quote']
+
+input:  whatsapp's new vulnerability is a concession, not a backdoor - the verge
+target: Follow
+isCorrect: True
+topN: ['Follow', 'stream', 'love', 'Giveaway']
+
+input: the two most important days in your are the day you are born and the day you find out why. ~ mark twain 
+target: quote
+isCorrect: False
+topN: ['fashion', 'beauty', 'stream', 'love']
+
+input: acmcclockeuro: / for ueberlingen, de for now (04h28m02s ut): 1547'35.7'' (ac) / 1301'16.7'' 
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'love']
+
+input:  mlk holiday denied to trash haulers at private nyc firms - new york daily news
+target: Follow
+isCorrect: True
+topN: ['Follow', 'stream', 'love', 'quote']
+
+input: 1999 bowman cleveland browns football card madre hill rookie 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.2091: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'babies', 'Giveaway']
+
+input:  ugg australia sheepskin boots girls size 3 in black bailey button
+target: auction
+isCorrect: True
+topN: ['auction', 'fashion', 'Sagittarius', 'quote']
+
+input:  authentic ds 750 brown chocolate gum 10.5 nib shoe sneaker
+target: Shoes
+isCorrect: True
+topN: ['quote', 'CA', 'Shoes', 'TX']
+
+input: please rt? cute babies discovering snow for the first time - hilarious...
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'beauty', 'browns']
+
+input: there are moments when you want to give up, the decisions at these exact moments define you. - prasad narulkar prasad84 
+target: quote
+isCorrect: True
+topN: ['stream', 'quote', 'fashion', 'beauty']
+
+input:  swiftype launches a new product to help companies search across dropbox, office, g suite and
+target: Startups
+isCorrect: False
+topN: ['quote', 'TX', 'CA', 'FL']
+
+input:  / for tirana, al for now (03h58m01s ut): 2420'17.0'' (ac) / 1728'13.6'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'beauty']
+
+input: used 2013 cadillac ats performance sedan cars for sale in victorville, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'TX', 'FL', 'stream']
+
+input: i entered to a disney princess belle prize pack ends 1/24
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'stream', 'auction']
+
+input:  $25 amazon novel the penitent by a. keith carreiro blog tour
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'quote', 'auction']
+
+input: free demo! thunder reels slots! direct link here:
+target: free
+isCorrect: True
+topN: ['stream', 'love', 'free', 'beauty']
+
+input: if you give up your what's left for you? go get it! 
+target: entrepreneur
+isCorrect: False
+topN: ['quote', 'love', 'stream', 'beauty']
+
+input: invite only fantasy sports app! billion dollar industry play live!! 
+target: NBA
+isCorrect: False
+topN: ['browns', 'stream', 'love', 'beauty']
+
+input: the internet of things means a big dilemma for big law discovery via 
+target: privacy
+isCorrect: False
+topN: ['auction', 'stream', 'quote', 'fashion']
+
+input: got a take action(2) start anywhere(3) ask for help when needed(4) don't stop~ 
+target: success
+isCorrect: False
+topN: ['quote', 'love', 'stream', 'beauty']
+
+input: 1945 cleveland rams vs pittsburgh steelers nfl football program + press tickets 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input:  5 startups tackling urban america's biggest issues 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'stream', 'CA', 'Startups']
+
+input: live streaming admiral vladivostok vs dinamo minsk hockey tv watch 
+target: stream
+isCorrect: True
+topN: ['stream', 'Sagittarius', 'Capricorn', 'Scorpio']
+
+input: hoardingrecipes: one pot chicken fajitas with chimichurri crema 
+target: love
+isCorrect: False
+topN: ['fashion', 'beauty', 'stream', 'style']
+
+input: australias fifth national report to the convention on biological 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'stream']
+
+input:  video>> startup idol at brainstorm tech 2014 (video)
+target: entrepreneur
+isCorrect: True
+topN: ['quote', 'stream', 'entrepreneur', 'beauty']
+
+input:  midcentury palm springs oasis with fortress-like walls and original
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input: win chimparoo diaper bag lime no purchase required. ends 03/31 
+target: Giveaway
+isCorrect: False
+topN: ['love', 'quote', 'win', 'success']
+
+input: acmcclockeuro: / for marseille, f for now (03h28m02s ut): 2658'29.3'' (ac) / 2227'29.8'' (m
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Capricorn', 'Sagittarius', 'beauty']
+
+input: full time entry level sales manager jobs in orlando, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'quote']
+
+input: bridal rhinestone crystal ear stud earrings silver plated snowflake  
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'style']
+
+input: please rt tom ford | fall winter 2016/2017 full fashion show | exclusive
+target: style
+isCorrect: True
+topN: ['style', 'fashion', 'deco', 'beauty']
+
+input:  a cheeky weekend to a bottle of tiger gin, just follow and rt, 18+, ends monday 16th jan 
+target: win
+isCorrect: False
+topN: ['quote', 'Giveaway', 'free', 'stream']
+
+input: i live for these days! changing the world day by day! 
+target: success
+isCorrect: False
+topN: ['stream', 'beauty', 'love', 'fashion']
+
+input: please rt? holiday sides: heavenly scalloped potatoes
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'Scorpio']
+
+input: please rt? undercover mama makes breastfeeding a breeze!
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'beauty']
+
+input: 22:06: temp: 66.7f; dewpoint: 63.03f; winds: - at 0.0 mph; pressure: 30.457 in.; hourly rain rate: 0.00 in. 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'quote']
+
+input: please rt maria akireikina spring summer 2017 | cpm moscow by fashion channel
+target: style
+isCorrect: True
+topN: ['style', 'fashion', 'beauty', 'deco']
+
+input:  2003 ud victory rookie orientation dwyane wade rc mt 
+target: NBA
+isCorrect: False
+topN: ['Shoes', 'fashion', 'quote', 'win']
+
+input: don't judge me by my past. i don't live there anymore. - petteri tarkkonen 
+target: success
+isCorrect: True
+topN: ['quote', 'success', 'win', 'stream']
+
+input: so, that happened: al gore meets with donald and ivanka trump on climate 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'stream', 'love']
+
+input: ecliptical (tropical, geocentric) longitude for as of 11h05m01s ut is 1810'4'' 
+target: Scorpio
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Scorpio', 'stream']
+
+input: please rt? bosch variocomfort steam generator iron review and giveaway
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'love', 'browns']
+
+input:  special love seed vial for each red "seed" is a seed of 
+target: love
+isCorrect: False
+topN: ['Giveaway', 'quote', 'free', 'beauty']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.2627: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'free', 'Giveaway']
+
+input: get social! - food + essential oils +great people = fun! in beach, more and rsvp here:
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'stream']
+
+input: cia confirms russian interference in election, trump team challenges re 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'fashion']
+
+input: last week people in the uk spent more money on vinyl than dig 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'stream']
+
+input:  say what they we are so lucky to have so much.we must share our good fortune with others 
+target: love
+isCorrect: False
+topN: ['browns', 'quote', 'stream', 'beauty']
+
+input:  / for mallorca, e for now (00h58m01s ut): 2529'47.6'' (ac) / 0807'29.5'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'TX']
+
+input:  lazy weekend poll ~ open thread, memorial day weekend 2016
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'stream']
+
+input: make your child feel confident this valentine's day. 
+target: style
+isCorrect: False
+topN: ['love', 'quote', 'success', 'beauty']
+
+input:  marc by marc jacobs dark brown zipper shoulder bag handbag purse
+target: auction
+isCorrect: False
+topN: ['stream', 'quote', 'browns', 'love']
+
+input: listen now! bwd radio on-demand interview w/ g.h.o.s.t. 8/18/16 
+target: CA
+isCorrect: False
+topN: ['stream', 'beauty', 'win', 'free']
+
+input:  womens marc by marc jacobs cotton swimwear - size m
+target: auction
+isCorrect: False
+topN: ['browns', 'stream', 'fashion', 'deco']
+
+input:  / for kapstad, za for now (00h58m02s ut): 1404'24.1'' (ac) / 2415'36.9'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.3473: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'babies', 'free']
+
+input: this airline sacrificed a goat on the tarmac before its flight to happening now 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'beauty', 'stream', 'free']
+
+input:  - black and white party outfits - dress up your jeans river island dres.
+target: style
+isCorrect: True
+topN: ['style', 'fashion', 'beauty', 'love']
+
+input: new 2016 honda hr v ex l hatchback 4 dr cars for sale in gainesville, fl 
+target: FL
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'quote']
+
+input: get a completely free 5! no deposit required here >> 
+target: free
+isCorrect: False
+topN: ['stream', 'NBA', 'love', 'quote']
+
+input: organicmatcha extractscatechingives power to rejuvenate yourskin. 
+target: beauty
+isCorrect: False
+topN: ['quote', 'stream', 'free', 'love']
+
+input:  / for istanbul, tr for now (22h28m02s ut): 1843'58.4'' (ac) / 2959'57.9'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: why are so may people making money with this? click here =>
+target: entrepreneur
+isCorrect: False
+topN: ['quote', 'success', 'stream', 'love']
+
+input: used 2013 cadillac cts coupe performance coupe cars for sale in pensacola, fl 
+target: FL
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'quote']
+
+input: got the war paint on ready to get shit done today :) 
+target: fashion
+isCorrect: True
+topN: ['beauty', 'fashion', 'stream', 'love']
+
+input: valentines moulds. treat your loved one to hand-made chocs! 
+target: love
+isCorrect: True
+topN: ['love', 'beauty', 'fashion', 'stream']
+
+input: what if thomas edison, bill gates, or steve jobs was "reasonable"? where would we be? 
+target: entrepreneur
+isCorrect: False
+topN: ['stream', 'CA', 'TX', 'quote']
+
+input: used 2014 mazda cx 5 sport wagon 4 dr cars for sale in bradenton, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'quote']
+
+input: representative public relations trade jobs in orlando, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'quote']
+
+input: acmcclockeuro: / for bukarest, r for now (00h28m01s ut): 1054'19.7'' (ac) / 2126'15.4'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'beauty']
+
+input: new 2017 bmw 3 series 330e iperformance plug in hybrid sedan 4 dr cars for sale in berkeley, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'TX', 'FL', 'stream']
+
+input: ecliptical (tropical, geocentric) longitude for as of 23h05m02s ut is 2446'27'' 
+target: Sagittarius
+isCorrect: False
+topN: ['stream', 'love', 'beauty', 'browns']
+
+input: how to fix every awkward beauty date-night moment in a snap 
+target: fashion
+isCorrect: True
+topN: ['beauty', 'fashion', 'browns', 'style']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.2071: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'babies', 'Giveaway']
+
+input: after being a malnourished shut in, takes the world by storm
+target: fashion
+isCorrect: False
+topN: ['Capricorn', 'Sagittarius', 'Scorpio', 'love']
+
+input:  rare mens christian louboutin crockodile skin shoes
+target: auction
+isCorrect: True
+topN: ['auction', 'fashion', 'stream', 'beauty']
+
+input: ecliptical (tropical, geocentric) longitude for as of 05h05m01s ut is 1350'20'' 
+target: Capricorn
+isCorrect: False
+topN: ['stream', 'quote', 'fashion', 'love']
+
+input:  brand nu cndtn*mani*giorgio armani*3btn*black*wool*jacket blazer sport coat 44r
+target: auction
+isCorrect: True
+topN: ['auction', 'fashion', 'stream', 'quote']
+
+input: acmcclockeuro: / for athens, gr for now (23h28m01s ut): 0152'07.9'' (ac) / 0657'12.5'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'beauty']
+
+input:  - operations supervisor - transportation supply chain/logistics - with ope... 
+target: CA
+isCorrect: True
+topN: ['CA', 'TX', 'stream', 'FL']
+
+input: lego 5003084 marvel super heroes avengers trus promo the hulk smash new 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'win', 'love']
+
+input: free shipping jeffree star liquid gloss matte lipstick waterproof cosmetics sd1 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'style', 'love']
+
+input: lego star wars 75165 imperial trooper battle pack 112pcs new in hand free ship 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'win', 'love']
+
+input: do you give urself the credit you deserve? choose where you put the "i". can i? or i can! 
+target: entrepreneur
+isCorrect: False
+topN: ['love', 'success', 'quote', 'win']
+
+input: (50x) .5ml plastic cartridge for buttonless batter... 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'style', 'love']
+
+input: acmcclockasia: / for seoul, rok for now (19h58m02s ut): 1230'12.8'' (ac) / 0445'32.1'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'beauty']
+
+input: outsourcing allows you to focus on income-generating activities! 
+target: entrepreneur
+isCorrect: False
+topN: ['quote', 'success', 'win', 'stream']
+
+input: mums meet uk clydebank dunbarton livingston fauldhouse penarth cowbridge 
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'beauty']
+
+input:  new adidas yeezy 750 boost light grey gum size 12.5 glow 100% authentic bb1840 
+target: Shoes
+isCorrect: False
+topN: ['stream', 'quote', 'beauty', 'fashion']
+
+input: local jobs to help manage commonwealth environmental water 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'beauty', 'quote', 'stream']
+
+input:  buy now: $37.85 kerastase initialiste 60ml or 2.2oz new in box!!!...
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'Shoes']
+
+input:  2013 bmw 3-series 335i xdrive 335i xdrive 3 series 4 dr sedan automatic gasoline 3.0l straight 6 cyl
+target: auction
+isCorrect: True
+topN: ['auction', 'fashion', 'stream', 'quote']
+
+input:  men's air jordan 9 shoes 302370 013 anthracite/white/black size 11 
+target: Shoes
+isCorrect: False
+topN: ['privacy', 'Giveaway', 'beauty', 'free']
+
+input: nfl cleveland browns men's short sleeve crew neck orange t shirt - medium 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input: please rt caballus excellence at monte carlo fashion week 2016 by fashion channel
+target: style
+isCorrect: True
+topN: ['style', 'fashion', 'beauty', 'love']
+
+input:  tom ford black orchid eau de toilette ~ fragrance review
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'style']
+
+input:  fendi ff0029-7nune-54 women's fashion translucent blue & brown sunglasses 54
+target: auction
+isCorrect: True
+topN: ['auction', 'browns', 'stream', 'fashion']
+
+input: 'deadshot mary': the undercover cop who became a tabloid sensation 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'fashion']
+
+input:  auth chanel cotton denim pants ladies blue 08c size 38 m a-4836
+target: auction
+isCorrect: True
+topN: ['auction', 'fashion', 'stream', 'beauty']
+
+input:  2005/06 sweet shot dwight howard jersey /125 magic rockets hawks jsy sp 
+target: NBA
+isCorrect: False
+topN: ['fashion', 'win', 'quote', 'stream']
+
+input: "the greatest opportunities today are to go into business for yourself as an entrepreneur." paul zane pilzer 
+target: entrepreneur
+isCorrect: False
+topN: ['success', 'quote', 'win', 'love']
+
+input:  coach dakotah pink neon ruby whiplash f35714 leather crossbody handbag $495
+target: auction
+isCorrect: False
+topN: ['win', 'success', 'love', 'quote']
+
+input: yes, there is a problem. but there is also a solution. 
+target: success
+isCorrect: False
+topN: ['beauty', 'fashion', 'quote', 'browns']
+
+input: stefano gabbana apologizes for body shaming lady gaga 
+target: fashion
+isCorrect: True
+topN: ['beauty', 'fashion', 'style', 'browns']
+
+input: lance thomas sf nyk will not return sunday at tor - hit in face 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'stream', 'Shoes', 'fashion']
+
+input: see a virtual tour of our listing on 17 paymaster mine road 
+target: CA
+isCorrect: True
+topN: ['TX', 'FL', 'quote', 'CA']
+
+input: learn more words with this vocab list: 20 words on cooking
+target: free
+isCorrect: False
+topN: ['stream', 'fashion', 'beauty', 'love']
+
+input: null / for tunis, tn for now (02h58m01s ut): 0350'54.6'' (ac) / 1727'11.5'
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: lego friends heartlake grand hotel building set, building kit 41101 lego set 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'win', 'love']
+
+input: valentine's day vintage 80s western cowgirl etched heart belt buckle sterling on nickel via 
+target: love
+isCorrect: True
+topN: ['love', 'quote', 'success', 'win']
+
+input: new 2016 ram 1500 big horn crew cab long bed cars for sale in melbourne, fl 
+target: FL
+isCorrect: True
+topN: ['stream', 'CA', 'FL', 'Follow']
+
+input:  / for palermo, i for now (00h58m02s ut): 1135'46.1'' (ac) / 1908'31.4'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'beauty']
+
+input: systems analyst net or java developer jobs in lakeland, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'quote']
+
+input:  buy now: $76.52 chanel no. 5 - the loose powder 5.11 oz
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'style']
+
+input: check out kids dkny vest black brand new size 5 zip up 
+target: fashion
+isCorrect: True
+topN: ['quote', 'stream', 'love', 'fashion']
+
+input:  italian fashion associations and shows continue unification with government support: be.. 
+target: fashion
+isCorrect: False
+topN: ['TX', 'FL', 'CA', 'quote']
+
+input: i'm in the running to win a free candle subscription box from gourmet candle! 
+target: free
+isCorrect: True
+topN: ['Giveaway', 'free', 'quote', 'auction']
+
+input:  authentic coach brown peyton leather mini satchel handbag/crossboby (euc)
+target: auction
+isCorrect: False
+topN: ['holidays', 'beauty', 'free', 'fashion']
+
+input: we finally learned the purpose of that extra shoelace hole on your sneakers 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'beauty', 'fashion', 'babies']
+
+input: happy almost valentine's day. i dedicate this one to my boyfriend. 
+target: love
+isCorrect: True
+topN: ['quote', 'stream', 'success', 'love']
+
+input: 1974 topps parker brothers draft game frank pitts rare browns psa 7 low pop 1/2 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input: lego bionicle 8603 toa metru whenua complete figure ~ free shipping 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'win', 'success']
+
+input: please rt? blac chyna &amp; rob kardashian welcome a girl!
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'love']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.7304: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'free', 'babies']
+
+input: our absurd political reality summed up in one tweet 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'NBA']
+
+input: photos! see how ntsa is now punishing drivers who break traffic rules, eh! eh! 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'Capricorn']
+
+input: tos / for hongkong, hkg for now (21h28m01s ut): 0119'26.5'' (ac) / 1241'16.4
+target: Capricorn
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'stream']
+
+input: used 2015 chevrolet tahoe ltz utility cars for sale in bradenton, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'quote']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.1437: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'free', 'stream']
+
+input: acmcclockasia: / for kabul, afg for now (23h58m02s ut): 1825'24.2'' (ac) / 0442'55.9'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'beauty']
+
+input:  the humble hotdog cart goes high design at guggenheim bilbao
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input: sears, kmart drop 31 trump home items from their online shops 
+target: success
+isCorrect: False
+topN: ['quote', 'Shoes', 'love', 'win']
+
+input: 2016 panini absolute football duke johnson cleveland browns 04/25 green 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input: acmcclockeuro: / for warsaw, pl for now (00h58m01s ut): 0403'54.6'' (ac) / 0152'28.0'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'TX']
+
+input:  swell midcentury time capsule house in dallas lists for $665k
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input: dave isay: everyone around you has a story the world needs to hear 
+target: entrepreneur
+isCorrect: False
+topN: ['quote', 'success', 'win', 'stream']
+
+input: 3pcs/set women jewelry pearl beads cz plain above knuckle ring band midi ring 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'style']
+
+input: live streaming universo/vitoria vs paulistano tv watch january 13, 2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'Capricorn', 'Sagittarius', 'Scorpio']
+
+input: acmcclockeuro: / for leningrad, ssr for now (22h28m02s ut): 0909'23.0'' (ac) / 0120'42.2'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'beauty']
+
+input:  / for ankara, tr for now (21h58m01s ut): 1142'21.8'' (ac) / 2008'40.0'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: streaming live san miguel beermen - talk n text tropang texters february 16, 2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'quote', 'love']
+
+input:  kim kardashian is jetting off to new york fashion week: hubby kanye west s...
+target: beauty
+isCorrect: True
+topN: ['browns', 'beauty', 'stream', 'love']
+
+input: a true love story never ends -- let that be like your affair with travel. 
+target: love
+isCorrect: False
+topN: ['quote', 'beauty', 'holidays', 'Giveaway']
+
+input: iphone giveaway, click on - win an iphone 7 plus on destination page to enter {ww} (2/28/17) 
+target: free
+isCorrect: True
+topN: ['stream', 'free', 'babies', 'fashion']
+
+input:  respect the minimum size for moving between furniture in every room
+target: deco
+isCorrect: True
+topN: ['quote', 'deco', 'fashion', 'browns']
+
+input:  republishing content: how to get more traffic by writing less 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'stream', 'Startups', 'CA']
+
+input: how to spend less time on the internet in 2017 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'TX']
+
+input:  christian louboutin apostrophy nude leather pointy toe pump women's size 37
+target: auction
+isCorrect: True
+topN: ['auction', 'fashion', 'stream', 'quote']
+
+input: morrisons sees best christmas performance for seven years 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'Capricorn']
+
+input: please rt? to the mom whose due date will never come
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'love', 'beauty']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.6148: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'free', 'babies']
+
+input: hoping to asus transformer mini powered by atom processor in 2016 mega 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'quote', 'auction']
+
+input: for a young 201 of the best tips to boost traffic:  
+target: Startups
+isCorrect: False
+topN: ['quote', 'success', 'NBA', 'stream']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.2425: 
+target: holidays
+isCorrect: True
+topN: ['quote', 'holidays', 'free', 'babies']
+
+input: lego star wars ucs 10240 red five x-wing new sealed huge display set 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'love', 'beauty']
+
+input:  golden state warriors draymond green t men l new sweet! 
+target: NBA
+isCorrect: False
+topN: ['quote', 'CA', 'TX', 'Shoes']
+
+input: grow your instagram account with these 14 tools we love!free ebook: 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'stream', 'quote']
+
+input:  indian-american entrepreneur under consideration to lead fda 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'stream', 'Startups', 'CA']
+
+input: what we are is god's gift to us. what we become is our gift to god. -eleanor powell 
+target: success
+isCorrect: True
+topN: ['quote', 'success', 'love', 'win']
+
+input: tos is now (03h58m01s ut) rising at 2249'32.1'' conjunct at kiew, ukr
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Capricorn', 'Scorpio', 'Follow']
+
+input: love is a part of creation, woven into the very fabric of the universe. 
+target: love
+isCorrect: True
+topN: ['win', 'love', 'success', 'quote']
+
+input: look forward to speaking march 17-19! learn tools to transform your life for greater & 
+target: success
+isCorrect: True
+topN: ['quote', 'love', 'success', 'win']
+
+input: shoppers 'drowning in a sea of loyalty cards' 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'fashion']
+
+input: guaranteed sign up today with see my profile now & earn 2k monthly 
+target: free
+isCorrect: False
+topN: ['Shoes', 'quote', 'holidays', 'fashion']
+
+input: watch south carolina gamecocks v mississippi state bulldogs live stream 2/11/2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'Capricorn', 'Sagittarius', 'Scorpio']
+
+input:  is now (08h58m01s ut) culminating at 1818'21.5'' conjunct at palermo, i
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Scorpio', 'quote']
+
+input: fantasy sports live interactive app launching!! share-play-earn 
+target: NBA
+isCorrect: False
+topN: ['browns', 'stream', 'quote', 'free']
+
+input:  buy now: $177.0 reli nano silver ag+ solution, 57 ppm, 6 - 16 oz b...
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'style']
+
+input: black women are forever queens! you can't go wrong with a beautiful black woman! 
+target: love
+isCorrect: True
+topN: ['quote', 'success', 'win', 'love']
+
+input: please rt? let's beat the heat with july summer promotions!
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'love']
+
+input: stop by the and a $25 amazon https://t.co/l7t8qdtpfx)
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'auction', 'quote']
+
+input: check out women's celine sunglasses -used- excellent condition - sc104 col s29 with case via 
+target: fashion
+isCorrect: False
+topN: ['Sagittarius', 'love', 'Capricorn', 'Scorpio']
+
+input:  toddler size boston celtics adidas tassel knit pom hat 
+target: NBA
+isCorrect: False
+topN: ['win', 'success', 'quote', 'fashion']
+
+input:  christian louboutin fontanette python blue open toe heels
+target: auction
+isCorrect: True
+topN: ['auction', 'stream', 'fashion', 'beauty']
+
+input: forget skydiving  thrill-seekers are now paying $5,000 to experience zero gravity 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'love']
+
+input: nwt cleveland browns women's xl shirt - msrp~$32.00 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'fashion']
+
+input: limelight by alcone sea of inspiration mineral and... 
+target: beauty
+isCorrect: True
+topN: ['fashion', 'beauty', 'style', 'love']
+
+input:  100% authentic christian dior canvas diorisshimo beige shoulder bag used b
+target: auction
+isCorrect: True
+topN: ['auction', 'stream', 'beauty', 'fashion']
+
+input: used 2016 honda civic sedan lx sedan 4 dr cars for sale in clearwater, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'quote']
+
+input: home / for boston, usma for now (06h28m01s ut): 0051'44.1'' (ac) / 1726'48
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: sponsored:enter to one of two durable gel nail polish set 2 winners 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'auction', 'quote']
+
+input: here are simple home remedies that all kenyans should read, especially  
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'stream', 'free']
+
+input: im in the running to a $25 breakout game store gift card! 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'auction', 'quote']
+
+input: lego marvel super heroes 76078 hulk vs red hulk 375pcs *in-hand* ships same day 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'win', 'love']
+
+input: acmcclockamer: / for mexico city, mex for now (12h28m01s ut): 1224'12.7'' (ac) / 2346'59.6'' 
+target: Capricorn
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'stream']
+
+input: new post: yomole multifunctional outdoor sports armband
+target: free
+isCorrect: False
+topN: ['quote', 'stream', 'love', 'fashion']
+
+input: new post: expanse announces the launch of blockchain-based 
+target: free
+isCorrect: False
+topN: ['stream', 'quote', 'Follow', 'win']
+
+input:  marc by marc jacobs size 38 us 8 ballerina nude/black slip 198$
+target: auction
+isCorrect: True
+topN: ['browns', 'stream', 'auction', 'quote']
+
+input: watch this video and help me win this 5 from video here:
+target: Giveaway
+isCorrect: False
+topN: ['quote', 'Sagittarius', 'Scorpio', 'beauty']
+
+input:  mala meditation prayer yoga glass beaded bracelet om charm hand made usa
+target: love
+isCorrect: False
+topN: ['beauty', 'fashion', 'privacy', 'Shoes']
+
+input: please rt? there's nothing sexy about our pregnancy journey
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'love']
+
+input: lego architecture new york city 21028- new/sealed/in hand - free priority ship 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'love', 'win']
+
+input: i don't have time = it's not my priority.....u always have time for things that matter most to you 
+target: success
+isCorrect: True
+topN: ['success', 'quote', 'love', 'win']
+
+input:  christian louboutin jet black satin bow sandals heels sz.40 / us 9.5
+target: auction
+isCorrect: True
+topN: ['auction', 'stream', 'fashion', 'beauty']
+
+input: 'play the game...change the game' takes his first steps towards the we 
+target: love
+isCorrect: False
+topN: ['browns', 'stream', 'beauty', 'fashion']
+
+input: i'm in the running of winning 1 usb type c wall charger 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'auction', 'quote']
+
+input: instagram: don't let someone else's fear get in the way of your dreams and goals. 
+target: success
+isCorrect: False
+topN: ['quote', 'stream', 'love', 'free']
+
+input:  a simple test for determinate the load carryng capacity of a pile
+target: deco
+isCorrect: True
+topN: ['deco', 'fashion', 'style', 'browns']
+
+input: finally blindspot is backkkkk! no more hiatus, please and thank you! 
+target: love
+isCorrect: False
+topN: ['fashion', 'beauty', 'style', 'stream']
+
+input: please rt? alison hubble, and other stories from primary school
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'Scorpio']
+
+input: lg's fancy smart fridge has alexa and amazon fresh built right in 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'NBA']
+
+input:  2014 audi s5 premium plus coupe 2-door 2014 audi s5 premium plus awd s/c auto sunroof nav 44k
+target: auction
+isCorrect: True
+topN: ['browns', 'stream', 'TX', 'auction']
+
+input:  vtg giorgio armani borgo 21 cotton shirt 15.5 blue brown beige plaid button down
+target: auction
+isCorrect: True
+topN: ['auction', 'fashion', 'quote', 'stream']
+
+input: this site is giving away xbox live codes live 
+target: free
+isCorrect: False
+topN: ['stream', 'love', 'beauty', 'NBA']
+
+input: the inventor of the mug shot also photographed hands, feet and dead bodies 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'TX']
+
+input: please rt? drew barrymore handles her daughter's disney meltdowns...
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'love']
+
+input: i would love to a scood and 3 bibs from on the blog! 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'quote', 'auction']
+
+input: 2013 national treasures jordan cameron browns 2 color jersey patch dolphins 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input: used 2009 gmc sierra 2500hd crew pickup cars for sale in jacksonville, fl 
+target: FL
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'quote']
+
+input: ladies shoe clearance  walmart ~ check your store! - 
+target: free
+isCorrect: True
+topN: ['free', 'win', 'stream', 'Giveaway']
+
+input: arian foster in hot dog stand showdown over n-word insult (video) happening now 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'stream', 'Sagittarius']
+
+input: uniquely coordinated assistants is out! stories via 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'stream', 'quote', 'Startups']
+
+input: enter daily to the new year new moola $25 paypal from daily entries ww ends 1/23
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'auction', 'quote']
+
+input:  now in stock! the floral shirt and black buttoned skirt. 
+target: fashion
+isCorrect: False
+topN: ['stream', 'love', 'quote', 'browns']
+
+input:  dark sophistication: thirty-year-old apartment embraces a smart, modern.
+target: deco
+isCorrect: True
+topN: ['deco', 'fashion', 'style', 'browns']
+
+input:  bjarke ingels's firm leads group tapped to rebrand the nordic...
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input: 2001 contenders gerard warren rookie ticket auto sp /200 browns rc autograph 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input: rockettes chairman encourages concerned dancers to be 'tolerant of intolerance' 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'NBA']
+
+input: new 2017 ram 1500 sport quad pickup cars for sale in davie, fl 
+target: FL
+isCorrect: False
+topN: ['CA', 'quote', 'stream', 'Shoes']
+
+input: tanzanite ring. statement ring. hearts ring. by hottorstudio via 
+target: fashion
+isCorrect: True
+topN: ['beauty', 'holidays', 'fashion', 'love']
+
+input: please rt? 10 double strollers for your growing brood
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'love', 'browns']
+
+input: please rt? 9 ways dads can emotionally prep for childbirth
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'love']
+
+input: please rt? how to make a mini city out of paper rolls
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'Scorpio']
+
+input: love kristin and am learning a lot. for all creatives 
+target: free
+isCorrect: False
+topN: ['stream', 'love', 'quote', 'beauty']
+
+input: will the suspect get away? not on my watch if i unusual suspects in mega 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'quote', 'free', 'win']
+
+input: enter daily to the share the love $25 paypal from daily entries ww ends 2/21
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'auction', 'quote']
+
+input: environmental water gives murrumbidgee wetlands a boost 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'quote', 'beauty', 'fashion']
+
+input: the online stalking rabbit hole: how far down have you gone? 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'stream', 'Capricorn']
+
+input:  vtg cleveland cavaliers cavs drew pearson twill snapback hat nwt nos dunking 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'stream', 'quote', 'browns']
+
+input:  is now (05h28m01s ut) rising at 2249'56.1'' conjunct at hamburg, d
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Capricorn', 'Scorpio', 'quote']
+
+input:  version of perfect to follow your idols. yasner chocomuchocookies
+target: free
+isCorrect: False
+topN: ['quote', 'beauty', 'stream', 'fashion']
+
+input: 2013 panini national treasures century silver jim brown cleveland browns 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input: i want to win a $25 amazon gift card thanks to kristina cappello & guy! 
+target: Giveaway
+isCorrect: False
+topN: ['quote', 'privacy', 'stream', 'success']
+
+input: confidence is the best makeup you could ever wear      
+target: fashion
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'style']
+
+input: retweet to win and follow to win another hour, favorite this fav as well as reply rt! ! it's february 15, 2017 at 12:15pm
+target: free
+isCorrect: True
+topN: ['win', 'success', 'quote', 'free']
+
+input: please rt? 8 kid-approved after-school snack recipes
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'love']
+
+input: 1956 topps football choice complete your set vg/ex to nm near mint grier matson 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'fashion']
+
+input:  the simple guide for needed number of recessed lights
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input: 1984 topps mike pruitt cleveland browns yearbook sticker rare mint 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input:  / for sydney, aus for now (14h58m01s ut): 2452'16.5'' (ac) / 0547'29.8'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: how to make beeswax candles etsy: ://t.co/qo51wpotti
+target: fashion
+isCorrect: False
+topN: ['stream', 'love', 'win', 'success']
+
+input: 1999 (browns) stadium club chrome first day kevin johnson /100 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input:  why it mattered (and didn't) that obama was our first black president: as we bask in the glow of the
+target: fashion
+isCorrect: True
+topN: ['fashion', 'beauty', 'quote', 'stream']
+
+input: please rt? i don't need to explain to anyone why i'm formula feeding
+target: babies
+isCorrect: True
+topN: ['babies', 'love', 'browns', 'stream']
+
+input:  <~~~~his guys ref/court antics put a grin on d. 'a face!  sense of humor i bet! worth $150m? noteworthy 
+target: NBA
+isCorrect: True
+topN: ['browns', 'stream', 'auction', 'NBA']
+
+input: private client advisor ii miami fl jobs in miami, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'quote']
+
+input: home / for washington, usdc for now (09h58m02s ut): 2106'21.9'' (ac) / 112
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Capricorn', 'Sagittarius', 'love']
+
+input: 2016 not ssp contenders corey coleman rps rookie ticket sepia auto browns 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input:  30 live-edge coffee tables that transform the living room
+target: deco
+isCorrect: True
+topN: ['deco', 'fashion', 'style', 'browns']
+
+input: 1979 topps oliver davis browns nm-mt set break *4671 
+target: browns
+isCorrect: True
+topN: ['browns', 'stream', 'deco', 'beauty']
+
+input: lego marvel super heroes the avengers quinjet chase 76032 mint factory sealed 
+target: build
+isCorrect: True
+topN: ['build', 'love', 'win', 'stream']
+
+input:  / for kiew, ukr for now (00h58m01s ut): 0733'14.8'' (ac) / 0443'31.5'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'beauty']
+
+input: new 2017 dodge charger se sedan 4 dr cars for sale in brooksville, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'quote', 'CA']
+
+input: lego star wars imperial star destroyer (100301) 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'love', 'win']
+
+input:  / for sanfrancisco, usca for now (11h58m01s ut): 2916'18.4'' (ac) / 2023'07.0'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: lego city training jet transporter 60079 from japan 
+target: build
+isCorrect: True
+topN: ['build', 'win', 'stream', 'success']
+
+input: lego friends 30205 pop star andrea red carpet stage 1 new sealed packs 30dayfix 
+target: build
+isCorrect: True
+topN: ['build', 'win', 'stream', 'love']
+
+input:  capsule design: an la company offering design-led furniture (for less)
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input: don't give up just yet. you can still see the stars shine bright above your head. 
+target: fashion
+isCorrect: False
+topN: ['free', 'stream', 'quote', 'win']
+
+input: final ! 20% additional discount for 2 or more items purchased. 
+target: fashion
+isCorrect: False
+topN: ['stream', 'quote', 'NBA', 'Giveaway']
+
+input: lego the batman movie 30524 the mini batwing new in sealed polybag 80 pieces 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'win', 'love']
+
+input:  current obsessions: this weekend's remodelista sf market at heath..
+target: deco
+isCorrect: True
+topN: ['deco', 'fashion', 'style', 'browns']
+
+input:  13 examples of how to include a double-sided fireplace into your...
+target: deco
+isCorrect: True
+topN: ['deco', 'browns', 'fashion', 'style']
+
+input: please rt? how to do a shattered glass manicure
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'browns', 'love']
+
+input: null / for kabul, afg for now (00h28m01s ut): 2040'28.0'' (ac) / 0731'51.8
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Capricorn', 'Sagittarius', 'beauty']
+
+input: please rt? talking business with fs murals founder francesca salisbury
+target: babies
+isCorrect: True
+topN: ['babies', 'browns', 'stream', 'Scorpio']
+
+input: please rt? nursery inspiration - find your shade of grey
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'love', 'beauty']
+
+input: lego star wars minifigures - 852555 - yoda - count dooku - mace windu - new 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'love', 'beauty']
+
+input: lego bionicle kohrak 8565 complete w/ instructions as is please read b26 1.12 
+target: build
+isCorrect: True
+topN: ['build', 'stream', 'win', 'love']
+
+input: please rt? 20 creative ways to reveal the gender of your baby!
+target: babies
+isCorrect: True
+topN: ['babies', 'stream', 'beauty', 'browns']
+
+numCorrect: 233 percCorrect: 0.781879194631

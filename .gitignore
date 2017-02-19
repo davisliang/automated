@@ -21,6 +21,7 @@
 *storm-local*
 *.bmp
 runAPI.sh
+*.gz
 
 # misc data files#
 *.html

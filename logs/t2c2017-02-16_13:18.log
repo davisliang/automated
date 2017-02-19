@@ -1,0 +1,1494 @@
+
+ ########################################## 
+EPOCH: 2
+input: transforming your mindset: 4 ways to boost productivity 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Sales', 'Startups', 'build', 'Capricorn', 'Giveaway', 'success', 'Sagittarius']
+
+input:  the wall of logs in this beerhall is meant resemble a forest floor
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'entrepreneur', 'browns', 'Capricorn', 'beauty', 'Sagittarius']
+
+input:  ruby aluminum tessellated facade for boutique in india
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'entrepreneur', 'fashion', 'beauty', 'Capricorn', 'browns', 'build']
+
+input: hourly shift supervisor 1981 braker lane austin tx austin tx jobs in austin, tx 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Sagittarius', 'entrepreneur', 'Capricorn', 'Giveaway', 'Startups']
+
+input: can you recommend anyone for this loan officer - colorado springs, co - co 
+target: Sales
+isCorrect: True
+topN: ['entrepreneur', 'Sales', 'Startups', 'Capricorn', 'babies', 'Sagittarius', 'build', 'FL']
+
+input:  asian-american leaders reflect on obama's legacy for the community 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'success', 'build', 'Sagittarius', 'style', 'love']
+
+input:  2016-17 panini hoops blue draymond green golden state warriors 
+target: NBA
+isCorrect: True
+topN: ['entrepreneur', 'NBA', 'Sagittarius', 'Startups', 'Capricorn', 'fashion', 'love', 'Giveaway']
+
+input: null / for luxembourg, l for now (02h28m01s ut): 0953'18.6'' (ac) / 0703'04.1'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: rt chandraosbourne: enter to this by following chandraosbourne on both twitter and facebook; retwee
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'Startups', 'holidays', 'auction']
+
+input: nate orchard - 2015 chrome topps rookie camo refractor /499 - browns rc 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: how is your marketing like a display window? listen > 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'quote', 'love', 'Capricorn', 'Startups', 'Sagittarius', 'style', 'build']
+
+input: used 2014 toyota camry sedan 4 dr cars for sale in miami, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input: 2000 (browns) leaf certified fabric of the game kevin johnson/1000 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: time cannot be regained you must use it wisely... try it's 100% 
+target: quote
+isCorrect: False
+topN: ['entrepreneur', 'love', 'success', 'free', 'win', 'Sagittarius', 'style', 'Capricorn']
+
+input:  london mayor to investigate foreign investment?s effect on housing.
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'entrepreneur', 'browns', 'Capricorn', 'beauty', 'Sagittarius']
+
+input: null / for mallorca, e for now (03h28m01s ut): 0505'49.6'' (ac) / 2101'24.6'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: please rt!! where?s the musk&quot; aether muskethanol & mad et len red musc
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'entrepreneur', 'Capricorn', 'Sagittarius', 'Scorpio', 'style']
+
+input: please rt? review: the toyota sienna is a minivan game-changer
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'Scorpio', 'holidays', 'Capricorn', 'Giveaway']
+
+input: will be purr-fect if i cat ear headphones in 2016 mega 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'entrepreneur', 'Sagittarius', 'Startups', 'love', 'Capricorn', 'holidays', 'free']
+
+input:  is now (06h58m01s ut) rising at 2534'30.7'' conjunct at caracas, yv
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'holidays']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.7372: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: 6 tips for prospect research  success at your fingertips! 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'quote', 'love', 'Sagittarius', 'babies', 'Capricorn', 'privacy', 'beauty']
+
+input: please rt? what men really think when we see a pregnant woman
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'Giveaway', 'holidays', 'love', 'Scorpio', 'Capricorn']
+
+input:  last couple of days to enter our valentine's giveaway! just like and rt to win 
+target: win
+isCorrect: True
+topN: ['win', 'entrepreneur', 'success', 'love', 'style', 'Capricorn', 'build', 'fashion']
+
+input: please rt? to the mom whose due date will never come
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Scorpio', 'Giveaway', 'Capricorn']
+
+input: according to facebook, australia couldn't get enough of trump in 2016 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'Startups', 'babies', 'fashion']
+
+input: acmcclockeuro: / for bukarest, r for now (02h28m01s ut): 0745'57.1'' (ac) / 2843'16.1'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: come find us at train station for a cuppa to cheer you up on hint: were in purple!
+target: free
+isCorrect: False
+topN: ['Capricorn', 'Startups', 'Sagittarius', 'love', 'holidays', 'FL', 'stream', 'browns']
+
+input: any mission worth accomplishing is best done with a team of people committed to excellence. 
+target: entrepreneur
+isCorrect: True
+topN: ['quote', 'entrepreneur', 'Sagittarius', 'Capricorn', 'love', 'Scorpio', 'style', 'Startups']
+
+input: check out amazon's plans for drone-distributing airborne warehouses 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'success', 'Giveaway', 'babies']
+
+input: it is not enough to have a good mind; the main thing is to use it well.-rene descartes 
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'success', 'quote', 'love', 'Capricorn', 'win', 'Startups', 'Sagittarius']
+
+input: acmcclockasia: / for teheran, ir for now (00h58m02s ut): 1229'12.7'' (ac) / 0323'53.9'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: lego 10697 classic large creative box new sealed 1500 mixed colors sizes bricks 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'style', 'Sagittarius']
+
+input: make a mark on the new year and win a marker duo on 
+target: win
+isCorrect: True
+topN: ['win', 'entrepreneur', 'success', 'love', 'Capricorn', 'style', 'build', 'FL']
+
+input: null / for budapest, h for now (05h28m02s ut): 0331'49.5'' (ac) / 0415'57.5'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: i've entered a competition to win the amazing lee stafford coco loco blow dryer . 
+target: beauty
+isCorrect: False
+topN: ['entrepreneur', 'Startups', 'build', 'Sagittarius', 'Capricorn', 'babies', 'love', 'privacy']
+
+input: you are the average of the 5 people you spend the most time with - jim rohn 
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'success', 'Startups', 'Capricorn', 'love', 'build', 'Sagittarius', 'style']
+
+input:  / for bukarest, r for now (22h58m02s ut): 1612'23.9'' (ac) / 2840'57.9'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: senior instrumentation and controls engineer wat jobs in san francisco, ca 
+target: CA
+isCorrect: False
+topN: ['entrepreneur', 'love', 'Sagittarius', 'Startups', 'Capricorn', 'beauty', 'fashion', 'build']
+
+input: we're click to apply: medical data entry clerk - mo 
+target: Sales
+isCorrect: False
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'love', 'babies', 'Sagittarius', 'build', 'win']
+
+input: find your aus use promo code loveheart online join free 
+target: love
+isCorrect: True
+topN: ['love', 'entrepreneur', 'Sagittarius', 'beauty', 'Capricorn', 'Scorpio', 'fashion', 'holidays']
+
+input:  who launches yearlong campaign to fight depression, slogan is: lets talk
+target: fashion
+isCorrect: True
+topN: ['holidays', 'build', 'Capricorn', 'entrepreneur', 'fashion', 'beauty', 'love', 'Sagittarius']
+
+input: i've just entered the to a 3-in-1 hand blender! get involved!
+target: win
+isCorrect: True
+topN: ['win', 'entrepreneur', 'success', 'love', 'Capricorn', 'fashion', 'style', 'build']
+
+input: property inspector construction rehab quality control jobs in tampa, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input: 2008 (browns) donruss gridiron gear silver holofoil o's derek anderson/250 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: cleveland browns 2016 leaf autograph jersey 16 prime sigs 2box live break 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: he that is good for making excuses is seldom good for anything else." benjamin franklin 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'success', 'Startups', 'Capricorn', 'love', 'build', 'Sagittarius', 'style']
+
+input:  is now (20h58m01s ut) rising at 2228'14.9'' conjunct at seoul, rok
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'entrepreneur', 'babies', 'love', 'Startups', 'holidays']
+
+input:  chane paris-moscow reissue 2.55 handbag quilted metallic hand painted leather
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Sagittarius', 'Capricorn', 'Giveaway', 'Startups', 'fashion', 'holidays']
+
+input: india is majorly changing the way its streets light up at night 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'success', 'Giveaway', 'babies']
+
+input: moose win! vince gets to see first moose shootouts. solid night in the city! thanks !! 
+target: win
+isCorrect: False
+topN: ['NBA', 'Sagittarius', 'Capricorn', 'privacy', 'entrepreneur', 'holidays', 'love', 'Giveaway']
+
+input: watch south carolina gamecocks v mississippi state bulldogs live stream 2/11/2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input:  this sleek, customizable truck camper reinvents a classic
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'entrepreneur', 'fashion', 'beauty', 'Capricorn', 'build', 'browns']
+
+input:  is now (08h28m02s ut) culminating at 1820'04.7'' conjunct at belgrade, yu
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Scorpio', 'Sagittarius', 'entrepreneur', 'Startups', 'love', 'build', 'FL']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.6572: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input:  georgio armani lined black wool skirt with wide self belt size 48 (us 12)
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Sagittarius', 'Capricorn', 'Giveaway', 'Startups', 'fashion', 'holidays']
+
+input:  teach your black daughter to appreciate her hair w/ 
+target: win
+isCorrect: True
+topN: ['win', 'entrepreneur', 'success', 'love', 'style', 'Capricorn', 'build', 'fashion']
+
+input:  / for kiew, ukr for now (23h28m01s ut): 2516'59.1'' (ac) / 1637'15.1'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input:  / for luxembourg, l for now (02h58m01s ut): 1548'23.4'' (ac) / 1511'50.9'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: chuck jones' entire interview with erin burnett 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'Startups', 'babies', 'fashion']
+
+input: join the sunrise senior living team! see our latest opening here: az 
+target: Sales
+isCorrect: True
+topN: ['entrepreneur', 'Sales', 'Startups', 'Capricorn', 'Sagittarius', 'babies', 'FL', 'build']
+
+input: 100% commissions daily!.. rtplz ://t.co/pksmedmoeq
+target: Startups
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'build', 'Capricorn', 'success', 'Sagittarius', 'love', 'Giveaway']
+
+input: part time field support rep i (merchandiser) - redding, ca, 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input:  / for tunis, tn for now (03h58m02s ut): 1353'35.0'' (ac) / 0035'47.8'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: enter to a $10 amazon gift card from in the kiss me if you can hop! ends 2/14
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'entrepreneur', 'Sagittarius', 'free', 'love', 'Startups', 'holidays', 'Capricorn']
+
+input:  nib christian louboutin hot chick 130 shocking rose /pink pat.leather pumps 37
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Giveaway', 'Sagittarius', 'Capricorn', 'Startups', 'fashion', 'holidays']
+
+input:  small apartment design idea ? raised bedroom allows for storage...
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns', 'entrepreneur', 'Capricorn', 'beauty', 'Sagittarius']
+
+input: null / for marseille, f for now (05h28m01s ut): 2322'09.2'' (ac) / 1921'21.9'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: reebok brady quinn 10 cleveland browns nfl football jersey adult large 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: arian foster in hot dog stand showdown over n-word insult (video) happening now 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'Startups', 'babies', 'beauty']
+
+input: 5pcs boho retro women stack plain above knuckle midi finger tip rings set gift 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'entrepreneur', 'style', 'Sagittarius', 'Scorpio', 'Capricorn']
+
+input: lego bionicle 8603 toa metru whenua complete figure ~ free shipping 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'Sagittarius', 'style']
+
+input: islam guide: a brief illustrated guide to understanding 
+target: love
+isCorrect: True
+topN: ['entrepreneur', 'Sagittarius', 'Capricorn', 'Startups', 'babies', 'fashion', 'holidays', 'love']
+
+input: beneath all the new tech at the security and debate continues to gather steam
+target: privacy
+isCorrect: False
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'build', 'Sagittarius', 'love', 'success', 'fashion']
+
+input:  $20 paypal cash from dead lawyers don't die author open ww 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'entrepreneur', 'Sagittarius', 'Capricorn', 'Startups', 'love', 'holidays', 'auction']
+
+input: seum playing alien isolation?an express elevator to hell yeah! 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Capricorn', 'Sagittarius', 'Startups', 'browns', 'love', 'build']
+
+input:  thanks for the chance of winning your amazing  good luck all  fingers double crossed   xx
+target: win
+isCorrect: True
+topN: ['win', 'entrepreneur', 'success', 'love', 'Capricorn', 'style', 'build', 'fashion']
+
+input: this futuristic car is so intuitive it knows your needs  and even your emotions 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'Giveaway', 'success', 'babies']
+
+input: watch irina falconi - nicole gibbs wta australian open live 1/18/2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input:  / for hongkong, hkg for now (22h28m02s ut): 1049'37.0'' (ac) / 2332'28.5'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input:  - welder corod bakersfield ca - will be trained in fusion welding drive... 
+target: CA
+isCorrect: True
+topN: ['entrepreneur', 'love', 'Startups', 'Sagittarius', 'free', 'Capricorn', 'babies', 'CA']
+
+input: please rt? drew barrymore handles her daughter's disney meltdowns...
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Scorpio', 'Capricorn', 'Giveaway']
+
+input: null is now (08h58m01s ut) culminating at 0105'17.3'' conjunct at athens, gr
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Scorpio', 'Sagittarius', 'entrepreneur', 'love', 'Startups', 'build', 'holidays']
+
+input: are the finals contender? and my thoughts on patriot players not going to the white house  podcast
+target: NBA
+isCorrect: True
+topN: ['NBA', 'Startups', 'Capricorn', 'Sagittarius', 'entrepreneur', 'Giveaway', 'build', 'holidays']
+
+input: 1948 leaf clifford fannin psa 4 st. louis browns short print 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: environmental water gives murrumbidgee wetlands a boost 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'Startups', 'babies', 'fashion']
+
+input: lol i called it that gsw was gonna stop 130 & they did  but so proud of my that stood up to this super team 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'entrepreneur', 'Sagittarius', 'Startups', 'build', 'Capricorn', 'love', 'fashion']
+
+input:  / for delhi, ind for now (21h28m01s ut): 2602'38.2'' (ac) / 0246'57.8'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input:  kim kardashian shares rare photos of saint west as family celebrated his f...
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'entrepreneur', 'style', 'Scorpio', 'Sagittarius', 'Capricorn']
+
+input:  katerina kopytina has designed an astronomy inspired planter...
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns', 'Capricorn', 'entrepreneur', 'beauty', 'Sagittarius']
+
+input:  / for bordeaux, f for now (04h28m01s ut): 0838'28.8'' (ac) / 0017'42.4'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input:  buy now: $36.99 electric bath brush spin spa skin back scrubber ma...
+target: beauty
+isCorrect: True
+topN: ['beauty', 'entrepreneur', 'love', 'fashion', 'Sagittarius', 'style', 'Capricorn', 'build']
+
+input: after being a malnourished shut in, takes the world by storm
+target: fashion
+isCorrect: False
+topN: ['entrepreneur', 'Giveaway', 'NBA', 'Sagittarius', 'Capricorn', 'love', 'quote', 'Sales']
+
+input: organicmatcha extractscatechingives power to rejuvenate yourskin. 
+target: beauty
+isCorrect: False
+topN: ['entrepreneur', 'babies', 'Sagittarius', 'Capricorn', 'love', 'Startups', 'holidays', 'fashion']
+
+input: play bmx park game online  free bmx park game  espn arcade 
+target: free
+isCorrect: False
+topN: ['entrepreneur', 'babies', 'love', 'Capricorn', 'Sagittarius', 'Startups', 'build', 'beauty']
+
+input:  for the i wouldn't change it.  red bowl - greenville
+target: entrepreneur
+isCorrect: True
+topN: ['quote', 'entrepreneur', 'love', 'Capricorn', 'Sagittarius', 'style', 'Startups', 'build']
+
+input:  / for newyork, usny for now (06h58m02s ut): 1512'26.0'' (ac) / 2507'26.2'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: null / for kairo, et for now (20h58m01s ut): 0425'32.0'' (ac) / 0725'46.6'' 
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: senior construction cost estimator jobs in houston, tx 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Sagittarius', 'Capricorn', 'entrepreneur', 'Giveaway', 'Startups']
+
+input: it's only been 2 days at the and i feel like i've improved so much! 
+target: success
+isCorrect: True
+topN: ['success', 'entrepreneur', 'build', 'win', 'Startups', 'style', 'fashion', 'love']
+
+input: case manager i pathways jobs in san francisco, ca 
+target: CA
+isCorrect: False
+topN: ['entrepreneur', 'love', 'Sagittarius', 'Startups', 'Capricorn', 'beauty', 'fashion', 'babies']
+
+input: gifting representative brazilian portuguese jobs in kissimmee, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.8828: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: acmcclockamer: / for toronto on, cdn for now (09h28m02s ut): 0942'37.7'' (ac) / 0039'38.4'' 
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: watch salvatore caruso - nicolas jarry tempe challenger men live streaming 14.02.2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input:  2014-15 national treasures colossal jersey dwyane wade 07/99 miami heat 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'entrepreneur', 'Sagittarius', 'Startups', 'babies', 'Capricorn', 'love', 'fashion']
+
+input: "the unsexiest blog ever" -> food. fashion.& fun-> {plz rt}
+target: fashion
+isCorrect: True
+topN: ['beauty', 'entrepreneur', 'love', 'Sagittarius', 'fashion', 'Capricorn', 'style', 'build']
+
+input: lego the batman movie the mini batwing polybag "new&sealed" 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'Scorpio', 'love', 'Sagittarius', 'style']
+
+input: dunfermline athletic - st. mirren soccer live stream 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input: hull city v bournemouth soccer live stream 14.01.2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input:  usa - cdl-a flatbed drivers - looking for an excellent flatbed opportunity it doesnx27t g... 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input:  african entrepreneurs to be taught management best practices 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'Capricorn', 'build', 'Sagittarius', 'style', 'love']
+
+input: in 2015, they abused uhuru for carrying ngina to france but see what raila did in acc 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'success', 'Giveaway', 'babies']
+
+input: full time entry level sales manager jobs in orlando, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'CA', 'TX', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input:  small, social, affordable living coming soon to upstate new york
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'entrepreneur', 'browns', 'Capricorn', 'beauty', 'Sagittarius']
+
+input: new 2016 honda hr v ex l hatchback 4 dr cars for sale in gainesville, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input: this sxy lady in a bikini wanted to show off to men but it went horribly wrong (vide 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'success', 'Giveaway', 'babies']
+
+input: the tools helping facilitate leaks from trumps white house 
+target: privacy
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'love', 'build', 'privacy', 'Sagittarius', 'success']
+
+input:  ugg foerster waterproof stout leather warm winter boots us 4 kids used
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Capricorn', 'Giveaway', 'Sagittarius', 'Startups', 'fashion', 'holidays']
+
+input:  authentic coach brown peyton leather mini satchel handbag/crossboby (euc)
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Capricorn', 'Sagittarius', 'Startups', 'Giveaway', 'fashion', 'Scorpio']
+
+input:  / for ueberlingen, de for now (03h58m01s ut): 0031'44.6'' (ac) / 0114'17.5'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: new 2017 bmw 4 series 430i coupe sulev coupe cars for sale in berkeley, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input:  average 3.8 failures before final what sets the successful ones apart is their amazing 
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'build', 'love', 'Capricorn', 'Sagittarius', 'style']
+
+input:  nwt coach sign nylon mini drawstring carryall handbag in lt grey 
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Capricorn', 'Sagittarius', 'Startups', 'Giveaway', 'fashion', 'Scorpio']
+
+input: i am looking for a buyer on 4731 stagecoach ct 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input:  nokia 700 silver/white 5mp international version gsm
+target: free
+isCorrect: True
+topN: ['entrepreneur', 'free', 'love', 'success', 'Sagittarius', 'babies', 'Capricorn', 'beauty']
+
+input: please rt? how to apply for a bursary and scholarship
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Scorpio', 'Giveaway', 'Capricorn']
+
+input: please rt sergio rossi - metallic-leather peep-toe sandal
+target: style
+isCorrect: True
+topN: ['style', 'entrepreneur', 'fashion', 'beauty', 'deco', 'love', 'Capricorn', 'build']
+
+input: family love: open, honest, caring and unconditional via 
+target: love
+isCorrect: True
+topN: ['quote', 'entrepreneur', 'love', 'Capricorn', 'Startups', 'Sagittarius', 'Scorpio', 'auction']
+
+input: ideas are easy. implementation is hard.  guy kawasaki 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'success', 'Startups', 'Capricorn', 'love', 'build', 'Sagittarius', 'style']
+
+input:  egyptian, south african entrepreneurs become endeavor entrepreneurs 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'success', 'build', 'Sagittarius', 'style', 'love']
+
+input:  los angeles lakers shaquille oneal signed dunk in purple photograph, 16" x 20"
+target: NBA
+isCorrect: True
+topN: ['NBA', 'entrepreneur', 'Sagittarius', 'Startups', 'Capricorn', 'privacy', 'babies', 'love']
+
+input: please rt? 7 things your picky eater might actually eat
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'Scorpio', 'Capricorn', 'holidays', 'privacy']
+
+input: vince costello all pro linebacker for cleveland browns autograph 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: all they wanted was a child. they never expected this. grab this today. read with 
+target: free
+isCorrect: True
+topN: ['free', 'entrepreneur', 'love', 'build', 'Sagittarius', 'Giveaway', 'style', 'quote']
+
+input:  womens ugg australia winter crochet purple boots size 8
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Capricorn', 'Sagittarius', 'Giveaway', 'Startups', 'fashion', 'holidays']
+
+input: watch brooklyn nets - toronto raptors livestream january 13, 2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input: happy valentine's day. (price: $3.00, size: 4.7/8 x 3.5 inches) 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'love', 'success', 'style', 'Capricorn', 'Sagittarius', 'fashion', 'Startups']
+
+input: arianna huffington looks for 2 qualities in new hires, and yo 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'Startups', 'babies', 'fashion']
+
+input:  be committed to continual education and share the best insights. read: 
+target: success
+isCorrect: False
+topN: ['entrepreneur', 'Sales', 'Startups', 'Capricorn', 'fashion', 'build', 'love', 'Sagittarius']
+
+input: live streaming umea city ibk v granlo bk tv watch january 15, 2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.5837: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: used 2014 toyota tacoma club cab pickup cars for sale in hayward, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'entrepreneur', 'Startups', 'Capricorn', 'Sagittarius', 'Giveaway']
+
+input: new lego pirates set 8396 soldier's arsenal nrfb sealed us seller 2008 mint! 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'style', 'success']
+
+input:  nikon coolpix b500 16 megapixel point and shoot compact digital camera red
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'entrepreneur', 'Sagittarius', 'Startups', 'Capricorn', 'love', 'auction', 'holidays']
+
+input: acmcclockeuro: / for bukarest, r for now (23h58m01s ut): 2910'41.8'' (ac) / 1646'47.1'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input:  - sales position - commission based / technology platform - description we are looking fo...
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input: lego set valentine's day dog hearts kids boys girls building kit fun new 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'style', 'Sagittarius']
+
+input: $.99 only today! the value driven business by benjamin teal 
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'build', 'Capricorn', 'Sagittarius', 'love', 'success', 'fashion']
+
+input: please rt? how to make a mini city out of paper rolls
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Scorpio', 'Giveaway', 'Capricorn']
+
+input: kat von d everlasting liquid matte lipstick made i... 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'entrepreneur', 'love', 'Sagittarius', 'fashion', 'Capricorn', 'style', 'build']
+
+input:  vtg giorgio armani borgo 21 cotton shirt 15.5 blue brown beige plaid button down
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Sagittarius', 'Capricorn', 'Giveaway', 'Startups', 'fashion', 'holidays']
+
+input:  2012 bmw 6-series alpine white - black rag top 2012 bmw 650i convertible
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Giveaway', 'Sagittarius', 'Startups', 'Capricorn', 'holidays', 'fashion']
+
+input:  version of perfect to follow your idols. yasner chocomuchocookies
+target: free
+isCorrect: True
+topN: ['entrepreneur', 'free', 'Capricorn', 'Startups', 'FL', 'Giveaway', 'love', 'Sagittarius']
+
+input: yeah the sun still shines but sometimes i don't feel it. 
+target: entrepreneur
+isCorrect: True
+topN: ['quote', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'Scorpio', 'beauty', 'babies']
+
+input:  the winners of smithsonian?s 13th annual photo contest (9 photos)
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'entrepreneur', 'fashion', 'beauty', 'Capricorn', 'browns', 'Sagittarius']
+
+input: what will you do with your new beginning today to create a better ending than yesterday? 
+target: success
+isCorrect: True
+topN: ['success', 'entrepreneur', 'win', 'Startups', 'build', 'style', 'love', 'Capricorn']
+
+input: lego ninjago masters of spinjitzu ronin r e x out of box new 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'style', 'Sagittarius']
+
+input:  marc by marc jacobs black leather wingman chain phone wristlet wallet
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Sagittarius', 'Capricorn', 'Giveaway', 'Startups', 'holidays', 'fashion']
+
+input: weekend what is a weekend? i am a trying to be better than my peers! what 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'Capricorn', 'build', 'Sagittarius', 'love', 'style']
+
+input:  7 game-changing black entrepreneurs you should know 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'Capricorn', 'build', 'Sagittarius', 'style', 'love']
+
+input: please rt? i don't need to explain to anyone why i'm formula feeding
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'Scorpio', 'holidays', 'Capricorn', 'Giveaway']
+
+input: attention craving lady shakes her petite derriere for team mafisi! do you love it? vi 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'success', 'Giveaway', 'babies']
+
+input:  / for kopenhagen, dk for now (05h28m01s ut): 1520'02.7'' (ac) / 2623'53.2'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: the art of asking effectively for what you really, really want 
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'success', 'quote', 'love', 'Capricorn', 'win', 'Startups', 'Sagittarius']
+
+input: west - entry-level cdl-a truck drivers - paid training guaranteed 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input: streaming live apollon smyrni vs ofi soccer january 18, 2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input: west usa - advertising sales executive - responsibilities business-to-business b2b ... 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input: beautiful everyday w new gp: ios:" ://t.co/0p1gfnwjai
+target: fashion
+isCorrect: True
+topN: ['beauty', 'entrepreneur', 'love', 'fashion', 'style', 'Capricorn', 'Sagittarius', 'Scorpio']
+
+input: come check out the finest in and originality in our 
+target: fashion
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'build', 'success', 'Capricorn', 'love', 'Sagittarius', 'fashion']
+
+input: 2016 contenders seth devalve rookie championship ticket auto clev browns /49 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.2119: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: success is walking from failure to failure with no loss of enthusiasm. 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'success', 'quote', 'love', 'win', 'Capricorn', 'Startups', 'Sagittarius']
+
+input:  lego star wars vader's tie fighter advanced -ucp - very rare 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'Scorpio', 'love', 'style', 'Sagittarius']
+
+input: that moment when you see wearing a black t-shirt at the  
+target: love
+isCorrect: False
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'build', 'Sales', 'FL', 'Giveaway', 'fashion']
+
+input: null / for tirana, al for now (00h28m01s ut): 0849'06.4'' (ac) / 1704'18.2'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: please rt? how to do a shattered glass manicure
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'holidays', 'love', 'Scorpio', 'Giveaway', 'Capricorn']
+
+input:  / for oslo, n for now (05h28m01s ut): 1252'58.9'' (ac) / 2839'17.5'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: new 2017 chrysler pacifica touring l sports van cars for sale in lodi, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'Scorpio']
+
+input:  4 ways to avoid nintendo's super mario mobile mistake
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'build', 'Capricorn', 'success', 'Sagittarius', 'love', 'FL']
+
+input:  - operations supervisor - transportation supply chain/logistics - with ope... 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'entrepreneur', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input:  - tax preparer - our tax preparers are an integral part of our business. once you su... 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Sagittarius', 'entrepreneur', 'Capricorn', 'Giveaway', 'Startups']
+
+input: lynch: fbi took hacking of dnc seriously happening now 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'Startups', 'babies', 'fashion']
+
+input: used 2014 ford f 150 stx extended cab pickup cars for sale in lewisville, tx 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Sagittarius', 'Capricorn', 'entrepreneur', 'Giveaway', 'Startups']
+
+input: boohoo - up to 50% off everything + free shipping on orders over $60 (code).. up
+target: fashion
+isCorrect: False
+topN: ['entrepreneur', 'Capricorn', 'Sagittarius', 'Startups', 'holidays', 'build', 'Giveaway', 'Scorpio']
+
+input: : let's go to the fourth! - 92, lakers - 70 dre with 24 and 17 rebounds. 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'entrepreneur', 'Sagittarius', 'Capricorn', 'babies', 'Startups', 'love', 'fashion']
+
+input: lego the lord of the rings 79008 pirate ship ambush new sealed 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'style', 'Sagittarius']
+
+input: 7pcs gold boho women stack plain above knuckle ring midi finger tip rings set 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'entrepreneur', 'style', 'Sagittarius', 'Scorpio', 'Capricorn']
+
+input:  susan sarandon: "my sexual orientation is up for grabs": susan sarandon is open about her sexuality
+target: fashion
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'fashion', 'build', 'Capricorn', 'Sagittarius', 'love', 'FL']
+
+input:  giorgio armani sz. 9 d/m tan/brown chukka desert ankle boot suede italy $775
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Sagittarius', 'Capricorn', 'Giveaway', 'Startups', 'fashion', 'holidays']
+
+input: perl python scripting developer jobs in sunnyvale, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input:  black cock, white slut (25:51) big cocks, blondes, interracial -
+target: free
+isCorrect: False
+topN: ['entrepreneur', 'love', 'Capricorn', 'babies', 'Sagittarius', 'holidays', 'privacy', 'Scorpio']
+
+input:  - call center representative - teleperformance is now hiring customer care professi... 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Sagittarius', 'Capricorn', 'entrepreneur', 'Giveaway', 'Startups']
+
+input:  - call center - description we are seeking a call center to join our tea... 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Sagittarius', 'entrepreneur', 'Capricorn', 'Giveaway', 'Startups']
+
+input:  a palette of wood, metal, and concrete for this apartment interior in...
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns', 'Capricorn', 'beauty', 'entrepreneur', 'Sagittarius']
+
+input: 2012 panini prominence cleveland browns football card ozzie newsome s /897 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input:  this is how a contemporary university should look like
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'entrepreneur', 'browns', 'beauty', 'Capricorn', 'Sagittarius']
+
+input: watch trencin - nitra club friendly live streaming 1/14/2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input: many festivals one spread lighten the heart like a so that it can be enlightened. be light to go high
+target: love
+isCorrect: True
+topN: ['entrepreneur', 'success', 'Startups', 'fashion', 'Capricorn', 'love', 'Sagittarius', 'build']
+
+input: acmcclockasia: / for sapporo, j for now (19h28m01s ut): 1006'27.3'' (ac) / 0644'57.6'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: morrisons sees best christmas performance for seven years 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'success', 'Giveaway', 'babies']
+
+input: ethical business directory - my account - sneak peek example 
+target: free
+isCorrect: False
+topN: ['entrepreneur', 'quote', 'love', 'Sagittarius', 'Capricorn', 'Startups', 'babies', 'beauty']
+
+input:  valley - 4000 sign-on bonus for experienced cdl truck drivers. drive with... 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'entrepreneur', 'Giveaway', 'Startups', 'Capricorn', 'Sagittarius']
+
+input: please rt? dr. drew weighs in on teen mom leah meeser after custody loss
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Giveaway', 'Scorpio', 'Capricorn']
+
+input: 'vikings' creator takes us inside this week's vengeful episode 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'success', 'Giveaway', 'Scorpio']
+
+input: watch dallas stars vs buffalo sabres hockey livestream january 16, 2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input:  100% auth new christian louboutin black sweety charity stud bag/handbag/purse
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Giveaway', 'Sagittarius', 'Capricorn', 'Startups', 'fashion', 'holidays']
+
+input: lego hero factory 2067 evo 2.0 complete figure bionicle ~ free shipping 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'Scorpio', 'love', 'style', 'Sagittarius']
+
+input: used 2016 mercedes benz c class c300 sedan 4d sedan cars for sale in los angeles, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input:  2014 audi s5 premium plus coupe 2-door 2014 audi s5 premium plus awd s/c auto sunroof nav 44k
+target: auction
+isCorrect: False
+topN: ['entrepreneur', 'Startups', 'love', 'Capricorn', 'Sagittarius', 'build', 'babies', 'fashion']
+
+input: please rt? for all the times i ever complained about pregnancy, i'm...
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'Scorpio', 'Capricorn', 'holidays', 'privacy']
+
+input: lovely stylish card great for day & we've got a keyring to match youtothemoonandback 
+target: love
+isCorrect: True
+topN: ['love', 'entrepreneur', 'Sagittarius', 'beauty', 'Capricorn', 'fashion', 'holidays', 'Scorpio']
+
+input: 2000 ultimate victory cleveland browns football card courtney brown rookie 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: look forward to speaking march 17-19! learn tools to transform your life for greater & 
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'success', 'love', 'Startups', 'Sagittarius', 'Capricorn', 'build', 'beauty']
+
+input: why are so may people making money with this? click here =>
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'build', 'Capricorn', 'Sagittarius', 'success', 'love', 'fashion']
+
+input:  atlantic beach modern by content architecture
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion', 'Capricorn', 'Sagittarius', 'beauty', 'entrepreneur']
+
+input:  2010-11 (heat) panini gold standard gold crowns dwyane wade /299 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'entrepreneur', 'Sagittarius', 'Startups', 'babies', 'Capricorn', 'love', 'fashion']
+
+input:  is now (15h58m01s ut) setting at 2339'41.8'' opposite at reykjavic, is
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Scorpio', 'Sagittarius', 'entrepreneur', 'love', 'Startups', 'build', 'holidays']
+
+input:  super quality indian snack bar is a small and vibrant restaurant in...
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns', 'Capricorn', 'entrepreneur', 'beauty', 'Sagittarius']
+
+input:  picture of the day: overlooking eixample from the top of sagrada...
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'entrepreneur', 'fashion', 'browns', 'Capricorn', 'beauty', 'Sagittarius']
+
+input: awesome from balance powerpoint & keynote template for 
+target: free
+isCorrect: False
+topN: ['fashion', 'style', 'entrepreneur', 'beauty', 'love', 'Sagittarius', 'Capricorn', 'holidays']
+
+input: 2007 score cleveland browns football card sean jones 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: get social! - food + essential oils +great people = fun! in beach, more and rsvp here:
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'entrepreneur', 'Capricorn', 'Startups', 'Sagittarius', 'win']
+
+input:  - physical therapy assistant - conducts a medically prescribed therapy prog... 
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Sagittarius', 'Startups', 'win']
+
+input:  is now (03h28m01s ut) rising at 2524'06.7'' conjunct at marseille, f
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Scorpio', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'holidays']
+
+input: acquisition of gm's opel-vauxhall by psa would brin... via 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'success', 'build', 'Sagittarius', 'style', 'love']
+
+input: watch stream swansea city v arsenal english premier league 1/14/2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input:  2010 porsche panamera s! nav! only 65k mi! awd! carfax cert! sharp! look 2010 porsche panamera s!
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Giveaway', 'Sagittarius', 'Capricorn', 'Startups', 'holidays', 'fashion']
+
+input:  video>> why you will fail to have a great career: larry smith at tedxuw (video)
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'success', 'Sagittarius', 'build', 'style', 'love']
+
+input:  / for ankara, tr for now (01h28m01s ut): 2856'42.0'' (ac) / 2146'02.7'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input:  southeast asian startups, east ventures has new us$27.5m fund for you 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'Capricorn', 'build', 'Sagittarius', 'style', 'love']
+
+input:  garage sale in burbank, sat. 14 on 14th hr8am s orchard dr 91506
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'entrepreneur', 'TX', 'Capricorn', 'Startups', 'Sagittarius', 'babies']
+
+input: acmcclockeuro: is now (08h28m01s ut) culminating at 1816'32.8'' conjunct at athens, gr
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Scorpio', 'Sagittarius', 'entrepreneur', 'Startups', 'love', 'build', 'FL']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.5501: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: claims examiner adjuster auto liability property damage jobs in san diego, ca 
+target: CA
+isCorrect: True
+topN: ['entrepreneur', 'CA', 'Startups', 'Capricorn', 'FL', 'Sagittarius', 'babies', 'love']
+
+input: travis prentice rookie 2000 fleer focus 238 serial cleveland browns 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input:  1991 alfa romeo spider spider voloce 1991 alfa romeo voloce spider service records and upgrades-
+target: auction
+isCorrect: True
+topN: ['auction', 'entrepreneur', 'Sagittarius', 'Giveaway', 'Capricorn', 'holidays', 'Startups', 'fashion']
+
+input: lego creator watch kids 4250341 buildable toy 48 pcs. new in box *very rare* 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'success', 'style']
+
+input: don't cry, all your favorite vines will live on here 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'success', 'Giveaway', 'babies']
+
+input: my1suite: how to improve client retention and increase repeat business 
+target: Startups
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'build', 'Capricorn', 'success', 'Sagittarius', 'love', 'FL']
+
+input: most great people have attained their greatest success just one step beyond their greatest failure. napoleon hill 
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'success', 'Startups', 'Capricorn', 'love', 'build', 'Sagittarius', 'style']
+
+input: did you read this interview i did? first part of a new "meet the team" series... 
+target: fashion
+isCorrect: False
+topN: ['entrepreneur', 'Giveaway', 'Sagittarius', 'quote', 'babies', 'love', 'Scorpio', 'privacy']
+
+input: retail sales counter manager chantecaille cosmetics fashion valley jobs in san diego, ca 
+target: CA
+isCorrect: True
+topN: ['entrepreneur', 'CA', 'Startups', 'Capricorn', 'FL', 'Sagittarius', 'babies', 'love']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.6575: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input:  jason sudeikis reveals son otis' hilarious name for beyonc: one of the smallest members of the beyh
+target: fashion
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'fashion', 'Capricorn', 'build', 'Sagittarius', 'love', 'FL']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.3473: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: please rt? ontario steps in to help sicks kids affected by trump travel...
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'Scorpio', 'holidays', 'Capricorn', 'Giveaway']
+
+input: please rt? today?s parent cake week easy-bake oven contest: rules...
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Scorpio', 'Capricorn', 'Giveaway']
+
+input: 1-4 wayne newton 3/25 hard rock rocksino northfield cleveland hot tickets 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: null / for athens, gr for now (02h28m01s ut): 0544'27.0'' (ac) / 2045'53.1'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'entrepreneur', 'love', 'babies', 'Startups', 'Giveaway']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.8485: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: read propaganda ebook free advertise - propaganda free ads
+target: free
+isCorrect: True
+topN: ['entrepreneur', 'free', 'love', 'success', 'Startups', 'Sagittarius', 'build', 'style']
+
+input: sr program manager talent development jobs in tampa, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input: lego star wars imperial star destroyer (100301) 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'Scorpio', 'love', 'style', 'Sagittarius']
+
+input: used 2013 ford escape sel wagon 4 dr cars for sale in cocoa, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input:  sky devices platinum 6.0  4g gsm unlocked dual-sim mediatek
+target: free
+isCorrect: True
+topN: ['entrepreneur', 'free', 'love', 'success', 'Sagittarius', 'babies', 'Capricorn', 'beauty']
+
+input: please rt? 7 genius tips to make mealtimes easier
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'Scorpio', 'holidays', 'Capricorn', 'privacy']
+
+input: need help writing your business plan? i'll guide you. 512.850.4808. 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'build', 'Capricorn', 'Sagittarius', 'love', 'style']
+
+input:  bessdress two piece sequined bodice prom dresses 2017
+target: free
+isCorrect: False
+topN: ['style', 'entrepreneur', 'fashion', 'beauty', 'deco', 'love', 'Capricorn', 'build']
+
+input: 04:51: temp: 58.4f; dewpoint: 54.54f; winds: - at 0.0 mph; pressure: 30.206 in.; hourly rain rate: 0.00 in. 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input:  - food inventory specialist needed for sculpture hospitality of jax. -... 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input: ends today 2/11 wintec industries custom high performance gaming pc worth $2000+ 
+target: free
+isCorrect: False
+topN: ['Giveaway', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'Startups', 'holidays', 'auction']
+
+input: lego 5761 creator 3-in-1 construction vehicles set - brand new 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'Sagittarius', 'style']
+
+input:  capsule design: an la company offering design-led furniture (for less)
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'entrepreneur', 'Capricorn', 'browns', 'beauty', 'Sagittarius']
+
+input: inspiration around every corner in tulum  more on  
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Capricorn', 'build', 'Sagittarius', 'love', 'Scorpio', 'Giveaway']
+
+input: 1977 topps mexican 420 jerry sherk browns cafes oklahoma state sp 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input:  is now (05h58m02s ut) rising at 2617'31.3'' conjunct at bukarest, r
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Scorpio', 'Sagittarius', 'entrepreneur', 'love', 'Startups', 'build', 'holidays']
+
+input: please rt? helping your child settle in at a new school
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'holidays', 'love', 'Scorpio', 'Giveaway', 'Capricorn']
+
+input: used 2007 honda accord sdn ex l sedan 4 dr cars for sale in clearwater, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Capricorn', 'entrepreneur', 'Scorpio', 'Sagittarius', 'win']
+
+input: narwall : personalized designs for toys, apparel and decor for kids 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'success', 'build', 'Sagittarius', 'style', 'love']
+
+input: please rt? 3 new travel products for parents who have somewhere to go
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Scorpio', 'Capricorn', 'Giveaway']
+
+input: lego 79004 the hobbit barrel escape an unexpected journey w gloin 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'style', 'Sagittarius']
+
+input: please rt? kids craft: how to make animal ears headbands and matching...
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Scorpio', 'Capricorn', 'Giveaway']
+
+input: hip hop nation - your underground station is out! stories via 
+target: free
+isCorrect: False
+topN: ['quote', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'fashion', 'Startups', 'babies']
+
+input:  otterbox defender series for samsung galaxy s6  retail
+target: free
+isCorrect: True
+topN: ['entrepreneur', 'free', 'love', 'success', 'Sagittarius', 'Capricorn', 'babies', 'beauty']
+
+input: watch stuttgart v koln club friendly live streaming 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input:  cages were a legit childminding solution in the 1920's 
+target: babies
+isCorrect: True
+topN: ['entrepreneur', 'love', 'babies', 'fashion', 'beauty', 'Sagittarius', 'Giveaway', 'Capricorn']
+
+input: watch boston river vs river plate montevideo live streaming 12.02.2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input: autographed paul warfield browns helmet fanatics authentic coa item 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.2091: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: lego atlantis squid warrior minifigure 8061 dark red tentacles genuine 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'Startups', 'Capricorn', 'love', 'Scorpio', 'success', 'style']
+
+input: new post: expanse announces the launch of blockchain-based 
+target: free
+isCorrect: False
+topN: ['entrepreneur', 'Startups', 'Sales', 'Capricorn', 'build', 'success', 'Sagittarius', 'love']
+
+input: please rt? 9 ways dads can emotionally prep for childbirth
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'holidays', 'Scorpio', 'Capricorn', 'Giveaway']
+
+input: 1979 topps "calvin hill" cleveland browns!!!!!!!!!! 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: resilience is about how you recharge, not how you endure 
+target: entrepreneur
+isCorrect: True
+topN: ['quote', 'entrepreneur', 'love', 'Sagittarius', 'Capricorn', 'Startups', 'Scorpio', 'style']
+
+input:  fair park district entrepreneur center to open in dallas 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Capricorn', 'success', 'build', 'Sagittarius', 'style', 'love']
+
+input:  final reflections on israel lab experience: israel is itself a start-up, a country that came 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'Capricorn', 'build', 'Sagittarius', 'style', 'love']
+
+input: please rt? diy daffodil clay pots or candle holders
+target: babies
+isCorrect: True
+topN: ['babies', 'Sagittarius', 'entrepreneur', 'love', 'Scorpio', 'holidays', 'Capricorn', 'Giveaway']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.8418: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.3207: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.9192: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: live streaming luzern - young boys swiss super league tv watch 2/12/2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.2264: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'entrepreneur', 'Sagittarius', 'love', 'Capricorn', 'style', 'Scorpio', 'Giveaway']
+
+input: watch steve darcis v radu albot tennis live february 14, 2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'entrepreneur', 'Sagittarius', 'Capricorn', 'browns', 'love', 'Startups', 'build']
+
+input: 1979 topps oliver davis browns nm-mt set break *4671 
+target: browns
+isCorrect: True
+topN: ['browns', 'Scorpio', 'Capricorn', 'deco', 'Sagittarius', 'babies', 'style', 'love']
+
+input: ladies shoe clearance  walmart ~ check your store! - 
+target: free
+isCorrect: False
+topN: ['entrepreneur', 'Sagittarius', 'Capricorn', 'Startups', 'love', 'holidays', 'babies', 'NBA']
+
+input:  review  stanfords ignite boot camp for entrepreneurs 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'Capricorn', 'build', 'Sagittarius', 'style', 'love']
+
+input:  thank you for following digital! stay tuned for tweets on & more!
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'build', 'love', 'Capricorn', 'Sales', 'babies', 'Sagittarius']
+
+numCorrect: 274 percCorrect: 0.919463087248

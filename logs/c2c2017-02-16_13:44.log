@@ -1,0 +1,1494 @@
+
+ ########################################## 
+EPOCH: 251
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: popup
+target: fashion
+isCorrect: False
+topN: ['News', 'Weather', 'news', 'Trump', 'Tech', 'Follow', 'Buzz', 'entrepreneur']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'business', 'fashion', 'beauty']
+
+input: success
+target: quote
+isCorrect: True
+topN: ['quote', 'quotes', 'news', 'News', 'job', 'RT', 'Job', 'jobs']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: work
+target: quote
+isCorrect: False
+topN: ['style', 'fashion', 'design', 'deco', 'music', 'beauty', 'success', 'makeup']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Knicks
+target: NBA
+isCorrect: False
+topN: ['Cards', 'Steelers', 'coins', 'Giveaway', 'Retail', 'NFL', 'Tech', 'free']
+
+input: grace
+target: love
+isCorrect: True
+topN: ['success', 'style', 'love', 'fashion', 'win', 'business', 'beauty', 'job']
+
+input: Mercury
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Libra', 'Scorpio', 'Hospitality', 'entrepreneur', 'deals', 'IT']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: MLB
+target: Cards
+isCorrect: True
+topN: ['Cards', 'Steelers', 'coins', 'Giveaway', 'NFL', 'Retail', 'Tech', 'Startups']
+
+input: Facebook
+target: Marketing
+isCorrect: True
+topN: ['business', 'marketing', 'entrepreneur', 'Retail', 'Marketing', 'success', 'IT', 'fashion']
+
+input: entrepreneur
+target: quote
+isCorrect: False
+topN: ['business', 'success', 'marketing', 'entrepreneur', 'deals', 'job', 'Retail', 'IT']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: sufi
+target: quote
+isCorrect: False
+topN: ['RT', 'Jobs', 'Buzz', 'SoundCloud', 'Job', 'Startups', 'Retail', 'Steelers']
+
+input: Saturn
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Libra', 'Capricorn', 'Scorpio', 'endorphins', 'deals', 'entrepreneur', 'NBA']
+
+input: business
+target: entrepreneur
+isCorrect: True
+topN: ['tech', 'marketing', 'business', 'IT', 'Marketing', 'news', 'entrepreneur', 'fitness']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: MAGA
+target: privacy
+isCorrect: True
+topN: ['privacy', 'Buzz', 'Trump', 'job', 'News', 'health', 'fitness', 'news']
+
+input: SocialMedia
+target: Marketing
+isCorrect: True
+topN: ['Marketing', 'marketing', 'Sales', 'Retail', 'Hospitality', 'Startups', 'business', 'Music']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: Odessa
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Tech', 'np', 'USA', 'Healthcare', 'RT']
+
+input: smallbiz
+target: success
+isCorrect: True
+topN: ['marketing', 'entrepreneur', 'business', 'Marketing', 'fashion', 'design', 'success', 'IT']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: SanAntonio
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Tech', 'np', 'jobs', 'job', 'Healthcare']
+
+input: mentalhealth
+target: quote
+isCorrect: False
+topN: ['love', 'beauty', 'success', 'style', 'music', 'fashion', 'sex', 'job']
+
+input: Baby
+target: babies
+isCorrect: False
+topN: ['music', 'Music', 'fashion', 'Weather', 'news', 'SoundCloud', 'Shoes', 'Tech']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Houston
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Tech', 'np', 'Healthcare', 'USA', 'RT']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: UGG
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'business', 'coins', 'deals']
+
+input: Network
+target: Marketing
+isCorrect: True
+topN: ['Buzz', 'Startups', 'Music', 'Marketing', 'SoundCloud', 'Tech', 'Steelers', 'NFL']
+
+input: amazon
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'makeup', 'music', 'design', 'Shoes', 'deco']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Ascendant
+target: Capricorn
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: giveaway
+target: win
+isCorrect: True
+topN: ['win', 'success', 'style', 'fashion', 'job', 'love', 'giveaway', 'deals']
+
+input: louboutin
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'business', 'NFL', 'coins']
+
+input: business
+target: entrepreneur
+isCorrect: True
+topN: ['tech', 'marketing', 'business', 'IT', 'Marketing', 'news', 'entrepreneur', 'fitness']
+
+input: Psychology
+target: Marketing
+isCorrect: False
+topN: ['Job', 'job', 'jobs', 'Jobs', 'Tech', 'tech', 'Startups', 'Retail']
+
+input: win
+target: Giveaway
+isCorrect: True
+topN: ['giveaway', 'Giveaway', 'free', 'auction', 'deals', 'Buzz', 'marketing', 'holidays']
+
+input: Basketball
+target: Shoes
+isCorrect: True
+topN: ['Buzz', 'NBA', 'NFL', 'SoundCloud', 'News', 'Weather', 'fashion', 'Shoes']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: celebrate
+target: love
+isCorrect: True
+topN: ['love', 'style', 'fashion', 'beauty', 'music', 'food', 'success', 'win']
+
+input: MAGA
+target: privacy
+isCorrect: True
+topN: ['privacy', 'Buzz', 'Trump', 'job', 'News', 'health', 'fitness', 'news']
+
+input: fragrance
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'makeup', 'health', 'music', 'love', 'fitness', 'style']
+
+input: Lewisville
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Tech', 'np', 'Healthcare', 'USA', 'Sagittarius']
+
+input: chanel
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'business', 'coins', 'deals']
+
+input: rings
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'makeup', 'health', 'music', 'fitness', 'love', 'style']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Ascendant
+target: Capricorn
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: giveaway
+target: win
+isCorrect: True
+topN: ['win', 'success', 'style', 'fashion', 'job', 'love', 'giveaway', 'deals']
+
+input: hermes
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'business', 'coins', 'NFL']
+
+input: makeup
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'makeup', 'health', 'music', 'fitness', 'style', 'love']
+
+input: thriller
+target: free
+isCorrect: True
+topN: ['free', 'giveaway', 'deals', 'Giveaway', 'food', 'travel', 'music', 'marketing']
+
+input: SocialMedia
+target: Marketing
+isCorrect: True
+topN: ['Marketing', 'marketing', 'Sales', 'Retail', 'Hospitality', 'Startups', 'business', 'Music']
+
+input: MAGA
+target: privacy
+isCorrect: True
+topN: ['privacy', 'Buzz', 'Trump', 'job', 'News', 'health', 'fitness', 'news']
+
+input: competition
+target: win
+isCorrect: True
+topN: ['win', 'success', 'giveaway', 'style', 'fashion', 'Giveaway', 'job', 'deals']
+
+input: Contest
+target: Giveaway
+isCorrect: True
+topN: ['win', 'success', 'Giveaway', 'job', 'giveaway', 'Marketing', 'Hospitality', 'Job']
+
+input: WIN
+target: Giveaway
+isCorrect: True
+topN: ['giveaway', 'Giveaway', 'free', 'auction', 'deals', 'Buzz', 'marketing', 'holidays']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: quotes
+target: quote
+isCorrect: True
+topN: ['love', 'quote', 'entrepreneur', 'quotes', 'success', 'business', 'style', 'beauty']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'business', 'fashion', 'beauty']
+
+input: Clippers
+target: NBA
+isCorrect: True
+topN: ['NBA', 'NFL', 'Steelers', 'Buzz', 'Retail', 'SoundCloud', 'fashion', 'job']
+
+input: Pluto
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Libra', 'Scorpio', 'Hospitality', 'IT', 'Trump', 'entrepreneur']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Timberwolves
+target: NBA
+isCorrect: True
+topN: ['NBA', 'NFL', 'Steelers', 'job', 'music', 'Retail', 'travel', 'Music']
+
+input: marketing
+target: quote
+isCorrect: False
+topN: ['business', 'marketing', 'entrepreneur', 'IT', 'job', 'Retail', 'tech', 'jobs']
+
+input: Barstow
+target: CA
+isCorrect: True
+topN: ['CA', 'TX', 'FL', 'IT', 'Healthcare', 'Startups', 'Hospitality', 'Retail']
+
+input: coach
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'business', 'entrepreneur', 'Giveaway', 'deals', 'coins']
+
+input: armani
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'business', 'deals', 'music']
+
+input: Paddington
+target: Giveaway
+isCorrect: False
+topN: ['Jobs', 'News', 'news', 'Music', 'Weather', 'Job', 'Retail', 'deals']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: Deals
+target: Shoes
+isCorrect: True
+topN: ['NBA', 'NFL', 'Steelers', 'fashion', 'Retail', 'Shoes', 'style', 'business']
+
+input: Saturn
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Libra', 'Capricorn', 'Scorpio', 'endorphins', 'deals', 'entrepreneur', 'NBA']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: health
+target: beauty
+isCorrect: True
+topN: ['fitness', 'beauty', 'health', 'fashion', 'style', 'makeup', 'endorphins', 'success']
+
+input: Deals
+target: NBA
+isCorrect: True
+topN: ['NBA', 'NFL', 'Steelers', 'fashion', 'Retail', 'Shoes', 'style', 'business']
+
+input: Norco
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'IT', 'MAGA', 'USA', 'Music', 'Hospitality']
+
+input: Ascendant
+target: Capricorn
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: boutique
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'music', 'design', 'Shoes', 'makeup', 'deco']
+
+input: jacobs
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'business', 'NFL', 'deals']
+
+input: Deals
+target: NBA
+isCorrect: True
+topN: ['NBA', 'NFL', 'Steelers', 'fashion', 'Retail', 'Shoes', 'style', 'business']
+
+input: giveaway
+target: win
+isCorrect: True
+topN: ['win', 'success', 'style', 'fashion', 'job', 'love', 'giveaway', 'deals']
+
+input: competition
+target: win
+isCorrect: True
+topN: ['win', 'success', 'giveaway', 'style', 'fashion', 'Giveaway', 'job', 'deals']
+
+input: quotes
+target: quote
+isCorrect: True
+topN: ['love', 'quote', 'entrepreneur', 'quotes', 'success', 'business', 'style', 'beauty']
+
+input: Deucalion
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Capricorn', 'Sagittarius', 'Libra', 'fashion', 'style', 'entrepreneur', 'fitness']
+
+input: Bradenton
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'fashion', 'Healthcare', 'Trump', 'USA']
+
+input: WIN
+target: Giveaway
+isCorrect: True
+topN: ['giveaway', 'Giveaway', 'free', 'auction', 'deals', 'Buzz', 'marketing', 'holidays']
+
+input: love
+target: free
+isCorrect: False
+topN: ['success', 'music', 'style', 'entrepreneur', 'love', 'fashion', 'business', 'beauty']
+
+input: christmas
+target: holidays
+isCorrect: False
+topN: ['business', 'win', 'fashion', 'marketing', 'entrepreneur', 'deals', 'beauty', 'auction']
+
+input: developers
+target: quote
+isCorrect: False
+topN: ['job', 'jobs', 'business', 'Job', 'entrepreneur', 'marketing', 'Jobs', 'success']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Ascendant
+target: Capricorn
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Escondido
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'job', 'IT', 'Hospitality', 'Healthcare', 'Weather']
+
+input: Entrepreneur
+target: Startups
+isCorrect: True
+topN: ['Startups', 'Marketing', 'marketing', 'health', 'IT', 'Retail', 'business', 'Healthcare']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: bmw
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'music', 'business', 'NFL']
+
+input: Clearwater
+target: FL
+isCorrect: True
+topN: ['job', 'FL', 'jobs', 'Job', 'TX', 'CA', 'business', 'fashion']
+
+input: Jacksonville
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'Trump', 'RT']
+
+input: Modesto
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'IT', 'Healthcare', 'USA', 'Hospitality', 'Retail']
+
+input: quote
+target: success
+isCorrect: True
+topN: ['success', 'win', 'quote', 'RT', 'entrepreneur', 'quotes', 'style', 'business']
+
+input: camp
+target: beauty
+isCorrect: False
+topN: ['music', 'fashion', 'business', 'SoundCloud', 'marketing', 'giveaway', 'food', 'style']
+
+input: Sale
+target: fashion
+isCorrect: True
+topN: ['Shoes', 'free', 'giveaway', 'Giveaway', 'deals', 'Cards', 'fashion', 'job']
+
+input: Gainesville
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'USA', 'RT']
+
+input: bmw
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'music', 'business', 'NFL']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: MAGA
+target: privacy
+isCorrect: True
+topN: ['privacy', 'Buzz', 'Trump', 'job', 'News', 'health', 'fitness', 'news']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: Basketball
+target: NBA
+isCorrect: True
+topN: ['Buzz', 'NBA', 'NFL', 'SoundCloud', 'News', 'Weather', 'fashion', 'Shoes']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'business', 'fashion', 'beauty']
+
+input: Win
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'giveaway', 'free', 'auction', 'Buzz', 'Follow', 'deals', 'marketing']
+
+input: MAGA
+target: privacy
+isCorrect: True
+topN: ['privacy', 'Buzz', 'Trump', 'job', 'News', 'health', 'fitness', 'news']
+
+input: school
+target: love
+isCorrect: False
+topN: ['travel', 'giveaway', 'makeup', 'holidays', 'health', 'Weather', 'free', 'food']
+
+input: MAGA
+target: privacy
+isCorrect: True
+topN: ['privacy', 'Buzz', 'Trump', 'job', 'News', 'health', 'fitness', 'news']
+
+input: smallbiz
+target: entrepreneur
+isCorrect: True
+topN: ['marketing', 'entrepreneur', 'business', 'Marketing', 'fashion', 'design', 'success', 'IT']
+
+input: Giveaway
+target: win
+isCorrect: True
+topN: ['win', 'success', 'fashion', 'giveaway', 'style', 'Giveaway', 'deals', 'news']
+
+input: poetry
+target: love
+isCorrect: False
+topN: ['fashion', 'music', 'quote', 'style', 'beauty', 'news', 'deco', 'quotes']
+
+input: key
+target: success
+isCorrect: False
+topN: ['quote', 'quotes', 'Tech', 'tech', 'entrepreneur', 'Job', 'job', 'news']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Davie
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'fashion', 'Retail', 'USA', 'Healthcare']
+
+input: Concord
+target: CA
+isCorrect: True
+topN: ['CA', 'FL', 'TX', 'IT', 'MAGA', 'USA', 'Healthcare', 'Hospitality']
+
+input: coach
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'business', 'entrepreneur', 'Giveaway', 'deals', 'coins']
+
+input: ukulele
+target: love
+isCorrect: False
+topN: ['music', 'business', 'Music', 'tech', 'marketing', 'SoundCloud', 'entrepreneur', 'style']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: fragrance
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'makeup', 'health', 'music', 'love', 'fitness', 'style']
+
+input: chanel
+target: auction
+isCorrect: True
+topN: ['auction', 'giveaway', 'fashion', 'Giveaway', 'entrepreneur', 'business', 'coins', 'deals']
+
+input: giveaway
+target: win
+isCorrect: True
+topN: ['win', 'success', 'style', 'fashion', 'job', 'love', 'giveaway', 'deals']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: Riverview
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'USA', 'Trump']
+
+input: giveaway
+target: win
+isCorrect: True
+topN: ['win', 'success', 'style', 'fashion', 'job', 'love', 'giveaway', 'deals']
+
+input: health
+target: beauty
+isCorrect: True
+topN: ['fitness', 'beauty', 'health', 'fashion', 'style', 'makeup', 'endorphins', 'success']
+
+input: health
+target: beauty
+isCorrect: True
+topN: ['fitness', 'beauty', 'health', 'fashion', 'style', 'makeup', 'endorphins', 'success']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: Sun
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Libra', 'Scorpio', 'Hospitality', 'IT', 'deals', 'love']
+
+input: fragrance
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'makeup', 'health', 'music', 'love', 'fitness', 'style']
+
+input: MAGA
+target: privacy
+isCorrect: True
+topN: ['privacy', 'Buzz', 'Trump', 'job', 'News', 'health', 'fitness', 'news']
+
+input: entrepreneur
+target: success
+isCorrect: True
+topN: ['business', 'success', 'marketing', 'entrepreneur', 'deals', 'job', 'Retail', 'IT']
+
+input: win
+target: Giveaway
+isCorrect: True
+topN: ['giveaway', 'Giveaway', 'free', 'auction', 'deals', 'Buzz', 'marketing', 'holidays']
+
+input: freebies
+target: free
+isCorrect: True
+topN: ['giveaway', 'Giveaway', 'free', 'auction', 'deals', 'makeup', 'fashion', 'food']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: spring
+target: fashion
+isCorrect: True
+topN: ['music', 'Music', 'fashion', 'beauty', 'love', 'style', 'news', 'SoundCloud']
+
+input: Brooksville
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'job', 'fashion', 'Job', 'Trump']
+
+input: boutique
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'music', 'design', 'Shoes', 'makeup', 'deco']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: Saturn
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Libra', 'Capricorn', 'Scorpio', 'endorphins', 'deals', 'entrepreneur', 'NBA']
+
+input: Jacksonville
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'Trump', 'RT']
+
+input: grind
+target: entrepreneur
+isCorrect: False
+topN: ['travel', 'beauty', 'fashion', 'makeup', 'holidays', 'deals', 'style', 'music']
+
+input: newlook
+target: fashion
+isCorrect: True
+topN: ['design', 'fashion', 'Buzz', 'marketing', 'style', 'NFL', 'music', 'SoundCloud']
+
+input: Jacksonville
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'Trump', 'RT']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: iphone
+target: free
+isCorrect: True
+topN: ['free', 'giveaway', 'RT', 'deals', 'Giveaway', 'travel', 'news', 'Cards']
+
+input: Oriental
+target: auction
+isCorrect: False
+topN: ['Jobs', 'Trump', 'Job', 'job', 'News', 'giveaway', 'jobs', 'news']
+
+input: WIN
+target: Giveaway
+isCorrect: True
+topN: ['giveaway', 'Giveaway', 'free', 'auction', 'deals', 'Buzz', 'marketing', 'holidays']
+
+input: quote
+target: free
+isCorrect: False
+topN: ['success', 'win', 'quote', 'RT', 'entrepreneur', 'quotes', 'style', 'business']
+
+input: designer
+target: beauty
+isCorrect: True
+topN: ['fashion', 'makeup', 'style', 'job', 'Shoes', 'beauty', 'health', 'music']
+
+input: fragrance
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'makeup', 'health', 'music', 'love', 'fitness', 'style']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: giveaway
+target: win
+isCorrect: True
+topN: ['win', 'success', 'style', 'fashion', 'job', 'love', 'giveaway', 'deals']
+
+input: gift
+target: free
+isCorrect: False
+topN: ['fashion', 'style', 'beauty', 'Shoes', 'makeup', 'design', 'music', 'deco']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: baby
+target: babies
+isCorrect: False
+topN: ['fashion', 'music', 'style', 'news', 'beauty', 'deals', 'love', 'quotes']
+
+input: Melbourne
+target: FL
+isCorrect: False
+topN: ['News', 'Weather', 'news', 'Tech', 'Buzz', 'Job', 'fashion', 'quotes']
+
+input: Tallahassee
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'Trump', 'fashion', 'USA']
+
+input: travel
+target: love
+isCorrect: False
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: giveaway
+target: win
+isCorrect: True
+topN: ['win', 'success', 'style', 'fashion', 'job', 'love', 'giveaway', 'deals']
+
+input: diy
+target: fashion
+isCorrect: False
+topN: ['tech', 'Tech', 'IT', 'Startups', 'Jobs', 'business', 'entrepreneur', 'design']
+
+input: style
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'design', 'Shoes', 'music', 'makeup', 'deco']
+
+input: beauty
+target: fashion
+isCorrect: True
+topN: ['makeup', 'beauty', 'fashion', 'style', 'health', 'sex', 'giveaway', 'job']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'business', 'fashion', 'beauty']
+
+input: Ascendant
+target: Capricorn
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: MLM
+target: entrepreneur
+isCorrect: False
+topN: ['RT', 'free', 'marketing', 'Marketing', 'business', 'Retail', 'quote', 'Buzz']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: Ascendant
+target: Capricorn
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: iphone
+target: free
+isCorrect: True
+topN: ['free', 'giveaway', 'RT', 'deals', 'Giveaway', 'travel', 'news', 'Cards']
+
+input: android
+target: free
+isCorrect: True
+topN: ['free', 'RT', 'giveaway', 'deals', 'news', 'News', 'NFL', 'travel']
+
+input: Ascendant
+target: Capricorn
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: makeover
+target: fashion
+isCorrect: True
+topN: ['style', 'fashion', 'business', 'news', 'makeup', 'job', 'beauty', 'fitness']
+
+input: sex
+target: free
+isCorrect: False
+topN: ['sex', 'job', 'travel', 'Job', 'Tech', 'NFL', 'music', 'makeup']
+
+input: rats
+target: babies
+isCorrect: False
+topN: ['fitness', 'news', 'health', 'music', 'NFL', 'job', 'business', 'SoundCloud']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: Orlando
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'Trump', 'USA']
+
+input: Jacksonville
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'Trump', 'RT']
+
+input: NEWS
+target: fashion
+isCorrect: False
+topN: ['RT', 'News', 'news', 'NFL', 'Buzz', 'Steelers', 'SoundCloud', 'quote']
+
+input: startups
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'tech', 'business', 'Startups', 'fashion', 'marketing', 'IT', 'Tech']
+
+input: Ascendant
+target: Scorpio
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: startup
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'business', 'Startups', 'marketing', 'fashion', 'success', 'tech', 'style']
+
+input: mindset
+target: entrepreneur
+isCorrect: True
+topN: ['success', 'win', 'business', 'entrepreneur', 'fashion', 'marketing', 'style', 'fitness']
+
+input: marketing
+target: entrepreneur
+isCorrect: True
+topN: ['business', 'marketing', 'entrepreneur', 'IT', 'job', 'Retail', 'tech', 'jobs']
+
+input: Chat
+target: free
+isCorrect: False
+topN: ['Buzz', 'news', 'News', 'SoundCloud', 'music', 'marketing', 'Startups', 'Marketing']
+
+input: NYFW
+target: fashion
+isCorrect: True
+topN: ['style', 'News', 'fashion', 'Buzz', 'news', 'makeup', 'job', 'Shoes']
+
+input: porn
+target: free
+isCorrect: False
+topN: ['sex', 'music', 'love', 'babies', 'makeup', 'beauty', 'health', 'food']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: iphone
+target: free
+isCorrect: True
+topN: ['free', 'giveaway', 'RT', 'deals', 'Giveaway', 'travel', 'news', 'Cards']
+
+input: jewelry
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'makeup', 'health', 'music', 'love', 'fitness', 'style']
+
+input: hair
+target: beauty
+isCorrect: True
+topN: ['fashion', 'style', 'makeup', 'beauty', 'design', 'deco', 'music', 'fitness']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: Estero
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'Trump', 'USA', 'fashion']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: startup
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'business', 'Startups', 'marketing', 'fashion', 'success', 'tech', 'style']
+
+input: Tallahassee
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'Trump', 'fashion', 'USA']
+
+input: Entrepreneur
+target: entrepreneur
+isCorrect: False
+topN: ['Startups', 'Marketing', 'marketing', 'health', 'IT', 'Retail', 'business', 'Healthcare']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: Pluto
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Libra', 'Scorpio', 'Hospitality', 'IT', 'Trump', 'entrepreneur']
+
+input: jewelry
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'makeup', 'health', 'music', 'love', 'fitness', 'style']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: style
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'design', 'Shoes', 'music', 'makeup', 'deco']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: iphone
+target: free
+isCorrect: True
+topN: ['free', 'giveaway', 'RT', 'deals', 'Giveaway', 'travel', 'news', 'Cards']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: amazon
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'makeup', 'music', 'design', 'Shoes', 'deco']
+
+input: arquitectura
+target: deco
+isCorrect: False
+topN: ['marketing', 'fashion', 'Marketing', 'business', 'tech', 'deals', 'music', 'news']
+
+input: travel
+target: holidays
+isCorrect: True
+topN: ['holidays', 'travel', 'deals', 'business', 'food', 'Retail', 'Giveaway', 'fitness']
+
+input: Beaconsfield
+target: free
+isCorrect: False
+topN: ['Jobs', 'jobs', 'Job', 'job', 'Weather', 'business', 'health', 'deals']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: news
+target: fashion
+isCorrect: True
+topN: ['tech', 'fashion', 'music', 'business', 'RT', 'IT', 'entrepreneur', 'news']
+
+input: giveaway
+target: free
+isCorrect: False
+topN: ['win', 'success', 'style', 'fashion', 'job', 'love', 'giveaway', 'deals']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Ascendant
+target: Capricorn
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: prochoice
+target: free
+isCorrect: False
+topN: ['Trump', 'fashion', 'news', 'music', 'style', 'News', 'business', 'giveaway']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: quote
+target: entrepreneur
+isCorrect: True
+topN: ['success', 'win', 'quote', 'RT', 'entrepreneur', 'quotes', 'style', 'business']
+
+input: fashion
+target: free
+isCorrect: False
+topN: ['style', 'fashion', 'deco', 'design', 'success', 'music', 'beauty', 'makeup']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'business', 'fashion', 'beauty']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: Finance
+target: Startups
+isCorrect: True
+topN: ['Startups', 'IT', 'tech', 'SoundCloud', 'entrepreneur', 'Jobs', 'Job', 'Tech']
+
+input: PROFITS
+target: free
+isCorrect: False
+topN: ['success', 'business', 'deals', 'marketing', 'win', 'entrepreneur', 'giveaway', 'Marketing']
+
+input: repost
+target: fashion
+isCorrect: False
+topN: ['deals', 'quote', 'NFL', 'Steelers', 'quotes', 'job', 'Jobs', 'tech']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'business', 'fashion', 'beauty']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'business', 'fashion', 'beauty']
+
+input: twitch
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'beauty', 'success', 'free']
+
+input: madrid
+target: stream
+isCorrect: False
+topN: ['business', 'entrepreneur', 'NFL', 'marketing', 'Retail', 'deals', 'auction', 'job']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: news
+target: fashion
+isCorrect: True
+topN: ['tech', 'fashion', 'music', 'business', 'RT', 'IT', 'entrepreneur', 'news']
+
+input: live
+target: stream
+isCorrect: True
+topN: ['stream', 'SoundCloud', 'music', 'news', 'browns', 'business', 'fashion', 'beauty']
+
+input: marketing
+target: entrepreneur
+isCorrect: True
+topN: ['business', 'marketing', 'entrepreneur', 'IT', 'job', 'Retail', 'tech', 'jobs']
+
+input: NYFW
+target: fashion
+isCorrect: True
+topN: ['style', 'News', 'fashion', 'Buzz', 'news', 'makeup', 'job', 'Shoes']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: win
+target: Giveaway
+isCorrect: True
+topN: ['giveaway', 'Giveaway', 'free', 'auction', 'deals', 'Buzz', 'marketing', 'holidays']
+
+input: deal
+target: free
+isCorrect: True
+topN: ['giveaway', 'Giveaway', 'free', 'auction', 'deals', 'food', 'fashion', 'news']
+
+input: Miami
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'Trump', 'USA']
+
+input: architecture
+target: deco
+isCorrect: True
+topN: ['design', 'deco', 'style', 'fashion', 'marketing', 'beauty', 'build', 'business']
+
+input: sale
+target: fashion
+isCorrect: True
+topN: ['deals', 'business', 'fashion', 'giveaway', 'news', 'success', 'marketing', 'job']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: startup
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'business', 'Startups', 'marketing', 'fashion', 'success', 'tech', 'style']
+
+input: cleveland
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'style', 'Steelers', 'fashion', 'beauty', 'makeup', 'news']
+
+input: Kissimmee
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'USA', 'Weather', 'RT', 'Healthcare']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: Saturn
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Libra', 'Capricorn', 'Scorpio', 'endorphins', 'deals', 'entrepreneur', 'NBA']
+
+input: startup
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'business', 'Startups', 'marketing', 'fashion', 'success', 'tech', 'style']
+
+input: guide
+target: free
+isCorrect: False
+topN: ['quote', 'quotes', 'success', 'news', 'giveaway', 'deals', 'business', 'style']
+
+input: Ascendant
+target: Sagittarius
+isCorrect: True
+topN: ['Libra', 'Sagittarius', 'Scorpio', 'Capricorn', 'deals', 'endorphins', 'SoundCloud', 'love']
+
+input: business
+target: entrepreneur
+isCorrect: True
+topN: ['tech', 'marketing', 'business', 'IT', 'Marketing', 'news', 'entrepreneur', 'fitness']
+
+input: lego
+target: build
+isCorrect: True
+topN: ['build', 'design', 'deals', 'business', 'marketing', 'win', 'tech', 'success']
+
+input: stylish
+target: fashion
+isCorrect: True
+topN: ['style', 'Buzz', 'music', 'news', 'fashion', 'food', 'beauty', 'SoundCloud']
+
+input: Riverview
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Hospitality', 'Healthcare', 'fashion', 'USA', 'Trump']
+
+input: moms
+target: babies
+isCorrect: True
+topN: ['babies', 'Nursing', 'health', 'food', 'sex', 'jobs', 'Healthcare', 'Steelers']
+
+numCorrect: 256.0 percCorrect: 0.859060402685

@@ -19,6 +19,7 @@ from keras.utils import np_utils
 from keras.models import Sequential
 from keras.layers import LSTM
 from keras.layers import Dense
+from keras.layers import PReLU
 from keras.layers import Activation
 from keras.optimizers import RMSprop
 from keras.optimizers import Adagrad
@@ -26,16 +27,17 @@ from keras.layers import Dropout
 from keras.layers import BatchNormalization
 from tweetGenerator_lstm import generateText
 from keras.callbacks import ModelCheckpoint
-
+from logger import logger
+import time
 #get the top N prediction of hashtags
 topN = 5
 #sequenceLength: sequence length (k in BPTTk)
-sequenceLength = 40
+sequenceLength = 30
 #Number of symbols
 vocabLen = 66
 #train test split
-trainPercent = 0.99
-
+trainPercent = 0.95
+logAllPredictions=True
 #X: [# Seuqences, 40 (sequenceLength), 65(inputSize)].
 #y: [# Sequences, 300]
 
@@ -81,24 +83,31 @@ model = Sequential()
 
 model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize)))
 
-model.add(Dense(outputSize))
-model.add(Activation('tanh'))
+model.add(Dense(numHiddenFirst))
+model.add(PReLU())
+model.add(BatchNormalization())
 
-optimizer = RMSprop(lr=0.01)
+model.add(Dense(outputSize))
+model.add(PReLU())
+model.add(BatchNormalization())
+
+optimizer = RMSprop(lr=0.005)
 
 model.compile(loss='mean_squared_error', optimizer=optimizer)
 print("Finished building model.")
 
+name = "t2c"+time.strftime("%Y-%m-%d_%H:%M") + ".log"
 for epoch in range(numEpochs):
     
-    print("\n")
     model.fit(trainX, trainY, nb_epoch=1, batch_size=128)
-    
+     
     correctCnt = 0
     randIdx = np.random.randint(0, nTestData, 10)
  
     tweetCnt = 0
     tweetStartIdx = 0
+    log = []
+    log.append([epoch])
     for testIdx in range(nTestSequences):
         # Stack the windows (1 x 40 x 65) of each tweet as a 3D matrix (#windows x 40 x 65)
         if testTweetSequence[testIdx][-1] == chr(3):
@@ -108,15 +117,18 @@ for epoch in range(numEpochs):
             tweetStartIdx = testIdx + 1
             if isCorrect:
                 correctCnt += 1
+                isCorrect = True
             if tweetCnt in randIdx:
                 print testTweets[tweetCnt][:-2]
                 print "True label is ", testHashtags[tweetCnt]
                 print "Top ", topN, " hashtags are ", topNht
+            
+            if logAllPredictions:
+                log.append([testTweets[tweetCnt][:-2],testHashtags[tweetCnt],isCorrect,topNht])
             tweetCnt += 1
-        
     accuracy = correctCnt*1.0 / nTestData
-    print "Test accuracy is ", accuracy    
-        
+    log.append([correctCnt, accuracy])        
+    logger(log,name)
 
 
 

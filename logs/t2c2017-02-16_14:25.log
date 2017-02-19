@@ -1,0 +1,1494 @@
+
+ ########################################## 
+EPOCH: 49
+input:  fendi ff0029-7nune-54 women's fashion translucent blue & brown sunglasses 54
+target: auction
+isCorrect: True
+topN: ['auction', 'Giveaway', 'entrepreneur', 'fashion']
+
+input: we are taking 20% off our entire catalog! take advantage now!!!!! 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'babies', 'privacy', 'love']
+
+input: be my him your make him it ! lightweight hoodies and more available at:
+target: love
+isCorrect: True
+topN: ['love', 'beauty', 'success', 'style']
+
+input: iphone giveaway, click on - win an iphone 7 plus on destination page to enter {ww} (2/28/17) 
+target: free
+isCorrect: True
+topN: ['free', 'Giveaway', 'stream', 'love']
+
+input:  is now (19h58m01s ut) rising at 1817'24.0'' conjunct at sapporo, j
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Scorpio', 'Sagittarius', 'entrepreneur']
+
+input:  brand nu cndtn*mani*giorgio armani*3btn*black*wool*jacket blazer sport coat 44r
+target: auction
+isCorrect: True
+topN: ['auction', 'Giveaway', 'fashion', 'entrepreneur']
+
+input: in trance plants teach soam shamans their songs/healing characteristics. 
+target: love
+isCorrect: True
+topN: ['free', 'success', 'love', 'quote']
+
+input:  men's nike lebron james "lebron xxiii" dark blue graphic t shirt large euc 
+target: NBA
+isCorrect: False
+topN: ['Steelers', 'Giveaway', 'Startups', 'Shoes']
+
+input: 20:41: temp: 63.7f; dewpoint: 54.88f; winds: - at 0.0 mph; pressure: 30.283 in.; hourly rain rate: 0.00 in. 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: never give up on your sport if you can't go a day without thinking about it! 
+target: quote
+isCorrect: False
+topN: ['beauty', 'success', 'privacy', 'IT']
+
+input: oldy vonka: social media training  9 tips to grow your  
+target: Marketing
+isCorrect: True
+topN: ['NBA', 'Marketing', 'Startups', 'entrepreneur']
+
+input: director of dining services jobs in los angeles, ca 
+target: CA
+isCorrect: True
+topN: ['CA', 'TX', 'FL', 'IT']
+
+input: limited edition nfl steelers medium boyfriend pants brand new, no tags 
+target: Steelers
+isCorrect: True
+topN: ['Steelers', 'NBA', 'browns', 'Scorpio']
+
+input: to all of you who truly believe in the , here's the for you 
+target: quote
+isCorrect: False
+topN: ['holidays', 'free', 'Giveaway', 'love']
+
+input:  adidas yeezy boost 350 pirate black (2016) size 11.5 no box 
+target: Shoes
+isCorrect: True
+topN: ['Shoes', 'fashion', 'Giveaway', 'love']
+
+input:  you're doing it wrong: how to find the perfect red lipstick: there's a science behind sexy red lips.
+target: fashion
+isCorrect: True
+topN: ['Startups', 'fashion', 'IT', 'entrepreneur']
+
+input:  105 brompton street - creed millesime 1849 perfume review
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'fashion', 'deco']
+
+input: forget skydiving  thrill-seekers are now paying $5,000 to experience zero gravity 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'love', 'Steelers', 'IT']
+
+input: for choose beige sensual with flair golden add aurea h 
+target: style
+isCorrect: False
+topN: ['beauty', 'free', 'success', 'fashion']
+
+input: please rt? undercover mama makes breastfeeding a breeze!
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input:  people & technology - junior project manager - null -... 
+target: IT
+isCorrect: True
+topN: ['Marketing', 'IT', 'Startups', 'babies']
+
+input: president obama's d.c. rental gets upgrades (photo gallery) happening now 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'love', 'Steelers', 'IT']
+
+input: thank you for hosting and sponsoring the awesome 
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'Shoes', 'Marketing']
+
+input:  is now (04h58m01s ut) setting at 2230'25.3'' opposite at sapporo, j
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Capricorn', 'Scorpio', 'love']
+
+input: no matter how tall the mountain, it cannot block out the sun. -unknown 
+target: quote
+isCorrect: False
+topN: ['success', 'love', 'entrepreneur', 'free']
+
+input: discover how you can use technology to change your health! listen: 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'success', 'Marketing', 'IT']
+
+input: we're click to apply: consulting senior manager - supply chain / transportation management -... - 
+target: IT
+isCorrect: True
+topN: ['Startups', 'IT', 'Marketing', 'Shoes']
+
+input: 'monopoly' fans are voting to change the game's iconic tokens 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input: 2007 (browns) top co-sign ch face holosilver red brady quinn/russell/150 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input:  why it mattered (and didn't) that obama was our first black president: as we bask in the glow of the
+target: fashion
+isCorrect: True
+topN: ['fashion', 'IT', 'Startups', 'entrepreneur']
+
+input: there really is no better place to start your experience.we 
+target: success
+isCorrect: False
+topN: ['deco', 'style', 'fashion', 'build']
+
+input: rt buy now: $34.99 western wild west organizer storage kid basket lin...
+target: style
+isCorrect: True
+topN: ['style', 'fashion', 'deco', 'love']
+
+input:  / for brussels, b for now (03h28m01s ut): 2438'23.0'' (ac) / 1603'45.8'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: null / for tirana, al for now (00h58m01s ut): 0534'54.8'' (ac) / 2305'19.0
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: gorgeous summer dress bytory burchszxs $38call uptown 602-354-5680 
+target: fashion
+isCorrect: True
+topN: ['fashion', 'free', 'love', 'Giveaway']
+
+input:  intelligence committee will investigate possible russia-trump links - politico
+target: Follow
+isCorrect: True
+topN: ['Follow', 'Giveaway', 'stream', 'love']
+
+input: live streaming deportivo alaves v deportivo la coruna tv watch 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'free', 'Follow']
+
+input: 1948 leaf clifford fannin psa 4 st. louis browns short print 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: 1-4 wayne newton 3/25 hard rock rocksino northfield cleveland hot tickets 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: used 2014 kia sorento sxl v6 wagon 4 dr cars for sale in miami, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input:  2016-17 panini hoops blue draymond green golden state warriors 
+target: NBA
+isCorrect: True
+topN: ['Shoes', 'NBA', 'Startups', 'Giveaway']
+
+input:  o?driu italian angel & gothic angel ~ new fragrances
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'fashion', 'deco']
+
+input: love kristin and am learning a lot. for all creatives 
+target: free
+isCorrect: True
+topN: ['Giveaway', 'free', 'holidays', 'auction']
+
+input: 2009 topps finest refractor parallel james davis rc browns clemson tigers 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input:  jimmy choo chandra fantasy woven fabric and nappa leather clutch nwt msrp 1450
+target: auction
+isCorrect: True
+topN: ['auction', 'Giveaway', 'entrepreneur', 'fashion']
+
+input:  what you are genuinely passionate about and let that guide you to your destination. diane sawyer 
+target: quote
+isCorrect: False
+topN: ['Startups', 'TX', 'Steelers', 'entrepreneur']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.6939: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: you can often your circumstances by changing your attitude. - 
+target: quote
+isCorrect: True
+topN: ['quote', 'free', 'love', 'stream']
+
+input: please rt $50 your way!! gc? target? walmart? itunes? best buy? paypal? single blog 2/28/2017
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'Shoes', 'Marketing']
+
+input: lego the batman movie the mini batwing polybag "new&sealed" 
+target: build
+isCorrect: True
+topN: ['build', 'success', 'entrepreneur', 'stream']
+
+input: frenik marketing group opens new location in berkeley lake - atlanta journal constitution 
+target: Marketing
+isCorrect: True
+topN: ['Marketing', 'Giveaway', 'Startups', 'IT']
+
+input:  this guy built his dream bachelor pad with an underground club
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input: klay thompson not thinking ahead to possible extension in 2018 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'Steelers', 'Startups', 'Giveaway']
+
+input: flying give you 'the fear?' here are the world's safest airlines 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input: see a virtual tour of our listing on 2602 galit cove 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Giveaway']
+
+input: raila to drop bombshell on monday! to name beneficiaries of waigurus lo 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'love', 'Steelers', 'IT']
+
+input: bringing some sensuality to the 1s and 2s is - her and 
+target: Follow
+isCorrect: False
+topN: ['success', 'love', 'build', 'Shoes']
+
+input:  move matrix & joint bursts improve movability! relieve joint pain 2/24us
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'Shoes', 'Marketing']
+
+input: need some solid relationship advise? check out my latest post on ! 
+target: love
+isCorrect: True
+topN: ['entrepreneur', 'Marketing', 'love', 'success']
+
+input: enter to a $10 amazon gift card from in the keep calm and hop on hop! ends 2/28
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'auction', 'Shoes']
+
+input:  in colour - paradiso long cape - swimwear (lime coral) from $39.00 
+target: fashion
+isCorrect: False
+topN: ['Marketing', 'Shoes', 'CA', 'Capricorn']
+
+input: 1922 e120 american caramel frank ellerbe psa 4 st. louis browns 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: emma watson wows in first song as belle from 'beauty and the beast' 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.6847: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: please rt i need your help, moms! which baby bag do you use&quot;
+target: style
+isCorrect: True
+topN: ['style', 'fashion', 'deco', 'love']
+
+input:  gucci authentic brown leather gg guccissima pelham 
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'Shoes']
+
+input: public consultation: draft assessment bilateral agreement between 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'love', 'Steelers', 'IT']
+
+input: life isn't about getting and having, it's about giving and being. -kevin kruse 
+target: quote
+isCorrect: True
+topN: ['quote', 'love', 'free', 'stream']
+
+input:  bjarke ingels's firm leads group tapped to rebrand the nordic...
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input:  christian louboutin apostrophy nude leather pointy toe pump women's size 37
+target: auction
+isCorrect: True
+topN: ['auction', 'Giveaway', 'entrepreneur', 'fashion']
+
+input: used 2014 gmc acadia sle utility cars for sale in miami, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input:  college football playoff's bill hancock gets 3-year extension - espn
+target: Follow
+isCorrect: True
+topN: ['Follow', 'Giveaway', 'stream', 'love']
+
+input:  how huge numbers of spectators a sejong art center can take&quot;
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input: multi-award winning looking for a crm and email executive in apply online today!
+target: Marketing
+isCorrect: True
+topN: ['Marketing', 'success', 'entrepreneur', 'IT']
+
+input: rod woodson,pittsburgh steelers,raiders,signed,autographed,nfl football,proof 
+target: Steelers
+isCorrect: True
+topN: ['Steelers', 'NBA', 'browns', 'Scorpio']
+
+input: failure is only failure if you stop trying! learn and from mistakes and keep moving forward! 
+target: entrepreneur
+isCorrect: False
+topN: ['babies', 'holidays', 'fashion', 'beauty']
+
+input:  / for beijing, tj for now (23h28m02s ut): 1942'19.4'' (ac) / 1331'18.2'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: watch trencin - nitra club friendly live streaming 1/14/2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'free', 'Follow']
+
+input:  is now (05h28m01s ut) rising at 2249'56.1'' conjunct at hamburg, d
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Capricorn', 'Scorpio', 'love']
+
+input: don't judge me by my past. i don't live there anymore. - petteri tarkkonen 
+target: success
+isCorrect: True
+topN: ['success', 'quote', 'entrepreneur', 'love']
+
+input:  2012 bmw k-series 2012 bmw k1600gt, 15k miles, fully loaded, gps, esa, great deal !!!
+target: auction
+isCorrect: True
+topN: ['auction', 'Giveaway', 'entrepreneur', 'fashion']
+
+input: acmcclockeuro: is now (10h58m01s ut) culminating at 2428'03.9'' conjunct at tirana, al
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Scorpio', 'entrepreneur']
+
+input: null / for bordeaux, f for now (01h28m02s ut): 0159'35.7'' (ac) / 0945'13.0'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input:  - welder corod bakersfield ca - will be trained in fusion welding drive... 
+target: CA
+isCorrect: True
+topN: ['CA', 'TX', 'FL', 'IT']
+
+input: you will never be admired without being criticized first. -grant cardone 
+target: success
+isCorrect: True
+topN: ['success', 'entrepreneur', 'quote', 'love']
+
+input: briggs new york womens plus-size curvy bistretch straight leg pant 
+target: style
+isCorrect: True
+topN: ['style', 'deco', 'fashion', 'love']
+
+input: null / for palermo, i for now (04h28m01s ut): 2404'51.8'' (ac) / 1614'20.3''
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: abrs national taxonomy research grant program - 2013-14 grants awa 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'love', 'Steelers', 'IT']
+
+input: many festivals one spread lighten the heart like a so that it can be enlightened. be light to go high
+target: love
+isCorrect: True
+topN: ['love', 'beauty', 'style', 'entrepreneur']
+
+input:  1991 alfa romeo spider spider voloce 1991 alfa romeo voloce spider service records and upgrades-
+target: auction
+isCorrect: True
+topN: ['auction', 'Giveaway', 'entrepreneur', 'fashion']
+
+input: steps that appears to be right but are stopping you from getting your goals 
+target: success
+isCorrect: True
+topN: ['success', 'entrepreneur', 'love', 'style']
+
+input: your life is your message to the world. make sure it's inspiring. ~ lollydaskal rt lollydaskal
+target: quote
+isCorrect: True
+topN: ['quote', 'free', 'love', 'stream']
+
+input: please rt? the look on this dad?s face as he meets his newborn will melt your
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input: null / for athens, gr for now (03h28m01s ut): 1818'29.2'' (ac) / 0708'22.5
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: used 2012 ram 2500 longhorn crew pickup cars for sale in odessa, tx 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Giveaway']
+
+input: please rt cividini full show autumn winter 2005 2006 milan women by fashion channel
+target: style
+isCorrect: True
+topN: ['style', 'fashion', 'deco', 'love']
+
+input:  who launches yearlong campaign to fight depression, slogan is: lets talk
+target: fashion
+isCorrect: False
+topN: ['deco', 'quote', 'style', 'Giveaway']
+
+input: hip hop nation - your underground station is out! stories via 
+target: free
+isCorrect: True
+topN: ['quote', 'stream', 'free', 'fashion']
+
+input: i want to the new year new moola $25 paypal from daily entries ww ends 1/23
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'auction', 'Shoes']
+
+input:  police said they couldn't find the men who gang-raped this woman while her 2-year-old
+target: Follow
+isCorrect: True
+topN: ['Follow', 'Giveaway', 'stream', 'love']
+
+input: how to create a successful online business from $5: 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input: ces 2017: uk support to tech firms 'an embarrassment' 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input:  computational romanticism and the dream life of driverless cars
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input: acmcclockeuro: / for leningrad, ssr for now (23h58m01s ut): 2033'48.3'' (ac) / 2116'35.7'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: new 2016 ram 2500 slt mega cab 4x4 mega pickup cars for sale in bryan, tx 
+target: TX
+isCorrect: False
+topN: ['quote', 'stream', 'free', 'love']
+
+input: shame! ghanas new president akufo-addo caught stealing during his inauguration (vide 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input:  charlotte nordmoen's robot designer could replace potters
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input: what will you do with your new beginning today to create a better ending than yesterday? 
+target: success
+isCorrect: True
+topN: ['love', 'entrepreneur', 'beauty', 'success']
+
+input: grow your instagram account with these 14 tools we love!free ebook: 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.8509: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: we should not be afraid of making mistakes. not learning from our mistakes is our enemy. 
+target: quote
+isCorrect: True
+topN: ['love', 'style', 'quote', 'beauty']
+
+input: this valentines day give her the gift of mac & cheese .. 
+target: love
+isCorrect: True
+topN: ['love', 'beauty', 'stream', 'fashion']
+
+input: instagram: don't let someone else's fear get in the way of your dreams and goals. 
+target: success
+isCorrect: False
+topN: ['quote', 'free', 'auction', 'stream']
+
+input: used 2014 toyota camry sedan 4 dr cars for sale in miami, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input:  htc desire 626 16gb 4g gsm unlocked android smartphone
+target: free
+isCorrect: True
+topN: ['free', 'Giveaway', 'stream', 'love']
+
+input:  don't forget to fill in your survey and help shape the future of 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Marketing', 'IT', 'Startups']
+
+input: jeffree star prom night liquid lip gloss matte lipstick waterproof long wpg 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'fashion', 'deco']
+
+input:  italian fashion associations and shows continue unification with government support: be.. 
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'Shoes', 'entrepreneur']
+
+input:  special love seed vial for each red "seed" is a seed of 
+target: love
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: kenneth faried pf den will not return wednesday at atl - right ankle sprain 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'Steelers', 'Startups', 'Sagittarius']
+
+input: internship job in nairobi, kenya - financial analyst 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input: 5 life lessons your kid will learn as a young experience 
+target: Startups
+isCorrect: True
+topN: ['Marketing', 'Startups', 'IT', 'entrepreneur']
+
+input: lego 10697 classic large creative box new sealed 1500 mixed colors sizes bricks 
+target: build
+isCorrect: True
+topN: ['build', 'success', 'entrepreneur', 'stream']
+
+input: lego duplo 5481 box + jungle animal safari building 179 blocks - no men 
+target: build
+isCorrect: True
+topN: ['build', 'success', 'entrepreneur', 'stream']
+
+input:  / for bukarest, r for now (22h58m02s ut): 1612'23.9'' (ac) / 2840'57.9'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input:  nwt stephen curry golden state warriors slate short sleeve xl 
+target: NBA
+isCorrect: True
+topN: ['Startups', 'NBA', 'Steelers', 'entrepreneur']
+
+input: used 2012 mazda cx 9 grand touring wagon 4 dr cars for sale in houston, tx 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Giveaway']
+
+input: faculty i on call medical assisting jobs in houston, tx 
+target: TX
+isCorrect: True
+topN: ['TX', 'FL', 'CA', 'Giveaway']
+
+input: rt nbastats: enter tonight's nbaontnt clash w/ cavs, westbrook leads the in scoring (30.9 ppg) & reb
+target: NBA
+isCorrect: False
+topN: ['Marketing', 'FL', 'Startups', 'entrepreneur']
+
+input:  / for luxembourg, l for now (03h28m01s ut): 1842'44.2'' (ac) / 1902'36.4'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: mums meet uk clydebank dunbarton livingston fauldhouse penarth cowbridge 
+target: babies
+isCorrect: True
+topN: ['babies', 'privacy', 'beauty', 'IT']
+
+input:  / for istanbul, tr for now (22h28m01s ut): 1406'58.0'' (ac) / 2351'13.7'' (mc)
+target: Scorpio
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: 1956 topps football choice complete your set vg/ex to nm near mint grier matson 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: watch irina falconi - nicole gibbs wta australian open live 1/18/2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'free', 'Follow']
+
+input: kula kwa macho! see the hot mamas campaigning for joho in t 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'love', 'Steelers', 'IT']
+
+input:  republishing content: how to get more traffic by writing less 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input:  strips made of led light makes the interior amazing
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.9370: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: our biggest sale ever! 50% off site wide  code: omg50 
+target: fashion
+isCorrect: True
+topN: ['Shoes', 'fashion', 'Giveaway', 'love']
+
+input: big b lovers, these 10 mamacitas will make you go nuts (see photos) 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input: tragedy drives man to give 'haven' to thousands of babies 
+target: babies
+isCorrect: False
+topN: ['fashion', 'beauty', 'Shoes', 'style']
+
+input: null / for luxembourg, l for now (02h28m02s ut): 0907'55.5'' (ac) / 0559'01.1'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: it is not enough to have a good mind; the main thing is to use it well.-rene descartes 
+target: success
+isCorrect: True
+topN: ['success', 'entrepreneur', 'Startups', 'Marketing']
+
+input: lol i called it that gsw was gonna stop 130 & they did  but so proud of my that stood up to this super team 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'Steelers', 'Giveaway', 'Startups']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.4354: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: change your mood. change your look! add to cart now. 
+target: fashion
+isCorrect: True
+topN: ['love', 'beauty', 'fashion', 'style']
+
+input: marina water sports park attendant jobs in orlando, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input:  there?s a lot of surprising features in this tiny 309 square foot..
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input: the for this key is for sale this evening in our lot 103.
+target: success
+isCorrect: True
+topN: ['quote', 'love', 'success', 'entrepreneur']
+
+input: i miss my 4 babies so much tonight... i know is taking amazing care of them. love you  
+target: babies
+isCorrect: False
+topN: ['entrepreneur', 'IT', 'Marketing', 'Startups']
+
+input: lego star wars mandalorian speeder 75022 complete w/ mini figures 
+target: build
+isCorrect: True
+topN: ['build', 'entrepreneur', 'success', 'stream']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.4858: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: check out women's celine sunglasses -used- excellent condition - sc104 col s29 with case via 
+target: fashion
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'style']
+
+input:  buy now: $66.4 opi nail polish lacquer 15ml/0.5fl.oz - hello kitt...
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'success']
+
+input: hey aliaa thanks for the follow! it is great to connect! for or look here:
+target: success
+isCorrect: True
+topN: ['success', 'love', 'entrepreneur', 'style']
+
+input: bure kabisa! some people cannot follow simple instructions; see this cop during train 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input:  swell midcentury time capsule house in dallas lists for $665k
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'beauty']
+
+input:  cages were a legit childminding solution in the 1920's 
+target: babies
+isCorrect: False
+topN: ['love', 'fashion', 'style', 'beauty']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.6462: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: win shadow tactics: blades of the shogun on steam {ww} (03/07/2017) 
+target: free
+isCorrect: True
+topN: ['free', 'Giveaway', 'stream', 'love']
+
+input: 'the last guardian' is a half-broken puppy-rearing simulator 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'love', 'Steelers', 'IT']
+
+input: lego hero factory 2067 evo 2.0 complete figure bionicle ~ free shipping 
+target: build
+isCorrect: True
+topN: ['build', 'success', 'stream', 'entrepreneur']
+
+input:  nishane: review of the first niche brand collection from turkey
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'fashion', 'deco']
+
+input: 08:56: temp: 64.8f; dewpoint: 60.83f; winds: 112 at 0.4 mph; pressure: 30.446 in.; hourly rain rate: 0.00 in. 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input:  i love making my clients money :) sign up today and see what i got  
+target: NBA
+isCorrect: True
+topN: ['Steelers', 'NBA', 'Giveaway', 'Startups']
+
+input:  nikon coolpix b500 16 megapixel point and shoot compact digital camera red
+target: Giveaway
+isCorrect: True
+topN: ['Giveaway', 'free', 'Shoes', 'Marketing']
+
+input:  it's fun to see you as a wife of nice performance in keep it up mam :) 
+target: love
+isCorrect: False
+topN: ['Startups', 'Shoes', 'Steelers', 'TX']
+
+input:  thanks for the follow! happy to follow back. check out & my latest vid day 14 is here!
+target: success
+isCorrect: False
+topN: ['Follow', 'Giveaway', 'stream', 'love']
+
+input:  thank you for following digital! stay tuned for tweets on & more!
+target: entrepreneur
+isCorrect: True
+topN: ['Marketing', 'entrepreneur', 'IT', 'Startups']
+
+input: used 2014 ford f 150 extended cab pickup cars for sale in estero, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: the latest rio tea import company daily report! thanks to 
+target: success
+isCorrect: True
+topN: ['Marketing', 'entrepreneur', 'success', 'IT']
+
+input: first-time home buyers at highest level since 2007, halifax says 
+target: privacy
+isCorrect: True
+topN: ['privacy', 'love', 'Steelers', 'IT']
+
+input: "the greatest opportunities today are to go into business for yourself as an entrepreneur." paul zane pilzer 
+target: entrepreneur
+isCorrect: True
+topN: ['success', 'quote', 'entrepreneur', 'love']
+
+input: acmcclockeuro: / for leningrad, ssr for now (03h58m01s ut): 0332'22.7'' (ac) / 2430'45.2'' 
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: acquisition of gm's opel-vauxhall by psa would brin... via 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input:  1976 vintage playoff game 3 buffalo braves boston celtics on dvd 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'Steelers', 'Shoes', 'Giveaway']
+
+input: win a niagara falls getaway - choice of family waterpark vacation or romantic retreat {us} 2/28/17 
+target: free
+isCorrect: True
+topN: ['free', 'Giveaway', 'stream', 'love']
+
+input:  / for ueberlingen, de for now (03h58m01s ut): 0031'44.6'' (ac) / 0114'17.5'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: ethical business directory - my account - sneak peek example 
+target: free
+isCorrect: False
+topN: ['love', 'entrepreneur', 'success', 'Startups']
+
+input:  / for lima, pe for now (08h58m02s ut): 0040'03.6'' (ac) / 2500'32.9'' (mc)
+target: Capricorn
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: 1939 original press photo st.louis browns vs detroit tigers 10 players trade 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: boriana petrova news is out! check it out: stories via 
+target: entrepreneur
+isCorrect: False
+topN: ['success', 'love', 'build', 'Giveaway']
+
+input: real bamako vs rivers united caf champions league live stream 11.02.2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'free', 'Follow']
+
+input: january's astro headset giveaway! (02/03/2017) {ww} 
+target: free
+isCorrect: True
+topN: ['free', 'Giveaway', 'stream', 'love']
+
+input:  mom and daughter team up to take down his dick (36:04) blondes, milf, threesome, teen -
+target: free
+isCorrect: True
+topN: ['free', 'Giveaway', 'stream', 'love']
+
+input: what's the most important thing you need to accomplish today? up 
+target: success
+isCorrect: False
+topN: ['entrepreneur', 'stream', 'Marketing', 'IT']
+
+input: washington are 25-10 su in their past 35 games. 5 of those 10 losses have come on final shot. 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'Steelers', 'Startups', 'entrepreneur']
+
+input: your brain is great at recognition, but pretty terrible at recall. 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Marketing', 'IT', 'Startups']
+
+input: hit like on this page for free food delivery on the go!!! 
+target: free
+isCorrect: False
+topN: ['fashion', 'style', 'beauty', 'Shoes']
+
+input: yes, there is a problem. but there is also a solution. 
+target: success
+isCorrect: False
+topN: ['quote', 'entrepreneur', 'love', 'stream']
+
+input:  say what they we are so lucky to have so much.we must share our good fortune with others 
+target: love
+isCorrect: False
+topN: ['babies', 'privacy', 'beauty', 'IT']
+
+input: fall in love with the moody sisters that will help your moody skin! 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'privacy', 'fashion']
+
+input: 1945 cleveland rams vs pittsburgh steelers nfl football program + press tickets 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: used 2014 bmw x3 xdrive28i wagon 4 dr cars for sale in miami, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: hoardingrecipes: one pot chicken fajitas with chimichurri crema 
+target: love
+isCorrect: True
+topN: ['love', 'beauty', 'holidays', 'babies']
+
+input:  basketball jason richardson size large adidas men's nba 
+target: NBA
+isCorrect: True
+topN: ['Startups', 'Giveaway', 'Shoes', 'NBA']
+
+input: claremont man pleads guilty to sexually assualting disabled teen girl - the union leader: 
+target: love
+isCorrect: True
+topN: ['love', 'beauty', 'success', 'style']
+
+input:  2010-11 (magic) panini threads century proof gold dwight howard/99 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'Shoes', 'Steelers', 'Giveaway']
+
+input: please rt? fare healthy: food, fitness and wellbeing for the whole family
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input:  calvin klein obsession summer & obsession for men summer ~ new fragrances
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'fashion', 'deco']
+
+input: lego ninjago ice dragon attack 2260 zane and krazi 
+target: build
+isCorrect: True
+topN: ['build', 'success', 'stream', 'entrepreneur']
+
+input: boynton - environmental field chemist - college degree in chemistry biology g... 
+target: FL
+isCorrect: True
+topN: ['CA', 'TX', 'FL', 'IT']
+
+input:  los angeles skyslide by oue limited opens this week
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input:  buy now: $76.52 chanel no. 5 - the loose powder 5.11 oz
+target: beauty
+isCorrect: True
+topN: ['beauty', 'fashion', 'love', 'success']
+
+input:  buy now: $66.0 tampax pocket pearl tampons super unscented - 396 ...
+target: beauty
+isCorrect: True
+topN: ['beauty', 'success', 'fashion', 'privacy']
+
+input:  video>> married to work and your co-founder? how to balance it all (video)
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Marketing', 'fashion']
+
+input: please rt? 5 ways to advocate for your special needs kid
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input: 'vikings' creator takes us inside this week's vengeful episode 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input:  real friends share everything (6:13) brunettes, hardcore, threesome -
+target: free
+isCorrect: False
+topN: ['babies', 'love', 'beauty', 'Steelers']
+
+input: your service can be scalable, just ask zach olsen - 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Marketing', 'IT', 'Startups']
+
+input: 2003 score cleveland browns football card tim couch 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input:  uniqe and one of a kind gifts available here for 
+target: fashion
+isCorrect: True
+topN: ['fashion', 'babies', 'Shoes', 'beauty']
+
+input:  is now (01h28m01s ut) culminating at 2248'52.2'' conjunct at seoul, rok
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Capricorn', 'Scorpio', 'love']
+
+input: alert: gary rowett is wearing a jacket and a cardigan tonight. 
+target: fashion
+isCorrect: False
+topN: ['Steelers', 'Startups', 'NBA', 'Giveaway']
+
+input: please rt! molton brown blossoming honeysuckle & white tea ~ new fragrance
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'fashion', 'deco']
+
+input: this musical remix of the uk news in 2016 is hilariously brutal 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input: some people love i thelord. :t.co/r681yczwnv :t.co/stlmdworzy
+target: love
+isCorrect: True
+topN: ['love', 'quote', 'beauty', 'holidays']
+
+input: surplus rooms, wholesale rates, unsold hotel inventory. check out offer n.6572: 
+target: holidays
+isCorrect: True
+topN: ['holidays', 'Giveaway', 'love', 'babies']
+
+input: i like the idea of doing something special for the whole family 
+target: love
+isCorrect: False
+topN: ['Scorpio', 'Steelers', 'TX', 'FL']
+
+input: if you want to be great, you gotta build your personal development! 
+target: success
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'Scorpio']
+
+input: what we are is god's gift to us. what we become is our gift to god. -eleanor powell 
+target: success
+isCorrect: True
+topN: ['success', 'entrepreneur', 'quote', 'Startups']
+
+input: instructional designer manager orlando fl jobs in orlando, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: lego architecture new york city 21028- new/sealed/in hand - free priority ship 
+target: build
+isCorrect: True
+topN: ['build', 'success', 'entrepreneur', 'stream']
+
+input: lego  bionicle  hero factory spare masks heads parts 46 
+target: build
+isCorrect: True
+topN: ['build', 'success', 'stream', 'entrepreneur']
+
+input:  is now (09h28m02s ut) culminating at 0106'09.3'' conjunct at berlin, de
+target: Capricorn
+isCorrect: True
+topN: ['Sagittarius', 'Capricorn', 'Scorpio', 'love']
+
+input: please rt!! where?s the musk&quot; aether muskethanol & mad et len red musc
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'fashion', 'deco']
+
+input: what one piece of business advice would you give? by 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input: lebron james custom jersey card art logo patch 3 color cleveland superior 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input:  happiness is not the matter of events, it depends on the tides of the mind .. 
+target: success
+isCorrect: True
+topN: ['success', 'love', 'privacy', 'Steelers']
+
+input: attention client needs or for womans face sketched and digitized. 
+target: fashion
+isCorrect: False
+topN: ['quote', 'beauty', 'love', 'stream']
+
+input: limelight by alcone sea of inspiration mineral and... 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'success', 'fashion', 'privacy']
+
+input: cleveland browns brown helmet t-shirt majestic men's xl nfl make offer! 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: 5pcs gold new fashion women urban ring above knuckle ring band midi ring 
+target: beauty
+isCorrect: True
+topN: ['beauty', 'love', 'fashion', 'style']
+
+input: used 2013 gmc terrain sle 2 utility cars for sale in jacksonville, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: outsourcing allows you to focus on income-generating activities! 
+target: entrepreneur
+isCorrect: True
+topN: ['success', 'entrepreneur', 'love', 'style']
+
+input: hey   thanks for the follow! it is great to connect! for or look here:
+target: success
+isCorrect: True
+topN: ['success', 'love', 'entrepreneur', 'style']
+
+input:  is now (08h28m02s ut) culminating at 1820'04.7'' conjunct at belgrade, yu
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Scorpio', 'entrepreneur']
+
+input:  is now (20h58m01s ut) rising at 2228'14.9'' conjunct at seoul, rok
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Capricorn', 'Scorpio', 'love']
+
+input:  are kept busy to enjoy when body is suffering from inactivity
+target: beauty
+isCorrect: True
+topN: ['love', 'beauty', 'success', 'style']
+
+input: 'some people dream of success while others wake up and work.' 
+target: success
+isCorrect: True
+topN: ['success', 'quote', 'entrepreneur', 'love']
+
+input: rondo unclear on benching, but back in rotation 
+target: NBA
+isCorrect: True
+topN: ['Shoes', 'NBA', 'Steelers', 'Giveaway']
+
+input: please rt? on not getting anything done when you have small children
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input:  "the height of isn't measured by numbers, it's measured by the number of those you helped to...
+target: success
+isCorrect: False
+topN: ['NBA', 'free', 'Steelers', 'Startups']
+
+input:  / for luxembourg, l for now (02h58m01s ut): 1548'23.4'' (ac) / 1511'50.9'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: 2012 panini prominence cleveland browns football card ozzie newsome s /897 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input:  knocki makes things happen when you knock on a surface it?s connected to
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input: samsung to reveal this month why the galaxy note7 kept exploding 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input: apana tambua senator! see what khalwalwe was forced to do after enrolling his son at 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input:  fair park district entrepreneur center to open in dallas 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input:  teen 'shark tank' entrepreneur sues to guard lacrosse co. 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input:  curved concrete staircase can be fast and easy - here is how
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'fashion', 'browns']
+
+input:  the desertscraper is a nomad skyscraper that fights desertification
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input: pdf free download leadershp and management of free ads - programs free free adsverts
+target: free
+isCorrect: False
+topN: ['love', 'stream', 'beauty', 'fashion']
+
+input:  3 lessons for entrepreneurs from nike "shoe dog" phil knight 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input:  video>> startup idol at brainstorm tech 2014 (video)
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'Marketing', 'NBA']
+
+input:  expert advice: how to create the perfect bath, from the grande dame of..
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input: call yumeka today and schedule you appointment. 480-737-9992. 
+target: beauty
+isCorrect: False
+topN: ['auction', 'Giveaway', 'entrepreneur', 'fashion']
+
+input:  puma future cat s1 shoes for women, new & authentic, us size 9
+target: fashion
+isCorrect: True
+topN: ['fashion', 'beauty', 'style', 'Shoes']
+
+input: free training! why now is the best time in history to be an - 
+target: entrepreneur
+isCorrect: False
+topN: ['Marketing', 'Startups', 'Giveaway', 'IT']
+
+input: heres the naughty ugandan lady who is making men salivate like dogs (photos) 
+target: Startups
+isCorrect: True
+topN: ['Startups', 'entrepreneur', 'IT', 'Marketing']
+
+input: got the war paint on ready to get shit done today :) 
+target: fashion
+isCorrect: True
+topN: ['style', 'deco', 'fashion', 'love']
+
+input: 10 free slot games for you to enjoy. play free slots here:
+target: free
+isCorrect: True
+topN: ['holidays', 'free', 'NBA', 'love']
+
+input:  version of perfect to follow your idols. yasner chocomuchocookies
+target: free
+isCorrect: True
+topN: ['free', 'Giveaway', 'stream', 'love']
+
+input:  london mayor to investigate foreign investment?s effect on housing.
+target: deco
+isCorrect: True
+topN: ['deco', 'style', 'browns', 'fashion']
+
+input: null / for luxembourg, l for now (02h28m01s ut): 0953'18.6'' (ac) / 0703'04.1'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: acmcclockeuro: is now (15h58m01s ut) setting at 1724'40.5'' opposite at bordeaux, f
+target: Capricorn
+isCorrect: True
+topN: ['Capricorn', 'Sagittarius', 'Scorpio', 'entrepreneur']
+
+input: null is now (04h28m01s ut) setting at 2538'45.7'' opposite at seoul, rok
+target: Sagittarius
+isCorrect: True
+topN: ['Sagittarius', 'Capricorn', 'Scorpio', 'love']
+
+input: please rt? for all the times i ever complained about pregnancy, i'm...
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input: watch uc davis aggies vs cal state northridge matadors basketball live 14.01.2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'free', 'Follow']
+
+input: 2008 (browns) r&s longevity parallel braylon edwards /249 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input:  / for leningrad, ssr for now (01h28m01s ut): 0251'30.6'' (ac) / 1236'04.1'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: come check out the finest in and originality in our 
+target: fashion
+isCorrect: True
+topN: ['love', 'stream', 'beauty', 'fashion']
+
+input: used 2009 gmc sierra 2500hd crew pickup cars for sale in jacksonville, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: larry nance jr. believes lakers 'going home a better team' after grammy trip 
+target: NBA
+isCorrect: True
+topN: ['NBA', 'Steelers', 'love', 'Giveaway']
+
+input: electronic piano construction kit (epick): an optical sensor bar for pianos 
+target: entrepreneur
+isCorrect: True
+topN: ['entrepreneur', 'Startups', 'success', 'IT']
+
+input: used 2016 honda civic sedan lx sedan 4 dr cars for sale in clearwater, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: new post: yomole multifunctional outdoor sports armband
+target: free
+isCorrect: True
+topN: ['free', 'Marketing', 'Steelers', 'Giveaway']
+
+input: used 2007 gmc yukon xl denali denali wagon 4 dr cars for sale in jacksonville, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: every day this week we are giving tickets for follow us for a chance to win. 
+target: fashion
+isCorrect: False
+topN: ['success', 'love', 'free', 'build']
+
+input: please rt? review of touching bellies, touching lives by judy gabriel
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input: please rt? diy daffodil clay pots or candle holders
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input: a star engineer just launched his own hyperloop outfit, arrivo 
+target: entrepreneur
+isCorrect: True
+topN: ['stream', 'quote', 'entrepreneur', 'free']
+
+input: 2000 ultimate victory cleveland browns football card courtney brown rookie 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: area manager gacoflex roof coatings roof foam sw fl jobs in tampa, fl 
+target: FL
+isCorrect: True
+topN: ['FL', 'TX', 'CA', 'Marketing']
+
+input: watch sweden u18 - finland u18 livestream 11.02.2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'free', 'Follow']
+
+input: please rt? drew barrymore handles her daughter's disney meltdowns...
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input: la redoute fashion > looking for looks with timeless pieces? . >
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'Shoes']
+
+input: check out kids dkny vest black brand new size 5 zip up 
+target: fashion
+isCorrect: True
+topN: ['love', 'fashion', 'entrepreneur', 'beauty']
+
+input: just pinned to necklaces: plastic link puf ://t.co/umtgp1cmst
+target: fashion
+isCorrect: True
+topN: ['fashion', 'style', 'beauty', 'Shoes']
+
+input: please rt? 4 tips to finally get your family get organized
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+input:  / for mexico city, mex for now (08h58m01s ut): 1825'32.5'' (ac) / 2537'30.3'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: watch golden state warriors - oklahoma city thunder nba live stream 11.02.2017 
+target: stream
+isCorrect: True
+topN: ['stream', 'browns', 'free', 'Follow']
+
+input: 1985 chicago white sox - cleveland program - scored 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: null / for athens, gr for now (01h28m01s ut): 1701'39.9'' (ac) / 0530'35.0
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: 2000 (browns) leaf certified fabric of the game kevin johnson/1000 
+target: browns
+isCorrect: True
+topN: ['browns', 'deco', 'stream', 'Steelers']
+
+input: wittier: ideas are easy. implementation is hard.  guy kawasaki wittier9 cindycapo sj wittier cindycapo
+target: entrepreneur
+isCorrect: True
+topN: ['success', 'quote', 'entrepreneur', 'love']
+
+input:  / for leningrad, ssr for now (04h58m01s ut): 2403'50.9'' (ac) / 1401'23.0'' (mc)
+target: Sagittarius
+isCorrect: True
+topN: ['Scorpio', 'Sagittarius', 'Capricorn', 'love']
+
+input: please rt? the advice that helped me decide to have a third baby
+target: babies
+isCorrect: True
+topN: ['babies', 'Steelers', 'Scorpio', 'love']
+
+numCorrect: 264 percCorrect: 0.885906040268

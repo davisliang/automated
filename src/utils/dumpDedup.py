@@ -2,7 +2,7 @@
 import numpy
 from os.path import expanduser
 
-dumpFile = open(expanduser("~/tweetnet/data/bigDupeDump.txt"))
+dumpFile = open(expanduser("~/tweetnet/data/dumpBig.txt"))
 dumpLines = dumpFile.readlines()
 
 dumpSet = set()

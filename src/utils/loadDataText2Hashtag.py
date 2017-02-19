@@ -27,9 +27,12 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent):
         tweets = pickle.load(open(expanduser("~/tweetnet/data/englishHashtagTweet.pkl"), "rb"))
         hashtags = pickle.load(open(expanduser("~/tweetnet/data/englishHashtag.pkl"), "rb"))
         modifiedTweets = []
+
         for i in range(len(tweets)):
-            # Get rid of the "text: " and add start of text and end of text
+            
+	    # Get rid of the "text: " and add start of text and end of text
             modifiedTweets.append(chr(2) + tweets[i][6:] + chr(3))
+        
         tweets = modifiedTweets
         nTweet = len(tweets)
         nTrainData = np.ceil(nTweet*trainPercent).astype(int)
@@ -37,10 +40,12 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent):
         hashtags_shuf = []
         idx_shuf = range(len(tweets))
         shuffle(idx_shuf)
+        
         for i in idx_shuf:
             tweets_shuf.append(tweets[i])
             ht = hashtags[i].split(" ")
 	    hashtags_shuf.append(ht[2])
+        
         #Split the tweets and hashtags into training and testing set 
         trainTweets = tweets_shuf[0: nTrainData]
         trainHashtags = hashtags_shuf[0: nTrainData]
