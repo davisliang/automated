@@ -8,3 +8,5 @@ sleep 5
 gnome-terminal -e ~/tweetnet/scripts/startSupervisor.sh
 sleep 5
 gnome-terminal -e ~/tweetnet/scripts/startStormUI.sh
+sleep 5
+gnome-terminal -e ~/tweetnet/scripts/startKafkaServer.sh

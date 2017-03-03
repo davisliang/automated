@@ -8,3 +8,5 @@ sleep 5
 ~/tweetnet/scripts/newTerminalMac.sh ~/tweetnet/scripts/startSupervisor.sh
 sleep 5
 ~/tweetnet/scripts/newTerminalMac.sh ~/tweetnet/scripts/startStormUI.sh
+sleep 6
+~/tweetnet/scripts/newTerminalMac.sh ~/tweetnet/scripts/startKafkaServer.sh
