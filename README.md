@@ -19,13 +19,14 @@ A side project of RelNet resulted in the ***Infinite Data Pipeline*** which is b
 1. [Install CUDA and cuDNN](http://www.pyimagesearch.com/2016/07/04/how-to-install-cuda-toolkit-and-cudnn-for-deep-learning/)
 2. [Apache Storm and Twitter API Setup](https://www.tutorialspoint.com/apache_storm/apache_storm_installation.htm)
 3. [Install keras and Theano](http://www.pyimagesearch.com/2016/07/18/installing-keras-for-deep-learning/)
+4. [Download Kafka 2.10](https://www.apache.org/dyn/closer.cgi?path=/kafka/0.10.1.1/kafka_2.10-0.10.1.1.tgz)
 
 ## Data Miner Run Guide (MacOSX Local):
-1. Run **systemStartMac.sh** to start your *Storm* instance. 
-2. Run **runAPI.sh** to open the *Twitter* stream and start collection. (Requires you to edit **runAPI.sh** with correct *Twitter* API credentials).
+1. Run **systemStartMac.sh** to start your *Storm* instance. Make sure `KAFKAHOME` is set correctly in `scripts/startKafkaServer.sh`.
+2. Edit `src/storm/pom.xml` with the appropriate Twitter credentials. Run `mvn install` inside `src/storm` to compile and `mvn exec:java` to start the data collection and streaming.
 
 ## Data Miner Run Guide (Ubuntu 16.04 Local):
-1. Run **systemStartMac.sh** to start your *Storm* instance. 
+1. Run **systemStartUbuntu.sh** to start your *Storm* instance. 
 2. Run **runAPI.sh** to open the *Twitter* stream and start collection. (Requires you to edit **runAPI.sh** with correct *Twitter* API credentials).
 
 ## Tweetnet Run Guide:
@@ -33,7 +34,7 @@ A side project of RelNet resulted in the ***Infinite Data Pipeline*** which is b
 
 ## Notes:
 
-**Note**: The system start script opens four new terminals; *Apache Zookeeper*, the *Nimbus*, the *Supervisor*, and *StormUI*. Each new open terminal requires **sudo** access and will request for the user's password. To view *StormUI* you can navigate to *localhost:8080*. 
+**Note**: The system start script opens five new terminals; *Apache Zookeeper*, the *Nimbus*, the *Supervisor*, *StormUI*, and the *Kafka* server. Each new open terminal requires **sudo** access and will request for the user's password. To view *StormUI* you can navigate to *localhost:8080*. 
 
 **Note**: In the CUDA setup, the section where you link cuda to cuda-7.5 is outdated. 
 
