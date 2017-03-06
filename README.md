@@ -1,7 +1,9 @@
-# TweetNet
-**TweetNet** is a deep learning model for NLP tasks. Tweetnet extracts features and uses context based LSTMs to learn representations from Tweets collected from the Twitter API.
+# RelNet
+**RelNet** is a context-driven, multi-tasking, and recurrent deep learning model. RelNet uses context features (such as topic embeddings) to reinforce learning relevant NLP tasks. RelNet comes in two flavors: the CCRNN (Contextual Cascaded Recurrent Neural Network) and the MCRNN (Multi-tasking Contextual Recurrent Neural Network). 
 
-The data miner built on Java, Apache Storm, and the Twitter API. The context-based LSTM model is built on Keras (on Theano), and Python.
+RelNet has been trained on various tasks such as missing word prediction to hashtag recommendation using a diverse set of text corpuses including Twitter, Reuters, and IMDB.
+
+A side project of RelNet resulted in the ***Infinite Data Pipeline*** which is built on Java, Apache Storm, Kafka, and the Twitter API. The Infinite Data Pipeline streams and preprocesses Twitter data online and directly injects the streamed data into a running Tensorflow topology. 
 
 ## Requirements:
 1. CUDNN (tested on cuDNN 5105)
