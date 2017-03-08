@@ -24,7 +24,7 @@ dictionary = pickle.load(open(expanduser("~/tweetnet/data/word2vec_dict.pkl"), "
 hashtagFreq = pickle.load(open(expanduser("~/tweetnet/data/hashtagFreq.pkl"), "rb"))
 
 idx_shuf = range(len(hashtags))
-shuffle(idx_shuf)
+#shuffle(idx_shuf)
 freqThreshold = 84
 hashtags_shuf = []
 context_shuf = []
@@ -58,7 +58,7 @@ for i in range(len(hashtags_shuf)):
 htDic = createHtDict(dictionary, outputStringLabel)
 
 # Train and Test split
-trainPercent = 0.95
+trainPercent = 0.9
 nTrainData = numpy.round(len(data)*trainPercent).astype(int)
 topN = 4
 nEpoch = 5000
@@ -86,6 +86,8 @@ model.add(PReLU())
 
 optimizer = RMSprop(lr=0.005)
 model.compile(loss='mse', optimizer=optimizer)
+
+model.summary()
 
 name = "c2c" + time.strftime("%Y-%m-%d_%H:%M") + ".log"
 for epoch in range(nEpoch):

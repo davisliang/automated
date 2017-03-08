@@ -21,6 +21,7 @@ from keras.layers import LSTM
 from keras.layers import Dense
 from keras.layers import PReLU
 from keras.layers import Activation
+from keras.layers.wrappers import TimeDistributed
 from keras.optimizers import RMSprop
 from keras.optimizers import Adagrad
 from keras.layers import Dropout
@@ -35,7 +36,7 @@ sequenceLength = 30
 #Number of symbols
 vocabLen = 66
 #train test split
-trainPercent = 0.95
+trainPercent = 0.9
 #threshold on hashtag frequency 
 freqThreshold = 84
 
@@ -50,6 +51,8 @@ print("Finished loading data")
 
 #initialize some hyper-parameters
 topN = np.ceil(0.05*nUniqueHt).astype(int)
+print  topN
+
 
 #embeddingLength: size of the word embedding
 embeddingLength = 300
@@ -82,24 +85,25 @@ numEpochs=50
 print("Start building model ....")
 model = Sequential()
 
-model.add(LSTM(numHiddenFirst, return_sequences=True, input_shape=(sequenceLength, inputSize)))
+#model.add(TimeDistributed(Dense(numHiddenFirst), input_shape=(sequenceLength, inputSize)))
+#model.add(BatchNormalization())
+
+model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize)))
 model.add(BatchNormalization())
-model.add(LSTM(numHiddenFirst, return_sequences=True))
-model.add(BatchNormalization())
-model.add(LSTM(numHiddenFirst))
-model.add(BatchNormalization())
+
 model.add(Dense(numHiddenFirst))
 model.add(PReLU())
 model.add(BatchNormalization())
 
 model.add(Dense(embeddingLength))
 model.add(PReLU())
-model.add(BatchNormalization())
 
 optimizer = RMSprop(lr=0.005)
 
 model.compile(loss='mean_squared_error', optimizer=optimizer)
 print("Finished building model.")
+
+model.summary()
 
 name = "t2c"+time.strftime("%Y-%m-%d_%H:%M") + ".log"
 for epoch in range(numEpochs):

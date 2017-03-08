@@ -12,7 +12,34 @@ from numpy import random
 from random import shuffle
 from os.path import expanduser
 
-def loadData(dictionary,ranges,sequenceLength,trainPercent):
+def normByThreshold(tweets, hashtags, freqThreshold):
+
+    #load hashtag frequency dictionary
+    hashtagFreq = pickle.load(open(expanduser("~/tweetnet/data/hashtagFreq.pkl"), "rb"))
+    tweets_shuf = []
+    hashtags_shuf = []
+    idx_shuf = range(len(tweets))
+    shuffle(idx_shuf)
+    hashtagFreqCnt = {}
+    for i in idx_shuf:
+        ht = hashtags[i].split(" ")
+        if hashtagFreq[ht[2]] >= freqThreshold:
+            if hashtagFreqCnt.get(ht[2]) == None:
+
+                hashtagFreqCnt[ht[2]] = 1
+                tweets_shuf.append(tweets[i])
+                hashtags_shuf.append(ht[2])
+
+            elif hashtagFreqCnt[ht[2]] < freqThreshold:
+
+                hashtagFreqCnt[ht[2]] += 1
+                tweets_shuf.append(tweets[i])
+                hashtags_shuf.append(ht[2])
+
+    return tweets_shuf, hashtags_shuf
+
+
+def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
 	''' Creates dataset based on dictionary, a set of ascii
 	ranges, and pickled twitter data from Apache Storm.
 
@@ -34,23 +61,17 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent):
             modifiedTweets.append(chr(2) + tweets[i][6:] + chr(3))
         
         tweets = modifiedTweets
-        nTweet = len(tweets)
-        nTrainData = np.ceil(nTweet*trainPercent).astype(int)
-        tweets_shuf = []
-        hashtags_shuf = []
-        idx_shuf = range(len(tweets))
-        shuffle(idx_shuf)
         
-        for i in idx_shuf:
-            tweets_shuf.append(tweets[i])
-            ht = hashtags[i].split(" ")
-	    hashtags_shuf.append(ht[2])
+	tweets_shuf, hashtags_shuf = normByThreshold(tweets, hashtags, freqThreshold)
+
+	nTweet = len(tweets_shuf)
+        nTrainData = np.ceil(nTweet*trainPercent).astype(int)
         
         #Split the tweets and hashtags into training and testing set 
         trainTweets = tweets_shuf[0: nTrainData]
         trainHashtags = hashtags_shuf[0: nTrainData]
-        testTweets = tweets_shuf[nTrainData+1: nTweet]
-        testHashtags = hashtags_shuf[nTrainData+1: nTweet]
+        testTweets = tweets_shuf[nTrainData: nTweet]
+        testHashtags = hashtags_shuf[nTrainData: nTweet]
         nTestData = len(testTweets)
 
         
@@ -71,27 +92,34 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent):
         trainHashtagSequence = []
         testTweetSequence = []
         testHashtagSequence = []
-
+	trainStartIdx = []
+ 	testStartIdx = []
+	
         #vector in word2vec is 300
         embeddingLength = 300
 
         #Split data into sequences of length 40 for training
+	sequenceCnt = 0
         for i in range(nTrainData):
             oneTweet = trainTweets[i]
+            trainStartIdx.append(sequenceCnt)
             for j in range(0, len(oneTweet) - sequenceLength + 1, 1):
                 trainTweetSequence.append(oneTweet[j : j+sequenceLength])
                 trainHashtagSequence.append(trainHashtags[i])
+                sequenceCnt += 1
         print('Number of sequences in training data: ', len(trainTweetSequence))
         print('Number of hashtags in training data: ', len(trainHashtagSequence))
 
 
-        #Split data into sequences of length 40 for testing
+        sequenceCnt = 0
+	#Split data into sequences of length 40 for testing
         for i in range(nTestData):
             oneTweet = testTweets[i]
-            ht = hashtags[i].split(" ")
-            for j in range(0, len(oneTweet) - sequenceLength + 1, 1):
+            testStartIdx.append(sequenceCnt)
+	    for j in range(0, len(oneTweet) - sequenceLength + 1, 1):
                 testTweetSequence.append(oneTweet[j : j+sequenceLength])
                 testHashtagSequence.append(testHashtags[i])
+                sequenceCnt += 1
         print('Number of sequences in testing data: ', len(testTweetSequence))
         print('Number of hashtags in testing data: ', len(testHashtagSequence))
 	
@@ -127,11 +155,11 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent):
         tweet2hashtagParam = [trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence]
           
 
-	return trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence, word2vecDict
+	return trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence, word2vecDict, trainStartIdx, testStartIdx
 
 
 if __name__ == "__main__":
-    trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence, dictionary = loadData({},np.array([]), 40, 0.99)
+    trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence, dictionary, trainStartIdx, testStartIdx = loadData({},np.array([]), 40, 0.9, 84)
 #    print trainTweets[0]
 #    print trainHashtags[0]
 #    print testTweets[0]
@@ -139,4 +167,9 @@ if __name__ == "__main__":
 #    for i in range(10):
 #        print trainTweetSequence[i]
 #        print trainHashtagSequence[i]
-    
+    print len(trainStartIdx)
+    print len(trainTweets)
+    print len(testStartIdx)
+    print len(testTweets)
+    print trainX.shape
+    print testX.shape

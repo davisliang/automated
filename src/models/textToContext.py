@@ -13,7 +13,7 @@ import os
 import sys
 from os.path import expanduser
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..","utils")))
-from loadDataText2Hashtag import loadData
+from loadDataT2C import loadData
 from predContext import predContext, createHtDict
 from keras.utils import np_utils
 from keras.models import Sequential
@@ -21,28 +21,34 @@ from keras.layers import LSTM
 from keras.layers import Dense
 from keras.layers import PReLU
 from keras.layers import Activation
+from keras.layers.wrappers import Bidirectional
 from keras.optimizers import RMSprop
+from keras.optimizers import Adadelta
 from keras.optimizers import Adagrad
 from keras.layers import Dropout
 from keras.layers import BatchNormalization
 from tweetGenerator_lstm import generateText
 from keras.callbacks import ModelCheckpoint
+from keras.regularizers import l2, activity_l2
+
 from logger import logger
 import time
 #get the top N prediction of hashtags
-topN = 5
+topN = 4
 #sequenceLength: sequence length (k in BPTTk)
 sequenceLength = 30
 #Number of symbols
 vocabLen = 66
 #train test split
-trainPercent = 0.95
+trainPercent = 0.9
+#freqThreshold for hashtags
+freqThreshold = 84
 logAllPredictions=True
 #X: [# Seuqences, 40 (sequenceLength), 65(inputSize)].
 #y: [# Sequences, 300]
 
 print("Start loading data ...")
-trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence, dictionary = loadData({},np.array([]), sequenceLength, trainPercent)
+trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence, dictionary = loadData({},np.array([]), sequenceLength, trainPercent, freqThreshold)
 print("Finished loading data")
 
 
@@ -76,12 +82,17 @@ htDic = createHtDict(dictionary, testHashtags)
 
 numEpochs=50
 
+lamb = 0.0001
 #building cLSTM model
 #print("\n")
 print("Start building model ....")
 model = Sequential()
 
+#model.add(LSTM(numHiddenFirst, return_sequences=True, input_shape=(sequenceLength, inputSize)))
+
 model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize)))
+
+model.add(BatchNormalization())
 
 model.add(Dense(numHiddenFirst))
 model.add(PReLU())
@@ -95,6 +106,8 @@ optimizer = RMSprop(lr=0.005)
 
 model.compile(loss='mean_squared_error', optimizer=optimizer)
 print("Finished building model.")
+
+model.summary()
 
 name = "t2c"+time.strftime("%Y-%m-%d_%H:%M") + ".log"
 for epoch in range(numEpochs):

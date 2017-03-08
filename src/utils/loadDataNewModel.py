@@ -39,7 +39,7 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent,freqThreshold):
         hashtags_shuf = []
         context_shuf = []
         idx_shuf = range(len(tweets))
-        shuffle(idx_shuf)
+        #shuffle(idx_shuf)
         hashtagFreqCnt = {}
 
         #Normalize hashtags so that each hashtags appear exactly # freqThreshold times
