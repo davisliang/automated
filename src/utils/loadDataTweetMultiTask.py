@@ -69,8 +69,12 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
         #Split the tweets and hashtags into training and testing set 
         trainTweets = tweets_shuf[0: nTrainData]
         trainHashtags = hashtags_shuf[0: nTrainData]
+        trainMw = missingWords_shuf[0: nTrainData]
+
         testTweets = tweets_shuf[nTrainData: nTweet]
         testHashtags = hashtags_shuf[nTrainData: nTweet]
+        testMw = missingWords_shuf[nTrainData: nTweet]
+
         nTestData = len(testTweets)
 
         
@@ -89,8 +93,12 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
 	#initialize datastore arrays
         trainTweetSequence = []
         trainHashtagSequence = []
+        trainMwSequence = []
+
         testTweetSequence = []
         testHashtagSequence = []
+        testMwSequence = []
+
 	trainStartIdx = []
  	testStartIdx = []
 	
@@ -105,9 +113,11 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
             for j in range(0, len(oneTweet) - sequenceLength + 1, 1):
                 trainTweetSequence.append(oneTweet[j : j+sequenceLength])
                 trainHashtagSequence.append(trainHashtags[i])
+                trainMwSequence.append(trainMw[i])
                 sequenceCnt += 1
         print('Number of sequences in training data: ', len(trainTweetSequence))
         print('Number of hashtags in training data: ', len(trainHashtagSequence))
+        print('Number of missing words in training data: ', len(trainMwSequence))
 
 
         sequenceCnt = 0
@@ -118,10 +128,11 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
 	    for j in range(0, len(oneTweet) - sequenceLength + 1, 1):
                 testTweetSequence.append(oneTweet[j : j+sequenceLength])
                 testHashtagSequence.append(testHashtags[i])
+                testMwSequence.append(testMw[i])
                 sequenceCnt += 1
         print('Number of sequences in testing data: ', len(testTweetSequence))
         print('Number of hashtags in testing data: ', len(testHashtagSequence))
-	
+	print('Number of missing words in testing data: ', len(testMwSequence))
 	
         # for each sequence, create onehot encoding for each character
 	print("Vectorization...")
@@ -129,19 +140,24 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
         # trainX: [#training sequences, 40, 65]
         # trainy: [#training sequences, 300]
         trainX = np.zeros((len(trainTweetSequence), sequenceLength, vocabLen), dtype=np.bool)
-        trainY = np.zeros((len(trainTweetSequence), embeddingLength))
+        trainY_task = np.zeros((len(trainTweetSequence), embeddingLength))
+        trainY_context = np.zeros((len(trainTweetSequence), embeddingLength))
+
 	for i, seq in enumerate(trainTweetSequence):
             if i % 10000 == 0:
                 print("Loading training tweet ", i)
 	    for j, ch in enumerate(seq):
 		oneHotIndex = dictionary.get(ch)
 		trainX[i,j,oneHotIndex] = 1
-                trainY[i] = word2vecDict[trainHashtagSequence[i]]	    
-        
+                trainY_task[i] = word2vecDict[trainHashtagSequence[i]]	    
+                trainY_context[i] = word2vecDict[trainMwSequence[i]]
+
+
         # testX: [#testing sequences, 40, 65]
         # testy: [#testing sequences, 300]
         testX = np.zeros((len(testTweetSequence), sequenceLength, vocabLen), dtype=np.bool)
-        testY = np.zeros((len(testTweetSequence), embeddingLength))
+        testY_task = np.zeros((len(testTweetSequence), embeddingLength))
+        testY_context = np.zeros((len(testTweetSequence), embeddingLength))
         
 	for i, seq in enumerate(testTweetSequence):
             if i % 10000 == 0:
@@ -149,19 +165,27 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
 	    for j, ch in enumerate(seq):
 		oneHotIndex = dictionary.get(ch)
 		testX[i,j,oneHotIndex] = 1
-                testY[i] = word2vecDict[testHashtagSequence[i]]	  
+                testY_task[i] = word2vecDict[testHashtagSequence[i]]	  
+                testY_context[i] = word2vecDict[testMwSequence[i]]
 
-        tweet2hashtagParam = [trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence]
-          
+        train_data = [trainX, trainY_task, trainY_context]
+        test_data = [testX, testY_task, testY_context]
 
-	return trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence, word2vecDict, trainStartIdx, testStartIdx
+        with open(expanduser("~/tweetnet/data/train_data.pkl"), "wb") as file1:
+            pickle.dump(train_data, file1, pickle.HIGHEST_PROTOCOL)
+        with open(expanduser("~/tweetnet/data/test_data.pkl"), "wb") as file2:
+            pickle.dump(test_data, file2, pickle.HIGHEST_PROTOCOL)
+
+	return trainTweets, trainHashtags, trainMw, testTweets, testHashtags, testMw, trainX, trainY_task, trainY_context, testX, testY_task, testY_context,  trainTweetSequence, trainHashtagSequence, trainMwSequence, testTweetSequence, testHashtagSequence, testMwSequence, word2vecDict, trainStartIdx, testStartIdx
 
 
 if __name__ == "__main__":
-    trainTweets, trainHashtags, testTweets, testHashtags, trainX, trainY, testX, testY, trainTweetSequence, trainHashtagSequence, testTweetSequence, testHashtagSequence, dictionary, trainStartIdx, testStartIdx = loadData({},np.array([]), 40, 0.9, 84)
+    trainTweets, trainHashtags, trainMw, testTweets, testHashtags, testMw, trainX, trainY_task, trainY_context, testX, testY_task, testY_context,  trainTweetSequence, trainHashtagSequence, trainMwSequence, testTweetSequence, testHashtagSequence, testMwSequence, word2vecDict, trainStartIdx, testStartIdx = loadData({},np.array([]), 40, 0.9, 84)
     print len(trainStartIdx)
     print len(trainTweets)
     print len(testStartIdx)
     print len(testTweets)
     print trainX.shape
     print testX.shape
+    print trainY_task.shape
+    print testY_task.shape

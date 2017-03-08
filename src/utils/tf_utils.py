@@ -2,7 +2,7 @@ import tensorflow as tf
 from tf.contrib.rnn import BasicLSTMCell
 import numpy as np
 
-def fcLayer(x, in_shape, out_shape, activation, dropout, scope="fc"):
+def fcLayer(x, in_shape, out_shape, activation, dropout, is_train=1, scope="fc"):
     
     x = tf.reshape(x, [-1, in_shape])
  
@@ -13,7 +13,8 @@ def fcLayer(x, in_shape, out_shape, activation, dropout, scope="fc"):
 
         with tf.variable_scope("activation"):
             output = applyActivation(fc, activation)
-            out_op = tf.nn.dropout(output, dropout)
+            if is_train:
+                out_op = tf.nn.dropout(output, dropout)
     
     return out_op
 
