@@ -1,7 +1,7 @@
 import numpy
 from os.path import expanduser
 def logger(listVals, name):
-    logwriter = open(expanduser('~/tweetnet/logs/'+ name), 'w+')
+    logwriter = open(expanduser('~/tweetnet/logs/'+ name), 'a')
     logwriter.write("\n ########################################## \n")
     logwriter.write("EPOCH: " + str(listVals[0][0]) + "\n")
     for i in xrange(1,len(listVals)-1):

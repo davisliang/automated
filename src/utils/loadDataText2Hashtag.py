@@ -51,19 +51,22 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
 	'''
 
         #load tweets with >=2 hashtags and corresponding english hashtags
-        tweets = pickle.load(open(expanduser("~/tweetnet/data/englishHashtagTweet.pkl"), "rb"))
-        hashtags = pickle.load(open(expanduser("~/tweetnet/data/englishHashtag.pkl"), "rb"))
+        tweets = pickle.load(open(expanduser("~/tweetnet/data/multitaskTweets.pkl.pkl"), "rb"))
+        hashtags = pickle.load(open(expanduser("~/tweetnet/data/multiTaskHashtags.pkl"), "rb"))
         modifiedTweets = []
 
-        for i in range(len(tweets)):
+        #for i in range(len(tweets)):
             
 	    # Get rid of the "text: " and add start of text and end of text
-            modifiedTweets.append(chr(2) + tweets[i][6:] + chr(3))
+        #    modifiedTweets.append(chr(2) + tweets[i][6:] + chr(3))
         
-        tweets = modifiedTweets
+        #tweets = modifiedTweets
         
-	tweets_shuf, hashtags_shuf = normByThreshold(tweets, hashtags, freqThreshold)
+	#tweets_shuf, hashtags_shuf = normByThreshold(tweets, hashtags, freqThreshold)
 
+        tweets_shuf = tweets
+        hashtags_shuf = hashtags
+        
 	nTweet = len(tweets_shuf)
         nTrainData = np.ceil(nTweet*trainPercent).astype(int)
         

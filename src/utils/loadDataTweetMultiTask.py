@@ -41,6 +41,8 @@ def normByThreshold(tweets, hashtags, missingWords, freqThreshold):
                 tweets_shuf.append(tweets[i])
                 hashtags_shuf.append(ht)
                 missingWords_shuf.append(mw)
+    print len(hashtagFreqCnt)
+    print hashtagFreqCnt
 
     return tweets_shuf, hashtags_shuf, missingWords_shuf
 
@@ -170,11 +172,14 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
 
         train_data = [trainX, trainY_task, trainY_context]
         test_data = [testX, testY_task, testY_context]
+        text_data = [testTweets, testHashtags, testMw, testTweetSequence, testHashtagSequence, testMwSequence, testStartIdx]
 
         with open(expanduser("~/tweetnet/data/train_data.pkl"), "wb") as file1:
             pickle.dump(train_data, file1, pickle.HIGHEST_PROTOCOL)
         with open(expanduser("~/tweetnet/data/test_data.pkl"), "wb") as file2:
             pickle.dump(test_data, file2, pickle.HIGHEST_PROTOCOL)
+        with open(expanduser("~/tweetnet/data/text_data.pkl"), "wb") as file3:
+            pickle.dump(text_data, file3, pickle.HIGHEST_PROTOCOL)
 
 	return trainTweets, trainHashtags, trainMw, testTweets, testHashtags, testMw, trainX, trainY_task, trainY_context, testX, testY_task, testY_context,  trainTweetSequence, trainHashtagSequence, trainMwSequence, testTweetSequence, testHashtagSequence, testMwSequence, word2vecDict, trainStartIdx, testStartIdx
 

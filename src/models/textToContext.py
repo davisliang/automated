@@ -24,7 +24,7 @@ from keras.layers import Activation
 from keras.layers.wrappers import Bidirectional
 from keras.optimizers import RMSprop
 from keras.optimizers import Adadelta
-from keras.optimizers import Adagrad
+from keras.optimizers import Adam
 from keras.layers import Dropout
 from keras.layers import BatchNormalization
 from tweetGenerator_lstm import generateText
@@ -36,7 +36,7 @@ import time
 #get the top N prediction of hashtags
 topN = 4
 #sequenceLength: sequence length (k in BPTTk)
-sequenceLength = 30
+sequenceLength = 40
 #Number of symbols
 vocabLen = 66
 #train test split
@@ -92,18 +92,20 @@ model = Sequential()
 
 model.add(LSTM(numHiddenFirst, input_shape=(sequenceLength, inputSize)))
 
-model.add(BatchNormalization())
+#model.add(BatchNormalization())
 
 model.add(Dense(numHiddenFirst))
-model.add(PReLU())
-model.add(BatchNormalization())
+model.add(Activation('relu'))
+#model.add(PReLU())
+#model.add(BatchNormalization())
 
 model.add(Dense(outputSize))
-model.add(PReLU())
-model.add(BatchNormalization())
+model.add(Activation('tanh'))
+#model.add(PReLU())
+#model.add(BatchNormalization())
 
-optimizer = RMSprop(lr=0.005)
-
+#optimizer = RMSprop(lr=0.005)
+optimizer = Adam(lr=0.0001)
 model.compile(loss='mean_squared_error', optimizer=optimizer)
 print("Finished building model.")
 

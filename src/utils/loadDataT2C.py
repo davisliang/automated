@@ -21,15 +21,15 @@ def normalizeByFreq(tweets, hashtags, hashtagFreq, freqThreshold):
     
     for i in idx_shuf:
         ht = hashtags[i].split(" ")
-        if hashtagFreq[ht[2]] >= freqThreshold:
-            if hashtagFreqCnt.get(ht[2]) == None:
-                hashtagFreqCnt[ht[2]] = 1
+        if hashtagFreq[ht[0]] >= freqThreshold:
+            if hashtagFreqCnt.get(ht[0]) == None:
+                hashtagFreqCnt[ht[0]] = 1
                 tweets_shuf.append(tweets[i])
-                hashtags_shuf.append(ht[2])
-            elif hashtagFreqCnt[ht[2]] < freqThreshold:
-                hashtagFreqCnt[ht[2]] += 1
+                hashtags_shuf.append(ht[0])
+            elif hashtagFreqCnt[ht[0]] < freqThreshold:
+                hashtagFreqCnt[ht[0]] += 1
                 tweets_shuf.append(tweets[i])
-                hashtags_shuf.append(ht[2])
+                hashtags_shuf.append(ht[0])
     return tweets_shuf, hashtags_shuf
 
 def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
@@ -44,21 +44,21 @@ def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
 	'''
 
         #load tweets with >=2 hashtags and corresponding english hashtags
-        tweets = pickle.load(open(expanduser("~/tweetnet/data/englishHashtagTweet.pkl"), "rb"))
-        hashtags = pickle.load(open(expanduser("~/tweetnet/data/englishHashtag.pkl"), "rb"))
+        tweets = pickle.load(open(expanduser("~/tweetnet/data/multitaskTweets.pkl"), "rb"))
+        hashtags = pickle.load(open(expanduser("~/tweetnet/data/multitaskHashtags.pkl"), "rb"))
         
         #load hashtag frequency dictionary
         hashtagFreq = pickle.load(open(expanduser("~/tweetnet/data/hashtagFreq.pkl"), "rb"))
         
-        modifiedTweets = []
-        for i in range(len(tweets)):
-	    # Get rid of the "text: " and add start of text and end of text
-            modifiedTweets.append(chr(2) + tweets[i][6:] + chr(3))
-        tweets = modifiedTweets
+        #modifiedTweets = []
+        #for i in range(len(tweets)):
+	#    # Get rid of the "text: " and add start of text and end of text
+        #    modifiedTweets.append(chr(2) + tweets[i][6:] + chr(3))
+        #tweets = modifiedTweets
 
         #Normalize data by frequency
         tweets_shuf, hashtags_shuf = normalizeByFreq(tweets, hashtags, hashtagFreq, freqThreshold)
-        
+ 
         nTweet = len(tweets_shuf)
         nTrainData = np.ceil(nTweet*trainPercent).astype(int)
         
