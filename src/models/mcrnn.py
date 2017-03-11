@@ -109,7 +109,8 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
     y_task = tf.placeholder(tf.float32, shape=(batch_size, task_dim))
 
     # Setting up training variables
-    optimizer = tf.train.AdamOptimizer(learning_rate=lr) 
+    optimizer1 = tf.train.AdamOptimizer(learning_rate=lr*0.5) 
+    optimizer2 = tf.train.AdamOptimizer(learning_rate=lr)
     is_train = tf.placeholder(tf.int32)
     n_batches = np.ceil(len(trainX) / batch_size).astype(int)
     
@@ -117,8 +118,8 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
     total_cost, cost1, cost2, output2, output1 = buildModel(x, y_context, y_task, is_train)
 
     # Minimize losses
-    train_step1 = optimizer.minimize(cost1)
-    train_step2 = optimizer.minimize(cost2)
+    train_step1 = optimizer1.minimize(cost1)
+    train_step2 = optimizer2.minimize(cost2)
  
     # Start running operations on the graph
     sess = tf.Session()
