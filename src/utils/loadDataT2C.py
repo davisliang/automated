@@ -12,26 +12,6 @@ from numpy import random
 from random import shuffle
 from os.path import expanduser
 
-def normalizeByFreq(tweets, hashtags, hashtagFreq, freqThreshold):
-    tweets_shuf = []
-    hashtags_shuf = []
-    hashtagFreqCnt = {}
-    idx_shuf = range(len(tweets))
-    #shuffle(idx_shuf)
-    
-    for i in idx_shuf:
-        ht = hashtags[i].split(" ")
-        if hashtagFreq[ht[0]] >= freqThreshold:
-            if hashtagFreqCnt.get(ht[0]) == None:
-                hashtagFreqCnt[ht[0]] = 1
-                tweets_shuf.append(tweets[i])
-                hashtags_shuf.append(ht[0])
-            elif hashtagFreqCnt[ht[0]] < freqThreshold:
-                hashtagFreqCnt[ht[0]] += 1
-                tweets_shuf.append(tweets[i])
-                hashtags_shuf.append(ht[0])
-    return tweets_shuf, hashtags_shuf
-
 def loadData(dictionary,ranges,sequenceLength,trainPercent, freqThreshold):
 	''' Creates dataset based on dictionary, a set of ascii
 	ranges, and pickled twitter data from Apache Storm.

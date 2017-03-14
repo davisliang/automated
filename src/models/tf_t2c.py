@@ -14,9 +14,9 @@ from predContext import predContext, createHtDict
 fc_activation = "tanh"
 output_activation = "tanh"
 dropout = 0.0
-lstm_size_0 = 512
-lstm_size_1 = 512
-lstm_size_2 = 512
+lstm_size_0 = 128
+lstm_size_1 = 128
+lstm_size_2 = 128
 n_layer_0 = 1
 n_layer_1 = 1
 n_layer_2 = 1
@@ -33,7 +33,7 @@ context_dim = 300
 task_dim = 300
 
 # Hyper- params
-lr = 0.0001
+lr = 0.001
 n_epoch = 500
 topN = 4
 
@@ -55,7 +55,7 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
     # Create lstm cell for branch 1 
     lstm_cell_1, state_1 = createLSTMCell(batch_size, lstm_size_1, n_layer_1, forget_bias=0.0)
     # Create lstm cells for branch 2
-    lstm_cell_2, state_2 = createLSTMCell(batch_size, lstm_size_2, n_layer_2, forget_bias=0.0)
+    task_lstm_cell, task_state = createLSTMCell(batch_size, lstm_size_2, n_layer_2, forget_bias=0.0)
 
     combined_cost = tf.constant(0)
     cost1 = tf.constant(0)
@@ -67,9 +67,14 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
                 tf.get_variable_scope().reuse_variables()
             (cell_output_0, state_0) = lstm_cell_0(x[time_step], state_0)
         
+        with tf.variable_scope("task_branch"):
+            if time_step > 0: 
+                tf.get_variable_scope().reuse_variables()
+            (task_cell_output, task_state) = task_lstm_cell(cell_output_0, task_state)    
+        
         with tf.variable_scope("Branch_task_fc"):
             if time_step == n_steps - 1:
-                fc_out2 = fcLayer(x=cell_output_0, in_shape=lstm_size_0, out_shape=branch2_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
+                fc_out2 = fcLayer(x=task_cell_output, in_shape=lstm_size_2, out_shape=branch2_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
                 cost2, output2 = predictionLayer(x=fc_out2, y=y_task, in_shape=branch1_fc, out_shape=y_task.get_shape()[-1].value, activation=output_activation)
 
     return cost2, output2
