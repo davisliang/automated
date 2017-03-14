@@ -70,21 +70,22 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
     #we should try both top and bottom outputs for our targets.
     for time_step in range(n_steps):
     	# first, we construct the context lstm
+        print time_step
     	with tf.variable_scope("context_branch"):
             if time_step > 0: 
                 tf.get_variable_scope().reuse_variables()
             (context_cell_output, context_state) = context_lstm_cell(x[time_step], context_state)
         with tf.variable_scope("context_fc"): 
-            if time_step == n_steps - 1:
-                context_fc_out = fcLayer(x=context_cell_output, in_shape=context_lstm_size, out_shape=context_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc1")
-                context_cost, context_output = predictionLayer(x=context_fc_out, y=y_context, in_shape=context_branch_fc, out_shape=y_context.get_shape()[-1].value, activation=output_activation)
+            if time_step > 0:
+                tf.get_variable_scope().reuse_variables()
+            context_fc_out = fcLayer(x=context_cell_output, in_shape=context_lstm_size, out_shape=context_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc1")
+            context_cost, context_output = predictionLayer(x=context_fc_out, y=y_context, in_shape=context_branch_fc, out_shape=y_context.get_shape()[-1].value, activation=output_activation)
 
-    for time_step in range(n_steps):
         # then make the body where the input is the concatenation of both text and context_output         
     	with tf.variable_scope("body_lstm"):
             if time_step > 0:
-                tf.get_variable_scope().reuser_variable()
-            body_input = tf.concat(x[time_step],context_output)
+                tf.get_variable_scope().reuse_variables()
+            body_input = tf.concat([x[time_step],context_output], 1)
             (body_cell_output, body_state) = body_lstm_cell(body_input, body_state)
 
         # finally make the output task cell.
@@ -98,7 +99,7 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
                 task_fc_out = fcLayer(x=task_cell_output, in_shape=task_lstm_size, out_shape=task_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
                 task_cost, task_output = predictionLayer(x=task_fc_out, y=y_task, in_shape=context_branch_fc, out_shape=y_task.get_shape()[-1].value, activation=output_activation)
 
-        return context_cost, task_cost, task_output, context_output
+    return context_cost, task_cost, task_output, context_output
 
 def trainModel(train_path = train_data_path, test_path = test_data_path):
     

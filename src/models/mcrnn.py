@@ -183,12 +183,12 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
 
                 feed_dict = {x: test_x, y_context: test_y_context, y_task: test_y_task} 
 
-        	cost_context, cost_task, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
+                cost_context, cost_task, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
                 print taskOutput.shape
                 for i in range(batch_size):
-        	    if testTweetSequence[startIdx+i][-1] == chr(3):
-            	        topNht, isCorrect, topNdist = predContext(htDic, np.reshape(taskOutput[i,:], [1,task_dim]), topN, testHashtags[tweetCnt])
-            	        #tweetStartIdx = testIdx + 1
+            	    if testTweetSequence[startIdx+i][-1] == chr(3):
+                	    topNht, isCorrect, topNdist = predContext(htDic, np.reshape(taskOutput[i,:], [1,task_dim]), topN, testHashtags[tweetCnt])
+                	        #tweetStartIdx = testIdx + 1
                         if isCorrect: correctCnt += 1
 
                         print "Tweet: ", testTweets[tweetCnt]
