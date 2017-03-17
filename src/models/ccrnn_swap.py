@@ -34,12 +34,9 @@ task_dim = 300
 
 # Hyper- params
 lr = 0.001
-context_lr = lr
+context_lr = lr*0.5
 n_epoch = 500
 topN = 4
-
-
-
 
 def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
      
@@ -76,64 +73,33 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
     	with tf.variable_scope("context_branch"):
             if time_step > 0: 
                 tf.get_variable_scope().reuse_variables()
-            context_lstm_bn = tf.contrib.layers.batch_norm(x[time_step], 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn1')
-            (context_cell_output, context_state) = context_lstm_cell(context_lstm_bn, context_state)
+            (context_cell_output, context_state) = context_lstm_cell(x[time_step], context_state)
         with tf.variable_scope("context_fc"): 
             if time_step > 0:
                 tf.get_variable_scope().reuse_variables()
 
-            context_fc_bn = tf.contrib.layers.batch_norm(context_cell_output, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn2')
-            context_fc_out = fcLayer(x=context_fc_bn, in_shape=context_lstm_size, out_shape=context_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc1")
-            
-            context_pred_bn = tf.contrib.layers.batch_norm(context_fc_out, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn3')
-            context_cost, context_output = predictionLayer(x=context_pred_bn, y=y_context, in_shape=context_branch_fc, out_shape=y_context.get_shape()[-1].value, activation=output_activation)
+            context_fc_out = fcLayer(x=context_cell_output, in_shape=context_lstm_size, out_shape=context_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc1")
+            context_cost, context_output = predictionLayer(x=context_fc_out, y=y_context, in_shape=context_branch_fc, out_shape=y_context.get_shape()[-1].value, activation=output_activation)
 
         # then make the body where the input is the concatenation of both text and context_output         
     	with tf.variable_scope("body_lstm"):
             if time_step > 0:
                 tf.get_variable_scope().reuse_variables()
             #body_input = tf.concat([x[time_step],context_cell_output], 1)
-
-            body_lstm_bn = tf.contrib.layers.batch_norm(x[time_step], 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn4')
-            (body_cell_output, body_state) = body_lstm_cell(body_lstm_bn, body_state)
+            (body_cell_output, body_state) = body_lstm_cell(x[time_step], body_state)
 
         # finally make the output task cell.
         with tf.variable_scope("task_branch"):
             if time_step > 0:
                 tf.get_variable_scope().reuse_variables()
 
-    	    task_input = tf.concat([body_cell_output, context_cell_output], 1)
-
-            task_lstm_bn = tf.contrib.layers.batch_norm(task_input, 
-                                              center=True, scale=True, 
-                                              is_training=True,
-                                              scope='bn5')
-            (task_cell_output,task_state) = task_lstm_cell(task_lstm_bn, task_state)
+	    task_input = tf.concat([body_cell_output, context_cell_output], 1)
+            (task_cell_output,task_state) = task_lstm_cell(task_input, task_state)
 
         with tf.variable_scope("task_fc"):
             if time_step == n_steps - 1:
-                task_fc_bn = tf.contrib.layers.batch_norm(task_cell_output, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn6')
-                task_fc_out = fcLayer(x=task_fc_bn, in_shape=task_lstm_size, out_shape=task_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
-                task_pred_bn = tf.contrib.layers.batch_norm(task_fc_out, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn7')
-                task_cost, task_output = predictionLayer(x=task_pred_bn, y=y_task, in_shape=task_branch_fc, out_shape=y_task.get_shape()[-1].value, activation=output_activation)
+                task_fc_out = fcLayer(x=task_cell_output, in_shape=task_lstm_size, out_shape=task_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
+                task_cost, task_output = predictionLayer(x=task_fc_out, y=y_task, in_shape=context_branch_fc, out_shape=y_task.get_shape()[-1].value, activation=output_activation)
 
     return context_cost, task_cost, task_output, context_output
 
@@ -152,13 +118,13 @@ def print_config():
 	print "-"*100
 def trainModel(train_path = train_data_path, test_path = test_data_path):
     
-    print print_config
+    print print_config()
     # Load data as np arrays
     train_data = pickle.load(open(expanduser(train_path)))
-    trainX, trainY_task, trainY_context = train_data[0], train_data[1], train_data[2]
+    trainX, trainY_task, trainY_context = train_data[0], train_data[2], train_data[1]
     
     test_data = pickle.load(open(expanduser(test_path)))
-    testX, testY_task, testY_context = test_data[0], test_data[1], test_data[2]
+    testX, testY_task, testY_context = test_data[0], test_data[2], test_data[1]
    
     htDic, testTweets, testHashtags, testMw, testTweetSequence, testHashtagSequence, testMwSequence, testStartIdx = prepareForTest() 
 
@@ -169,8 +135,8 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
     y_task = tf.placeholder(tf.float32, shape=(batch_size, task_dim))
 
     # Setting up training variables
-    optimizer1 = tf.train.AdamOptimizer(learning_rate=lr) 
-    optimizer2 = tf.train.AdamOptimizer(learning_rate=context_lr)
+    optimizer1 = tf.train.AdamOptimizer(learning_rate=context_lr) 
+    optimizer2 = tf.train.AdamOptimizer(learning_rate=lr)
     is_train = tf.placeholder(tf.int32)
     n_batches = np.ceil(len(trainX) / batch_size).astype(int)
     
@@ -210,15 +176,15 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
             	epochTask += cost_task
 
                 train_step1.run(feed_dict=feed_dict)
-                cost_context, _, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
+                cost_context, cost_task, contextOutput, taskOutput = sess.run(fetches = [context_cost, task_cost, context_output, task_output], feed_dict=feed_dict)
                 contextCost += cost_context
                 epochContext += cost_context
                 
                 if batch !=0 and batch % 100 == 0:
-                    print "Minibatch ", batch, " Missing word: ", contextCost / 100, " Hashtag: ", taskCost / 100
+                    print "Minibatch ", batch, " Missing word: ", taskCost / 100, " Hashtag: ", contextCost / 100
                     contextCost = 0
                     taskCost = 0
-            print "Epoch ", epoch, "Missing word: ", epochContext / n_batches, " Hashtag: ", epochTask / n_batches
+            print "Epoch ", epoch, "Missing word: ", epochTask / n_batches, " Hashtag: ", epochContext / n_batches
 
 
             # At the end of each epoch, run a forward pass of all testing data
@@ -234,11 +200,11 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
 
                 feed_dict = {x: test_x, y_context: test_y_context, y_task: test_y_task} 
 
-                cost_context, cost_task, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
+                cost_context, cost_task, contextOutput, taskOutput = sess.run(fetches = [context_cost, task_cost, context_output, task_output], feed_dict=feed_dict)
                 print taskOutput.shape
                 for i in range(batch_size):
                     if testTweetSequence[startIdx+i][-1] == chr(3):
-                        topNht, isCorrect, topNdist = predContext(htDic, np.reshape(taskOutput[i,:], [1,task_dim]), topN, testHashtags[tweetCnt])
+                        topNht, isCorrect, topNdist = predContext(htDic, np.reshape(contextOutput[i,:], [1,task_dim]), topN, testHashtags[tweetCnt])
                         #tweetStartIdx = testIdx + 1
                         if isCorrect: correctCnt += 1
 

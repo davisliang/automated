@@ -65,17 +65,33 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
         with tf.variable_scope("SharedLSTM"):
             if time_step > 0: 
                 tf.get_variable_scope().reuse_variables()
-            (cell_output_0, state_0) = lstm_cell_0(x[time_step], state_0)
+            shared_lstm_bn = tf.contrib.layers.batch_norm(x[time_step], 
+                                          center=True, scale=True, 
+                                          is_training=True,
+                                          scope='bn1')
+            (cell_output_0, state_0) = lstm_cell_0(shared_lstm_bn, state_0)
         
         with tf.variable_scope("task_branch"):
             if time_step > 0: 
                 tf.get_variable_scope().reuse_variables()
-            (task_cell_output, task_state) = task_lstm_cell(cell_output_0, task_state)    
+            task_lstm_bn = tf.contrib.layers.batch_norm(cell_output_0, 
+                                          center=True, scale=True, 
+                                          is_training=True,
+                                          scope='bn2')
+            (task_cell_output, task_state) = task_lstm_cell(task_lstm_bn, task_state)    
         
         with tf.variable_scope("Branch_task_fc"):
             if time_step == n_steps - 1:
-                fc_out2 = fcLayer(x=task_cell_output, in_shape=lstm_size_2, out_shape=branch2_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
-                cost2, output2 = predictionLayer(x=fc_out2, y=y_task, in_shape=branch1_fc, out_shape=y_task.get_shape()[-1].value, activation=output_activation)
+                task_fc_bn = tf.contrib.layers.batch_norm(task_cell_output, 
+                                          center=True, scale=True, 
+                                          is_training=True,
+                                          scope='bn3')
+                fc_out2 = fcLayer(x=task_fc_bn, in_shape=lstm_size_2, out_shape=branch2_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
+                task_pred_bn = tf.contrib.layers.batch_norm(fc_out2, 
+                                          center=True, scale=True, 
+                                          is_training=True,
+                                          scope='bn4')
+                cost2, output2 = predictionLayer(x=task_pred_bn, y=y_task, in_shape=branch1_fc, out_shape=y_task.get_shape()[-1].value, activation=output_activation)
 
     return cost2, output2
             
