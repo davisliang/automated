@@ -1,3 +1,8 @@
+# Add batch normalization to the input to fully conntect layers and prediction layers
+# No batch norm on Recurrent layer
+# When using batch normalization, make sure that keep_prob is set to 1.0 so that
+# no dropout will be applied to fc layer
+
 import tensorflow as tf
 import numpy as np
 import os
@@ -13,7 +18,6 @@ from predContext import predContext, createHtDict
 # 0 -- shared;  1 -- context;  2 -- task
 fc_activation = "tanh"
 output_activation = "tanh"
-dropout = 0.0
 body_lstm_size = 128
 context_lstm_size = 128
 task_lstm_size = 128
@@ -26,7 +30,7 @@ task_branch_fc = 512
 # Data params
 train_data_path = "~/tweetnet/data/train_data.pkl"
 test_data_path = "~/tweetnet/data/test_data.pkl"
-batch_size = 1024
+batch_size = 128
 n_steps = 40
 feature_length = 66
 context_dim = 300
@@ -37,11 +41,11 @@ lr = 0.01
 context_lr = lr
 n_epoch = 500
 topN = 4
+keep_prob_val = 1.0
 
 
 
-
-def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
+def buildModel(x, y_context, y_task, is_train, keep_prob, scope="multiTask"):
      
     # Assume the input shape is (batch_size, n_steps, feature_length) 
 
@@ -76,13 +80,9 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
     	with tf.variable_scope("context_branch"):
             if time_step > 0: 
                 tf.get_variable_scope().reuse_variables()
-            context_lstm_bn = tf.contrib.layers.batch_norm(x[time_step], 
-                                          center=True, scale=True, 
-                                          is_training=is_train,
-                                          scope='bn1')
-            (context_cell_output, context_state) = context_lstm_cell(context_lstm_bn, context_state)
-	    #(context_cell_output, context_state) = context_lstm_cell(x[time_step], context_state)
-        with tf.variable_scope("context_fc"): 
+	    (context_cell_output, context_state) = context_lstm_cell(x[time_step], context_state)
+        
+	with tf.variable_scope("context_fc"): 
             if time_step > 0:
                 tf.get_variable_scope().reuse_variables()
 
@@ -90,7 +90,7 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
                                           center=True, scale=True, 
                                           is_training=is_train,
                                           scope='bn2')
-            context_fc_out = fcLayer(x=context_fc_bn, in_shape=context_lstm_size, out_shape=context_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc1")
+            context_fc_out = fcLayer(x=context_fc_bn, in_shape=context_lstm_size, out_shape=context_branch_fc, activation=fc_activation, dropout=keep_prob, is_train=is_train, scope="fc1")
             
             context_pred_bn = tf.contrib.layers.batch_norm(context_fc_out, 
                                           center=True, scale=True, 
@@ -104,11 +104,7 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
                 tf.get_variable_scope().reuse_variables()
             #body_input = tf.concat([x[time_step],context_cell_output], 1)
 
-            body_lstm_bn = tf.contrib.layers.batch_norm(x[time_step], 
-                                          center=True, scale=True, 
-                                          is_training=is_train,
-                                          scope='bn4')
-            (body_cell_output, body_state) = body_lstm_cell(body_lstm_bn, body_state)
+            (body_cell_output, body_state) = body_lstm_cell(x[time_step], body_state)
 
         # finally make the output task cell.
         with tf.variable_scope("task_branch"):
@@ -116,12 +112,7 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
                 tf.get_variable_scope().reuse_variables()
 
     	    task_input = tf.concat([body_cell_output, context_cell_output], 1)
-
-            task_lstm_bn = tf.contrib.layers.batch_norm(task_input, 
-                                              center=True, scale=True, 
-                                              is_training=is_train,
-                                              scope='bn5')
-            (task_cell_output,task_state) = task_lstm_cell(task_lstm_bn, task_state)
+            (task_cell_output,task_state) = task_lstm_cell(task_input, task_state)
 
         with tf.variable_scope("task_fc"):
             if time_step == n_steps - 1:
@@ -129,7 +120,7 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
                                           center=True, scale=True, 
                                           is_training=is_train,
                                           scope='bn6')
-                task_fc_out = fcLayer(x=task_fc_bn, in_shape=task_lstm_size, out_shape=task_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
+                task_fc_out = fcLayer(x=task_fc_bn, in_shape=task_lstm_size, out_shape=task_branch_fc, activation=fc_activation, dropout=keep_prob, is_train=is_train, scope="fc2")
                 task_pred_bn = tf.contrib.layers.batch_norm(task_fc_out, 
                                           center=True, scale=True, 
                                           is_training=is_train,
@@ -176,9 +167,10 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
     optimizer2 = tf.train.AdamOptimizer(learning_rate=context_lr)
     is_train = tf.placeholder(tf.bool)
     n_batches = np.ceil(len(trainX) / batch_size).astype(int)
+    keep_prob = tf.placeholder(tf.float32)
     
     # Build model and apply optimizer
-    context_cost, task_cost, task_output, context_output = buildModel(x, y_context, y_task, is_train)
+    context_cost, task_cost, task_output, context_output = buildModel(x, y_context, y_task, is_train, keep_prob)
 
     # Minimize losses
     train_step1 = optimizer1.minimize(context_cost)
@@ -204,7 +196,7 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
                 train_y_context = trainY_context[startIdx : startIdx+batch_size, :]
                 train_y_task = trainY_task[startIdx : startIdx+batch_size, :]        
                 
-                feed_dict = {x: train_x, y_context: train_y_context, y_task: train_y_task, is_train: True}
+                feed_dict = {x: train_x, y_context: train_y_context, y_task: train_y_task, is_train: True, keep_prob: keep_prob_val}
 
                 #feed dict same for both train_step1 and train_step 2?
                 train_step2.run(feed_dict=feed_dict)
@@ -235,7 +227,7 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
                 test_y_context = testY_context[startIdx : startIdx+batch_size, :]
                 test_y_task = testY_task[startIdx : startIdx+batch_size, :]
 
-                feed_dict = {x: test_x, y_context: test_y_context, y_task: test_y_task, is_train: True} 
+                feed_dict = {x: test_x, y_context: test_y_context, y_task: test_y_task, is_train: True, keep_prob:1.0} 
 
                 cost_context, cost_task, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
                 print taskOutput.shape

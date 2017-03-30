@@ -12,8 +12,9 @@ def fcLayer(x, in_shape, out_shape, activation, dropout, is_train, scope="fc"):
 
         with tf.variable_scope("activation"):
             output = applyActivation(fc, activation)
-            #out_op = tf.cond(tf.less(is_train, tf.constant(1)), lambda: tf.nn.dropout(output, dropout), lambda: tf.identity(output))
-            out_op = output 
+            #out_op = tf.nn.dropout(output, dropout)
+            out_op = output
+
     return out_op
 
 def createLSTMCell(batch_size, lstm_size, n_layers, forget_bias):

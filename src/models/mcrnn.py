@@ -32,12 +32,15 @@ feature_length = 66
 context_dim = 300
 task_dim = 300
 
+
 # Hyper- params
 lr = 0.001
+context_lr = lr
 n_epoch = 500
 topN = 4
+keep_prob_val = 1.0
 
-def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
+def buildModel(x, y_context, y_task, is_train, dropout, scope="multiTask"):
      
     # Assume the input shape is (batch_size, n_steps, feature_length) 
 
@@ -67,60 +70,50 @@ def buildModel(x, y_context, y_task, is_train, scope="multiTask"):
         with tf.variable_scope("shared_lstm"):
             if time_step > 0: 
                 tf.get_variable_scope().reuse_variables()
-            body_lstm_bn = tf.contrib.layers.batch_norm(x[time_step], 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn1')
-            (body_cell_output, body_state) = body_lstm_cell(body_lstm_bn, body_state)
+            (body_cell_output, body_state) = body_lstm_cell(x[time_step], body_state)
         
         with tf.variable_scope("context_branch"):
             if time_step > 0: 
                 tf.get_variable_scope().reuse_variables()
-            context_lstm_bn = tf.contrib.layers.batch_norm(body_cell_output, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn2')
-            (context_cell_output, context_state) = context_lstm_cell(context_lstm_bn, context_state)
+            (context_cell_output, context_state) = context_lstm_cell(body_cell_output, context_state)
+
         with tf.variable_scope("context_fc"):
             if time_step == n_steps - 1:
-                context_fc_bn = tf.contrib.layers.batch_norm(context_cell_output, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn3')
-                context_fc_out = fcLayer(x=context_fc_bn, in_shape=context_lstm_size, out_shape=context_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc1")
-                context_pred_bn = tf.contrib.layers.batch_norm(context_fc_out, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn4')
-                context_cost, context_output = predictionLayer(x=context_pred_bn, y=y_context, in_shape=context_branch_fc, out_shape=y_context.get_shape()[-1].value, activation=output_activation)
+                context_fc_out = fcLayer(x=context_cell_output, in_shape=context_lstm_size, out_shape=context_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc1")
+                context_cost, context_output = predictionLayer(x=context_fc_out, y=y_context, in_shape=context_branch_fc, out_shape=y_context.get_shape()[-1].value, activation=output_activation)
 
         with tf.variable_scope("task_branch"):
             if time_step > 0: 
                 tf.get_variable_scope().reuse_variables()
-            task_lstm_bn = tf.contrib.layers.batch_norm(body_cell_output, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn5')
-            (task_cell_output, task_state) = task_lstm_cell(task_lstm_bn, task_state)
+            (task_cell_output, task_state) = task_lstm_cell(body_cell_output, task_state)
         with tf.variable_scope("task_fc"):
             if time_step == n_steps - 1:
-                task_fc_bn = tf.contrib.layers.batch_norm(task_cell_output, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn6')
-                task_fc_out = fcLayer(x=task_fc_bn, in_shape=task_lstm_size, out_shape=task_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
-                task_pred_bn = tf.contrib.layers.batch_norm(task_fc_out, 
-                                          center=True, scale=True, 
-                                          is_training=True,
-                                          scope='bn7')
-                task_cost, task_output = predictionLayer(x=task_pred_bn, y=y_task, in_shape=context_branch_fc, out_shape=y_task.get_shape()[-1].value, activation=output_activation)
+                task_fc_out = fcLayer(x=task_cell_output, in_shape=task_lstm_size, out_shape=task_branch_fc, activation=fc_activation, dropout=dropout, is_train=is_train, scope="fc2")
+                task_cost, task_output = predictionLayer(x=task_fc_out, y=y_task, in_shape=context_branch_fc, out_shape=y_task.get_shape()[-1].value, activation=output_activation)
 
 
     return context_cost, task_cost, task_output, context_output
 
+def print_config():
+        print "-"*100
+        print "Learning rate for task: ", lr
+        print "Learning rate for context: ", context_lr
+        print "Body LSTM  size: ", body_lstm_size
+        print "Context LSTM size: ", context_lstm_size
+        print "Task LSTM size: ", task_lstm_size
+        print "Context fc size: ", context_branch_fc
+        print "Task fc size: ", task_branch_fc
+        print "Number of steps: ", n_steps
+        print "Batch size: ", batch_size
+        print "keep prob in drop out layer: ", keep_prob_val
+
+        print "-"*100
+
             
 
 def trainModel(train_path = train_data_path, test_path = test_data_path):
+
+    print_config()
     
     # Load data as np arrays
     train_data = pickle.load(open(expanduser(train_path)))
@@ -138,13 +131,14 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
     y_task = tf.placeholder(tf.float32, shape=(batch_size, task_dim))
 
     # Setting up training variables
-    optimizer1 = tf.train.AdamOptimizer(learning_rate=lr) 
-    optimizer2 = tf.train.AdamOptimizer(learning_rate=lr)
+    optimizer1 = tf.train.AdamOptimizer(learning_rate=context_lr) 
+    optimizer2 = tf.train.AdagradOptimizer(learning_rate=lr)
     is_train = tf.placeholder(tf.int32)
     n_batches = np.ceil(len(trainX) / batch_size).astype(int)
+    keep_prob = tf.placeholder(tf.float32)
     
     # Build model and apply optimizer
-    context_cost, task_cost, task_output, context_output = buildModel(x, y_context, y_task, is_train)
+    context_cost, task_cost, task_output, context_output = buildModel(x, y_context, y_task, is_train, keep_prob)
 
     # Minimize losses
     train_step1 = optimizer1.minimize(context_cost)
@@ -170,16 +164,18 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
                 train_y_context = trainY_context[startIdx : startIdx+batch_size, :]
                 train_y_task = trainY_task[startIdx : startIdx+batch_size, :]        
                 
-                feed_dict = {x: train_x, y_context: train_y_context, y_task: train_y_task, is_train: 1}
+                feed_dict = {x: train_x, y_context: train_y_context, y_task: train_y_task, is_train: 1, keep_prob: keep_prob_val}
 
-                train_step2.run(feed_dict=feed_dict)
-                _, cost_task, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
-                taskCost += cost_task
             
                 train_step1.run(feed_dict=feed_dict)
                 cost_context, _, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
                 contextCost += cost_context
-                epochTask += cost_task
+                
+		train_step2.run(feed_dict=feed_dict)
+                _, cost_task, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
+                taskCost += cost_task
+                
+		epochTask += cost_task
                 epochContext += cost_context
                 
                 if batch !=0 and batch % 100 == 0:
@@ -200,7 +196,7 @@ def trainModel(train_path = train_data_path, test_path = test_data_path):
                 test_y_context = testY_context[startIdx : startIdx+batch_size, :]
                 test_y_task = testY_task[startIdx : startIdx+batch_size, :]
 
-                feed_dict = {x: test_x, y_context: test_y_context, y_task: test_y_task} 
+                feed_dict = {x: test_x, y_context: test_y_context, y_task: test_y_task, is_train: 0, keep_prob: 1.0} 
 
                 cost_context, cost_task, taskOutput = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
                 print taskOutput.shape
