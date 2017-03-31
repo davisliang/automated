@@ -54,6 +54,7 @@ def buildModel(x, y_context, y_task, is_train, dropout, scope="multiTask"):
     # Split to get a list of "n_steps" tensors of shape (batch_size, feature_length)
     print x.get_shape()
     x = tf.split(x, n_steps, 0)
+    print x
 
     # Create lstm cell for the shared layer 
     body_lstm_cell, body_state = createLSTMCell(batch_size, body_lstm_size, body_n_layer, forget_bias=0.0)
