@@ -4,7 +4,6 @@ import os
 import cPickle as pickle
 from os.path import expanduser
 import sys
-import mcrnn_model_gen
 from mcrnn_model_gen2 import model
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..","utils")))
@@ -25,30 +24,30 @@ def get_data(data_path):
 
 
 def trainModel():
-    
+
     M = model()
-    data_path = "~/automatedMTL/data/rotten_tomato"
+    data_path = "~/tweetnet/automatedMTL/data/rotten_tomato"
 
     # Reformat the data according to the secondary task
     # Create class look up table
-    # max_length = reformat_data(data_path, M.secondary_task == "missing word")
-    # class_look_up(data_path)
+    max_length = reformat_data(data_path, M.secondary_task == "missing word")
+    class_look_up(data_path)
 
     n_classes, word2vec_dic, n_test, n_train, missing_word_dic = get_data(data_path)
-    
+
     x = tf.placeholder(tf.float32, shape=(None, M.max_length, M.feature_length))
     if M.secondary_task == "missing word":
         y_context = tf.placeholder(tf.float32, shape=(None, M.context_dim))
     else:
         y_context = tf.placeholder(tf.float32, shape=(None, M.max_length, M.feature_length))
     y_task = tf.placeholder(tf.float32, shape=(None, M.task_dim))
-    
+
     optimizer1 = tf.train.AdamOptimizer(learning_rate=M.context_lr)
     optimizer2 = tf.train.AdamOptimizer(learning_rate=M.lr)
     is_train = tf.placeholder(tf.int32)
     n_train_batches = np.ceil(n_train / M.batch_size).astype(int)
     keep_prob = tf.placeholder(tf.float32)
-    
+
     context_cost, task_cost, task_output, context_output = M.buildModel(x, y_context, y_task, is_train, keep_prob)
     if M.is_multi_task:
         train_step1 = optimizer1.minimize(context_cost)
@@ -57,20 +56,20 @@ def trainModel():
     # Start running operations on the graph
     sess = tf.Session()
     sess.run(tf.initialize_all_variables())
-    
+
     with sess.as_default():
         for epoch in range(100):
             taskCost = 0
             contextCost = 0
 
             all_classes, train_file, test_file = load_data(data_path)
-            start_idx = 0 
+            start_idx = 0
             for minibatch in range(n_train_batches):
                 encoded_batch, batch_classes, batch_context_encoded, batch_context, batch_identifier, batch_text, batch_length = load_batch(n_classes, word2vec_dic, missing_word_dic, M.feature_length, M.max_length, data_path+"/Train/", 1, train_file, test_file, all_classes, start_idx, M.batch_size, M.secondary_task)
                 start_idx += M.batch_size
-        
+
                 feed_dict = {x: encoded_batch, y_context: batch_context_encoded, y_task: batch_classes, is_train:1, keep_prob:0.5}
-                
+
                 if M.is_multi_task:
                     train_step1.run(feed_dict=feed_dict)
 	            context_cost_val, _, _ = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
@@ -80,7 +79,7 @@ def trainModel():
 	        _, task_cost_val, _ = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
                 taskCost += task_cost_val
 
-                #print "Minibatch ", minibatch, " Missing Word: ", contextCost , " Classification: ", taskCost 
+                #print "Minibatch ", minibatch, " Missing Word: ", contextCost , " Classification: ", taskCost
                 contextCost = 0
                 taskCost = 0
 
@@ -101,6 +100,6 @@ def is_correct(target, output):
     #print prediction, target
     return prediction == target
 
-            
+
 if __name__ == "__main__":
-    trainModel()    
+    trainModel()
