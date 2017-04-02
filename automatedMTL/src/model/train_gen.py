@@ -23,9 +23,9 @@ def get_data(data_path):
     return n_classes, word2vec_dic, n_test, n_train, missing_word_dic
 
 
-def trainModel():
+def trainModel(M):
 
-    M = model()
+    #M = model()
     data_path = "~/tweetnet/automatedMTL/data/rotten_tomato"
 
     # Reformat the data according to the secondary task
@@ -53,12 +53,14 @@ def trainModel():
         train_step1 = optimizer1.minimize(context_cost)
     train_step2 = optimizer2.minimize(task_cost)
 
+    accuracy_list = np.zeros((M.n_epoch))
     # Start running operations on the graph
     sess = tf.Session()
     sess.run(tf.initialize_all_variables())
 
     with sess.as_default():
-        for epoch in range(100):
+        print "Total number of epoch is: ", M.n_epoch
+        for epoch in range(M.n_epoch):
             taskCost = 0
             contextCost = 0
 
@@ -92,8 +94,10 @@ def trainModel():
                 feed_dict = {x:encoded_batch, y_context: batch_context_encoded, y_task: batch_classes, is_train:0, keep_prob:0.5}
                 task_output_val = sess.run(fetches = [task_output], feed_dict=feed_dict)
 		accuracy += is_correct(batch_classes, task_output_val)
+	    accuracy_list[epoch] = accuracy * 1.0 / n_test
             print "The accuracy in epoch ", epoch, " is: ", accuracy * 1.0 / n_test
-
+        tf.reset_default_graph()
+        return accuracy_list
 def is_correct(target, output):
     prediction = np.argmax(output)
     target = np.argmax(target)
