@@ -25,7 +25,7 @@ def get_data(data_path):
 
 def trainModel(M):
 
-    #M = model()
+    # M = model()
     data_path = "~/tweetnet/automatedMTL/data/rotten_tomato"
 
     # Reformat the data according to the secondary task
@@ -42,11 +42,14 @@ def trainModel(M):
         y_context = tf.placeholder(tf.float32, shape=(None, M.max_length, M.feature_length))
     y_task = tf.placeholder(tf.float32, shape=(None, M.task_dim))
 
-    optimizer1 = tf.train.AdamOptimizer(learning_rate=M.context_lr)
-    optimizer2 = tf.train.AdamOptimizer(learning_rate=M.lr)
     is_train = tf.placeholder(tf.int32)
     n_train_batches = np.ceil(n_train / M.batch_size).astype(int)
+    n_test_batches = np.ceil(n_test / M.batch_size).astype(int)
     keep_prob = tf.placeholder(tf.float32)
+    context_lr = tf.placeholder(tf.float32)
+    task_lr = tf.placeholder(tf.float32)
+    optimizer1 = tf.train.AdamOptimizer(learning_rate=context_lr)
+    optimizer2 = tf.train.AdamOptimizer(learning_rate=task_lr)
 
     context_cost, task_cost, task_output, context_output = M.buildModel(x, y_context, y_task, is_train, keep_prob)
     if M.is_multi_task:
@@ -70,8 +73,7 @@ def trainModel(M):
                 encoded_batch, batch_classes, batch_context_encoded, batch_context, batch_identifier, batch_text, batch_length = load_batch(n_classes, word2vec_dic, missing_word_dic, M.feature_length, M.max_length, data_path+"/Train/", 1, train_file, test_file, all_classes, start_idx, M.batch_size, M.secondary_task)
                 start_idx += M.batch_size
 
-                feed_dict = {x: encoded_batch, y_context: batch_context_encoded, y_task: batch_classes, is_train:1, keep_prob:0.5}
-
+                feed_dict = {x: encoded_batch, y_context: batch_context_encoded, y_task: batch_classes, is_train:1, keep_prob:0.5, context_lr:(1-epoch*1.0/M.n_epoch)*M.lr, task_lr:epoch*1.0/M.n_epoch*M.lr}
                 if M.is_multi_task:
                     train_step1.run(feed_dict=feed_dict)
 	            context_cost_val, _, _ = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
@@ -81,29 +83,43 @@ def trainModel(M):
 	        _, task_cost_val, _ = sess.run(fetches = [context_cost, task_cost, task_output], feed_dict=feed_dict)
                 taskCost += task_cost_val
 
-                #print "Minibatch ", minibatch, " Missing Word: ", contextCost , " Classification: ", taskCost
+                # print "Minibatch ", minibatch, " Missing Word: ", contextCost , " Classification: ", taskCost
                 contextCost = 0
                 taskCost = 0
 
             start_idx = 0
 	    accuracy = 0
 
-            for i in range(n_test):
-                encoded_batch, batch_classes, batch_context_encoded, batch_context, batch_identifier, batch_text, batch_length = load_batch(n_classes, word2vec_dic, missing_word_dic, M.feature_length, M.max_length, data_path+"/Test/", 0, train_file, test_file, all_classes, start_idx, 1, M.secondary_task)
-		start_idx += 1
+            for i in range(n_test_batches):
+                encoded_batch, batch_classes, batch_context_encoded, batch_context, batch_identifier, batch_text, batch_length = load_batch(n_classes, word2vec_dic, missing_word_dic, M.feature_length, M.max_length, data_path+"/Test/", 0, train_file, test_file, all_classes, start_idx, M.batch_size, M.secondary_task)
+		start_idx += M.batch_size
                 feed_dict = {x:encoded_batch, y_context: batch_context_encoded, y_task: batch_classes, is_train:0, keep_prob:0.5}
-                task_output_val = sess.run(fetches = [task_output], feed_dict=feed_dict)
-		accuracy += is_correct(batch_classes, task_output_val)
-	    accuracy_list[epoch] = accuracy * 1.0 / n_test
-            print "The accuracy in epoch ", epoch, " is: ", accuracy * 1.0 / n_test
+                task_output_val = sess.run(fetches = [task_output], feed_dict=feed_dict) #task output val is list of a single element, which is a numpy array of suze (batch_size, n_classes)
+		task_output_val = task_output_val[0] 
+		batch_accuracy = is_correct(M, batch_classes, task_output_val)
+		accuracy += batch_accuracy
+		#print "Batch accuracy is: ", batch_accuracy
+	    accuracy_list[epoch] = accuracy * 1.0 / n_test_batches
+            print "The accuracy in epoch ", epoch, " is: ", accuracy * 1.0 / n_test_batches
         tf.reset_default_graph()
         return accuracy_list
-def is_correct(target, output):
-    prediction = np.argmax(output)
-    target = np.argmax(target)
+
+
+def is_correct(M, target, output):
+    batch_accuracy = 0
+    for r in range(M.batch_size):
+        prediction = np.argmax(output[r,:])
+	label = np.argmax(target[r,:])
+	#print prediction, label
+	if prediction == label:
+	    batch_accuracy += 1
+    return batch_accuracy * 1.0 / M.batch_size
+    #prediction = np.argmax(output)
+    #target = np.argmax(target)
     #print prediction, target
-    return prediction == target
+    #return prediction == target
 
 
 if __name__ == "__main__":
-    trainModel()
+    M = model()
+    trainModel(M)
