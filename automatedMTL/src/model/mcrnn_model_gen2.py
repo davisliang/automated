@@ -22,9 +22,9 @@ class model(object):
 	context_output_activation = "tanh"
 	task_output_activation = "softmax"
 	dropout = 0.0
-	body_lstm_size = 128
-	context_lstm_size = 128
-	task_lstm_size = 128
+	body_lstm_size = 512
+	context_lstm_size = 512
+	task_lstm_size = 512
 	body_n_layer = 1
 	context_n_layer = 1
 	task_n_layer = 1
@@ -119,7 +119,7 @@ class model(object):
         	    last_task_output = self.last_relevant(task_cell_output, self.length(task_cell_output))
         	    # feed the last output to the fc layer and make prediction
         	    task_fc_out = fcLayer(x=last_task_output, in_shape=self.task_lstm_size, out_shape=self.task_branch_fc, activation=self.fc_activation, dropout=self.dropout, is_train=is_train, scope="fc2")
-        	    task_output, task_logits = predictionLayer(x=task_fc_out, y=y_task, in_shape=self.context_branch_fc, out_shape=y_task.get_shape()[-1].value, activation=self.task_output_activation)
+        	    task_output, task_logits = predictionLayer(x=task_fc_out, y=y_task, in_shape=self.task_branch_fc, out_shape=y_task.get_shape()[-1].value, activation=self.task_output_activation)
 		    print "Task output shape: ", task_output.get_shape()
 		    task_cost = compute_cost(logit=task_logits, y=y_task, out_type="last_only", max_length=self.max_length, batch_size=self.batch_size, embed_dim=self.n_classes,activation=self.task_output_activation)
 

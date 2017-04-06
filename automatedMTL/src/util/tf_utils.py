@@ -17,6 +17,12 @@ def fcLayer(x, in_shape, out_shape, activation, dropout, is_train, scope="fc"):
 
     return out_op
 
+def createGRUCell(batch_size, lstm_size):
+    gru_cell = tf.contrib.rnn.GRUCell(num_units=lstm_size, activation=tf.tanh)
+    state=gru_cell.zero_state(batch_size, tf.float32)
+
+    return gru_cell, state
+
 def createLSTMCell(batch_size, lstm_size, n_layers, forget_bias):
 
     lstm_cell = tf.contrib.rnn.BasicLSTMCell(lstm_size, forget_bias=forget_bias)
