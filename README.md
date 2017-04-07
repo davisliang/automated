@@ -16,7 +16,7 @@ A side project of RelNet resulted in the ***Infinite Data Pipeline*** which is b
 8. Linux Based OS (tested on Ubuntu 16.04LTS)
 
 ## Install Guide:
-1. [Install CUDA and cuDNN](http://www.pyimagesearch.com/2016/07/04/how-to-install-cuda-toolkit-and-cudnn-for-deep-learning/)
+1. [Install CUDA and cuDNN](http://tleyden.github.io/blog/2015/11/22/cuda-7-dot-5-on-aws-gpu-instance-running-ubuntu-14-dot-04/)
 2. [Apache Storm and Twitter API Setup](https://www.tutorialspoint.com/apache_storm/apache_storm_installation.htm)
 3. [Install keras and Theano](http://www.pyimagesearch.com/2016/07/18/installing-keras-for-deep-learning/)
 4. [Download Kafka 2.10](https://www.apache.org/dyn/closer.cgi?path=/kafka/0.10.1.1/kafka_2.10-0.10.1.1.tgz)
