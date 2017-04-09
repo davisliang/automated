@@ -6,7 +6,7 @@ def fcLayer(x, in_shape, out_shape, activation, dropout, is_train, scope="fc"):
     x = tf.reshape(x, [-1, in_shape])
  
     with tf.variable_scope(scope):
-        w = tf.get_variable(name="w", shape = [in_shape, out_shape], dtype=tf.float32, initializer=tf.truncated_normal_initializer(stddev=1e-2))
+        w = tf.get_variable(name="w", shape = [in_shape, out_shape], dtype=tf.float32, initializer=tf.contrib.layers.xavier_initializer())
         b = tf.get_variable(name="b", shape= [out_shape], dtype=tf.float32, initializer=tf.constant_initializer(0.0))
         fc = tf.add(tf.matmul(x, w), b)
 
@@ -56,7 +56,7 @@ def predictionLayer(x, y, in_shape, out_shape, activation, scope="prediction"):
     x = tf.reshape(x, [-1, in_shape])
 
     with tf.variable_scope(scope):
-        w = tf.get_variable(name=scope+"w", shape = [in_shape, out_shape], dtype=tf.float32, initializer=tf.truncated_normal_initializer(stddev=1e-2))
+        w = tf.get_variable(name=scope+"w", shape = [in_shape, out_shape], dtype=tf.float32, initializer=tf.contrib.layers.xavier_initializer())
         b = tf.get_variable(name=scope+"b", shape= [out_shape], dtype=tf.float32, initializer=tf.constant_initializer(0.0))
         logits = tf.add(tf.matmul(x, w), b)
         output = applyActivation(logits, activation)

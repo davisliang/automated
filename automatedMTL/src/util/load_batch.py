@@ -57,6 +57,7 @@ def encode_sequence(word2vec_dic, sequence, encode_dim, max_len):
         word = sequence_by_word[i]
         if word2vec_dic.get(word) == None:
             encoded_seq[i, :] = word2vec_dic["UNK"]
+	    continue
         else:
             if word != "REMOVE":
                 encoded_seq[i, :] = word2vec_dic[word]
