@@ -12,6 +12,7 @@ from tf_utils import fcLayer, createLSTMCell, createGRUCell, applyActivation, pr
 class model(object):
 
         # Task params
+	dataset = "ag_news"
         is_multi_task = True
         secondary_task = "word generation"
         primary_task = "classification"
@@ -32,9 +33,13 @@ class model(object):
 	task_branch_fc = 512
 
 	# Data params
-	n_classes = 2
+        if dataset == "rotten_tomato":
+	    n_classes = 2
+	    max_length = 52
+	if dataset == "ag_news":
+	    n_classes = 4
+	    max_length = 177
 	batch_size = 128
-	max_length = 52
 	feature_length = 300
  	context_dim = 300
 	task_dim = n_classes
