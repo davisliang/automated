@@ -1,9 +1,9 @@
-# RelNet
-**RelNet** is a context-driven, multi-tasking, and recurrent deep learning model. RelNet uses context features (such as topic embeddings) to reinforce learning relevant NLP tasks. RelNet comes in two flavors: the CCRNN (Contextual Cascaded Recurrent Neural Network) and the MCRNN (Multi-tasking Contextual Recurrent Neural Network). 
+# Automated Multi-task Learning
+**Automated MTL** supports two generalized multi-tasking, and recurrent deep learning architectures. Automated MTL uses the statistical regularities within the original dataset itself to reinforce the representations learned for the primary task. Automated MTL comes in two flavors: the CRNN (Cascaded Recurrent Neural Network) and the MRNN (Multi-tasking Recurrent Neural Network). 
 
-RelNet has been trained on various tasks such as missing word prediction to hashtag recommendation using a diverse set of text corpuses including Twitter, Reuters, and IMDB.
+The automated MTL architectures have achieved state-of-the-art performance in sentiment analysis, topic prediction, and hashtag recommendation using a diverse set of text corpuses including Twitter, Rotten Tomatoes, and IMDB.
 
-A side project of RelNet resulted in the ***Infinite Data Pipeline*** which is built on Java, Apache Storm, Kafka, and the Twitter API. The Infinite Data Pipeline streams and preprocesses Twitter data online and directly injects the streamed data into a running Tensorflow topology. 
+A side project of automated MTL resulted in the ***Infinite Data Pipeline*** which is built on Java, Apache Storm, Kafka, and the Twitter API. The Infinite Data Pipeline streams and preprocesses Twitter data online and directly injects the streamed data into a running Tensorflow topology. 
 
 ## Requirements:
 1. CUDNN (tested on cuDNN 5105)
