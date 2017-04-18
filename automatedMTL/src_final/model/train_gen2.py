@@ -4,13 +4,12 @@ import os
 import cPickle as pickle
 from os.path import expanduser
 import sys
-#from mcrnn_model_gen2 import model
-from ccrnn_model_gen import model
+from mcrnn_model_gen2 import model
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..","utils")))
 from tf_utils import fcLayer, createLSTMCell, applyActivation, predictionLayer
 from load_batch_val import get_file_identifiers, get_classes, load_data, get_word2vec, load_batch
-#from reformat import reformat_data
+from reformat import reformat_data
 from load_util import class_look_up
 
 def get_data(data_path):
@@ -29,7 +28,7 @@ def get_data_ag(data_path):
     word2vec_dic = get_word2vec("~/tweetnet/data/word2vec_dict.pkl")
 
     n_classes, n_data, n_data_per_class, n_train_data, n_test_data, n_validation_data, max_length = data_stats['n_classes'], data_stats['n_data'], data_stats['n_data_per_class'],data_stats['n_train_data'], data_stats['n_test_data'], data_stats["n_validation_data"], data_stats['max_length']
-    return n_classes, word2vec_dic, n_train_data, n_test_data, n_validation_data
+    return n_classes, word2vec_dic, n_test_data, n_train_data, n_validation_data
 
 
 
@@ -47,7 +46,7 @@ def trainModel(M):
         n_classes, word2vec_dic, n_test, n_train, missing_word_dic = get_data(data_path)
 
     else:
-        n_classes, word2vec_dic, n_train, n_test, n_validation = get_data_ag(data_path)
+        n_classes, word2vec_dic, n_test, n_train, n_validation = get_data_ag(data_path)
     x = tf.placeholder(tf.float32, shape=(None, M.max_length, M.feature_length))
     if M.secondary_task == "missing word":
         y_context = tf.placeholder(tf.float32, shape=(None, M.context_dim))
@@ -58,14 +57,13 @@ def trainModel(M):
     is_train = tf.placeholder(tf.int32)
     n_train_batches = np.ceil(n_train / M.batch_size).astype(int)
     n_test_batches = np.ceil(n_test / M.batch_size).astype(int)
-    if "rotten_tomato" not in data_path:
-        n_val_batches = np.ceil(n_validation / M.batch_size).astype(int)
+    n_val_batches = np.ceil(n_validation / M.batch_size).astype(int)
     global_step = tf.Variable(0, trainable=False)
     keep_prob = tf.placeholder(tf.float32)
     context_lr = tf.placeholder(tf.float32)
     task_lr = tf.placeholder(tf.float32)
-    decay_context_lr = tf.train.exponential_decay(context_lr, global_step, 500, 0.96, staircase=True)
-    decay_task_lr = tf.train.exponential_decay(task_lr, global_step, 500, 0.96, staircase=True)
+    # decay_context_lr = tf.train.exponential_decay(context_lr, global_step, 500, 0.96, staircase=True)
+    # decay_task_lr = tf.train.exponential_decay(task_lr, global_step, 500, 0.96, staircase=True)
     optimizer1 = tf.train.AdamOptimizer(learning_rate=context_lr)
     optimizer2 = tf.train.AdamOptimizer(learning_rate=task_lr)
 
@@ -108,8 +106,7 @@ def trainModel(M):
 
             all_classes, train_file, test_file, val_file = load_data(data_path)
             start_idx = 0
-            #for minibatch in range(10):
-	    for minibatch in range(n_train_batches):
+            for minibatch in range(n_train_batches):
                 encoded_batch, batch_classes, batch_context_encoded, batch_context, batch_identifier, batch_text, batch_length = load_batch(n_classes, word2vec_dic, {}, M.feature_length, M.max_length, data_path+"/Train/", 1, 0, train_file, test_file, val_file, all_classes, start_idx, M.batch_size, M.secondary_task)
                 start_idx += M.batch_size
 	
@@ -132,19 +129,18 @@ def trainModel(M):
 
             start_idx = 0
 	    validation_accuracy = 0
-            if "rotten_tomato" not in data_path:
-                for i in range(n_val_batches):
-                    encoded_batch, batch_classes, batch_context_encoded, batch_context, batch_identifier, batch_text, batch_length = load_batch(n_classes, word2vec_dic, {}, M.feature_length, M.max_length, data_path+"/Validation/", 0, 1, train_file, test_file,val_file, all_classes, start_idx, M.batch_size, M.secondary_task)
-		    start_idx += M.batch_size
-                    feed_dict = {x:encoded_batch, y_context: batch_context_encoded, y_task: batch_classes, is_train:0, keep_prob:1.0}
-                    task_output_val = sess.run(fetches = [task_output], feed_dict=feed_dict) #task output val is list of a single element, which is a numpy array of suze (batch_size, n_classes)
-		    task_output_val = task_output_val[0] 
-		    batch_accuracy = is_correct(M, batch_classes, task_output_val)
-		    validation_accuracy += batch_accuracy
-		    #print "Batch accuracy is: ", batch_accuracy
-	        validation_accuracy_list[epoch] = validation_accuracy * 1.0 / n_val_batches
-                print "\n"
-                print "The validation accuracy in epoch ", epoch, " is: ", validation_accuracy * 1.0 / n_val_batches
+            for i in range(n_val_batches):
+                encoded_batch, batch_classes, batch_context_encoded, batch_context, batch_identifier, batch_text, batch_length = load_batch(n_classes, word2vec_dic, {}, M.feature_length, M.max_length, data_path+"/Validation/", 0, 1, train_file, test_file,val_file, all_classes, start_idx, M.batch_size, M.secondary_task)
+		start_idx += M.batch_size
+                feed_dict = {x:encoded_batch, y_context: batch_context_encoded, y_task: batch_classes, is_train:0, keep_prob:1.0}
+                task_output_val = sess.run(fetches = [task_output], feed_dict=feed_dict) #task output val is list of a single element, which is a numpy array of suze (batch_size, n_classes)
+		task_output_val = task_output_val[0] 
+		batch_accuracy = is_correct(M, batch_classes, task_output_val)
+		validation_accuracy += batch_accuracy
+		#print "Batch accuracy is: ", batch_accuracy
+	    validation_accuracy_list[epoch] = validation_accuracy * 1.0 / n_val_batches
+            print "\n"
+            print "The validation accuracy in epoch ", epoch, " is: ", validation_accuracy * 1.0 / n_val_batches
 
 	    start_idx = 0
 	    test_accuracy = 0

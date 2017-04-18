@@ -8,8 +8,8 @@ from train_gen2 import trainModel as TM
 #does hyperparameter search over some set of hyperparams.
 
 
-LR = [0.001]
-LR_MOD = [0.0,1.0] #4
+LR = [0.01]
+LR_MOD = [1.0,0.0] #4
 N_EPOCHS = [30] # 30
 N_EXPERIMENTS = [5] # 5
 KEEP_PROB_VAL = [1.0]
