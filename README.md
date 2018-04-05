@@ -3,6 +3,7 @@
 
 The automated MTL architectures have achieved state-of-the-art performance in sentiment analysis, topic prediction, and hashtag recommendation using a diverse set of text corpuses including Twitter, Rotten Tomatoes, and IMDB.
 
+## The Infinite Data Pipeline (∞DP):
 A side project of automated MTL resulted in the ***Infinite Data Pipeline*** which is built on Java, Apache Storm, Kafka, and the Twitter API. The Infinite Data Pipeline streams and preprocesses Twitter data online and directly injects the streamed data into a running Tensorflow topology. 
 
 ## Requirements:
